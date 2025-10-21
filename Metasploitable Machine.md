@@ -1,1 +1,70 @@
-┌──(kali㉿RANGER)-[~] └─$ nmap 192.168.229.129 -sV -p- -O Starting Nmap 7.95 ( [https://nmap.org](https://nmap.org/) ) at 2025-10-21 00:18 IST Nmap scan report for 192.168.229.129 Host is up (0.00073s latency). Not shown: 65505 closed tcp ports (reset) PORT STATE SERVICE VERSION 21/tcp open ftp vsftpd 2.3.4 22/tcp open ssh OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0) 23/tcp open telnet Linux telnetd 25/tcp open smtp Postfix smtpd 53/tcp open domain ISC BIND 9.4.2 80/tcp open http Apache httpd 2.2.8 ((Ubuntu) DAV/2) 111/tcp open rpcbind 2 (RPC #100000) 139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 445/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 512/tcp open exec netkit-rsh rexecd 513/tcp open login? 514/tcp open tcpwrapped 1099/tcp open java-rmi GNU Classpath grmiregistry 1524/tcp open bindshell Metasploitable root shell 2049/tcp open nfs 2-4 (RPC #100003) 2121/tcp open ftp ProFTPD 1.3.1 3306/tcp open mysql MySQL 5.0.51a-3ubuntu5 3632/tcp open distccd distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)) 5432/tcp open postgresql PostgreSQL DB 8.3.0 - 8.3.7 5900/tcp open vnc VNC (protocol 3.3) 6000/tcp open X11 (access denied) 6667/tcp open irc UnrealIRCd 6697/tcp open irc UnrealIRCd 8009/tcp open ajp13 Apache Jserv (Protocol v1.3) 8180/tcp open http Apache Tomcat/Coyote JSP engine 1.1 8787/tcp open drb Ruby DRb RMI (Ruby 1.8; path /usr/lib/ruby/1.8/drb) 33889/tcp open status 1 (RPC #100024) 45753/tcp open java-rmi GNU Classpath grmiregistry 55233/tcp open nlockmgr 1-4 (RPC #100021) 59979/tcp open mountd 1-3 (RPC #100005) MAC Address: 00:0C:29:5C:DF:B8 (VMware) Device type: general purpose Running: Linux 2.6.X OS CPE: cpe:/o:linux:linux_kernel:2.6 OS details: Linux 2.6.9 - 2.6.33 Network Distance: 1 hop Service Info: Hosts: metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+# 🛡️ Nmap Scan — 192.168.229.129  
+**Scan:** `nmap -sV -p- -O` · **Date:** 2025-10-21 00:18 IST  
+**Host:** metasploitable.localdomain · **MAC:** `00:0C:29:5C:DF:B8` (VMware)
+
+---
+
+## Summary
+> **Device:** Linux (2.6.x) — likely a Metasploitable VM.  
+> **Network distance:** 1 hop.  
+> **Action:** isolate and remediate high-risk services immediately.
+
+---
+
+## Legend
+<span style="display:inline-block;padding:2px 8px;border-radius:999px;background:#e74c3c;color:white;font-weight:600">HIGH</span>
+<span style="display:inline-block;padding:2px 8px;border-radius:999px;background:#f39c12;color:white;font-weight:600">MED</span>
+<span style="display:inline-block;padding:2px 8px;border-radius:999px;background:#2ecc71;color:white;font-weight:600">LOW</span>
+
+---
+
+## Services & Recommendations
+
+| Port | Proto | Service (detected) | Version / Details | Risk |
+|---:|:---:|:---|:---|:---:|
+| **21** | tcp | **ftp** | vsftpd **2.3.4** | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **22** | tcp | **ssh** | OpenSSH **4.7p1** | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **23** | tcp | **telnet** | telnetd | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **25** | tcp | smtp | Postfix smtpd | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **53** | tcp | domain | ISC BIND **9.4.2** | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **80** | tcp | http | Apache **2.2.8** | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **111** | tcp | rpcbind | rpcbind 2 | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **139** | tcp | netbios-ssn | Samba smbd 3.x-4.x | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **445** | tcp | netbios-ssn | Samba smbd 3.x-4.x | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **512** | tcp | exec | netkit-rsh rexecd | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **513** | tcp | login? | rlogin-like | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **514** | tcp | tcpwrapped | wrapped | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **1099** | tcp | java-rmi | GNU Classpath grmiregistry | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **1524** | tcp | bindshell | Metasploitable root shell | <span style="background:#c0392b;color:white;padding:3px 8px;border-radius:6px">CRITICAL</span> |
+| **2049** | tcp | nfs | NFS 2-4 | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **2121** | tcp | ftp | ProFTPD **1.3.1** | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **3306** | tcp | mysql | MySQL **5.0.51a** | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **3632** | tcp | distccd | distccd v1 | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **5432** | tcp | postgresql | PostgreSQL **8.3.x** | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **5900** | tcp | vnc | VNC (3.3) | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **6000** | tcp | X11 | access denied | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **6667** | tcp | irc | UnrealIRCd | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **6697** | tcp | irc (ssl) | UnrealIRCd | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **8009** | tcp | ajp13 | Apache JServ AJP | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **8180** | tcp | http | Tomcat/Coyote JSP | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **8787** | tcp | drb | Ruby DRb (Ruby 1.8) | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **33889** | tcp | status | RPC | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **45753** | tcp | java-rmi | GNU Classpath grmiregistry | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+| **55233** | tcp | nlockmgr | NLM 1-4 | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
+| **59979** | tcp | mountd | mountd 1-3 | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
+
+---
+
+## Top 6 Immediate Actions
+1. **Isolate** the host (if this isn't an intentional test VM).  
+2. **Shut down/close**: bindshell (1524), telnet (23), rsh/rlogin (512/513), exposed DBs (3306/5432).  
+3. **Block externally**: NFS, RPC, RMI, DRb, Samba ports (139/445/2049/1099/8787).  
+4. **Patch/upgrade** critical apps (OpenSSH, Apache, MySQL, Postgres, BIND).  
+5. **Audit logs and accounts** for signs of compromise.  
+6. **Rebuild from a trusted image** if compromise is suspected.
+
+---
+
+### Notes
+- Many services are intentionally vulnerable (Metasploitable). If this is a lab VM — great for training; if not, treat as compromised.
+- Want this exported as **CSV** / **JSON** or a printable one-page PDF? Say which and I'll generate it.
