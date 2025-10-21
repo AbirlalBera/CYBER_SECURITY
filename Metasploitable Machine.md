@@ -1,4 +1,4 @@
-# 🛡️ Nmap Scan — 192.168.229.129  
+# 🛡️ Nmap Scan — 192.168.229.129 (Metasploitable VM)
 **Scan:** `nmap -sV -p- -O` · **Date:** 2025-10-21 00:18 IST  
 **Host:** metasploitable.localdomain · **MAC:** `00:0C:29:5C:DF:B8` (VMware)
 
@@ -53,18 +53,4 @@
 | **55233** | tcp | nlockmgr | NLM 1-4 | <span style="background:#f39c12;color:white;padding:3px 8px;border-radius:6px">MED</span> |
 | **59979** | tcp | mountd | mountd 1-3 | <span style="background:#e74c3c;color:white;padding:3px 8px;border-radius:6px">HIGH</span> |
 
----
 
-## Top 6 Immediate Actions
-1. **Isolate** the host (if this isn't an intentional test VM).  
-2. **Shut down/close**: bindshell (1524), telnet (23), rsh/rlogin (512/513), exposed DBs (3306/5432).  
-3. **Block externally**: NFS, RPC, RMI, DRb, Samba ports (139/445/2049/1099/8787).  
-4. **Patch/upgrade** critical apps (OpenSSH, Apache, MySQL, Postgres, BIND).  
-5. **Audit logs and accounts** for signs of compromise.  
-6. **Rebuild from a trusted image** if compromise is suspected.
-
----
-
-### Notes
-- Many services are intentionally vulnerable (Metasploitable). If this is a lab VM — great for training; if not, treat as compromised.
-- Want this exported as **CSV** / **JSON** or a printable one-page PDF? Say which and I'll generate it.
