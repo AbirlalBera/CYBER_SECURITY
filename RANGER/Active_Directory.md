@@ -1,3 +1,3 @@
 **Active Directory is a directory service developed by Microsoft for Windows domain networks. It stores information about network objects such as computers, users, and groups. It provides authentication and authorisation services, and allows administrators to manage network resources centrally.**
 
-Domain Controller : 
+**Domain Controller :** The server that runs the Active Directory services is known as a Domain Controller (DC).A domain controller is a server that manages security authentication requests in a Windows Server network. It stores user account information and controls access to resources on the network. It is a critical component for managing and securing a network infrastructure.
