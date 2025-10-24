@@ -1,0 +1,3 @@
+**Active Directory is a directory service developed by Microsoft for Windows domain networks. It stores information about network objects such as computers, users, and groups. It provides authentication and authorisation services, and allows administrators to manage network resources centrally.**
+
+Domain Controller : 
