@@ -6,8 +6,9 @@
 
 The main advantages of having a configured Windows domain are:
 
-    Centralised identity management: All users across the network can be configured from Active Directory with minimum effort.
-    Managing security policies: You can configure security policies directly from Active Directory and apply them to users and computers across the network as needed.
+**Centralised identity management:**  All users across the network can be configured from Active Directory with minimum effort.
+
+**Managing security policies:**  You can configure security policies directly from Active Directory and apply them to users and computers across the network as needed.
 
 
 
