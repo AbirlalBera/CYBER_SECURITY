@@ -48,5 +48,8 @@ ps -A :  View all running processes
 
 ps axjf :  View process tree (see the tree formation until ps axjf is run below)
 
-ps aux : The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
+![[Pasted image 20251026015206.png]]
+
+
+ps aux : The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). 
  
