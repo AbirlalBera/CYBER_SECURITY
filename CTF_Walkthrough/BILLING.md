@@ -118,7 +118,9 @@ sudo /usr/bin/fail2ban-client set <JAIL> banip 1.2.3.5
 
 ![[Pasted image 20251025191756.png]]
 
-Finnaly we got the root access
+Finnaly we got the root access.Now lest find the root.txt flag
+
+
 
 
 
