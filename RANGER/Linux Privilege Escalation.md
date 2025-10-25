@@ -138,3 +138,15 @@ The target system may be a pivoting point to another network. The ifconfig comma
 
 ----------------
 
+ifconfig
+
+The ifconfig command will give us information about the network interfaces of the system. 
+
+
+
+
+
+This can be confirmed using the ip route command to see which network routes exist.
+
+
+
