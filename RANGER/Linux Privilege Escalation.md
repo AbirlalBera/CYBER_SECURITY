@@ -12,5 +12,12 @@ Execute any administrative command
 
 -----------------------------
 
-hostname : The hostname command will return the hostname of the target machine
+# COMMANDS:
+
+hostname : The hostname command will return the hostname of the target machine.
+
+uname -a : 
+
+
+
 
