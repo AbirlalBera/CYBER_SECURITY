@@ -53,7 +53,7 @@ Time: Amount of CPU time used by the process (this is NOT the time this process 
 
 CMD: The command or executable running (will NOT display any command line parameter)
 
-**The “ps” command provides a few useful options------------------------**
+**The “ps” command provides a few useful options----------**
 
 ps -A :  View all running processes
 
