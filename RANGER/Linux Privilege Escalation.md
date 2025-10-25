@@ -15,7 +15,11 @@ Execute any administrative command
 
 hostname : The hostname command will return the hostname of the target machine.
 
+![[Pasted image 20251026022208.png]]
+
 uname -a : Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
+
+![[Pasted image 20251026022146.png]]
 
 /proc/version : The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.Looking at /proc/version may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
 
