@@ -72,3 +72,13 @@ The sudo -l command can be used to list all commands your user can run using sud
 
 ![[Pasted image 20251026020034.png]]
 
+-----------------
+ls
+
+One of the common commands used in Linux is probably ls.
+
+
+
+While looking for potential privilege escalation vectors, please remember to always use the ls command with the -la parameter. The example below shows how the “secret.txt” file can easily be missed using the ls or ls -l commands.
+
+![[Pasted image 20251026020128.png]]
