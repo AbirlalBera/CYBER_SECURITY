@@ -124,7 +124,10 @@ Finnaly we got the root access.Now lest find the root.txt flag
 
 -----------------------------
 
-THANK YOU  
+<p style="text-align: center;">THANK YOU </p>
+
+
+
 
 
 
