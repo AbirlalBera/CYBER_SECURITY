@@ -10,11 +10,8 @@ Enabling persistence
 Changing the privilege of existing (or new) users
 Execute any administrative command
 
-# COMMANDS:
-
------------------------------
-
-
+-------------------
+<p style="text-align: center;">COMMANDS</p>
 
 hostname : The hostname command will return the hostname of the target machine.
 
@@ -25,7 +22,7 @@ uname -a : Will print system information giving us additional detail about the k
 /etc/issue :  Systems can also be identified by looking at the /etc/issue file. This file usually contains some information about the operating system but can easily be customized or changed. While on the subject, any file containing system information can be customized or changed. For a clearer understanding of the system, it is always good to look at all of these.
 
 ---------------------------
-### ps Command 
+### <p style="text-align: center;">ps Command 
 
 The ps command is an effective way to see the running processes on a Linux system. Typing ps on your terminal will show processes for the current shell. 
 
