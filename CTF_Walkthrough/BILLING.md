@@ -15,3 +15,9 @@ Open 10.201.76.54:80
 Open 10.201.76.54:3306
 Open 10.201.76.54:5038
 
+![[Pasted image 20251025183606.png]]
+
+These are the service running on the server.
+
+-
+
