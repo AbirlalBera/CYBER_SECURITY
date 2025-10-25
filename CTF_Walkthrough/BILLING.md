@@ -94,7 +94,7 @@ sudo /usr/bin/fail2ban-client status
 ## step 2 : 
 
 ```
-### Choose one of the jails from the "Jail list" in the output.
+# Choose one of the jails from the "Jail list" in the output.
 
 sudo /usr/bin/fail2ban-client get <JAIL> actions
 
