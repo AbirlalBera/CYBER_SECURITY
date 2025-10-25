@@ -68,3 +68,7 @@ The PATH variable may have a compiler or a scripting language (e.g. Python) that
 
 sudo -l
 
+The sudo -l command can be used to list all commands your user can run using sudo.
+
+![[Pasted image 20251026020034.png]]
+
