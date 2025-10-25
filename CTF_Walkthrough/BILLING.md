@@ -2,7 +2,7 @@
 
 -----------
 
-RustScan 
+# Scanning using RustScan 
 
 rustscan -a 10.201.76.54 -- -sC -sV 
 
@@ -42,7 +42,7 @@ msf >run
 #### Now we get the meterpreter session 
 
 --------------------------
-# Now lets find the root.txt Flag
+# Now lets find the user.txt Flag
 
 
 ![[Pasted image 20251025184353.png]]
@@ -54,6 +54,8 @@ Found total 3 users
 ![[Pasted image 20251025184711.png]]
 
 So finally in the magnus user i found the user.txt flag
+
+FLAG : 
 
 ----------------
 # Now lets find the root.txt Flag
@@ -125,6 +127,8 @@ sudo /usr/bin/fail2ban-client set <JAIL> banip 1.2.3.5
 Finnaly we got the root access.Now lest find the root.txt flag
 
 ![[Pasted image 20251025192042.png]]
+
+# FLAG : THM{33ad5b530e71a172648f424ec23fae60}
 
 -----------------------------
 
