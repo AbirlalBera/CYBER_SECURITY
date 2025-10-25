@@ -89,3 +89,11 @@ The id command will provide a general overview of the user’s privilege level a
 
 ![[Pasted image 20251026020304.png]]
 
+------------
+ /etc/passwd
+
+Reading the /etc/passwd file can be an easy way to discover users on the system. 
+
+![[Pasted image 20251026020434.png]]
+
+
