@@ -28,7 +28,6 @@ uname -a : Will print system information giving us additional detail about the k
 The ps command is an effective way to see the running processes on a Linux system. Typing ps on your terminal will show processes for the current shell. 
 
 The output of the ps (Process Status) will show the following;
-
 ```
 PID: The process ID (unique to the process)
 TTY: Terminal type used by the user
@@ -37,4 +36,10 @@ CMD: The command or executable running (will NOT display any command line parame
 ```
 
 
+The “ps” command provides a few useful options------------------------
 
+    ps -A: View all running processes
+    ps axjf: View process tree (see the tree formation until ps axjf is run below)
+
+
+    ps aux: The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
