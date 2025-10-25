@@ -54,3 +54,6 @@ So finally in the magnus user i found the user.txt flag
 ----------------
 Now lets find the root.txt Flag
 
+To do that we have to escalate priviellage
+
+check which service we can usser
