@@ -291,7 +291,6 @@ Full root access achieved!
 4. **Low suspicion** - Fail2ban activity looks normal in logs
 5. **Reusable** - Any user on the system can now get root with `/bin/bash -p`
 
-This exploit demonstrates why principle of least privilege is crucial - users should never have unrestricted configuration access to security services.
 
 <p style="text-align: center;">THANK YOU </p>
 
