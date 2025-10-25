@@ -20,6 +20,7 @@ uname -a : Will print system information giving us additional detail about the k
 
 /proc/version : The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.Looking at /proc/version may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
 
+/etc/issue : 
 
 
 
