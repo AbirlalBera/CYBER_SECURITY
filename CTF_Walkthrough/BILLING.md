@@ -55,7 +55,8 @@ Found total 3 users
 
 So finally in the magnus user i found the user.txt flag
 
-FLAG : 
+## FLAG : THM{4a6831d5f124b25eefb1e92e0f0da4ca}
+
 
 ----------------
 # Now lets find the root.txt Flag
@@ -128,7 +129,7 @@ Finnaly we got the root access.Now lest find the root.txt flag
 
 ![[Pasted image 20251025192042.png]]
 
-# FLAG : THM{33ad5b530e71a172648f424ec23fae60}
+## FLAG : THM{33ad5b530e71a172648f424ec23fae60}
 
 -----------------------------
 
