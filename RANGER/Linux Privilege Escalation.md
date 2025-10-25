@@ -10,9 +10,11 @@ Enabling persistence
 Changing the privilege of existing (or new) users
 Execute any administrative command
 
+# COMMANDS:
+
 -----------------------------
 
-# COMMANDS:
+
 
 hostname : The hostname command will return the hostname of the target machine.
 
@@ -52,4 +54,5 @@ ps axjf :  View process tree (see the tree formation until ps axjf is run below)
 
 
 ps aux : The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). 
- 
+
+![[Pasted image 20251026015328.png]]
