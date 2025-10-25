@@ -201,7 +201,7 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 
 
 
-
+![[Pasted image 20251026025002.png]]
 
 
 
