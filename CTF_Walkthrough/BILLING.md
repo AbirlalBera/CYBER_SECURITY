@@ -49,4 +49,8 @@ Found total 3 users
 
 ![[Pasted image 20251025184711.png]]
 
-So finally in the 
+So finally in the magnus user i found the user.txt flag
+
+----------------
+Now lets find the root.txt Flag
+
