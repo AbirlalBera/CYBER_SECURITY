@@ -24,3 +24,5 @@ Then we found a exploit on msf console and the service was MagnusBilling
 ![[Pasted image 20251025183737.png]]
 
 
+![[Pasted image 20251025184034.png]]
+
