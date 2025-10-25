@@ -43,6 +43,8 @@ CMD: The command or executable running (will NOT display any command line parame
 
 ps -A :  View all running processes
 
+![[Pasted image 20251026015057.png]]
+
 ps axjf :  View process tree (see the tree formation until ps axjf is run below)
 
 ps aux : The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
