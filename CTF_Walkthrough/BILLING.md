@@ -56,4 +56,10 @@ Now lets find the root.txt Flag
 
 To do that we have to escalate priviellage
 
-check which service we can usser
+check which service we can use under sudo permission . Before that change the meterpreter shell to normal shell.
+
+meterpreter > shell
+
+
+
+
