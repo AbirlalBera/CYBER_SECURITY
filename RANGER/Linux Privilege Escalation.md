@@ -22,11 +22,19 @@ uname -a : Will print system information giving us additional detail about the k
 
 /etc/issue :  Systems can also be identified by looking at the /etc/issue file. This file usually contains some information about the operating system but can easily be customized or changed. While on the subject, any file containing system information can be customized or changed. For a clearer understanding of the system, it is always good to look at all of these.
 
+---------------------------
 ### ps Command 
 
 The ps command is an effective way to see the running processes on a Linux system. Typing ps on your terminal will show processes for the current shell. 
 
+The output of the ps (Process Status) will show the following;
 
+```
+PID: The process ID (unique to the process)
+TTY: Terminal type used by the user
+Time: Amount of CPU time used by the process (this is NOT the time this process    has been running for)
+CMD: The command or executable running (will NOT display any command line parameter)
+```
 
 
 
