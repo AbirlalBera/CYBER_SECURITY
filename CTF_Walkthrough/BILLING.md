@@ -66,7 +66,11 @@ sudo -l
 
 we found fail2bn service that have sudo permission......
 
+**fail2ban :** Fail2ban is an open-source intrusion prevention software for Linux that protects servers from brute-force attacks by monitoring log files for suspicious activity and automatically banning malicious IP addresses.
+
 lets exploit these service !!!!!!!!!!
+
+
 
 
 
