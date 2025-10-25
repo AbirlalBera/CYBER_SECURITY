@@ -194,6 +194,10 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 -n: Do not resolve names
 -o: Display timers
 
+![[Pasted image 20251026023533.png]]
+
+-----------------
+###  find Command
 
 
 
