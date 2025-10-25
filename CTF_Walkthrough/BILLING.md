@@ -70,6 +70,8 @@ we found fail2bn service that have sudo permission......
 
 lets exploit these service !!!!!!!!!!
 
+we found a exploit on https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/sudo/fail2ban-command/
+
 
 
 
