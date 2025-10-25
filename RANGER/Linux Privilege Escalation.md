@@ -173,13 +173,15 @@ netstat -s: list network usage statistics by protocol (below) This can also be u
 
 netstat -tp: list connections with the service name and PID information.
 
-
+![[Pasted image 20251026023355.png]]
 
 This can also be used with the -l option to list listening ports (below)
 
-
+![[Pasted image 20251026023405.png]]
 
 We can see the “PID/Program name” column is empty as this process is owned by another user.
+
+![[Pasted image 20251026023426.png]]
 
 Below is the same command run with root privileges and reveals this information as 2641/nc (netcat)
 
