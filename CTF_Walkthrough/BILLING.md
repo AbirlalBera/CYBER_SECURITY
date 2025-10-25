@@ -60,6 +60,10 @@ check which service we can use under sudo permission . Before that change the me
 
 meterpreter > shell
 
+sudo -l
 
+![[Pasted image 20251025190512.png]]
+
+we found  
 
 
