@@ -16,7 +16,9 @@ Execute any administrative command
 
 hostname : The hostname command will return the hostname of the target machine.
 
-uname -a : 
+uname -a : Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
+
+/proc/version : 
 
 
 
