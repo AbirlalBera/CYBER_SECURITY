@@ -10,3 +10,7 @@ Enabling persistence
 Changing the privilege of existing (or new) users
 Execute any administrative command
 
+-----------------------------
+
+hostname : The hostname command will return the hostname of the target machine
+
