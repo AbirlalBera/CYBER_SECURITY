@@ -21,6 +21,9 @@ These are the service running on the server.
 
 ----------------
 Then we found a exploit on msf console and the service was MagnusBilling
+
+
+search MagnusBilling
 ![[Pasted image 20251025183737.png]]
 
 
