@@ -62,3 +62,9 @@ The env command will show environmental variables.
 
 ![[Pasted image 20251026015826.png]]
 
+The PATH variable may have a compiler or a scripting language (e.g. Python) that could be used to run code on the target system or leveraged for privilege escalation.
+
+---------------------
+
+sudo -l
+
