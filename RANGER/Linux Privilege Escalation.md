@@ -201,3 +201,9 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 
 
 ![[IMAGES/Pasted image 20251026025408.png]]
+
+![[Screenshot 2025-10-26 025551.png]]
+
+https://assets.tryhackme.com/additional/imgur/pSMfoz4.png
+
+
