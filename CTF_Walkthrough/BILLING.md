@@ -46,3 +46,7 @@ Now we get the meterpreter session
 Then back to the home directory 
 
 Found total 3 users 
+
+![[Pasted image 20251025184711.png]]
+
+So finally in the 
