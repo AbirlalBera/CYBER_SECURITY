@@ -53,3 +53,12 @@ ps axjf :  View process tree (see the tree formation until ps axjf is run below)
 ps aux : The aux option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). 
 
 ![[Pasted image 20251026015328.png]]
+
+-------------
+
+### env
+
+The env command will show environmental variables.
+
+![[Pasted image 20251026015826.png]]
+
