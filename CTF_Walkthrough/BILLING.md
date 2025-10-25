@@ -19,5 +19,8 @@ Open 10.201.76.54:5038
 
 These are the service running on the server.
 
--
+----------------
+Then we found a exploit i
+![[Pasted image 20251025183737.png]]
+
 
