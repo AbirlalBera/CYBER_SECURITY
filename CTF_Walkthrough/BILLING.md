@@ -64,6 +64,10 @@ sudo -l
 
 ![[Pasted image 20251025190512.png]]
 
-we found  
+we found fail2bn service that have sudo permission......
+
+lets exploit these service !!!!!!!!!!
+
+
 
 
