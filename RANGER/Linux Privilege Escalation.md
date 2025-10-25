@@ -107,6 +107,11 @@ cat /etc/passwd | cut -d ":" -f 1
 
 Remember that this will return all users, some of which are system or service users that would not be very useful. Another approach could be to grep for “home” as real users will most likely have their folders under the “home” directory. 
 
+```
+cat /etc/passwd | grep home
+```
+
 ![[Pasted image 20251026020555.png]]
 
+------------------------
 
