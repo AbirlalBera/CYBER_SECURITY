@@ -165,11 +165,11 @@ The netstat command can be used with several different options to gather informa
 
 netstat -l : list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol (below)
 
-
+![[Pasted image 20251026023237.png]]
 
 netstat -s: list network usage statistics by protocol (below) This can also be used with the -t or -u options to limit the output to a specific protocol. 
 
-
+![[Pasted image 20251026023301.png]]
 
 netstat -tp: list connections with the service name and PID information.
 
