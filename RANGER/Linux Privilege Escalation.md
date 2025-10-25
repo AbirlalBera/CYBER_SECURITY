@@ -151,7 +151,7 @@ This can be confirmed using the ip route command to see which network routes exi
 
 ------------
 
- netstat
+ ###  **netstat**
 
 Following an initial check for existing interfaces and network routes, it is worth looking into existing communications. The netstat command can be used with several different options to gather information on existing connections.
 
