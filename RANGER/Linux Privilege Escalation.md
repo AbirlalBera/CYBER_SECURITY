@@ -200,10 +200,4 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 ###  find Command
 
 
-
-![[Pasted image 20251026025002.png]]
-
-
-
-![[Pasted image 20251026024843.png]]
-![[Pasted image 20251026025147.png]]![[Pasted image 20251026025254.png]]
+![[IMAGES/Pasted image 20251026025408.png]]
