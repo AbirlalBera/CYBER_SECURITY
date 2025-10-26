@@ -70,3 +70,13 @@ Several groups are created by default in a domain that can be used to grant spec
 
 - **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
 
+### OUs vs. Groups: The Simple Difference
+
+This is a common point of confusion, but the distinction is crucial:
+
+| Organizational Unit (OU) | Security Group                                                        |
+| ------------------------ | --------------------------------------------------------------------- |
+| **Purpose**              | **Apply Policies** (like software rules or security settings)         |
+| **Membership**           | A user/computer can be in **only one** OU.                            |
+| **Analogy**              | Assigning an employee to the **"Sales Department"** in the HR system. |
+
