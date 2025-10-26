@@ -61,3 +61,4 @@ Several groups are created by default in a domain that can be used to grant spec
 To configure users, groups or machines in Active Directory, we need to log in to the Domain Controller and run "Active Directory Users and Computers" from the start menu:
 
 ![[Pasted image 20251027001836.png]]
+
