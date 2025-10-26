@@ -11,6 +11,6 @@ The main advantages of having a configured Windows domain are:
 
 **Managing security policies:**  You can configure security policies directly from Active Directory and apply them to users and computers across the network as needed.
 
-
+**Active Directory Domain Service** :  
 
 
