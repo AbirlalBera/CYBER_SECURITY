@@ -8,3 +8,7 @@
 
 --------------
 
+Types :
+
+Kernal  Exploit 
+
