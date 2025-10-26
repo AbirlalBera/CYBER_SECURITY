@@ -228,4 +228,6 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 - `find / -name python*`
 - `find / -name gcc*`
 
+### Find specific file permissions:
 
+- `find / -perm -u=s -type f 2>/dev/null`: Find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user.
