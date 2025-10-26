@@ -213,6 +213,7 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 - `find / -amin -60`: find files accesses within the last hour (60 minutes)
 - `find / -size 50M`: find files with a 50 MB size
 
+- `-type f 2>/dev/null :` Used to redirect errors to “/dev/null” and have a cleaner output (below).
 
 
 
