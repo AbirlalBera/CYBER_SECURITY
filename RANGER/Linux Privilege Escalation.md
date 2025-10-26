@@ -201,7 +201,6 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 
 **Find files:**
 
-``
 - `find . -name flag1.txt`:   find the file named “flag1.txt” in the current directory
 - `find /home -name flag1.txt`: find the file names “flag1.txt” in the /home directory
 - `find / -type d -name config`: find the directory named config under “/”
