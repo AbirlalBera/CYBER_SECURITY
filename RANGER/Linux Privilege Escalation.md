@@ -197,9 +197,9 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 ![[Pasted image 20251026023533.png]]
 
 -----------------
-###  find Command
+#  find Command
 
-**Find files:**
+### **Find files:**
 
 - `find . -name flag1.txt`:   find the file named “flag1.txt” in the current directory
 - `find /home -name flag1.txt`: find the file names “flag1.txt” in the /home directory
@@ -222,5 +222,10 @@ Folders and files that can be written to or executed from:
 - `find / -perm -o w -type d 2>/dev/null`: Find world-writeable folders
 - `find / -perm -o x -type d 2>/dev/null` : Find world-executable folders
 
+Find development tools and supported languages:
+
+- `find / -name perl*`
+- `find / -name python*`
+- `find / -name gcc*`
 
 
