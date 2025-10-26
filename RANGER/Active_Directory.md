@@ -44,11 +44,10 @@ The main advantages of having a configured Windows domain are:
     
 - Groups can contain both users and computers.
 
+Several groups are created by default in a domain that can be used to grant specific privileges to users. As an example, here are some of the most important groups in a domain:
 
-
-|                    |                                                                                                                                                           |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Security Group** | **Description**                                                                                                                                           |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Domain Admins      | Users of this group have administrative privileges over the entire domain. By default, they can administer any computer on the domain, including the DCs. |
 | Server Operators   | Users in this group can administer Domain Controllers. They cannot change any administrative group memberships.                                           |
 | Backup Operators   | Users in this group are allowed to access any file, ignoring their permissions. They are used to perform backups of data on computers.                    |
@@ -57,3 +56,4 @@ The main advantages of having a configured Windows domain are:
 | Domain Computers   | Includes all existing computers in the domain.                                                                                                            |
 | Domain Controllers | Includes all existing DCs on the domain.                                                                                                                  |
 
+## 
