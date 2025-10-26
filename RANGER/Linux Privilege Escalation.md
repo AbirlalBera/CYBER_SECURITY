@@ -197,7 +197,7 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 ![[Pasted image 20251026023533.png]]
 
 -----------------
-#  find Command
+# find Command
 
 ### **Find files:**
 
@@ -215,14 +215,14 @@ The netstat usage you will probably see most often in blog posts, write-ups, and
 
 - `-type f 2>/dev/null :` Used to redirect errors to “/dev/null” and have a cleaner output (below).
 
-Folders and files that can be written to or executed from:
+### Folders and files that can be written to or executed from:
 
 - `find / -writable -type d 2>/dev/null` : Find world-writeable folders
 - `find / -perm -222 -type d 2>/dev/null`: Find world-writeable folders
 - `find / -perm -o w -type d 2>/dev/null`: Find world-writeable folders
 - `find / -perm -o x -type d 2>/dev/null` : Find world-executable folders
 
-Find development tools and supported languages:
+### Find development tools and supported languages:
 
 - `find / -name perl*`
 - `find / -name python*`
