@@ -56,9 +56,17 @@ Several groups are created by default in a domain that can be used to grant spec
 | Domain Computers   | Includes all existing computers in the domain.                                                                                                            |
 | Domain Controllers | Includes all existing DCs on the domain.                                                                                                                  |
 
-## Active Directory Users and Computers
+### Active Directory Users and Computers: The Management Tool
 
-To configure users, groups or machines in Active Directory, we need to log in to the Domain Controller and run "Active Directory Users and Computers" from the start menu:
+- This is the program you use to manage everything in your Active Directory (users, computers, groups). You run it on a **Domain Controller** **(the main server).**
 
 ![[Pasted image 20251027001836.png]]
+
+### Organizational Units (OUs): The Folders for Organization
+
+- **What they are:** OUs are like folders or directories that you use to organize your users and computers within Active Directory.
+    
+- **Main Purpose:** They are used to apply **policies and settings** to specific sets of users or computers.
+    
+    - **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
 
