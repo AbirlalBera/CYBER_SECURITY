@@ -11,7 +11,39 @@ The main advantages of having a configured Windows domain are:
 
 **Managing security policies:**  You can configure security policies directly from Active Directory and apply them to users and computers across the network as needed.
 
+------------------------------------
 **Active Directory Domain Service** :  The core of any Windows Domain is the **Active Directory Domain Service (AD DS)**. This service acts as a catalogue that holds the information of all of the "objects" that exist on your network. Amongst the many objects supported by AD, we have users, groups, machines, printers, shares and many others
+
+### The Main Objects
+
+#### 👤 1. Users
+
+- These are accounts that can log in and access things (they are "security principals").
+    
+- **Two Types:**
+    
+    - **People:** Regular employees.
+        
+    - **Services:** Special accounts used to run programs (like a web server).
+        
+
+#### 💻 2. Machines (Computers)
+
+- Every computer that joins the network gets its own account in AD.
+    
+- They are also "security principals."
+    
+- **How to spot them:** Their name ends with a **`$`** (e.g., `DC01$`).
+    
+
+#### 👥 3. Security Groups
+
+- This is how you manage permissions efficiently. Instead of giving access to each user individually, you put them in a **group** and give the **group** permission.
+    
+- **Key Advantage:** Add a user to a group, and they instantly get all the group's access rights.
+    
+- Groups can contain both users and computers.
+
 
 
 |                    |                                                                                                                                                           |
