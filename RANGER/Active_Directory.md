@@ -119,3 +119,14 @@ How to give permission to a another user to change or reset someones password --
 
 ![[Pasted image 20251027010356.png]]
 
+After giving the permission lets change some ones password-----------
+
+```
+PS C:\Users\phillip> Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose New 
+
+Password: ********* 
+
+VERBOSE: Performing the operation "Set-ADAccountPassword" on target "CN=Sophie,OU=Sales,OU=THM,DC=thm,DC=local".
+```
+
+
