@@ -69,7 +69,16 @@ Several groups are created by default in a domain that can be used to grant spec
 - **Main Purpose:** They are used to apply **policies and settings** to specific sets of users or computers.
 
 - **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
+![[Pasted image 20251027002406.png]]
 
+
+ there are other default containers apart from the THM OU. These containers are created by Windows automatically and contain the following:
+
+- **Builtin:** Contains default groups available to any Windows host.
+- **Computers:** Any machine joining the network will be put here by default. You can move them if needed.
+- **Domain Controllers:** Default OU that contains the DCs in your network.
+- **Users:** Default users and groups that apply to a domain-wide context.
+- **Managed Service Accounts:** Holds accounts used by services in your Windows domain.
 ### OUs vs. Groups: The Simple Difference
 
 This is a common point of confusion, but the distinction is crucial:
