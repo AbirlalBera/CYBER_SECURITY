@@ -65,8 +65,8 @@ Several groups are created by default in a domain that can be used to grant spec
 ### Organizational Units (OUs): The Folders for Organization
 
 - **What they are:** OUs are like folders or directories that you use to organize your users and computers within Active Directory.
-    
+
 - **Main Purpose:** They are used to apply **policies and settings** to specific sets of users or computers.
-    
-    - **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
+
+- **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
 
