@@ -88,3 +88,7 @@ This is a common point of confusion, but the distinction is crucial:
 | **Membership**           | A user/computer can be in **only one** OU.                            |
 | **Analogy**              | Assigning an employee to the **"Sales Department"** in the HR system. |
 
+---------------
+
+How to give permission to a another user to change or reset someones password ---------
+
