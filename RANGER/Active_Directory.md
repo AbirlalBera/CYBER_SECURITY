@@ -90,5 +90,13 @@ This is a common point of confusion, but the distinction is crucial:
 
 ---------------
 
+
+## Deleting extra OUs and users
+
+The first thing you should notice is that there is an additional department OU in your current AD configuration that doesn't appear in the chart. We've been told it was closed due to budget cuts and should be removed from the domain. If you try to right-click and delete the OU, you will get the following error:
+![[Pasted image 20251027010147.png]]
+
+![[Pasted image 20251027010156.png]]
+
 How to give permission to a another user to change or reset someones password ---------
 
