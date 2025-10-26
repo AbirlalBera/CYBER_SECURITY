@@ -97,6 +97,12 @@ The first thing you should notice is that there is an additional department OU�
 ![[Pasted image 20251027010147.png]]
 
 ![[Pasted image 20251027010156.png]]
+![[Pasted image 20251027010206.png]]
+Be sure to uncheck the box and try deleting the OU again. You will be prompted to confirm that you want to delete the OU, and as a result, any users, groups or OUs under it will also be deleted.
+
+-----------------
+
+### Delegation :
 
 How to give permission to a another user to change or reset someones password ---------
 
