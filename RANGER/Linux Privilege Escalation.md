@@ -17,3 +17,21 @@ We first find the kernal version using uname -a
 the find the vuln on the specific version 
 
 then we use the 
+
+---------------
+
+Using nano :
+
+## Check Your Sudo Rights First:
+
+```
+sudo -l
+```
+
+Look for an entry like:
+
+```
+User username may run the following commands on hostname:
+(root) NOPASSWD: /usr/bin/nano
+```
+
