@@ -12,3 +12,8 @@ Types :
 
 Kernal  Exploit 
 
+We first find the kernal version using uname -a
+
+the find the vuln on the specific version 
+
+then we connect the 
