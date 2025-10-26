@@ -71,8 +71,7 @@ Several groups are created by default in a domain that can be used to grant spec
 - **Example:** You can create an "IT" OU and apply specific software installation rules to everyone in it. You can create a "Sales" OU with a different set of rules.
 ![[Pasted image 20251027002406.png]]
 
-
- there are other default containers apart from the THM OU. These containers are created by Windows automatically and contain the following:
+There are other default containers apart from the THM OU. These containers are created by Windows automatically and contain the following:
 
 - **Builtin:** Contains default groups available to any Windows host.
 - **Computers:** Any machine joining the network will be put here by default. You can move them if needed.
