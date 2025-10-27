@@ -3,15 +3,12 @@
 A cross-platform task automation tool from Microsoft that combines:
 
 - A **command-line shell**
-    
+
 - A **scripting language**
-    
+
 - A **configuration management framework**
-    
 
 It is built on the .NET framework.
-
----
 
 ### The Core Power: Object-Oriented
 
@@ -29,7 +26,10 @@ This is the most important concept that sets PowerShell apart.
 ### Brief History
 
 - **Problem:** Old Windows tools (`cmd.exe`, batch files) were limited for complex enterprise management.
-    
+
 - **Solution:** **Jeffrey Snover** led the creation of an object-oriented shell that integrates deeply with Windows via the .NET framework.
-    
+
 - **Evolution:** First released for Windows (2006). The open-source, cross-platform **PowerShell Core** was released in 2016 (now known simply as PowerShell 7+).
+
+---------------
+
