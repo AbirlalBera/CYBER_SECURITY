@@ -134,3 +134,22 @@ Now change the user password
 --------------------------
 
 
+### Organizing Machines in Active Directory (AD)
+
+**Default Location:** All non-Domain Controller machines that join the domain are placed in the default **"Computers" container**. This is not ideal for applying different security policies.
+
+### Recommended Machine Categories (for OUs)
+
+Create separate Organizational Units (OUs) for different device types to apply specific policies.
+
+|Category|Purpose|Policy Needs|
+|---|---|---|
+|**Workstations**|Daily-use computers for regular users.|Standard user policies, web browsing, office apps. **Privileged users should NOT log in here.**|
+|**Servers**|Machines that provide services to the network.|Locked down, minimal access, specific service rules.|
+|**Domain Controllers**|The critical servers that manage AD itself.|Highly restricted, most sensitive policies. (Often has a default OU).|
+
+**Why Organize?** Placing machines in the correct OU allows you to deploy targeted Group Policies (like security settings, software, and access rules) to entire categories of devices at once.
+
+**Action:** Manually move devices from the default **"Computers" container** into the appropriate OUs you create (e.g., Workstations, Servers).
+
+--------
