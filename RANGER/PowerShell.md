@@ -81,7 +81,9 @@ ANS :  Get-Command -name Remove*
 
 ANS : Write-Output ( same as echo )
 
-3 >
+3 > What is the command to retrieve some example usage for the cmdlet `New-LocalUser`?
+
+ANS : 
 
 ------
 
