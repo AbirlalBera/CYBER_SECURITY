@@ -239,7 +239,10 @@ Uses "tickets" as proof of authentication.
     - User logs in and sends a request to the **Key Distribution Center (KDC)** on the Domain Controller.
         
     - The KDC verifies the user and issues a **TGT**. This TGT is the user's "master ticket" to get other service tickets.
-        
+
+
+
+
 2. **Get a Service Ticket (TGS)**
     
     - When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
