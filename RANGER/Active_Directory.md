@@ -320,3 +320,10 @@ Trusts define how domains in a forest or tree can access each other's resources.
 |---|---|---|
 |**One-Way Trust**|Domain A trusts Domain B. Users from B can be given access to resources in A, but not vice-versa.|`uk.thm.local` **<--** `us.thm.local` (A trusts B)|
 |**Two-Way Trust**|Domains A and B trust each other. Users from either domain can be given access to resources in the other.|**Default relationship** between domains in the same tree or forest.|
+
+-------------
+
+### Labs :  
+https://tryhackme.com/room/activedirectoryhardening
+
+https://tryhackme.com/module/hacking-active-directory
