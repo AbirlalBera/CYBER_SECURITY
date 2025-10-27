@@ -219,3 +219,57 @@ A collection of settings applied to OUs to configure computers and users.
 - **Setting:** `Interactive logon: Machine inactivity limit` -> **300 seconds** (5 minutes)
     
 - **Linking:** Link to computer OUs (e.g., Workstations, Servers) or the root domain (computer policies are ignored on user-only OUs).
+--------------------------------
+
+# Windows Authentication Methods
+
+Two main protocols are used:
+
+1. **Kerberos (Modern Default)**
+    
+2. **NetNTLM (Legacy, for compatibility)**
+    
+
+### Kerberos Authentication (3-Step Process)
+
+Uses "tickets" as proof of authentication.
+
+1. **Get a Ticket-Granting Ticket (TGT)**
+    
+    - User logs in and sends a request to the **Key Distribution Center (KDC)** on the Domain Controller.
+        
+    - The KDC verifies the user and issues a **TGT**. This TGT is the user's "master ticket" to get other service tickets.
+        
+2. **Get a Service Ticket (TGS)**
+    
+    - When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
+        
+    - The KDC issues a TGS, which is encrypted with the **service account's password hash**.
+        
+3. **Connect to the Service**
+    
+    - The user presents the TGS to the service.
+        
+    - The service decrypts it with its own password hash. If successful, access is granted.
+        
+
+**Key Takeaway:** Kerberos is more secure and efficient. The user's password hash is never sent over the network after the initial login.
+
+![[Pasted image 20251027215857.png]]
+
+### NetNTLM Authentication (Challenge-Response)
+
+A legacy protocol that uses a "challenge-response" method.
+
+1. **Client requests authentication.**
+    
+2. **Server sends a random challenge.**
+    
+3. **Client calculates a response** using its NTLM password hash and the challenge, then sends it back.
+    
+4. **Server sends the challenge and response** to the Domain Controller for verification.
+    
+5. **Domain Controller verifies** the response and tells the server if authentication passed or failed.
+    
+
+**Key Takeaway:** The user's password hash is never sent directly over the wire, but it is vulnerable to relay attacks. Considered obsolete.
