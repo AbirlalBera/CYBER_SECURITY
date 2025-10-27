@@ -47,21 +47,22 @@ PowerShell commands are called **cmdlets** and follow a consistent naming patt
 
 #### 2. Essential Cmdlets for Discovery
 
-|Cmdlet|Purpose|Example|
-|---|---|---|
-|`Get-Command`|Lists all available commands (cmdlets, aliases, functions).|`Get-Command`|
-|`Get-Help`|Shows help for a specific cmdlet.|`Get-Help Get-Date -Examples`|
-|`Get-Alias`|Shows shortcut names for cmdlets.|`Get-Alias`|
+|Command|Description|
+|---|---|
+|**`powershell`**|Launches PowerShell from a Command Prompt (cmd) window.|
+|**`Get-Command`**|Lists all available commands (cmdlets, functions, aliases) in the current session.|
+|**`Get-Help`**|Provides detailed help and usage information for a specific cmdlet.|
+|**`Get-Alias`**|Lists all command aliases (shortcuts, e.g., `dir` for `Get-ChildItem`).|
+|**`Find-Module`**|Searches online repositories (like the PowerShell Gallery) for modules.|
+|**`Install-Module`**|Downloads and installs a module from a repository, making its cmdlets available.|
 
-**Key Aliases:**
+### Common Aliases
 
-- `dir` -> `Get-ChildItem` (Lists directory contents)
-
-- `cd` -> `Set-Location` (Changes directory)
-
-- `cat` -> `Get-Content` (Shows file content)
-
-
+|Alias|Equivalent Cmdlet|
+|---|---|
+|**`dir`**|`Get-ChildItem`|
+|**`cd`**|`Set-Location`|
+|**`cat`**|`Get-Content`|
 #### 3. Extending PowerShell with Modules
 
 You can download and install new cmdlets from online repositories like the **PowerShell Gallery**.
