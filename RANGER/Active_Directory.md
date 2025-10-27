@@ -281,3 +281,43 @@ A legacy protocol that uses a "challenge-response" method.
 
 # Trees, Forests and Trusts
 
+### Scaling Active Directory: Beyond a Single Domain
+
+As companies grow, a single domain may become insufficient. AD uses **Trees** and **Forests** to organize multiple domains.
+
+
+
+### Trees
+
+- **What it is:** A hierarchy of domains that share a **common namespace**.
+    
+- **Example:** A root domain `thm.local` with subdomains `uk.thm.local` and `us.thm.local`.
+    
+- **Purpose:** Provides administrative separation. The IT team for `uk.thm.local` manages only their domain, not the US one.
+    
+- **New Group:** **Enterprise Admins** have administrative privileges over **all domains** in the entire structure.
+
+
+### Forests
+
+- **What it is:** A collection of one or more **domain Trees** that have different namespaces.
+    
+- **Example:** The `thm.local` tree and the `mht.local` tree from a merged company exist together in one forest.
+    
+- **Purpose:** Allows completely separate companies or business units to be managed together under a single umbrella.
+
+
+
+### Trust Relationships
+
+Trusts define how domains in a forest or tree can access each other's resources.
+
+- **What it is:** A bridge that allows users from one domain to be **authenticated** in another domain.
+    
+- **Key Point:** A trust relationship **enables** authorization but does **not automatically grant** access. Permissions must still be explicitly given.
+    
+
+|Trust Type|Description|Example|
+|---|---|---|
+|**One-Way Trust**|Domain A trusts Domain B. Users from B can be given access to resources in A, but not vice-versa.|`uk.thm.local` **<--** `us.thm.local` (A trusts B)|
+|**Two-Way Trust**|Domains A and B trust each other. Users from either domain can be given access to resources in the other.|**Default relationship** between domains in the same tree or forest.|
