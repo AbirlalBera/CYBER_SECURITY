@@ -32,4 +32,6 @@ This is the most important concept that sets PowerShell apart.
 - **Evolution:** First released for Windows (2006). The open-source, cross-platform **PowerShell Core** was released in 2016 (now known simply as PowerShell 7+).
 
 ---------------
+# Commands :
+
 
