@@ -34,7 +34,8 @@ This is the most important concept that sets PowerShell apart.
 ---------------
 # PowerShell Basics Commands :
 
-## PowerShell commands are known as `cmdlets`
+#### PowerShell commands are known as `cmdlets`
+
 #### 1. Cmdlet Syntax: `Verb-Noun`
 
 PowerShell commands are called **cmdlets** and follow a consistent naming pattern.
