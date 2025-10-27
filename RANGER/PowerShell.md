@@ -70,5 +70,13 @@ You can download and install new cmdlets from online repositories like the **Po
 - **Search for a module:** `Find-Module -Name "ModuleName*"`
 
 - **Install a module:** `Install-Module -Name "ModuleName"`
+
+Questions :
+
+1 > How would you retrieve a list of commands that **start with** the verb `Remove`? [for the sake of this question, avoid the use of quotes (" or ') in your answer]
+
+ANS :  Get-Command -name Remove*
+
+
 ------
 
