@@ -34,4 +34,7 @@ This is the most important concept that sets PowerShell apart.
 ---------------
 # Commands :
 
-PS 
+PS : 
+
+cmdlets(command-lets) :
+
