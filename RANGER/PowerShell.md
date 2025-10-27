@@ -77,6 +77,7 @@ Questions :
 
 ANS :  Get-Command -name Remove*
 
+2 > 
 
 ------
 
