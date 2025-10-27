@@ -47,14 +47,14 @@ PowerShell commands are called **cmdlets** and follow a consistent naming patt
 
 #### 2. Essential Cmdlets for Discovery
 
-|Command|Description|
-|---|---|
-|**`powershell`**|Launches PowerShell from a Command Prompt (cmd) window.|
-|**`Get-Command`**|Lists all available commands (cmdlets, functions, aliases) in the current session.|
-|**`Get-Help`**|Provides detailed help and usage information for a specific cmdlet.|
-|**`Get-Alias`**|Lists all command aliases (shortcuts, e.g., `dir` for `Get-ChildItem`).|
-|**`Find-Module`**|Searches online repositories (like the PowerShell Gallery) for modules.|
-|**`Install-Module`**|Downloads and installs a module from a repository, making its cmdlets available.|
+| Command              | Description                                                                        |
+| -------------------- | ---------------------------------------------------------------------------------- |
+| **`powershell`**     | Launches PowerShell from a Command Prompt (cmd) window.                            |
+| **`Get-Command`**    | Lists all available commands (cmdlets, functions, aliases) in the current session. |
+| **`Get-Help`**       | Provides detailed help and usage information for a specific cmdlet.                |
+| **`Get-Alias`**      | Lists all command aliases (shortcuts, e.g., `dir` for `Get-ChildItem`).            |
+| **`Find-Module`**    | Searches online repositories (like the PowerShell Gallery) for modules.            |
+| **`Install-Module`** | Downloads and installs a module from a repository, making its cmdlets available.   |
 
 ### Common Aliases
 
