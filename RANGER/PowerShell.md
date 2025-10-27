@@ -83,7 +83,7 @@ ANS : Write-Output ( same as echo )
 
 3 > What is the command to retrieve some example usage for the cmdlet `New-LocalUser`?
 
-ANS : 
+ANS : Get-Help New-LocalUser -examples
 
 ------
 
