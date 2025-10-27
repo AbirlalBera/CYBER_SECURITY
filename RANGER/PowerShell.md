@@ -77,7 +77,11 @@ Questions :
 
 ANS :  Get-Command -name Remove*
 
-2 > 
+2 > What cmdlet has its traditional counterpart `echo` as an alias?
+
+ANS : Write-Output ( same as echo )
+
+3 >
 
 ------
 
