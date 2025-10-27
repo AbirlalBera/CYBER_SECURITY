@@ -87,3 +87,7 @@ ANS : Get-Help New-LocalUser -examples
 
 ------
 
+# Navigating the File System and Working with Files
+
+PowerShell provides a range of cmdlets for navigating the file system and managing files, many of which have counterparts in the traditional Windows CLI.
+
