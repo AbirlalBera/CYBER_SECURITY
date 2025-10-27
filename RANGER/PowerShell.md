@@ -70,3 +70,5 @@ You can download and install new cmdlets from online repositories like the **Po
 - **Search for a module:** `Find-Module -Name "ModuleName*"`
 
 - **Install a module:** `Install-Module -Name "ModuleName"`
+------
+
