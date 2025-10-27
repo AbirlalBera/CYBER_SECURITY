@@ -32,9 +32,42 @@ This is the most important concept that sets PowerShell apart.
 - **Evolution:** First released for Windows (2006). The open-source, cross-platform **PowerShell Core** was released in 2016 (now known simply as PowerShell 7+).
 
 ---------------
-# Commands :
+# PowerShell Basics Commands :
 
 PS : 
 
 cmdlets(command-lets) :
 
+#### 1. Cmdlet Syntax: `Verb-Noun`
+
+PowerShell commands are called **cmdlets** and follow a consistent naming pattern.
+
+- `Get-Content` - Gets the content of a file.
+
+- `Set-Location` - Sets the current working directory (like `cd`).
+
+
+#### 2. Essential Cmdlets for Discovery
+
+|Cmdlet|Purpose|Example|
+|---|---|---|
+|`Get-Command`|Lists all available commands (cmdlets, aliases, functions).|`Get-Command`|
+|`Get-Help`|Shows help for a specific cmdlet.|`Get-Help Get-Date -Examples`|
+|`Get-Alias`|Shows shortcut names for cmdlets.|`Get-Alias`|
+
+**Key Aliases:**
+
+- `dir` -> `Get-ChildItem` (Lists directory contents)
+
+- `cd` -> `Set-Location` (Changes directory)
+
+- `cat` -> `Get-Content` (Shows file content)
+
+
+#### 3. Extending PowerShell with Modules
+
+You can download and install new cmdlets from online repositories like the **PowerShell Gallery**.
+
+- **Search for a module:** `Find-Module -Name "ModuleName*"`
+
+- **Install a module:** `Install-Module -Name "ModuleName"`
