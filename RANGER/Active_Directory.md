@@ -129,4 +129,8 @@ Password: *********
 VERBOSE: Performing the operation "Set-ADAccountPassword" on target "CN=Sophie,OU=Sales,OU=THM,DC=thm,DC=local".
 ```
 
+Now change the user password
+
+--------------------------
+
 
