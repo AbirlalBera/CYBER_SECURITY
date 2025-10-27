@@ -153,3 +153,5 @@ Create separate Organizational Units (OUs) for different device types to apply s
 **Action:** Manually move devices from the default **"Computers" container** into the appropriate OUs you create (e.g., Workstations, Servers).
 
 --------
+# Group Policies :
+
