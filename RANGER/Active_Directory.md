@@ -285,8 +285,7 @@ A legacy protocol that uses a "challenge-response" method.
 
 As companies grow, a single domain may become insufficient. AD uses **Trees** and **Forests** to organize multiple domains.
 
-
-
+![[Pasted image 20251027222702.png]]
 ### Trees
 
 - **What it is:** A hierarchy of domains that share a **common namespace**.
@@ -297,7 +296,7 @@ As companies grow, a single domain may become insufficient. AD uses **Trees** 
     
 - **New Group:** **Enterprise Admins** have administrative privileges over **all domains** in the entire structure.
 
-
+![[Pasted image 20251027222709.png]]
 ### Forests
 
 - **What it is:** A collection of one or more **domain Trees** that have different namespaces.
@@ -306,7 +305,7 @@ As companies grow, a single domain may become insufficient. AD uses **Trees** 
     
 - **Purpose:** Allows completely separate companies or business units to be managed together under a single umbrella.
 
-
+![[Pasted image 20251027222714.png]]
 
 ### Trust Relationships
 
