@@ -155,3 +155,67 @@ Create separate Organizational Units (OUs) for different device types to apply s
 --------
 # Group Policies :
 
+### Group Policy Objects (GPO) - Key Notes
+
+**What is a GPO?**  
+A collection of settings applied to OUs to configure computers and users.
+
+**Management Tool:**  
+`Group Policy Management` on a Domain Controller.
+
+**How it Works:**
+
+1. Create a GPO in the `Group Policy Objects` folder.
+    
+2. **Link** the GPO to an OU.
+    
+3. The GPO applies to all users/computers in that OU and any **child OUs**.
+    
+
+**Key Concepts:**
+
+- **Scope:** Where the GPO is linked (e.g., an OU or the entire domain).
+    
+- **Security Filtering:** Can be refined to apply to specific users/groups within the OU (default is `Authenticated Users`).
+    
+- **Two Policy Types:**
+    
+    - **Computer Configuration:** Settings applied to machines (e.g., password policy, lock screen).
+        
+    - **User Configuration:** Settings applied to users (e.g., blocking Control Panel).
+        
+
+**GPO Distribution & Update:**
+
+- Distributed via the `SYSVOL` network share on Domain Controllers.
+    
+- Changes can take up to 2 hours to apply. Force an immediate update with:
+    
+    powershell
+    
+    gpupdate /force
+    
+
+
+### Practical GPO Examples
+
+**1. Restrict Control Panel (User Policy)**
+
+- **GPO Name:** `Restrict Control Panel Access`
+    
+- **Policy Path:** `User Configuration -> Administrative Templates -> Control Panel`
+    
+- **Setting:** `Prohibit Access to Control Panel and PC settings` -> **Enabled**
+    
+- **Linking:** Link to user OUs (e.g., Marketing, Sales) where you want the restriction.
+    
+
+**2. Auto Lock Screen (Computer Policy)**
+
+- **GPO Name:** `Auto Lock Screen`
+    
+- **Policy Path:** `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options`
+    
+- **Setting:** `Interactive logon: Machine inactivity limit` -> **300 seconds** (5 minutes)
+    
+- **Linking:** Link to computer OUs (e.g., Workstations, Servers) or the root domain (computer policies are ignored on user-only OUs).
