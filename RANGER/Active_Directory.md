@@ -240,7 +240,7 @@ Uses "tickets" as proof of authentication.
         
     - The KDC verifies the user and issues a **TGT**. This TGT is the user's "master ticket" to get other service tickets.
 
-
+![[Pasted image 20251027215857.png]]
 
 
 2. **Get a Service Ticket (TGS)**
@@ -248,8 +248,8 @@ Uses "tickets" as proof of authentication.
     - When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
         
     - The KDC issues a TGS, which is encrypted with the **service account's password hash**.
-        
-3. **Connect to the Service**
+![[Pasted image 20251027222010.png]]
+2. **Connect to the Service**
     
     - The user presents the TGS to the service.
         
@@ -258,7 +258,7 @@ Uses "tickets" as proof of authentication.
 
 **Key Takeaway:** Kerberos is more secure and efficient. The user's password hash is never sent over the network after the initial login.
 
-![[Pasted image 20251027215857.png]]
+![[Pasted image 20251027222027.png]]
 
 ### NetNTLM Authentication (Challenge-Response)
 
@@ -273,6 +273,9 @@ A legacy protocol that uses a "challenge-response" method.
 4. **Server sends the challenge and response** to the Domain Controller for verification.
     
 5. **Domain Controller verifies** the response and tells the server if authentication passed or failed.
-    
 
+![[Pasted image 20251027222035.png]]
 **Key Takeaway:** The user's password hash is never sent directly over the wire, but it is vulnerable to relay attacks. Considered obsolete.
+
+-----
+
