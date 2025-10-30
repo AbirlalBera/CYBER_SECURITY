@@ -24,5 +24,8 @@ options :
 - w [File] : write captured packets to a file (e.g. `w capture.pcap`).
 
 - r [file] : Read from a previously saved capture file (e.g. `r capture.pcap`).
-- n : Disable.
+
+- n : Disable DNS resolutions to show raw IP addresses.
+
+
 
