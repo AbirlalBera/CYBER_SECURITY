@@ -1,0 +1,37 @@
+Step 1: Concept ko apni language me samjho
+
+Sabse pehle ensure karo ki student definition ko meaning-wise samjhta ho.
+Example:
+
+🔹 Question: What is phishing?
+🔹 Student samjhe: “Fake email ya message bhejkar user se credentials lena.”
+
+Agar meaning clear hai, tab English me bolna easy ban jaata hai.
+Concept clarity bina English me bolne ki koshish karoge to students “rote learning” karenge — aur interview me atak jaate hain.
+
+🗣️ Step 2: 3-layer definition bolne ka habit
+
+ ek fixed pattern me definition dena:
+
+1. Start – Basic meaning
+2. Middle – Technical explanation
+3. End – Example
+
+Example:
+
+Phishing is a type of social engineering attack where attackers send fake emails or messages to trick users into sharing sensitive information, such as passwords or credit card numbers.
+For example, an email pretending to be from a bank asking to verify your account.
+
+Is pattern se unka answer structured aur natural lagta hai.
+
+🔁 Step 3: “Speak & Record” practice (daily 10 mins)
+
+Har din ek topic lo (e.g., Firewall, IDS, Encryption)
+
+Pehle apni language me explain karo (2 min)
+
+Fir English me bolo aur record karo (2 min)
+
+Record suno aur check karo ki kaunse words repeat ho rahe hain ya galat highlighter hain
+
+Agle din wahi improve karo
