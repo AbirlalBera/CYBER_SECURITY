@@ -59,3 +59,13 @@ sudo tcpdump -i eth0 src 192.168.229.128 and dst host 172.65.64.5
 sudo tcpdump -i eth0 | tee file1.out 
 ```
 
+sudo tcpdump -i eth0 host 192.168.229.129  -vvv
+
+sudo tcpdump -i eth0 icmp                
+
+sudo tcpdump -i eth0 udp    
+
+sudo tcpdump -i eth0 tcp port 80  
+
+sudo tcpdump -i eth0 tcp port 80 or port 8080      
+
