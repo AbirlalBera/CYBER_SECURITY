@@ -46,3 +46,6 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 - -tcp, udp, icmp: Capture only specific protocols.
 ------------------
 
+```
+sudo tcpdump -i eth0 src 192.168.229.128 and dst host 172.65.64.5
+```
