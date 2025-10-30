@@ -23,5 +23,6 @@ options :
 
 - w [File] : write captured packets to a file (e.g. `w capture.pcap`).
 
-- r [file] : Read from a previously capture file (e.g. `c 100` for 100 packets).
+- r [file] : Read from a previously saved capture file (e.g. `r capture.pcap`).
+- n : Disable.
 
