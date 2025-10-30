@@ -21,6 +21,7 @@ options :
 
 - c [count] : Capture a specific number of packets(e.g. `c 100` for 100 packets).
 
-- w [File] : write captured packets to a file (e.g. `w ` for 100 packets).
-	
+- w [File] : write captured packets to a file (e.g. `w capture.pcap`).
+
+- r [file] : Read from a previously capture file (e.g. `c 100` for 100 packets).
 
