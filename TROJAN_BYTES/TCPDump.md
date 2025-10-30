@@ -4,4 +4,8 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 **Key Benifits :**
 
-1. Real time network mon
+1. Real time network monitoring
+2. Filter traffic for specific analysis 
+3. Security investigation and forensics 
+4. Pinpoint traffic issues
+
