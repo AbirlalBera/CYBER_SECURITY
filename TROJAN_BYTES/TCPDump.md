@@ -8,7 +8,7 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 2. Filter traffic for specific analysis 
 3. Security investigation and forensics 
 4. Pinpoint traffic issues
-
+----------------------------
 **tcpdump command Format :**
 
 ```
@@ -33,12 +33,14 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 **Expression :**
 
--host [IP]: Capture traffic from or to a specific host.
+- -host [IP]: Capture traffic from or to a specific host.
 
--port [number]: Capture traffic from/to a specific port.
+- -port [number]: Capture traffic from/to a specific port.
 
--src [IP]: Source IP address filter.
+- -src [IP]: Source IP address filter.
 
--dst [IP]: Destination IP address filter.
+- -dst [IP]: Destination IP address filter.
 
--tcp, udp, icmp: Capture only specific protocols.
+- -tcp, udp, icmp: Capture only specific protocols.
+------------------
+
