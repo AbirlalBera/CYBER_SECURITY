@@ -27,5 +27,7 @@ options :
 
 - n : Disable DNS resolutions to show raw IP addresses.
 
+- v, -vv, -vvv : Increase verbosity level for more detailed output.
 
+- s [count] : Capture a specific number of packets(e.g. `c 100` for 100 packets).
 
