@@ -67,7 +67,7 @@ sudo tcpdump -i eth0 udp
 
 sudo tcpdump -i eth0 tcp port 80  
 
-sudo tcpdump -i eth0 tcp port 80 or port
+sudo tcpdump -i eth0 portrange 100-200
 
-sudo tcpdump -i eth0 tcp port 80 or port 8080       
+sudo tcpdump -i eth0 tcp port 80 or port 443       
 
