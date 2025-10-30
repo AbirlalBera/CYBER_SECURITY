@@ -21,16 +21,24 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 - c [count] : Capture a specific number of packets(e.g. `c 100` for 100 packets).
 
-- w [File] : write captured packets to a file (e.g. `w capture.pcap`).
+- -w [File] : write captured packets to a file (e.g. `w capture.pcap`).
 
-- r [file] : Read from a previously saved capture file (e.g. `r capture.pcap`).
+- -r [file] : Read from a previously saved capture file (e.g. `r capture.pcap`).
 
-- n : Disable DNS resolutions to show raw IP addresses.
+- -n : Disable DNS resolutions to show raw IP addresses.
 
-- v, -vv, -vvv : Increase verbosity level for more detailed output.
+- -v, -vv, -vvv : Increase verbosity level for more detailed output.
 
-- s [snaplen] : Specify the snapshot length(number of bytes per packet to capture).
+- -s [snaplen] : Specify the snapshot length(number of bytes per packet to capture).
 
 **Expression :**
 
+-host [IP]: Capture traffic from or to a specific host.
 
+-port [number]: Capture traffic from/to a specific port.
+
+-src [IP]: Source IP address filter.
+
+-dst [IP]: Destination IP address filter.
+
+-tcp, udp, icmp: Capture only specific protocols.
