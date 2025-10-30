@@ -15,7 +15,7 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
    tcpdump [options] [expressions ]
 ```
 
-options :
+**options :**
 
 - i [interface] : Secify the network interface (e.g. `eth0`, `wlan0`).
 
@@ -29,5 +29,6 @@ options :
 
 - v, -vv, -vvv : Increase verbosity level for more detailed output.
 
-- s [count] : Capture a specific number of packets(e.g. `c 100` for 100 packets).
+- s [snaplen] : Specify the snapshot length(number of bytes per packet to capture).
 
+Expression
