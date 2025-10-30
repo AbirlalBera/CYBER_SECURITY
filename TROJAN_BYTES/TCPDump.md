@@ -17,6 +17,8 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 options :
 
-i [interface] : Secify the network interface (e.g. )
+i [interface] : Secify the network interface (e.g. `eth0`, `wlan0`)
+
+- c [count] : Capture a specific number of packets(e.g. `c 100)
 
 
