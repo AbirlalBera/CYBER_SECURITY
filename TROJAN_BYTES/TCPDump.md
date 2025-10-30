@@ -50,9 +50,7 @@ sudo tcpdump -i eth0 > file.out
 ```
 
 
-```
-sudo tcpdump -i eth0 src 192.168.229.128 and dst host 172.65.64.5
-```
+
 
 
 ```
@@ -71,3 +69,6 @@ sudo tcpdump -i eth0 portrange 100-200
 
 sudo tcpdump -i eth0 tcp port 80 or port 443       
 
+```
+sudo tcpdump -i eth0 src 192.168.229.128 and dst host 172.65.64.5
+```
