@@ -7,13 +7,7 @@ Nmap scan result :
 ![[Pasted image 20251105184250.png]]
 
 
-
-
-
-
-
-
-
-
-
 ![[Pasted image 20251105184054.png]]
+
+![[Pasted image 20251105184445.png]]
+
