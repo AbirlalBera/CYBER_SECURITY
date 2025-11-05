@@ -15,7 +15,11 @@ Nmap scan result :
 
 ![[screencapture-web-check-xyz-check-https-tazapay-com-2025-11-05-18_49_40.png]]
 
-Subdomain
+--------------
+
+## **Subdomains**
+
+**All Subdomains : -**
 
 ```
 ┌──(kali㉿RANGER)-[~]
@@ -62,7 +66,7 @@ api-sandbox.tazapay.com
 
 
 -----------------------------------------------------------------------------------------------------------------
-Ac
+Active Subdomai
 
 ```
 ┌──(kali㉿RANGER)-[~]
