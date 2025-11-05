@@ -14,3 +14,4 @@ Nmap scan result :
 ![[Pasted image 20251105184810.png]]
 
 ![[screencapture-web-check-xyz-check-https-tazapay-com-2025-11-05-18_49_40.png]]
+
