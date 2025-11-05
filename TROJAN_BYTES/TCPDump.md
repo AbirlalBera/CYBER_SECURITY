@@ -44,31 +44,47 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 - -dst [IP]: Destination IP address filter.
 
 - -tcp, udp, icmp: Capture only specific protocols.
+- 
 ------------------
-```
-sudo tcpdump -i eth0 > file.out  
-```
 
-
-
-
+### **Basic Capture & Output**
 
 ```
-sudo tcpdump -i eth0 | tee file1.out 
+sudo tcpdump -i eth0 > file.out           # Redirect raw output to file
+sudo tcpdump -i eth0 | tee file1.out      # View AND save to file simultaneously
 ```
 
-sudo tcpdump -i eth0 host 192.168.229.129  -vvv
-
-sudo tcpdump -i eth0 icmp                
-
-sudo tcpdump -i eth0 udp    
-
-sudo tcpdump -i eth0 tcp port 80  
-
-sudo tcpdump -i eth0 portrange 100-200
-
-sudo tcpdump -i eth0 tcp port 80 or port 443       
+### **Filter by Host & Verbosity**
 
 ```
+sudo tcpdump -i eth0 host 192.168.229.129 -vvv  # Triple verbose for detailed info
+```
+
+### **Protocol-Based Filtering**
+
+```
+sudo tcpdump -i eth0 icmp                 # ICMP/ping packets only
+sudo tcpdump -i eth0 udp                  # UDP packets only  
+sudo tcpdump -i eth0 tcp port 80          # HTTP traffic only
+```
+
+### **Port Range & Multiple Ports**
+
+```
+sudo tcpdump -i eth0 portrange 100-200    # Ports 100 to 200
+sudo tcpdump -i eth0 tcp port 80 or port 443  # HTTP or HTTPS traffic
+```
+
+### **Advanced Source/Destination Filters**
+
+```
+# Specific source → destination host
 sudo tcpdump -i eth0 src 192.168.229.128 and dst host 172.65.64.5
+
+# Specific source → destination port  
+sudo tcpdump -i eth0 src 192.168.229.128 and dst port 443
+
+# Specific source → destination network
+sudo tcpdump -i eth0 src 192.168.229.128 and dst net 172.65.64.0/24
 ```
+
