@@ -6,12 +6,13 @@ Nmap scan result :
 ![[Pasted image 20251105184221.png]]
 ![[Pasted image 20251105184250.png]]
 
+------------
+**Automated Scanning by nikto :-**
 
 ![[Pasted image 20251105184054.png]]
 
-![[Pasted image 20251105184445.png]]
-
-![[Pasted image 20251105184810.png]]
+-----------------------
+**Web Check result :-**
 
 ![[screencapture-web-check-xyz-check-https-tazapay-com-2025-11-05-18_49_40.png]]
 
@@ -64,9 +65,7 @@ api-sandbox.tazapay.com
 [INF] Found 38 subdomains for tazapay.com in 11 seconds 727 milliseconds
 ```
 
-
------------------------------------------------------------------------------------------------------------------
-Active Subdomai
+**Active Subdomain**
 
 ```
 ┌──(kali㉿RANGER)-[~]
