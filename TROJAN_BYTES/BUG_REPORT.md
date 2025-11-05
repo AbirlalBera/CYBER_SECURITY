@@ -11,3 +11,5 @@ Nmap scan result :
 
 ![[Pasted image 20251105184445.png]]
 
+![[Pasted image 20251105184810.png]]
+
