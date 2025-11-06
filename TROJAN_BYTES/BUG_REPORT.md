@@ -97,3 +97,4 @@ vpn.tazapay.com
 -----------------------------------------------------------------------------------------------------------------
 tazapay api
 https://dev-docs.portone.cloud/vi/docs/payment_channels/tazapay 
+https://docs.wooshpay.com/2809314m0
