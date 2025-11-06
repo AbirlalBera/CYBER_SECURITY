@@ -95,5 +95,5 @@ vpn.tazapay.com
 ![[Pasted image 20251106201004.png]]
 
 -----------------------------------------------------------------------------------------------------------------
-
-https://dev-docs.portone.cloud/vi/docs/payment_channels/tazapay tazapay
+tazapay api
+https://dev-docs.portone.cloud/vi/docs/payment_channels/tazapay 
