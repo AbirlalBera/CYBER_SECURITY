@@ -96,4 +96,4 @@ vpn.tazapay.com
 
 -----------------------------------------------------------------------------------------------------------------
 
-
+https://dev-docs.portone.cloud/vi/docs/payment_channels/tazapay tazapay
