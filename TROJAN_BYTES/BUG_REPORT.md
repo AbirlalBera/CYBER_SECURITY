@@ -92,7 +92,8 @@ vpn.tazapay.com
 [INF] Found 15 subdomains for tazapay.com in 10 seconds 26 milliseconds
 ```
 
+![[Pasted image 20251106201004.png]]
 
 -----------------------------------------------------------------------------------------------------------------
 
-![[Pasted image 20251105194424.png]]
+
