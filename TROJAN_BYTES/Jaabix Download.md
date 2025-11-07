@@ -3,5 +3,9 @@
 ##### Now download my sql in ubuntu
 
 ```
-https://www.zabbix.com/https://www.zabbix.com/
+sudo apt install mysql-server 
+```
+
+```
+sudo systemctl status mysql-server
 ```
