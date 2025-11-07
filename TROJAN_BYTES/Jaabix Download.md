@@ -57,7 +57,7 @@ DBPassword=jabbix
 
 ----------------
 
-##### f. Start Zabbix server and agent processes
+##### Start Zabbix server and agent processes
 
 Start Zabbix server and agent processes and make it start at system boot.
 
@@ -69,7 +69,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 --------
 #### Start Zabbix
 
-To start the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
+To setup the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
 
 ![[Pasted image 20251107175751.png]]
@@ -78,11 +78,11 @@ To start the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
 #### Now login with credentials : 
 
-url : http://loca
+#### url : http://locahost/zabbix
 
-username : Admin
+**username :** Admin
 
-Password : zabbix
+**Password :** zabbix
 
 
 
