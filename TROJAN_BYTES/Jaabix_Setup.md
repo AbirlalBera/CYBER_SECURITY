@@ -1,3 +1,4 @@
+Zabbix : **Zabbix** is an open-source **monitoring platform** used to track the performance and availability of **IT infrastructure**, including servers, networks, virtual machines, applications, databases, and cloud services.
 ### First choose platform **ubuntu**
 
 ![[Pasted image 20251107180708.png]]
