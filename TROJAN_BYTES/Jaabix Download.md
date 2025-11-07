@@ -14,8 +14,9 @@ sudo systemctl status mysql-server
 service mysql start
 ```
 
-Then hit ```mys```
+**Then hit** ``` mysql ```
 
 ```
 mysql>
 ```
+
