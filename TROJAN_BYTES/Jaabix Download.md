@@ -74,7 +74,11 @@ To start the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
 ![[Pasted image 20251107175751.png]]
 
-Now login with credentials : 
+----------
+
+#### Now login with credentials : 
+
+url : http://loca
 
 username : Admin
 
