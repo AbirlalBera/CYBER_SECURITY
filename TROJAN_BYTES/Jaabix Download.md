@@ -114,7 +114,13 @@ To setup the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
 ----------
 
+### Resource : 
 
+https://www.youtube.com/watch?v=R3820E5MH00
+
+https://www.zabbix.com/download?zabbix=7.4&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent&db=mysql&ws=apache
+
+--------
 
 
 
