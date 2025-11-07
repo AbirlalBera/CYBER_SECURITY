@@ -4,7 +4,6 @@
 
 -----
 <p style="text-align: center;" >Setup</p>
--------------
 ### First choose platform **ubuntu**
 
 ![[Pasted image 20251107180708.png]]
