@@ -1,4 +1,4 @@
-First choose platform **ubuntu**
+### First choose platform **ubuntu**
 
 ![[Pasted image 20251107180708.png]]
 
@@ -24,7 +24,7 @@ apt update
 ### Install Zabbix server, frontend, agent
 
 ```
-apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent`
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
 ```
  
  ---
@@ -111,6 +111,8 @@ To setup the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 **username :** Admin
 
 **Password :** zabbix
+
+----------
 
 
 
