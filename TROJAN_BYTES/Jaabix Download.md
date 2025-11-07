@@ -65,3 +65,6 @@ Start Zabbix server and agent processes and make it start at system boot.
 systemctl restart zabbix-server zabbix-agent apache2  
 systemctl enable zabbix-server zabbix-agent apache2
 ```
+
+--------
+Start Z
