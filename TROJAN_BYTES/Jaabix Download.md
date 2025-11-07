@@ -69,5 +69,9 @@ systemctl enable zabbix-server zabbix-agent apache2
 --------
 #### Start Zabbix
 
+To start the gui search 
+
+
+
 
 
