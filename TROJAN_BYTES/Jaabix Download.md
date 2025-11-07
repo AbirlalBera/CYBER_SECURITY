@@ -71,6 +71,8 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 To start the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
+![[Pasted image 20251107175751.png]]
+
 
 
 
