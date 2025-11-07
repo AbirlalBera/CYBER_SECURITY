@@ -121,6 +121,5 @@ https://www.youtube.com/watch?v=R3820E5MH00
 https://www.zabbix.com/download?zabbix=7.4&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent&db=mysql&ws=apache
 
 --------
-
-
+<style textalign=c
 
