@@ -1,4 +1,21 @@
+First choose platofrm UBUNTU
 
+![[Pasted image 20251107180708.png]]
+##### a. Become root user
+
+Start new shell session with root privileges.
+
+`$ sudo -s`
+
+##### b. Install Zabbix repository
+
+[Documentation](https://www.zabbix.com/documentation/7.4/manual/installation/install_from_packages)
+
+`# wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu24.04_all.deb   # dpkg -i zabbix-release_latest_7.4+ubuntu24.04_all.deb   # apt update`
+
+##### c. Install Zabbix server, frontend, agent
+
+`# apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent`
  ---
 ##### Now download my sql in ubuntu and create initial database for jabbix
 
