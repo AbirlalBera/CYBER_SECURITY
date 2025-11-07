@@ -35,5 +35,13 @@ mysql> quit;`
 
 The password I set is **jabbix**
 
+On Zabbix server host import initial schema and data. You will be prompted to enter your newly created password.
+```
+
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+
+````
+
+
 ----------------
 
