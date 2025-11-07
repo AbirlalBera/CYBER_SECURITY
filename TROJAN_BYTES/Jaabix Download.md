@@ -42,6 +42,13 @@ zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-charact
 
 ````
 
+On Zabbix server host import initial schema and data. You will be prompted to enter your newly created password.
+
+##### e. Configure the database for Zabbix server
+
+Edit file /etc/zabbix/zabbix_server.conf
+
+`DBPassword=password`
 
 ----------------
 
