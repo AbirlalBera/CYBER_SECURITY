@@ -69,7 +69,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 --------
 #### Start Zabbix
 
-To start the gui search 
+To start the gui search http://192.168.229.130/zabbix/setup.php  (ip/zabbix)
 
 
 
