@@ -46,9 +46,14 @@ On Zabbix server host import initial schema and data. You will be prompted to en
 
 ##### e. Configure the database for Zabbix server
 
-Edit file /etc/zabbix/zabbix_server.conf
+Edit file
+```
+vi /etc/zabbix/zabbix_server.conf
+```
 
-`DBPassword=password`
+```
+DBPassword=password
+```
 
 ----------------
 
