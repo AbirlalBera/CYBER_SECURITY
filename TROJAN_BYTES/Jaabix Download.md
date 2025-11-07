@@ -1,15 +1,18 @@
-First choose platofrm UBUNTU
+First choose platform **ubuntu**
 
 ![[Pasted image 20251107180708.png]]
-##### a. Become root user
+
+-------------
+### Become root user
 
 Start new shell session with root privileges.
 
-`$ sudo -s`
+```
+sudo -s
+```
 
-##### b. Install Zabbix repository
+### Install Zabbix repository
 
-[Documentation](https://www.zabbix.com/documentation/7.4/manual/installation/install_from_packages)
 
 `# wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu24.04_all.deb   # dpkg -i zabbix-release_latest_7.4+ubuntu24.04_all.deb   # apt update`
 
