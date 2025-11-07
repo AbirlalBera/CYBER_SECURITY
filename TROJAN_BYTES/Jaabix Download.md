@@ -1,6 +1,6 @@
 
  ---
-##### Now download my sql in ubuntu and create initial database for ja
+##### Now download my sql in ubuntu and create initial database for jabbix
 
 ```
 sudo apt install mysql-server 
@@ -33,4 +33,7 @@ mysql> set global log_bin_trust_function_creators = 1;
 mysql> quit;`
 ```
 
-The password i set is **jabbix**
+The password I set is **jabbix**
+
+----------------
+
