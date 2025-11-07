@@ -48,11 +48,11 @@ On Zabbix server host import initial schema and data. You will be prompted to en
 
 Edit file
 ```
-vi /etc/zabbix/zabbix_server.conf
+nano /etc/zabbix/zabbix_server.conf
 ```
 
 ```
-DBPassword=password
+DBPassword=jabbix
 ```
 
 ----------------
