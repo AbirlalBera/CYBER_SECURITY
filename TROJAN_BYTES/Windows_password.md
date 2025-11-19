@@ -15,9 +15,9 @@ The **Security Account Manager (SAM)** is a **database** in Windows that stores:
 
 ### **Location:**
 
-On disk : C:\Windows\System32\config\SAM
+**On disk :** C:\Windows\System32\config\SAM
 
-In the registry : HKEY_LOCAL_MACHINE\SAM
+**In the registry :** HKEY_LOCAL_MACHINE\SAM
 
 ### **Importance:**
 
@@ -26,6 +26,10 @@ The SAM stores user account information and hashed passwords for local users.
 It is critical because access to the SAM allows attackers to crack password hashes or take over local accounts.
 
 Windows uses SAM together with the SYSTEM file (which holds the encryption key) to verify passwords.
+
+**NOTICE :**
+
+This file is locked while Windows is running, meaning you cannot access it directly unless booted into another OS (like Linux) or using specialized tools.
 
 -------------------
 **2.How can you change a Windows password without logging in?**
