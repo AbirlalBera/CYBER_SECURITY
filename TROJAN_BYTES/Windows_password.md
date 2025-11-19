@@ -35,13 +35,14 @@ Windows uses SAM together with the SYSTEM file (which holds the encryption key) 
 ### **3. How to create a new Windows user without logging in?**
 
 1.Boot from a Windows installation media or live CD.
-    
-Open the command prompt using the Ease of Access / cmd.exe replacement trick.
-    
-Create a new user:
 
-`net user NewUser NewPassword /add net localgroup administrators NewUser /add   (optional, for admin)`
+2.Open the command prompt using the Ease of Access / cmd.exe replacement trick.
 
+3.Create a new user:
+
+```
+net user NewUser NewPassword /add net localgroup administrators NewUser /add   (optional, for admin)
+```
 
 This creates a fully functional Windows account without needing to log in first.
 
