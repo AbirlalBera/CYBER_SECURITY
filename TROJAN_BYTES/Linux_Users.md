@@ -42,10 +42,13 @@ sudo passwd username
 
 Step 3: Add User to Sudo Group
 
-sudo usermod -aG sudo username   //// Add user to sudo group (most common method)
+sudo usermod -aG sudo username   
 
 
-sudo usermod -aG wheel username   //// Alternative: Add to wheel group (some distributions)
+
+Step 4: Verify User and Group Membership
+
+
 ```
 
 **Verify sudo access:**
