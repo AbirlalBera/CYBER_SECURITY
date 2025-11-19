@@ -26,10 +26,21 @@ Netdiscover is a **network reconnaissance tool** used primarily to discover live
 
 ```
 sudo netdiscover   
- 
 ```
 
 Scans the network you are currently connected to and Auto-detects subnet
 
-2.Specify Network Interface
+**2.Specify Network Interface**
 
+```
+netdiscover -i eth0
+netdiscover -i wlan0
+```
+
+3.**Scan a Specific Range**
+
+```
+netdiscover -r 192.168.1.0/24
+netdiscover -r 10.0.0.0/16
+netdiscover -r 192.168.0.1-192.168.0.254
+```
