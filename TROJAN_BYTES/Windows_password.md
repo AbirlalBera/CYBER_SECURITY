@@ -38,6 +38,8 @@ This file is locked while Windows is running, meaning we cannot access it direct
 -------------------
 **2.How can you change a Windows password without logging in?**
 
+[https://youtu.be/1Y8jebX0Ntg](https://youtu.be/1Y8jebX0Ntg "Share link")
+
 -------------
 
 ### **3. How to create a new Windows user without logging in?**
