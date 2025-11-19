@@ -27,9 +27,9 @@ It is critical because access to the SAM allows attackers to crack password hash
 
 Windows uses SAM together with the SYSTEM file (which holds the encryption key) to verify passwords.
 
-**NOTICE :**
+### **NOTICE :**
 
-This file is locked while Windows is running, meaning you cannot access it directly unless booted into another OS (like Linux) or using specialized tools.
+This file is locked while Windows is running, meaning we cannot access it directly unless booted into another OS (like Linux) or using specialized tools.
 
 -------------------
 **2.How can you change a Windows password without logging in?**
