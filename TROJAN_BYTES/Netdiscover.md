@@ -57,11 +57,11 @@ netdiscover -p (lowecase of p)
 
 **5.Active Mode (Force Active Scan)**
 
-Forces active ARP scanning.
-
-**Use when:**  
-You want fast and complete discovery.
-
 **Example:**
 
-`netdiscover -P`
+```
+netdiscover -P ( Uppercase of P )
+```
+
+**6.Set Delay Between ARP Requests**
+
