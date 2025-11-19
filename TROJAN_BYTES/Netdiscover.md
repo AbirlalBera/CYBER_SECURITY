@@ -30,12 +30,16 @@ sudo netdiscover
 
 Scans the network you are currently connected to and Auto-detects subnet
 
+-------------
+
 **2.Specify Network Interface**
 
 ```
 netdiscover -i eth0
 netdiscover -i wlan0
 ```
+
+-------------
 
 **3.Scan a Specific Range**
 
@@ -44,6 +48,8 @@ netdiscover -r 192.168.1.0/24
 netdiscover -r 10.0.0.0/16
 netdiscover -r 192.168.0.1-192.168.0.254
 ```
+
+-------------
 
 **4.Passive Mode (Listen Only)**
 
@@ -56,6 +62,8 @@ netdiscover -p (lowecase of p)
 - Just want to observe network traffic silently
 
 **5.Active Mode (Force Active Scan)**
+
+-------------
 
 
 ```
@@ -95,7 +103,7 @@ Skips DNS lookups for faster scanning.
 netdiscover -f  // Provides quick results.
 ```
 
-# 🔥 **9. -d : Debug Mode**
+**10.Debug Mode**
 
 Shows detailed internal debug output.
 
@@ -106,9 +114,8 @@ Troubleshooting errors.
 
 `netdiscover -d`
 
----
 
-# 🔥 **10. -b : Display MAC Address Vendor List**
+**11.Display MAC Address Vendor List**
 
 Show manufacturer/vendor information for known MAC prefixes.
 
@@ -118,7 +125,7 @@ Show manufacturer/vendor information for known MAC prefixes.
 
 ---
 
-# 🔥 **11. -L : Load Hostlist from File**
+**12.Load Hostlist from File**
 
 Scan only IP addresses from a file.
 
