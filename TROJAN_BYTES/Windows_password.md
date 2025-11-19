@@ -33,7 +33,7 @@ This file is locked while Windows is running, meaning we cannot access it direct
 
 **Online without changing the OS** : **Mimikatz** , **pwdump / fgdump** ,  **Cain & Abel (legacy)**
 
-**Offline Tools boot from another OS or a live CD/USB** :  **Offline NT Password & Registry Editor** , 
+**Offline Tools boot from another OS or a live CD/USB** :  **Offline NT Password & Registry Editor** , **Hiren’s BootCD / PE** , **Linux with ntfs-3g**
 
 -------------------
 **2.How can you change a Windows password without logging in?**
