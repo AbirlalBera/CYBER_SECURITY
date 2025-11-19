@@ -8,4 +8,10 @@ Rainbow tables are precomputed tables used to reverse cryptographic hash functio
 
 2.An attacker compares a stolen hash (e.g., NTLM hash from SAM) to the hashes in the table.
 
-If a match is found → the attacker instantly retrieves the password.
+3.If a match is found → the attacker instantly retrieves the password.
+
+### How modern systems resist them ------
+
+Modern OSes use salted hashes (unique random values per password).
+
+Salt makes pre-computed tables useless.
