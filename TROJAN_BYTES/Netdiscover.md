@@ -48,10 +48,20 @@ netdiscover -r 192.168.0.1-192.168.0.254
 **4.Passive Mode (Listen Only)**
 
 ```
-netdiscover -p
+netdiscover -p (lowecase of p)
 ```
 
 **Use when:**
 - Avoid detection
 - Just want to observe network traffic silently
 
+**5.Active Mode (Force Active Scan)**
+
+Forces active ARP scanning.
+
+**Use when:**  
+You want fast and complete discovery.
+
+**Example:**
+
+`netdiscover -P`
