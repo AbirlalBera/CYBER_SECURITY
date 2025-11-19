@@ -71,20 +71,15 @@ netdiscover -s 1 ( Fast scan )
 netdiscover -s 5 ( Slow scan stealthier )
 ```
 
-**6. -c : Number of ARP Requests to Send**
+**7. Number of ARP Requests to Send**
 
 Set number of times to send ARP packets per host.
 
-**Default:** 1
+```
+netdiscover -c 3  //Scan each host 3 times
+```
 
-**Example:**  
-Scan each host 3 times:
-
-`netdiscover -c 3`
-
----
-
-# 🔥 **7. -n : Number of Results to Display**
+**8.Number of Results to Display**
 
 Limit number of discovered hosts shown.
 
