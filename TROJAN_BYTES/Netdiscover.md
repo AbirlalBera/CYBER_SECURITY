@@ -18,5 +18,11 @@ Netdiscover is a **network reconnaissance tool** used primarily to discover live
 
 - Can detect devices communicating on the network while it listens.
 
-**
+------------
+
+## **Commands :-**
+
+Scan default subnet
+
+sudo netdiscover
 
