@@ -81,17 +81,13 @@ netdiscover -c 3  //Scan each host 3 times
 
 **8.Number of Results to Display**
 
-Limit number of discovered hosts shown.
-
-**Example:**
-
-`netdiscover -n 50`
+```
+netdiscover -n 50    //Limit number of discovered hosts shown
+```
 
 Shows only top 50 devices.
 
----
-
-# 🔥 **8. -f : Fast Scan Mode**
+**9.Fast Scan Mode**
 
 Skips DNS lookups for faster scanning.
 
