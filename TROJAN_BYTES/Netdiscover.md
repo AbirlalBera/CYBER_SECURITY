@@ -1,3 +1,5 @@
+# Netdiscover :
+
 Netdiscover is a **network reconnaissance tool** used primarily to discover live hosts (active devices) on a local network (LAN) . It works by **ARP (Address Resolution Protocol) scanning**, which is very effective in detecting devices on a subnet, especially in networks that do not respond to ping requests.
 
 ### **How Netdiscover Works**
@@ -144,18 +146,17 @@ netdiscover -L hosts.txt
 ------------
 # 🎯 **FULL NETDISCOVER COMMAND CHEAT SHEET**
 
-| Option | Full Form     | Use                      |
-| ------ | ------------- | ------------------------ |
-| `-i`   | Interface     | Select NIC (eth0, wlan0) |
-| `-r`   | Range         | Scan subnet/IP range     |
-| `-p`   | Passive       | Listen only              |
-| `-P`   | Active        | Force active ARP scan    |
-| `-s`   | Delay         | Time between packets     |
-| `-c`   | Count         | ARP requests per host    |
-| `-n`   | Limit results | Show X hosts             |
-| `-f`   | Fast mode     | Faster scanning          |
-| `-d`   | Debug         | Verbose output           |
-| `-b`   | Vendor list   | Show vendor info         |
-| `-L`   | Hostlist      | Scan from file           |
-| `-h`   | Help          | Show help menu           |
-**
+| Option                     | Full Form     | Use                      |
+| -------------------------- | ------------- | ------------------------ |
+| `-i`                       | Interface     | Select NIC (eth0, wlan0) |
+| `-r`                       | Range         | Scan subnet/IP range     |
+| `-p`                       | Passive       | Listen only              |
+| `-P`                       | Active        | Force active ARP scan    |
+| `-s`                       | Delay         | Time between packets     |
+| `-c`                       | Count         | ARP requests per host    |
+| `-n`                       | Limit results | Show X hosts             |
+| `-f`                       | Fast mode     | Faster scanning          |
+| `-d`                       | Debug         | Verbose output           |
+| `-b`                       | Vendor list   | Show vendor info         |
+| `-L`                       | Hostlist      | Scan from file           |
+| `-h`                       | Help          | Show help menu           |
