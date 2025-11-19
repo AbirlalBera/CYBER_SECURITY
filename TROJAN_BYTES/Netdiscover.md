@@ -37,10 +37,21 @@ netdiscover -i eth0
 netdiscover -i wlan0
 ```
 
-3.**Scan a Specific Range**
+**3.Scan a Specific Range**
 
 ```
 netdiscover -r 192.168.1.0/24
 netdiscover -r 10.0.0.0/16
 netdiscover -r 192.168.0.1-192.168.0.254
 ```
+
+**4.Passive Mode (Listen Only)**
+
+```
+netdiscover -p
+```
+
+**Use when:**
+- Avoid detection
+- Just want to observe network traffic silently
+
