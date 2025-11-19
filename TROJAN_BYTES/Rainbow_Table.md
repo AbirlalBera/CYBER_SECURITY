@@ -12,6 +12,8 @@ Rainbow tables are precomputed tables used to reverse cryptographic hash functio
 
 ### How modern systems resist them ------
 
-Modern OSes use salted hashes (unique random values per password).
+Modern OSes use salted hashes (unique random values per password) . Salt makes pre-computed tables useless.
 
-Salt makes pre-computed tables useless.
+------------
+## Tools used for Rainbow Table attacks
+
