@@ -112,7 +112,7 @@ sudo usermod -aG mygroup user2
 Step 3: Give group full permissions to a directory
 
 sudo chgrp mygroup /path/to/directory
-sudo chmod 770 /path/to/directory  # rwx for owner and group
+sudo chmod 770 /path/to/directory       # rwx for owner and group
 
 
 
