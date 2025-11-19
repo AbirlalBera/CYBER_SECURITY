@@ -28,11 +28,12 @@ cat /etc/group   //// View group file
 
 Step 1: Create a New User
 
-sudo adduser username  
+sudo adduser username    OR   sudo useradd -m -s /bin/bash username 
 
 
-sudo useradd -m -s /bin/bash username   
+Step 2: Set Password (if using useradd)
 
+sudo passwd john 
 
 sudo usermod -aG sudo username   //// Add user to sudo group (most common method)
 
