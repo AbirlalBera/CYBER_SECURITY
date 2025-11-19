@@ -44,7 +44,10 @@ Step 3: Add User to Sudo Group
 
 sudo usermod -aG sudo username   
 
+OR
 
+Alternative: Add to wheel group (some distributions)
+sudo usermod -aG wheel username
 
 
 
@@ -69,16 +72,16 @@ sudo whoami
 ##  **How to revoke permissions?**
 
 ```
-# Remove user from sudo group
+Step 1: Remove user from sudo group
 sudo deluser username sudo
 
-# Remove from wheel group
+Step 2: Remove from wheel group
 sudo deluser username wheel
 
-# Lock user account
+Step 3: Lock user account
 sudo passwd -l username
 
-# Delete user account
+Step 5: Delete user account
 sudo userdel -r username
 ```
 
