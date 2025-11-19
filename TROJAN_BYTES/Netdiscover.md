@@ -57,7 +57,6 @@ netdiscover -p (lowecase of p)
 
 **5.Active Mode (Force Active Scan)**
 
-**Example:**
 
 ```
 netdiscover -P ( Uppercase of P )
@@ -65,3 +64,9 @@ netdiscover -P ( Uppercase of P )
 
 **6.Set Delay Between ARP Requests**
 
+```
+
+netdiscover -s 1 ( Fast scan )
+
+netdiscover -s 5 ( Slow scan stealthier )
+```
