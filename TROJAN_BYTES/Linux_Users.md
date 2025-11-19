@@ -9,13 +9,16 @@
 **/etc/group -** Group information
 
 
-bash
+```
 
-View password file
-cat /etc/passwd
+cat /etc/passwd   //// View password file
 
-View shadow file (requires root)
-sudo cat /etc/shadow
 
-View group file
-cat /etc/group
+sudo cat /etc/shadow   //// View shadow file (requires root)
+
+
+cat /etc/group   //// View group file
+```
+
+---------
+
