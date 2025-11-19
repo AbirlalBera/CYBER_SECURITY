@@ -63,11 +63,7 @@ Split password into two 7-character blocks, uppercased, hashed with DES.
 Easily cracked; modern Windows usually disables LM hashes.
 
 ##### Microsoft Accounts:
-
 Passwords are not stored locally in SAM in plain form.
-        
-    Windows caches a derivative hash of the Microsoft account credentials for offline login (called cached credentials).
-        
-Security note:
-    
-    The SAM alone is not enough; you also need the SYSTEM registry hive to decrypt NTLM hashes, which adds a layer of protection.
+
+Windows caches a derivative hash of the Microsoft account credentials for offline login (called cached credentials).
+
