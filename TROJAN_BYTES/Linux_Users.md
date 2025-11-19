@@ -46,7 +46,19 @@ sudo usermod -aG sudo username
 
 
 
+
+
 Step 4: Verify User and Group Membership
+
+id username
+
+
+
+
+Step 5: Test 
+
+su - username
+sudo whoami
 
 
 ```
