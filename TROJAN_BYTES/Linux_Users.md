@@ -72,6 +72,8 @@ sudo whoami
 ##  **How to revoke permissions?**
 
 ```
+
+
 Step 1: Remove user from sudo group
 sudo deluser username sudo
 
@@ -81,12 +83,31 @@ sudo deluser username wheel
 Step 3: Lock user account
 sudo passwd -l username
 
-Step 5: Delete user account
+Step 4: Delete user account
 sudo userdel -r username
+
+
 ```
 
 -----------------
 
-How to give a group (two users) full permissions and then revoke those permissions?
+##  **How to give a group (two users) full permissions and then revoke those permissions? **
 
+```
+# Create a group
+sudo groupadd mygroup
+
+# Add users to group
+sudo usermod -aG mygroup user1
+sudo usermod -aG mygroup user2
+
+# Give group full permissions to a directory
+sudo chgrp mygroup /path/to/directory
+sudo chmod 770 /path/to/directory  # rwx for owner and group
+
+# Revoke permissions
+sudo chmod 750 /path/to/directory  # Remove group write access
+# OR
+sudo chmod 700 /path/to/directory  # Remove all group access
+```
 
