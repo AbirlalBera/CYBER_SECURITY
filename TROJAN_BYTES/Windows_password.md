@@ -29,7 +29,9 @@ Windows uses SAM together with the SYSTEM file (which holds the encryption key) 
 
 ### **NOTICE :**
 
-This file is locked while Windows is running, meaning we cannot access it directly unless booted into another OS (like Linux) or using specialized tools.
+This file is locked while Windows is running, meaning we cannot access it directly unless booted into another OS (like Linux) or using specialized tools. like---
+
+Online without changing the os : Mimikatz , pwdump / fgdump ,  **Cain & Abel (legacy)**
 
 -------------------
 **2.How can you change a Windows password without logging in?**
