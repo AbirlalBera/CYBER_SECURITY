@@ -94,20 +94,35 @@ sudo userdel -r username
 ##  **How to give a group (two users) full permissions and then revoke those permissions? **
 
 ```
-# Create a group
+Step 1: Create a group
+
 sudo groupadd mygroup
 
-# Add users to group
+
+
+
+Step 2: Add users to group
+
 sudo usermod -aG mygroup user1
 sudo usermod -aG mygroup user2
 
-# Give group full permissions to a directory
+
+
+
+Step 3: Give group full permissions to a directory
+
 sudo chgrp mygroup /path/to/directory
 sudo chmod 770 /path/to/directory  # rwx for owner and group
 
-# Revoke permissions
+
+
+
+Step 4: Revoke permissions
+
 sudo chmod 750 /path/to/directory  # Remove group write access
-# OR
+
+OR
+
 sudo chmod 700 /path/to/directory  # Remove all group access
 ```
 
