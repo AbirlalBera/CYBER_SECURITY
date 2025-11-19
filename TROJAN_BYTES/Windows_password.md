@@ -49,23 +49,22 @@ This creates a fully functional Windows account without needing to log in first.
 ---------------
 ### **4. Where are Windows passwords stored, and in what format?**
 
-Local Accounts (not Microsoft accounts):  
-    Stored in the SAM file (C:\Windows\System32\config\SAM), hashed, never in plain text.
-    
+##### Local Accounts (not Microsoft accounts): 
+Stored in the SAM file (C:\Windows\System32\config\SAM), hashed, never in plain text.
+
 Password formats in SAM:
+
+NTLM hash (most common today)
+
+NTLM = MD4 hash of the UTF-16LE password.
+
+Example: password123 → hashed using MD4.    
+LM hash (older, insecure, often disabled)
+
+Split password into two 7-character blocks, uppercased, hashed with DES.
+
+Easily cracked; modern Windows usually disables LM hashes.
     
-    NTLM hash (most common today)
-        
-        NTLM = MD4 hash of the UTF-16LE password.
-            
-        Example: password123 → hashed using MD4.
-            
-    LM hash (older, insecure, often disabled)
-        
-        Split password into two 7-character blocks, uppercased, hashed with DES.
-            
-        Easily cracked; modern Windows usually disables LM hashes.
-            
 Microsoft Accounts:
     
     Passwords are not stored locally in SAM in plain form.
