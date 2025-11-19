@@ -17,3 +17,11 @@ Modern OSes use salted hashes (unique random values per password) . Salt makes p
 ------------
 ## Tools used for Rainbow Table attacks
 
+**Ophcrack -** Includes rainbow tables for LM and NTLM hashes
+
+**RainbowCrack -** General-purpose rainbow table implementation
+
+**Cain and Abel -** Includes rainbow table functionality
+
+**rcrack -** Command-line rainbow table cracker
+
