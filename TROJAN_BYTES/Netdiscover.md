@@ -91,14 +91,9 @@ Shows only top 50 devices.
 
 Skips DNS lookups for faster scanning.
 
-**Use when:**  
-You want quick results.
-
-**Example:**
-
-`netdiscover -f`
-
----
+```
+netdiscover -f  // Provides quick results.
+```
 
 # 🔥 **9. -d : Debug Mode**
 
