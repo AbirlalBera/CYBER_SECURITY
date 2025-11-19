@@ -70,3 +70,76 @@ netdiscover -s 1 ( Fast scan )
 
 netdiscover -s 5 ( Slow scan stealthier )
 ```
+
+**6. -c : Number of ARP Requests to Send**
+
+Set number of times to send ARP packets per host.
+
+**Default:** 1
+
+**Example:**  
+Scan each host 3 times:
+
+`netdiscover -c 3`
+
+---
+
+# 🔥 **7. -n : Number of Results to Display**
+
+Limit number of discovered hosts shown.
+
+**Example:**
+
+`netdiscover -n 50`
+
+Shows only top 50 devices.
+
+---
+
+# 🔥 **8. -f : Fast Scan Mode**
+
+Skips DNS lookups for faster scanning.
+
+**Use when:**  
+You want quick results.
+
+**Example:**
+
+`netdiscover -f`
+
+---
+
+# 🔥 **9. -d : Debug Mode**
+
+Shows detailed internal debug output.
+
+**Use when:**  
+Troubleshooting errors.
+
+**Example:**
+
+`netdiscover -d`
+
+---
+
+# 🔥 **10. -b : Display MAC Address Vendor List**
+
+Show manufacturer/vendor information for known MAC prefixes.
+
+**Example:**
+
+`netdiscover -b`
+
+---
+
+# 🔥 **11. -L : Load Hostlist from File**
+
+Scan only IP addresses from a file.
+
+**Example:**
+
+hosts.txt:
+
+`192.168.1.10 192.168.1.20 192.168.1.30`
+
+`netdiscover -L hosts.txt`
