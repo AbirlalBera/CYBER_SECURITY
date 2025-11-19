@@ -25,25 +25,25 @@ cat /etc/group   //// View group file
 **2.How to create a user in Linux and give them sudo permission?**
 
 ```
-Create a new user
-sudo adduser username   //// 
 
-OR with useradd (more basic)   //// 
-sudo useradd -m -s /bin/bash username
+sudo adduser username   //// Create a new user
 
-Add user to sudo group (most common method)
-sudo usermod -aG sudo username
 
-Alternative: Add to wheel group (some distributions)
-sudo usermod -aG wheel username
+sudo useradd -m -s /bin/bash username   //// OR with useradd (more basic)
+
+
+sudo usermod -aG sudo username   //// Add user to sudo group (most common method)
+
+
+sudo usermod -aG wheel username   //// Alternative: Add to wheel group (some distributions)
 ```
 
 **Verify sudo access:**
 
 
 ```
-Switch to the new user and test sudo
-su - username
+
+su - username   //// Switch to the new user and test sudo
 sudo whoami  # Should return "root"
 ```
 
