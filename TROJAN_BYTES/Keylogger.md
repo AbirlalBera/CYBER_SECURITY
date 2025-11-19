@@ -8,7 +8,7 @@ A keylogger is surveillance software or hardware that records keystrokes on a co
 
 ---------
 
-### Keylogger Example :
+### **Keylogger Example :**
 
 
 ```
@@ -91,4 +91,7 @@ if __name__ == "__main__":
     else:
         print("Program terminated. Responsible use is required.")
 ```
+
+------------
+## **Detection :** 
 
