@@ -1,5 +1,5 @@
 
-**Where is the SAM (Security Account Manager) stored, and why is it important?**
+**1.Where is the SAM (Security Account Manager) stored, and why is it important?**
 
 ### **SAM :** 
 **SAM** stands for **Security Account Manager**.It is a **Windows system component** responsible for storing and managing **local user accounts and their password hashes**.
@@ -26,3 +26,7 @@ The SAM stores user account information and hashed passwords for local users.
 It is critical because access to the SAM allows attackers to crack password hashes or take over local accounts.
 
 Windows uses SAM together with the SYSTEM file (which holds the encryption key) to verify passwords.
+
+-------------------
+**2.How can you change a Windows password without logging in?**
+
