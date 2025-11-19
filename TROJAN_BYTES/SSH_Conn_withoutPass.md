@@ -46,3 +46,66 @@ ssh username@server_ip
 ### 
 
 ### 
+------------
+# ✅ **Step 3: Test SSH login**
+
+From Kali:
+
+`ssh username@server_ip`
+
+You should now log in **without typing your password**.
+
+---
+
+# 🔥 Kali Tip: Auto-load key with ssh-agent
+
+If you want _no passphrase typing_ and auto key loading:
+
+`eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519`
+
+To load key automatically every reboot, add this to your `~/.bashrc`:
+
+`eval "$(ssh-agent -s)" > /dev/null ssh-add ~/.ssh/id_ed25519 2>/dev/null`
+
+---
+
+# 🛑 Optional: Disable password login on the server (more secure)
+
+On the **remote server**, edit SSH config:
+
+`sudo nano /etc/ssh/sshd_config`
+
+Find or add:
+
+`PasswordAuthentication no PubkeyAuthentication yes`
+
+Restart SSH:
+
+`sudo systemctl restart ssh`
+
+---
+
+# 🗂 Optional: Use an SSH config file for faster commands
+
+Create/edit this file on Kali:
+
+`nano ~/.ssh/config`
+
+Add:
+
+`Host myserver     HostName server_ip     User username     IdentityFile ~/.ssh/id_ed25519`
+
+Now connect simply with:
+
+`ssh myserver`
+
+---
+
+If you want, I can also show you how to:
+
+✔ Connect to multiple servers without passwords  
+✔ Fix "Permission denied (publickey)" errors  
+✔ Use SSH keys for Git (GitHub, GitLab, Kali repos)  
+✔ Transfer files using SCP or SSHFS
+
+Just tell me!
