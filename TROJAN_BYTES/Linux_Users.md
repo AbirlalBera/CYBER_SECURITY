@@ -31,9 +31,16 @@ Step 1: Create a New User
 sudo adduser username    OR   sudo useradd -m -s /bin/bash username 
 
 
+
+
 Step 2: Set Password (if using useradd)
 
-sudo passwd john 
+sudo passwd username
+
+
+
+
+Step 3: Add User to Sudo Group
 
 sudo usermod -aG sudo username   //// Add user to sudo group (most common method)
 
