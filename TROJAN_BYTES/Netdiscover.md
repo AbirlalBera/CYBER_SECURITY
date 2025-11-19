@@ -3,8 +3,14 @@ Netdiscover is a **network reconnaissance tool** used primarily to discover live
 ### **How Netdiscover Works**
 
 **Netdiscover uses two main modes:**
+### **a) Active Mode**
 
-### **a) Passive Mode**
+- Sends ARP requests to a range of IP addresses (subnet scan).
+
+- Receives ARP replies from live hosts.
+
+- Lists IP addresses, MAC addresses, and manufacturer/vendor info (from MAC).
+### **b) Passive Mode**
 
 - Listens for ARP requests on the network without sending any packets.
 
