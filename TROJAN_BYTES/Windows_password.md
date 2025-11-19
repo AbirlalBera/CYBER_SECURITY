@@ -10,4 +10,8 @@ The **Security Account Manager (SAM)** is a **database** in Windows that stores:
 **Security identifiers (SIDs)**
 **Account properties**
 
+### Location:
+
+On disk : C:\Windows\System32\config\SAM
+
 In the registry : HKEY_LOCAL_MACHINE\SAM
