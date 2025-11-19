@@ -22,11 +22,14 @@ Netdiscover is a **network reconnaissance tool** used primarily to discover live
 
 ## **Commands :-**
 
-**Scan default subnet**
+**1.Scan default subnet**
 
 ```
-sudo netdiscover   //Scans the network you are currently connected to.and Auto-detects subnet
-                    
+sudo netdiscover   
+ 
 ```
 
+Scans the network you are currently connected to and Auto-detects subnet
+
+2.Specify Network Interface
 
