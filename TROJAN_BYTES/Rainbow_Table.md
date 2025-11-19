@@ -25,3 +25,4 @@ Modern OSes use salted hashes (unique random values per password) . Salt makes p
 
 **rcrack -** Command-line rainbow table cracker
 
+## Practical
