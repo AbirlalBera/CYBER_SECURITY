@@ -127,9 +127,9 @@ netdiscover -d  //Troubleshooting errors
 
 Show manufacturer/vendor information for known MAC prefixes.
 
-**Example:**
-
-`netdiscover -b`
+```
+netdiscover -b  
+```
 
 ---
 
@@ -137,10 +137,22 @@ Show manufacturer/vendor information for known MAC prefixes.
 
 Scan only IP addresses from a file.
 
-**Example:**
+```
+netdiscover -L hosts.txt
+```
 
-hosts.txt:
-
-`192.168.1.10 192.168.1.20 192.168.1.30`
-
-`netdiscover -L hosts.txt`
+------------
+|Option|Full Form|Use|
+|---|---|---|
+|`-i`|Interface|Select NIC (eth0, wlan0)|
+|`-r`|Range|Scan subnet/IP range|
+|`-p`|Passive|Listen only|
+|`-P`|Active|Force active ARP scan|
+|`-s`|Delay|Time between packets|
+|`-c`|Count|ARP requests per host|
+|`-n`|Limit results|Show X hosts|
+|`-f`|Fast mode|Faster scanning|
+|`-d`|Debug|Verbose output|
+|`-b`|Vendor list|Show vendor info|
+|`-L`|Hostlist|Scan from file|
+|`-h`|Help|Show help menu|
