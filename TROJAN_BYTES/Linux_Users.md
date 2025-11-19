@@ -26,7 +26,7 @@ cat /etc/group   //// View group file
 
 ```
 
-sudo adduser username   //// Create a new user
+sudo adduser username  Create a new user
 
 
 sudo useradd -m -s /bin/bash username   //// OR with useradd (more basic)
