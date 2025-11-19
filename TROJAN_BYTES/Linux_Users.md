@@ -68,7 +68,19 @@ sudo whoami
 
 ##  **How to revoke permissions?**
 
+```
+# Remove user from sudo group
+sudo deluser username sudo
 
+# Remove from wheel group
+sudo deluser username wheel
+
+# Lock user account
+sudo passwd -l username
+
+# Delete user account
+sudo userdel -r username
+```
 
 -----------------
 
