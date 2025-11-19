@@ -61,14 +61,16 @@ netdiscover -p (lowecase of p)
 - Avoid detection
 - Just want to observe network traffic silently
 
-**5.Active Mode (Force Active Scan)**
-
 -------------
+
+**5.Active Mode (Force Active Scan)**
 
 
 ```
 netdiscover -P ( Uppercase of P )
 ```
+
+-------------
 
 **6.Set Delay Between ARP Requests**
 
@@ -79,6 +81,8 @@ netdiscover -s 1 ( Fast scan )
 netdiscover -s 5 ( Slow scan stealthier )
 ```
 
+-------------
+
 **7. Number of ARP Requests to Send**
 
 Set number of times to send ARP packets per host.
@@ -86,6 +90,8 @@ Set number of times to send ARP packets per host.
 ```
 netdiscover -c 3  //Scan each host 3 times
 ```
+
+-------------
 
 **8.Number of Results to Display**
 
@@ -95,6 +101,8 @@ netdiscover -n 50    //Limit number of discovered hosts shown
 
 Shows only top 50 devices.
 
+-------------
+
 **9.Fast Scan Mode**
 
 Skips DNS lookups for faster scanning.
@@ -103,17 +111,17 @@ Skips DNS lookups for faster scanning.
 netdiscover -f  // Provides quick results.
 ```
 
+-------------
+
 **10.Debug Mode**
 
 Shows detailed internal debug output.
 
-**Use when:**  
-Troubleshooting errors.
+```
+netdiscover -d  //Troubleshooting errors
+```
 
-**Example:**
-
-`netdiscover -d`
-
+-------------
 
 **11.Display MAC Address Vendor List**
 
