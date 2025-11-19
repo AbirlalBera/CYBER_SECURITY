@@ -22,7 +22,9 @@ cat /etc/group   //// View group file
 
 ---------
 
-How to create a user in Linux and give them sudo permission?
+**How to create a user in Linux and give them sudo permission?**
+
+
 
 -------------
 
@@ -32,6 +34,4 @@ How to revoke permissions?
 
 How to give a group (two users) full permissions and then revoke those permissions?
 
--------------
 
-how to connect ssh without puting your passwod every single time?
