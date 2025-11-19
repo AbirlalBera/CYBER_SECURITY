@@ -1,4 +1,4 @@
-**1.Where are passwords stored in Linux?**
+## **1.Where are passwords stored in Linux?**
 
 **Passwords are stored in these files:**
 
@@ -22,7 +22,7 @@ cat /etc/group   //// View group file
 
 ---------
 
-**2.How to create a user in Linux and give them sudo permission?**
+## **2.How to create a user in Linux and give them sudo permission?**
 
 ```
 
@@ -63,18 +63,12 @@ sudo whoami
 
 ```
 
-**Verify sudo access:**
-
-
-```
-
-su - username   //// Switch to the new user and test sudo
-sudo whoami  # Should return "root"
-```
 
 -------------
 
-How to revoke permissions?
+##  **How to revoke permissions?**
+
+
 
 -----------------
 
