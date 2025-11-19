@@ -142,17 +142,20 @@ netdiscover -L hosts.txt
 ```
 
 ------------
-|Option|Full Form|Use|
-|---|---|---|
-|`-i`|Interface|Select NIC (eth0, wlan0)|
-|`-r`|Range|Scan subnet/IP range|
-|`-p`|Passive|Listen only|
-|`-P`|Active|Force active ARP scan|
-|`-s`|Delay|Time between packets|
-|`-c`|Count|ARP requests per host|
-|`-n`|Limit results|Show X hosts|
-|`-f`|Fast mode|Faster scanning|
-|`-d`|Debug|Verbose output|
-|`-b`|Vendor list|Show vendor info|
-|`-L`|Hostlist|Scan from file|
-|`-h`|Help|Show help menu|
+# 🎯 **FULL NETDISCOVER COMMAND CHEAT SHEET**
+
+| Option | Full Form     | Use                      |
+| ------ | ------------- | ------------------------ |
+| `-i`   | Interface     | Select NIC (eth0, wlan0) |
+| `-r`   | Range         | Scan subnet/IP range     |
+| `-p`   | Passive       | Listen only              |
+| `-P`   | Active        | Force active ARP scan    |
+| `-s`   | Delay         | Time between packets     |
+| `-c`   | Count         | ARP requests per host    |
+| `-n`   | Limit results | Show X hosts             |
+| `-f`   | Fast mode     | Faster scanning          |
+| `-d`   | Debug         | Verbose output           |
+| `-b`   | Vendor list   | Show vendor info         |
+| `-L`   | Hostlist      | Scan from file           |
+| `-h`   | Help          | Show help menu           |
+**
