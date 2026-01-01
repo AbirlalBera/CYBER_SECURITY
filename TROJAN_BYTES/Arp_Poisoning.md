@@ -35,6 +35,8 @@ Physical Address of Windows System ---->
 
 ```
 Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
+
+ IPv4 Address. . . . . . . . . . . : 192.168.229.132
 ```
 
 
