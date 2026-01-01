@@ -23,7 +23,7 @@
 
 ## 1️⃣ Code Obfuscation
 
-Transforms source code to make it unreadable and hard to reverse engineer.
+Code obfuscation transforms source code into a functionally equivalent form that is difficult for humans to read and understand, in order to prevent reverse engineering.
 
 **Example (JavaScript):**
 
@@ -43,7 +43,7 @@ function _0x9f3a(_0x2b){return _0x2b==="admin";}
 
 ## 2️⃣ Control Flow Obfuscation
 
-Changes the logical execution path of a program.
+Control flow obfuscation alters the execution path of a program by introducing misleading loops and conditions without changing its behavior.
 
 **Example (C):**
 
@@ -66,7 +66,7 @@ while(1){
 
 ## 3️⃣ Data Obfuscation
 
-Hides sensitive data values.
+Data obfuscation hides sensitive information by masking, modifying, or replacing it to prevent unauthorized access.
 
 **Example:**
 
