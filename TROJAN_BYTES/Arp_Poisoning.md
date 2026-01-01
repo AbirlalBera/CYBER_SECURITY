@@ -38,4 +38,9 @@ Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
 ```
 
 
+Physical Address of Linux System ---->
+
+```
 ether 00:0c:29:f2:93:7b
+```
+
