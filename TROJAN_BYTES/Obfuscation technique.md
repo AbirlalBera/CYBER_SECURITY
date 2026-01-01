@@ -20,111 +20,59 @@
 
 ### 🧩 Types of Obfuscation
 
-### 1.**Code Obfuscation** 
 
-Makes program code hard to read and understand.
+## 1️⃣ Code Obfuscation
+
+Transforms source code to make it unreadable and hard to reverse engineer.
 
 **Example (JavaScript):**
 
-```
-// Original
-function add(a, b) {
-  return a + b;
-}
+`// Original function login(user) {   return user === "admin"; }  // Obfuscated function _0x9f3a(_0x2b){return _0x2b==="admin";}`
 
+---
 
+## 2️⃣ Control Flow Obfuscation
 
-// Obfuscated
-function _0x1a2b(_0x3c,_0x4d){return _0x3c+_0x4d;}
-
-```
-
-
-### 2. **Control Flow Obfuscation**
-
-Alters the logical flow of a program to confuse analysis.
+Changes the logical execution path of a program.
 
 **Example (C):**
 
-```
-// Original
-if (x > 5)
-  y = 10;
+`// Original if (x > 5)   y = 10;  // Obfuscated while(1){   if(x <= 5) break;   y = 10;   break; }`
 
+---
 
+## 3️⃣ Data Obfuscation
 
-// Obfuscated
-while(1){
-  if(x <= 5) break;
-  y = 10;
-  break;
-}
-```
-
-### 3. **Data Obfuscation**
-
-Hides sensitive data such as passwords or personal information.
+Hides sensitive data values.
 
 **Example:**
 
-```
-Original: `Password = "admin123"`
- 
- 
-Obfuscated: `Password = "a*d***23"`
-```
+- Original: `CreditCard = 1234-5678-9012-3456`
+    
+- Obfuscated: `CreditCard = XXXX-XXXX-XXXX-3456`
+    
 
-### 4. **String Obfuscation**
+---
 
-Conceals strings used in the code.
+## 4️⃣ String Obfuscation
 
-**Example (JAVA):**
+Encrypts or encodes strings inside code.
 
-```
-// Original
-String key = "secretKey";
+**Example (Java):**
 
+`// Original String key = "secretKey";  // Obfuscated String key = decrypt("c2VjcmV0S2V5");`
 
+---
 
-// Obfuscated
-String key = decrypt("c2VjcmV0S2V5");
-```
+## 5️⃣ Variable Renaming Obfuscation
 
+Renames meaningful variables to random or meaningless names.
 
-### 5. **Variable and Function Renaming**
+**Example (Python):**
 
-Renames meaningful identifiers to meaningless names.
+`# Original total_price = cost * quantity  # Obfuscated a1 = b2 * c3`
 
-**Example:**
-
-```
-# Original
-total_price = cost * quantity
-
-
-
-# Obfuscated
-a1 = b2 * c3
-```
-
-
-### 6. **Encryption-Based Obfuscation**
-
-Uses encryption to hide code or data (decrypted only at runtime).
-
-**Example:**
-
-- Encrypted payload decrypted during execution by malware
-
-
-### 7. **Network / Traffic Obfuscation**
-
-Disguises network traffic to avoid detection.
-
-**Example:**
-
-- Malware using HTTPS or Tor to hide command-and-control traffic
-
+---
 
 ## 6️⃣ Layout / Formatting Obfuscation
 
@@ -164,6 +112,18 @@ Uses conditions whose outcome is known but hard to analyze.
 
 `if ((7 * 7 - 49) == 0) {   execute(); }`
 
+---
+
+## 🔟 Encryption-Based Obfuscation
+
+Encrypts code or payloads, decrypts at runtime.
+
+**Example:**
+
+- Malware encrypts its payload and decrypts it in memory before execution
+    
+
+---
 
 ## 1️⃣1️⃣ Packing / Runtime Obfuscation
 
@@ -209,6 +169,16 @@ Rewrites its entire code logic while keeping same behavior.
 
 ---
 
+## 1️⃣5️⃣ Network / Traffic Obfuscation
+
+Disguises network traffic.
+
+**Example:**
+
+- Malware using HTTPS or DNS tunneling to hide data exfiltration
+    
+
+---
 
 ## 1️⃣6️⃣ Steganographic Obfuscation
 
