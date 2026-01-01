@@ -164,18 +164,6 @@ Uses conditions whose outcome is known but hard to analyze.
 
 `if ((7 * 7 - 49) == 0) {   execute(); }`
 
----
-
-## 🔟 Encryption-Based Obfuscation
-
-Encrypts code or payloads, decrypts at runtime.
-
-**Example:**
-
-- Malware encrypts its payload and decrypts it in memory before execution
-    
-
----
 
 ## 1️⃣1️⃣ Packing / Runtime Obfuscation
 
@@ -221,16 +209,6 @@ Rewrites its entire code logic while keeping same behavior.
 
 ---
 
-## 1️⃣5️⃣ Network / Traffic Obfuscation
-
-Disguises network traffic.
-
-**Example:**
-
-- Malware using HTTPS or DNS tunneling to hide data exfiltration
-    
-
----
 
 ## 1️⃣6️⃣ Steganographic Obfuscation
 
