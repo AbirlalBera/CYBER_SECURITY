@@ -97,4 +97,38 @@ Windows ⇄ Kali (Attacker) ⇄ Router ⇄ Internet
 ```
 
 ------------
-## Arp ta
+## Arp table (windows) :
+
+### Before Attacxk ---->
+
+```
+C:\Users\SHELL>arp -a
+
+Interface: 192.168.229.132 --- 0x5
+  Internet Address      Physical Address      Type
+  192.168.229.2         00-50-56-e3-be-e6     dynamic
+  192.168.229.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+```
+
+### Before Attacxk ---->
+
+```
+C:\Users\SHELL>arp -a
+
+Interface: 192.168.229.132 --- 0x5
+  Internet Address      Physical Address      Type
+  192.168.229.2         00-0c-29-f2-93-7b     dynamic
+  192.168.229.131       00-0c-29-f2-93-7b     dynamic
+  192.168.229.254       00-50-56-ec-48-1a     dynamic
+  192.168.229.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+```
