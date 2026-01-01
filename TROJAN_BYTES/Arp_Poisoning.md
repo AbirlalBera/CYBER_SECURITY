@@ -160,7 +160,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 
 enables IP forwarding on a Linux system, allowing it to forward packets between network interfaces like a router.
 
-Now we can Monitor all the traffics. (Lets search any http site like airindia)
+Now we can Monitor all the traffics. **(Lets search any http site like airindia.com)**
 
 -----------
 
