@@ -20,15 +20,25 @@
 
 ### 🧩 Types of Obfuscation
 
-1.**Code Obfuscation** - Makes program code hard to read and understand.
+### 1.**Code Obfuscation** 
+
+Makes program code hard to read and understand.
 
 **Example (JavaScript):**
 
 ```
-`// Original function add(a, b) {   return a + b; }  // Obfuscated function _0x1a2b(_0x3c,_0x4d){return _0x3c+_0x4d;}`
+// Original
+function add(a, b) {
+  return a + b;
+}
+
+
+
+// Obfuscated
+function _0x1a2b(_0x3c,_0x4d){return _0x3c+_0x4d;}
+
 ```
 
----
 
 ### 2. **Control Flow Obfuscation**
 
@@ -38,7 +48,6 @@ Alters the logical flow of a program to confuse analysis.
 
 `// Original if (x > 10) {   y = 5; }  // Obfuscated while (true) {   if (x <= 10) break;   y = 5;   break; }`
 
----
 
 ### 3. **Data Obfuscation**
 
