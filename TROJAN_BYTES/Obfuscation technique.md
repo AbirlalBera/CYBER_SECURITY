@@ -44,9 +44,21 @@ function _0x1a2b(_0x3c,_0x4d){return _0x3c+_0x4d;}
 
 Alters the logical flow of a program to confuse analysis.
 
-**Example:**
+**Example (C):**
 
-`// Original if (x > 10) {   y = 5; }  // Obfuscated while (true) {   if (x <= 10) break;   y = 5;   break; }`
+```
+// Original
+if (x > 5)
+  y = 10;
+
+// Obfuscated
+while(1){
+  if(x <= 5) break;
+  y = 10;
+  break;
+}
+
+```
 
 
 ### 3. **Data Obfuscation**
