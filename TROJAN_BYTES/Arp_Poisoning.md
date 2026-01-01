@@ -176,3 +176,14 @@ alert("You are hacked");
 ```
 
 Next,
+
+use http.proxy option in bettercap
+
+Next,
+
+Turn on http.proxy on
+
+Next,
+
+use set  http.proxy.injectjs op
+
