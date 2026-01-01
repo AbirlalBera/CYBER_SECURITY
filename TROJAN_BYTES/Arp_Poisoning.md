@@ -164,12 +164,12 @@ Now we can Monitor all the traffics. **(Lets search any http site like aitindia.
 
 -----------
 
-### Showing pop up messages when anyone visit the page :
+### Showing pop up messages when anyone visit the page ( victim-side ):
 
 ![[Pasted image 20260101220927.png]]
 
 First,
-make a js file 
+make a .js file 
 
 ```
 alert("You are hacked");
@@ -185,7 +185,8 @@ Turn on http.proxy on
 
 Next,
 
-help set  http.proxy.injectjs /home/ranger/alert.js
+help  http.proxy
+
 use  http.proxy.injectjs option
 
 set  http.proxy.injectjs /home/ranger/alert.js (File Path)
