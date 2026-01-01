@@ -31,7 +31,7 @@ Windows (Victim) → Attacker (Linux) → Router → Internet
 We have two machines **Kali** (Attacker)  and  **Windows** (Victim)  machines.
 
 
-Physical Address of Windows System ---->
+Physical Address and IP of Windows System ---->
 
 ```
 Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
@@ -40,9 +40,11 @@ Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
 ```
 
 
-Physical Address of Linux System ---->
+Physical Address and IP of Linux System ---->
 
 ```
 ether 00:0c:29:f2:93:7b
+
+inet 192.168.229.131
 ```
 
