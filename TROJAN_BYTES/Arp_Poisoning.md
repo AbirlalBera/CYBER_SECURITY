@@ -55,7 +55,7 @@ Router IP adress ---->
 ```
 
 ---------------
-## Attack :
+## Attack (In Kali) :
 
 ```
 sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132 
@@ -75,3 +75,26 @@ This command performs **ARP spoofing against the router** by sending fake ARP re
 sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
 ```
 
+This command performs **ARP spoofing against the Windows victim** by sending fake ARP replies that map the **router’s IP address** to the **attacker’s MAC address**.
+
+### What it achieves
+
+- Poisons the **Windows ARP cache**
+
+- Redirects packets meant for **router → Kali**
+
+- Intercepts **outgoing traffic** (victim → router)
+
+
+---
+
+## Combined Effect (MITM)
+
+When **both commands are run**, the attacker becomes a **Man-in-the-Middle**:
+
+```
+Windows ⇄ Kali (Attacker) ⇄ Router ⇄ Internet
+```
+
+------------
+## Arp ta
