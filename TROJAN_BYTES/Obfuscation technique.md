@@ -83,7 +83,15 @@ Encrypts or encodes strings inside code.
 
 **Example (Java):**
 
-`// Original String key = "secretKey";  // Obfuscated String key = decrypt("c2VjcmV0S2V5");`
+```
+// Original
+String key = "secretKey";
+
+
+
+// Obfuscated
+String key = decrypt("c2VjcmV0S2V5");
+```
 
 ---
 
@@ -93,7 +101,15 @@ Renames meaningful variables to random or meaningless names.
 
 **Example (Python):**
 
-`# Original total_price = cost * quantity  # Obfuscated a1 = b2 * c3`
+```
+# Original
+total_price = cost * quantity
+
+
+
+# Obfuscated
+a1 = b2 * c3
+```
 
 ---
 
@@ -103,7 +119,9 @@ Alters formatting without changing logic.
 
 **Example:**
 
-`int x=5;int y=10;int z=x+y;`
+```
+int x=5;int y=10;int z=x+y;
+```
 
 ---
 
@@ -113,7 +131,9 @@ Replaces simple instructions with complex equivalents.
 
 **Example:**
 
-`// Original x = x + 1;  // Obfuscated x = x - (-1);`
+```
+
+```
 
 ---
 
