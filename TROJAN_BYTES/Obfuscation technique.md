@@ -79,7 +79,7 @@ Data obfuscation hides sensitive information by masking, modifying, or replacing
 
 ## 4️⃣ String Obfuscation
 
-Encrypts or encodes strings inside code.
+String obfuscation conceals string literals in code by encoding or encrypting them and decoding them only at runtime.
 
 **Example (Java):**
 
@@ -97,7 +97,7 @@ String key = decrypt("c2VjcmV0S2V5");
 
 ## 5️⃣ Variable Renaming Obfuscation
 
-Renames meaningful variables to random or meaningless names.
+This technique replaces meaningful variable and function names with random or meaningless identifiers to obscure program intent.
 
 **Example (Python):**
 
@@ -115,7 +115,7 @@ a1 = b2 * c3
 
 ## 6️⃣ Layout / Formatting Obfuscation
 
-Alters formatting without changing logic.
+Layout obfuscation removes readable formatting such as indentation, spacing, and line breaks without affecting execution.
 
 **Example:**
 
@@ -127,7 +127,7 @@ int x=5;int y=10;int z=x+y;
 
 ## 7️⃣ Instruction Substitution Obfuscation
 
-Replaces simple instructions with complex equivalents.
+Instruction substitution replaces simple instructions with more complex but logically equivalent operations.
 
 **Example:**
 
@@ -145,7 +145,7 @@ x = x - (-1);
 
 ## 8️⃣ Dead Code Insertion
 
-Adds useless or never-executed code.
+Dead code insertion adds code that never executes or has no effect, increasing complexity and misleading analysts.
 
 **Example:**
 
