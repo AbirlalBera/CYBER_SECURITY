@@ -132,7 +132,13 @@ Replaces simple instructions with complex equivalents.
 **Example:**
 
 ```
+// Original
+x = x + 1;
 
+
+
+// Obfuscated
+x = x - (-1);
 ```
 
 ---
@@ -143,7 +149,11 @@ Adds useless or never-executed code.
 
 **Example:**
 
-`if(false){   System.out.println("This never runs"); }`
+```
+if(false){
+  System.out.println("This never runs");
+}
+```
 
 ---
 
@@ -153,7 +163,11 @@ Uses conditions whose outcome is known but hard to analyze.
 
 **Example:**
 
-`if ((7 * 7 - 49) == 0) {   execute(); }`
+```
+if ((7 * 7 - 49) == 0) {
+  execute();
+}
+```
 
 ---
 
@@ -164,7 +178,7 @@ Encrypts code or payloads, decrypts at runtime.
 **Example:**
 
 - Malware encrypts its payload and decrypts it in memory before execution
-    
+
 
 ---
 
@@ -175,7 +189,7 @@ Compresses or packs executable files.
 **Example:**
 
 - UPX-packed executable that unpacks during runtime
-    
+
 
 ---
 
@@ -186,7 +200,7 @@ Hides system or API calls.
 **Example:**
 
 - `LoadLibrary()` called dynamically instead of directly
-    
+
 
 ---
 
@@ -197,7 +211,7 @@ Code changes its structure every time it runs.
 **Example:**
 
 - Virus mutates its code signature on each infection
-    
+
 
 ---
 
@@ -208,7 +222,7 @@ Rewrites its entire code logic while keeping same behavior.
 **Example:**
 
 - Malware that reorders instructions and changes registers
-    
+
 
 ---
 
@@ -219,7 +233,7 @@ Disguises network traffic.
 **Example:**
 
 - Malware using HTTPS or DNS tunneling to hide data exfiltration
-    
+
 
 ---
 
@@ -230,7 +244,7 @@ Hides data inside other files.
 **Example:**
 
 - Malicious payload hidden inside an image file
-    
+
 
 ---
 
