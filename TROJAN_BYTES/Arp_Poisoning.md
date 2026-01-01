@@ -4,9 +4,12 @@
 ### Normal communication
 
 ```
-Windows Victim  →  Router  →  Internet
+Windows (Victim)  →  Router  →  Internet
 ```
 
 ### During ARP Poisoning
 
-```Windows Victim → Attacker (Linux) → Router → Internet```
+```
+Windows (Victim) → Attacker (Linux) → Router → Internet
+```
+
