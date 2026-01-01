@@ -152,6 +152,10 @@ net.sniff on
 ```
 
 
+#### Required :
+
 ```
 sudo sysctl -w net.ipv4.ip_forward=1 
 ```
+
+`net.ipv4.ip_forward=1` enables IP forwarding on a Linux system, allowing it to forward packets between network interfaces like a router.
