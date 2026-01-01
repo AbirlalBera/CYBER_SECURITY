@@ -31,4 +31,8 @@ Windows (Victim) → Attacker (Linux) → Router → Internet
 We have two machines **Kali** (Attacker)  and  **Windows** (Victim)  machines.
 
 
- Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
+Physical Address of Windows System ---->
+
+```
+Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
+```
