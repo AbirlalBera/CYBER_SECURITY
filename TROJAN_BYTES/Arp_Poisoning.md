@@ -99,7 +99,7 @@ Windows ⇄ Kali (Attacker) ⇄ Router ⇄ Internet
 ------------
 ## Arp table (windows) :
 
-### Before Attacxk ---->
+### Before Attack ---->
 
 ```
 C:\Users\SHELL>arp -a
@@ -115,7 +115,7 @@ Interface: 192.168.229.132 --- 0x5
   255.255.255.255       ff-ff-ff-ff-ff-ff     static
 ```
 
-### Before Attacxk ---->
+### After Attack ---->
 
 ```
 C:\Users\SHELL>arp -a
@@ -132,3 +132,4 @@ Interface: 192.168.229.132 --- 0x5
   239.255.255.250       01-00-5e-7f-ff-fa     static
   255.255.255.255       ff-ff-ff-ff-ff-ff     static
 ```
+
