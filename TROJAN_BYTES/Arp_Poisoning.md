@@ -185,5 +185,9 @@ Turn on http.proxy on
 
 Next,
 
-use set  http.proxy.injectjs op
+help set  http.proxy.injectjs /home/ranger/alert.js
+use  http.proxy.injectjs option
+
+set  http.proxy.injectjs /home/ranger/alert.js (File Path)
+
 
