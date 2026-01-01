@@ -159,7 +159,7 @@ if(false){
 
 ## 9️⃣ Opaque Predicates
 
-Uses conditions whose outcome is known but hard to analyze.
+Opaque predicates are conditions with outcomes known to the developer but difficult for an analyzer to determine.
 
 **Example:**
 
@@ -173,7 +173,7 @@ if ((7 * 7 - 49) == 0) {
 
 ## 🔟 Encryption-Based Obfuscation
 
-Encrypts code or payloads, decrypts at runtime.
+This technique encrypts code or data and decrypts it only during execution to hide it from static analysis.
 
 **Example:**
 
@@ -184,7 +184,7 @@ Encrypts code or payloads, decrypts at runtime.
 
 ## 1️⃣1️⃣ Packing / Runtime Obfuscation
 
-Compresses or packs executable files.
+Packing compresses or encrypts an executable and unpacks it in memory at runtime to conceal its contents.
 
 **Example:**
 
@@ -195,7 +195,7 @@ Compresses or packs executable files.
 
 ## 1️⃣2️⃣ API Call Obfuscation
 
-Hides system or API calls.
+API call obfuscation hides direct system or library calls by resolving them dynamically at runtime.
 
 **Example:**
 
@@ -206,7 +206,7 @@ Hides system or API calls.
 
 ## 1️⃣3️⃣ Polymorphic Obfuscation
 
-Code changes its structure every time it runs.
+Polymorphic obfuscation changes the code’s appearance each time it runs while keeping the same behavior.
 
 **Example:**
 
@@ -217,7 +217,7 @@ Code changes its structure every time it runs.
 
 ## 1️⃣4️⃣ Metamorphic Obfuscation
 
-Rewrites its entire code logic while keeping same behavior.
+Metamorphic obfuscation rewrites the program’s code structure entirely while preserving its functionality.
 
 **Example:**
 
