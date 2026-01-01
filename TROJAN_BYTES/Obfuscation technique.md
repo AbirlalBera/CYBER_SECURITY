@@ -228,7 +228,7 @@ Metamorphic obfuscation rewrites the program’s code structure entirely while p
 
 ## 1️⃣5️⃣ Network / Traffic Obfuscation
 
-Disguises network traffic.
+Network obfuscation disguises malicious or sensitive traffic to appear as legitimate communication.
 
 **Example:**
 
@@ -239,7 +239,7 @@ Disguises network traffic.
 
 ## 1️⃣6️⃣ Steganographic Obfuscation
 
-Hides data inside other files.
+Steganographic obfuscation hides data within other files such as images, audio, or video.
 
 **Example:**
 
@@ -250,7 +250,7 @@ Hides data inside other files.
 
 ## 1️⃣7️⃣ Virtualization-Based Obfuscation
 
-Runs code inside a custom virtual machine.
+This technique converts code into custom bytecode executed by a virtual machine to prevent analysis.
 
 **Example:**
 
