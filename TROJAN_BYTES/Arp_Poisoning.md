@@ -28,5 +28,7 @@ Windows (Victim) → Attacker (Linux) → Router → Internet
 
 ## How to Perform :
 
-We have two m
+We have two machines **Kali** (Attacker)  and  **Windows** (Victim)  machines.
+
+
  
