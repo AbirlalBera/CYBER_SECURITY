@@ -51,15 +51,15 @@ Alters the logical flow of a program to confuse analysis.
 if (x > 5)
   y = 10;
 
+
+
 // Obfuscated
 while(1){
   if(x <= 5) break;
   y = 10;
   break;
 }
-
 ```
-
 
 ### 3. **Data Obfuscation**
 
@@ -67,12 +67,12 @@ Hides sensitive data such as passwords or personal information.
 
 **Example:**
 
-- Original: `Password = "admin123"`
-    
-- Obfuscated: `Password = "a*d***23"`
-    
-
----
+```
+Original: `Password = "admin123"`
+ 
+ 
+Obfuscated: `Password = "a*d***23"`
+```
 
 ### 4. **String Obfuscation**
 
@@ -80,9 +80,10 @@ Conceals strings used in the code.
 
 **Example:**
 
-`// Original String url = "https://example.com";  // Obfuscated String url = decode("aHR0cHM6Ly9leGFtcGxlLmNvbQ==");`
+```
 
----
+```
+
 
 ### 5. **Variable and Function Renaming**
 
