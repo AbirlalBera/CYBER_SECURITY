@@ -78,10 +78,16 @@ Obfuscated: `Password = "a*d***23"`
 
 Conceals strings used in the code.
 
-**Example:**
+**Example (JAVA):**
 
 ```
+// Original
+String key = "secretKey";
 
+
+
+// Obfuscated
+String key = decrypt("c2VjcmV0S2V5");
 ```
 
 
@@ -91,9 +97,16 @@ Renames meaningful identifiers to meaningless names.
 
 **Example:**
 
-`# Original total_amount = price * quantity  # Obfuscated a = b * c`
+```
+# Original
+total_price = cost * quantity
 
----
+
+
+# Obfuscated
+a1 = b2 * c3
+```
+
 
 ### 6. **Encryption-Based Obfuscation**
 
