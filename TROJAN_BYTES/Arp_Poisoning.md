@@ -54,6 +54,24 @@ Router IP adress ---->
 192.168.229.2
 ```
 
-sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132 
+---------------
+## Attack :
 
+```
+sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132 
+```
+
+This command performs **ARP spoofing against the router** by sending fake ARP replies that map the **Windows victim’s IP address** to the **attacker’s MAC address**.
+
+### What it achieves
+
+- Poisons the **router’s ARP cache**
+
+- Redirects packets meant for **Windows → Kali**
+
+- Intercepts **incoming traffic** (router → victim)
+
+```
 sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
+```
+
