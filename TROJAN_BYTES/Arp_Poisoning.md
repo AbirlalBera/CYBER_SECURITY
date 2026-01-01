@@ -1,5 +1,5 @@
 
-**ARP Poisoning** is a network attack where an attacker sends **fake ARP messages** to a local network to associate **their MAC address** with the **IP address of another device** (usually the router or a victim).
+ARP Poisoning (also called ARP Spoofing) is a **man-in-the-middle attack** that exploits the ARP (Address Resolution Protocol) to intercept network traffic between two devices. The attacker sends falsified ARP messages to link their MAC address with the IP address of a legitimate device, causing network traffic to be redirected through the attacker's machine.
 
 ### Normal communication
 
