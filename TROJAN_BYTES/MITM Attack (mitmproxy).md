@@ -8,8 +8,11 @@ Download file Format
 mitmproxy-12.2.1-linux-x86_64.tar.gz
 ```
 
-then ,
+**then ,**
 
-Unzip the file
+Unzip the file ---->
 
-tar -xvf 
+```
+tar -xvf mitmproxy-12.2.1-linux-x86_64.tar.gz
+```
+
