@@ -139,3 +139,12 @@ Monitor Using bettercap Tool :
 sudo bettercap --iface eth0
 
 help
+
+net.probe on 
+net.recon on
+set event.http.response.dump true
+set event.http.request.dump true
+events.stream off
+events.stream on
+set net.sniff.local true 
+net.sniff on 
