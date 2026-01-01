@@ -164,4 +164,6 @@ Now we can Monitor all the traffics. **(Lets search any http site like aitindia.
 
 -----------
 
-Showing pop up messages 
+### Showing pop up messages when anyone visit the page :
+
+![[Pasted image 20260101220927.png]]
