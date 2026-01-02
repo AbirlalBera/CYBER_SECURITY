@@ -46,7 +46,22 @@ Run ---->
 ```
 
 -------------
+Caution :
+
 ![[Pasted image 20260102084728.png]]
 
 If ` Errno 98] Transparent Proxy failed to listen on *:8080 with [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): [errno 98] address already in use`   this error occurs then kill the process.
+
+```
+┌──(ranger🎃KALI)-[~/Desktop/mitm]
+└─$ sudo netstat -tunlp | grep 8080            
+[sudo] password for ranger: 
+tcp        0      0 192.168.229.131:8080    0.0.0.0:*               LISTEN      36294/bettercap  
+```   
+
+
+```
+┌──(ranger🎃KALI)-[~/Desktop/mitm]
+└─$ sudo kill -9 36294  
+```
 
