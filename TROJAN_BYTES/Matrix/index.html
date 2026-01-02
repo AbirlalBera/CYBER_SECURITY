@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Matrix Dot Animation</title>
+<title>Matrix Glitch Rain</title>
 <style>
     body {
         margin: 0;
         background: black;
         overflow: hidden;
+        font-family: monospace;
     }
     canvas {
         display: block;
@@ -25,59 +26,37 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const lines = [];
-const lineCount = 40;
+const chars = "01#@$%&*アカサタナハマヤラワ";
+const fontSize = 16;
+const columns = Math.floor(canvas.width / fontSize);
+const drops = Array(columns).fill(0);
 
-class Line {
-    constructor(y) {
-        this.y = y;
-        this.speed = Math.random() * 0.5 + 0.2;
-        this.offset = Math.random() * 100;
-    }
+function draw() {
+    // fade effect (trail)
+    ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    draw() {
-        let x = this.offset;
-        while (x < canvas.width) {
-            // dot
-            ctx.beginPath();
-            ctx.arc(x, this.y, 3, 0, Math.PI * 2);
-            ctx.fillStyle = "#00ff66";
-            ctx.shadowBlur = 10;
-            ctx.shadowColor = "#00ff66";
-            ctx.fill();
+    ctx.fillStyle = "#00ff66";
+    ctx.font = fontSize + "px monospace";
+    ctx.shadowColor = "#00ff66";
+    ctx.shadowBlur = 12;
 
-            // dash
-            ctx.fillRect(x + 6, this.y - 1, 12, 2);
+    for (let i = 0; i < drops.length; i++) {
+        const text = chars.charAt(Math.floor(Math.random() * chars.length));
+        const x = i * fontSize;
+        const y = drops[i] * fontSize;
 
-            x += Math.random() * 40 + 30;
+        ctx.fillText(text, x, y);
+
+        if (y > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
         }
-    }
 
-    update() {
-        this.offset -= this.speed;
-        if (this.offset < -100) {
-            this.offset = canvas.width;
-        }
+        drops[i]++;
     }
 }
 
-// create lines
-for (let i = 0; i < lineCount; i++) {
-    lines.push(new Line(Math.random() * canvas.height));
-}
-
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    lines.forEach(line => {
-        line.draw();
-        line.update();
-    });
-
-    requestAnimationFrame(animate);
-}
-
-animate();
+setInterval(draw, 33);
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
