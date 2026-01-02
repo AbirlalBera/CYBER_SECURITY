@@ -52,6 +52,8 @@ sudo bettercap --iface eth0
 ```
 help
 
+help dns.spoof
 
+set dns.spoof.add
 ```
 
