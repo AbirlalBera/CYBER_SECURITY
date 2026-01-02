@@ -37,3 +37,12 @@ sudo bash mitm.sh
 ```   
 
 -----------
+**Go to the mitmproxy folder** 
+
+Run ----> 
+
+```
+./mitmweb -m transparent -s /home/ranger/Desktop/mitm/mitm-sslstrip.py 
+```
+
+-------------
