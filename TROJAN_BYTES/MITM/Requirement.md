@@ -1,4 +1,64 @@
-First 
+First we have to perform Arp-Poisoning atttack with the victim machine 
+
+## How to Perform (In VM):
+
+We have two machines **Kali** (Attacker)  and  **Windows** (Victim)  machines.
+
+
+Physical Address and IP of Windows System ---->
+
+```
+Physical Address. . . . . . . . . : 00-0C-29-5B-B9-15
+
+ IPv4 Address. . . . . . . . . . . : 192.168.229.132
+```
+
+
+Physical Address and IP of Linux System ---->
+
+```
+ether 00:0c:29:f2:93:7b
+
+inet 192.168.229.131
+```
+
+Router IP adress ---->
+
+```
+192.168.229.2
+```
+
+---------------
+## Attack (In Kali) :
+
+```
+sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132 
+```
+
+This command performs **ARP spoofing against the router** by sending fake ARP replies that map the **Windows victim’s IP address** to the **attacker’s MAC address**.
+
+### What it achieves
+
+- Poisons the **router’s ARP cache**
+
+- Redirects packets meant for **Windows → Kali**
+
+- Intercepts **incoming traffic** (router → victim)
+
+```
+sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
+```
+
+This command performs **ARP spoofing against the Windows victim** by sending fake ARP replies that map the **router’s IP address** to the **attacker’s MAC address**.
+
+### What it achieves
+
+- Poisons the **Windows ARP cache**
+
+- Redirects packets meant for **router → Kali**
+
+- Intercepts **outgoing traffic** (victim → router)
+
 
 
 
