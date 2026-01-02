@@ -1,0 +1,1 @@
+We are going to perform DNS spoof attack using **bettercap** tool
