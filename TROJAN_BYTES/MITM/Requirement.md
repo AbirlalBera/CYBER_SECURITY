@@ -48,3 +48,5 @@ Run ---->
 -------------
 ![[Pasted image 20260102084728.png]]
 
+If ` Errno 98] Transparent Proxy failed to listen on *:8080 with [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): [errno 98] address already in use`   this error occurs then kill the process.
+
