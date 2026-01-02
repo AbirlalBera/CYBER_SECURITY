@@ -49,3 +49,9 @@ sudo arpspoof -i eth0 -t 192.168.229.132 192.168.229.2
 sudo bettercap --iface eth0
 ```
 
+```
+help
+
+
+```
+
