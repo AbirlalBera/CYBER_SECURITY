@@ -1,4 +1,4 @@
-Download the files from mitmproxy website (https://www.mitmproxy.org/)
+*Download* the files from mitmproxy website (https://www.mitmproxy.org/)
 
 Current version (1/1/2026) (https://www.mitmproxy.org/downloads/#12.2.1/)
 
@@ -46,7 +46,7 @@ Run ---->
 ```
 
 -------------
-Caution :
+### Caution :
 
 ![[Pasted image 20260102084728.png]]
 
