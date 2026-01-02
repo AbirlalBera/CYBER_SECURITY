@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matrix Dot Animation</title>
+<style>
+    body {
+        margin: 0;
+        background: black;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const lines = [];
+const lineCount = 40;
+
+class Line {
+    constructor(y) {
+        this.y = y;
+        this.speed = Math.random() * 0.5 + 0.2;
+        this.offset = Math.random() * 100;
+    }
+
+    draw() {
+        let x = this.offset;
+        while (x < canvas.width) {
+            // dot
+            ctx.beginPath();
+            ctx.arc(x, this.y, 3, 0, Math.PI * 2);
+            ctx.fillStyle = "#00ff66";
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = "#00ff66";
+            ctx.fill();
+
+            // dash
+            ctx.fillRect(x + 6, this.y - 1, 12, 2);
+
+            x += Math.random() * 40 + 30;
+        }
+    }
+
+    update() {
+        this.offset -= this.speed;
+        if (this.offset < -100) {
+            this.offset = canvas.width;
+        }
+    }
+}
+
+// create lines
+for (let i = 0; i < lineCount; i++) {
+    lines.push(new Line(Math.random() * canvas.height));
+}
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    lines.forEach(line => {
+        line.draw();
+        line.update();
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+</script>
+
+</body>
+</html>
