@@ -19,7 +19,9 @@ set arp.spoof.targets 192.168.229.132
 
 --------------
 
-Step 2 : 
+Step 2 : Starting Dns spoofing
+
+
 
 
 
