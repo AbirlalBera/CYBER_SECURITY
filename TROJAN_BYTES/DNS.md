@@ -50,3 +50,12 @@ When you type a URL into your browser, a "DNS lookup" occurs. This is a multi-st
 ## what is DNS Caching 
 
 **DNS Caching** is the temporary storage of DNS lookup results (IP addresses) on your device or across the network. Its main goal is to make the internet faster by preventing your computer from having to ask the entire "DNS hierarchy" for the same website address every time you click a link.
+
+---
+## The Role of TTL (Time to Live)
+
+DNS records aren't stored forever. Every record comes with a **TTL (Time to Live)** value, which is a timer set by the website owner.
+
+**High TTL (e.g., 24 hours):** Good for stable websites. It reduces traffic and makes things fast but means if the site moves to a new server, it might take a day for everyone to see the change.
+
+ **Low TTL (e.g., 5 minutes):** Good for sites that change often. It's more "accurate" but forces the computer to do more lookups.
