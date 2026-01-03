@@ -56,7 +56,15 @@ set dns.spoof.domains testfire.net,aitindia.in
 dns.spoof on
 ```
 
+-----------
+### How the Attack Works (Step-by-Step Overview)
+
+1.**ARP Poisoning/Spoofing**: The attacker tricks the victim's Windows machine and the network gateway (router) into sending traffic through the attacker's Kali machine. This positions the attacker as a MITM.
 
 
+2.**DNS Interception and Spoofing**: While in the middle, the attacker captures DNS queries (e.g., for "facebook.com") from the victim and replies with a fake IP pointing to a malicious server (often hosted on the Kali machine itself, e.g., a phishing page).
+
+
+3.**Redirection**: The Windows user types a legitimate URL but loads the attacker's fake site. The browser shows the correct domain, making it hard to detect (especially without HTTPS warnings).
 
 
