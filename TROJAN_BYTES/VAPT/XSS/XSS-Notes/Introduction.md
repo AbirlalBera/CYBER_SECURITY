@@ -40,17 +40,17 @@ XSS vulnerabilities jeopardize the overall security of a website or application.
 XSS attacks are categorized into three main types:
 
 1. **Reflected XSS (Non-Persistent XSS)**: Occurs when data sent from a user is immediately reflected by a web application without proper filtering and then executed by the user's browser. Malicious scripts are usually sent via URL parameters and executed when the user opens the URL.
-    
+
 2. **Stored XSS (Persistent XSS)**: Happens when malicious scripts are stored in the web application's database and executed when other users view the affected content.
-    
+
 3. **DOM-based XSS (DOM XSS)**: Malicious scripts are executed directly by manipulating the Document Object Model (DOM) in the user's browser. Here, the attacker triggers the execution of a web application's client-side scripts by altering the DOM.
-    
+
 
 ### Key Concepts
 
 **HTML (Hyper Text Markup Language)**: A standard markup language used to create web pages.
 
-```auto
+```
 <html>
     <head>
         <title>Home</title>
