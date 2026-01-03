@@ -1,4 +1,4 @@
-
+DNS spoofing (also known as DNS cache poisoning) is a cyberattack where an attacker corrupts the Domain Name System (DNS) resolution process by injecting false information. This causes a DNS server or resolver to return an incorrect IP address for a domain name, redirecting users to a malicious website instead of the legitimate one. The user sees the correct domain in their browser but connects to an attacker-controlled server, enabling phishing, data theft, malware distribution, or man-in-the-middle (MITM) attacks.
 
 
 
