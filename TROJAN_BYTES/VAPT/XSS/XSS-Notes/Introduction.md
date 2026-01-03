@@ -125,3 +125,6 @@ This CSP rule allows loading scripts only from the same origin (self) and [https
 |<svg>|Used to create vector graphics.|
 
 
+
+
+
