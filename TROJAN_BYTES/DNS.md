@@ -29,4 +29,19 @@ When you manage a website, you use different "records" to tell the internet wher
 |**CNAME**|Canonical Name|Creates an alias (points one domain to another domain).|
 |**MX**|Mail Exchanger|Specifies where to send emails for that domain.|
 |**TXT**|Text Record|Used for verification (like proving you own the site to Google).|
---
+
+---
+## How DNS Works (The Lookup Process)
+
+When you type a URL into your browser, a "DNS lookup" occurs. This is a multi-step process involving several servers that work together to find the right IP address.
+
+1. **DNS Recursor:** The "librarian." This is usually provided by your ISP. It receives your request and goes searching through other servers to find the answer.
+
+2. **Root Nameserver:** The first stop in the hierarchy. It doesn't know the IP, but it knows where to find the **Top-Level Domain (TLD)** servers (like `.com` or `.org`).
+
+3. **TLD Nameserver:** This server manages a specific extension. If you're looking for `example.com`, the `.com` TLD server will point you toward the server that actually owns that domain.
+
+4. **Authoritative Nameserver:** The final stop. This server holds the actual "A Record" (IP address) for the domain. It returns the IP to the Recursor, which then gives it to your browser.
+
+---
+
