@@ -43,6 +43,8 @@ When you type a URL into your browser, a "DNS lookup" occurs. This is a multi-st
 
 4. **Authoritative Nameserver:** The final stop. This server holds the actual "A Record" (IP address) for the domain. It returns the IP to the Recursor, which then gives it to your browser.
 
+![[Pasted image 20260103171347.png]]
+
 ---
 
 ## what is DNS Caching 
