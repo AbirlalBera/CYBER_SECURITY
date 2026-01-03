@@ -19,7 +19,7 @@ set arp.spoof.targets 192.168.229.132 (Victim IP)
 
 --------------
 
-## Step 2 : Start apache on 
+## Step 2 : Start apache on kali
 
 ```
 sudo systemctl start apache2 
