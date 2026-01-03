@@ -8,12 +8,21 @@ We have two machines **Kali** (Attacker)  and  **Windows** (Victim)  machines.
 
 ```
 sudo bettercap --iface eth0
-```
 
-
-```
 net.probe on
+
+arp.spoof on
+
+set arp.spoof.targets 192.168.229.132
+
 ```
+
+--------------
+
+Step 2 : 
+
+
+
 
 
 
