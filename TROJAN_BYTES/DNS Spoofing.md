@@ -67,4 +67,11 @@ dns.spoof on
 
 3.**Redirection**: The Windows user types a legitimate URL but loads the attacker's fake site. The browser shows the correct domain, making it hard to detect (especially without HTTPS warnings).
 
+--------------
+### Prevention for Windows Users
 
+- Use **HTTPS Everywhere** (browsers enforce it now) to detect mismatches.
+- Enable **DNS over HTTPS (DoH)** in Windows settings or browsers (e.g., Firefox, Chrome).
+- Use a **VPN** on untrusted networks.
+- Network segmentation and ARP protection on switches (e.g., Dynamic ARP Inspection).
+- Tools like ARPwatch or antivirus with network monitoring.
