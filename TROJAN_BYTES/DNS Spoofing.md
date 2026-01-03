@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 We are going to perform DNS spoof attack using **bettercap** tool ------
 
 ## Step 1 : First we have to perform Arp-Poisoning atttack with the victim machine (Using bettercap tool)
@@ -24,6 +39,8 @@ set arp.spoof.targets 192.168.229.132 (Victim IP)
 ```
 sudo systemctl start apache2 
 ```
+
+Here we host a dummy website 
 
 ------------
 ## Step 3 : Starting dns spoofing 
