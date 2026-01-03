@@ -45,3 +45,6 @@ When you type a URL into your browser, a "DNS lookup" occurs. This is a multi-st
 
 ---
 
+## what is DNS Caching 
+
+**DNS Caching** is the temporary storage of DNS lookup results (IP addresses) on your device or across the network. Its main goal is to make the internet faster by preventing your computer from having to ask the entire "DNS hierarchy" for the same website address every time you click a link.
