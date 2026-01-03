@@ -1,0 +1,1 @@
+**DNS (Domain Name System)** is often called the "phonebook of the internet." Its primary job is to translate human-friendly domain names (like `google.com`) into machine-friendly IP addresses (like `142.250.190.46`).
