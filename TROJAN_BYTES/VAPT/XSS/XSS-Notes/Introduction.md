@@ -102,27 +102,15 @@ This CSP rule allows loading scripts only from the same origin (self) and [https
 
 ### Commonly Used HTML Tags in XSS Attacks
 
-| HTML Tag | Description                                  |
-| -------- | -------------------------------------------- |
-| <script> | Used to include JavaScript code in the page. |
-|<img>|Used to embed an image.|
-|<iframe>|Used to embed another web page into the current page.|
-|<a>|Used to create a hyperlink.|
-|<input>|Used to get user input.|
-|<textarea>|Used to get multi-line user input.|
-|<svg>|Used to create vector graphics.|
-
-
-
-| HTML Tag | Description                                  |
-| -------- | -------------------------------------------- |
-| <script> | Used to include JavaScript code in the page. |
-|<img>|Used to embed an image.|
-|<iframe>|Used to embed another web page into the current page.|
-|<a>|Used to create a hyperlink.|
-|<input>|Used to get user input.|
-|<textarea>|Used to get multi-line user input.|
-|<svg>|Used to create vector graphics.|
+|HTML Tag|Description|
+|---|---|
+|`<script>`|Used to include JavaScript code in the page.|
+|`<img>`|Used to embed an image.|
+|`<iframe>`|Used to embed another web page into the current page.|
+|`<a>`|Used to create a hyperlink.|
+|`<input>`|Used to get user input.|
+|`<textarea>`|Used to get multi-line user input.|
+|`<svg>`|Used to create vector graphics.|
 
 
 
