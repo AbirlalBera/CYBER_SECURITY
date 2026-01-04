@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Explained: Types, Vulnerabilities, and Prevention</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #00ffc6;
+            text-shadow: 0 0 10px #00ffc6;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #00ffc6; }
+            to { text-shadow: 0 0 20px #00ffc6; }
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #00ffc6;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ffc6;
+            animation: fadeInDiagram 1.5s ease-in-out;
+        }
+        @keyframes fadeInDiagram {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .vuln-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding Cross-Site Scripting (XSS)</h1>
+    <p>An interactive guide to XSS types, vulnerabilities, and protections</p>
+</header>
+
+<section data-aos="fade-up" data-aos-duration="1000">
+    <h2>What is XSS?</h2>
+    <p>Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into webpages viewed by other users. This can lead to data theft, session hijacking, or defacement.</p>
+
+<grok-card data-id="81cb0a" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>Overview diagram showing how XSS works.</p>
+
+<grok-card data-id="4be5cb" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+</section>
+
+<section data-aos="fade-right" data-aos-duration="1200">
+    <h2>Types of XSS</h2>
+
+    <h3>1. Reflected XSS</h3>
+    <p>Reflected XSS occurs when user input is immediately returned in the response without proper sanitization, often in search results or error messages.</p>
+
+<grok-card data-id="237c34" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>Diagram of Reflected XSS attack flow.</p>
+
+<grok-card data-id="17a015" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+
+    <h3>2. Stored XSS</h3>
+    <p>Stored XSS involves injecting scripts that are stored on the server (e.g., in comments or profiles) and executed when other users view the content.</p>
+
+<grok-card data-id="9564d8" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>Diagram illustrating Stored XSS.</p>
+
+<grok-card data-id="673e0f" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+
+    <h3>3. DOM-Based XSS</h3>
+    <p>DOM-Based XSS happens client-side when JavaScript takes unsanitized input and writes it to the DOM, allowing script execution.</p>
+
+<grok-card data-id="c0d07d" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>DOM-Based XSS attack model diagram.</p>
+
+<grok-card data-id="17d447" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+</section>
+
+<section data-aos="zoom-in" data-aos-duration="1000">
+    <h2>Vulnerabilities in XSS Types</h2>
+    <ul class="vuln-list">
+        <li><strong>Reflected:</strong> Vulnerable to phishing links with malicious payloads in URLs.</li>
+        <li><strong>Stored:</strong> Affects all users viewing the stored content, high impact on forums/blogs.</li>
+        <li><strong>DOM-Based:</strong> Exploits client-side scripts, hard to detect server-side.</li>
+    </ul>
+</section>
+
+<section data-aos="fade-left" data-aos-duration="1200">
+    <h2>Prevention: CSP and Security Headers</h2>
+    <p>Content Security Policy (CSP) is a header that helps prevent XSS by controlling resource loading.</p>
+
+<grok-card data-id="a7cb5a" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>CSP overview diagram.</p>
+
+<grok-card data-id="078a90" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+
+    <p>Other Security Headers: X-XSS-Protection, Content-Type Options, X-Frame-Options.</p>
+
+<grok-card data-id="f2743e" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+    <p>HTTP Security Headers diagram.</p>
+
+<grok-card data-id="6f81d0" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+</section>
+
+<footer>
+    <p>Created on January 02, 2026 • For educational purposes</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
