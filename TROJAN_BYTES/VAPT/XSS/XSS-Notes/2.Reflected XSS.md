@@ -84,7 +84,7 @@ Secure Code Example
 
 In this example, the **htmlspecialchars** function is used to safely output user input. This function converts HTML-specific characters (<,>,&,",' etc.) into their HTML entities (&lt;,&gt;,&amp;,&quot;,&#039;etc.).
 
-```auto
+```
 <?php 
     if (isset($_GET['q'])) {
         $q = $_GET['q'];
