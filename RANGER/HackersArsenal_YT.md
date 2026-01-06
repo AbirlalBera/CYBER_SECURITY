@@ -132,3 +132,14 @@ sqlmap -u "https://target.com/index.php?id=1" --dbs --batch --random-agent
 ---
 # 9.Automate SSRF Discovery
 
+Gopherus
+
+```
+
+```
+
+interactsh
+
+```
+
+```
