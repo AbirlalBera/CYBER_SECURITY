@@ -247,5 +247,11 @@ waffwoof https://target.com
 GitDumper
 
 ```
-python3 GitDumper.py httmps://target.com/.git
+python3 GitDumper.py https://target.com/.git /output-folder/
 ```
+
+---
+# 19.Automating Reverse Shell Generation
+
+msfvenom
+
