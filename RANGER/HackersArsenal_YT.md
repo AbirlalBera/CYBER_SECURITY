@@ -89,3 +89,17 @@ python3 linkfinder.py -i https://target.com/script.js -o results.html
 cat js_files.txt | gf apikey > secrets.txt
 ```
 
+---
+
+# 6.Automating parameter Discovery
+
+Arjun
+
+```
+```
+
+paramspider
+
+```
+
+```
