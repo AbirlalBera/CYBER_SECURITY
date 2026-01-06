@@ -242,4 +242,10 @@ waffwoof https://target.com
 ```
 
 ---
-# 18.Automating Information Disclosure D
+# 18.Automating Information Disclosure Detection
+
+GitDumper
+
+```
+python3 GitDumper.py httmps://target.com/.git
+```
