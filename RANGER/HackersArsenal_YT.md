@@ -215,3 +215,10 @@ waybackurls target.com > waybacktxt
 ```
 
 ---
+# 15.Automating S3 Bucket Enumaration
+
+AWSBucketDump
+
+```
+
+```
