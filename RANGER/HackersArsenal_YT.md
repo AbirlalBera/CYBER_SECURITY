@@ -233,3 +233,10 @@ python3 cmseek.py -u target.com
 ```
 
 ---
+# 17.Automating WAF Detection
+
+wafwoof
+
+```
+
+```
