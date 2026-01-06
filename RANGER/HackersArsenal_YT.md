@@ -108,3 +108,12 @@ python3 paramspider.py -d target.com --level high -o params.txt
 ---
 
 # 7.Automate XSS Detection
+
+dalfox
+
+```
+
+```
+
+XSStrike
+
