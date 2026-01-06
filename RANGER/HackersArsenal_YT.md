@@ -41,11 +41,16 @@ nmap -p- --open -sV -sC -T4 -oN nmap_results.txt target.com
 Eyewitness
 
 ```
-eyewitness -f subdomais
+eyewitness -f subdomais.txt --web
 ```
 
 Aquatone
 
 ```
-
+cat subdomains.txt | aquatone -out screenshots/
 ```
+
+---
+
+# 4.Automating Directory BruteForcing
+
