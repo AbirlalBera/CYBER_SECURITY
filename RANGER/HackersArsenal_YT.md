@@ -62,8 +62,13 @@ cat subdomains.txt | aquatone -out screenshots/
 
 Ffuf
 
+```
+ffuf -u https://target.com/FUZZ -w /usr/share/wordlists/dirbu
+```
 Gobuster
 
 Feroxbuster
 
-	
+```
+feroxbuster -u http://target.com/ -s 200,300,301
+```
