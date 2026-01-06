@@ -182,3 +182,11 @@ Nikto
 ```
 nikto -h target.com
 ```
+
+---
+
+# 13.Automating API Recon
+
+postman
+
+kiterunner
