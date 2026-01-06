@@ -145,4 +145,11 @@ interactsh-client -v
 ```
 
 ---
-# 10.
+# 10.Automating LFI and RFI
+
+Lfisuit
+
+```
+
+```
+
