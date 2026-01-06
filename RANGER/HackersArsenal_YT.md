@@ -20,4 +20,10 @@ amass enum -passive -d target.com -o subdomains.txt
 ```
 
 ---
-# 2.
+# 2.Port Scanning
+
+Masscan
+
+```
+masscan -p1-65535 --rate 10000 -o
+```
