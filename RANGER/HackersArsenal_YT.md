@@ -150,6 +150,11 @@ interactsh-client -v
 Lfisuit
 
 ```
+python lfisuite.py "https://target.com"
+```
+
+flimap
 
 ```
 
+```
