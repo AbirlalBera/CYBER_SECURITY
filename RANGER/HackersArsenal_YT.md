@@ -38,3 +38,14 @@ nmap -p- --open -sV -sC -T4 -oN nmap_results.txt target.com
 
 # 3.Automating Screenshot Capture For Subdomains
 
+Eyewitness
+
+```
+eyewitness -f subdomais
+```
+
+Aquatone
+
+```
+
+```
