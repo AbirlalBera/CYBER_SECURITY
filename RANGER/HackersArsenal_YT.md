@@ -86,4 +86,6 @@ feroxbuster -u http://target.com/ -s 200,300,301
 
 ```
 python3 linkfinder.py -i https://target.com/script.js -o results.html
+cat js_files.txt | gf apikey > secrets.txt
 ```
+
