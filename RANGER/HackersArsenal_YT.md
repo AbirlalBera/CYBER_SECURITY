@@ -10,13 +10,13 @@ subfinder -d target.com -o subdomains.txt
 Assetfinder
 
 ```
-subfinder -d target.com -o subdomains.txt
+assetfinder --subs-only target.com >> subdomains.txt
 ```
 
 Amass
 
 ```
-ama -d target.com -o subdomains.txt
+amass enum -passive -d target.com -o subdomains.txt
 ```
 
 ---
