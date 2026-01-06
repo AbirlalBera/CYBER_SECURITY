@@ -171,5 +171,14 @@ python3 oralyzer.py -l urls.txt -p payloads.txt
 ---
 # 12.Automating Security header check
 
-httpx
+httpx-toolkit
 
+```
+httpx -u target.com -sc -tittle -server -o headers.txt
+```
+
+Nikto
+
+```
+nikto -h target.com
+```
