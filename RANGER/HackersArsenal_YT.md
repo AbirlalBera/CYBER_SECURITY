@@ -121,10 +121,13 @@ python3 XSStrike/xsstike.py -u "https://target.com/index.php?search=query"
 ```
 
 ---
-# 8.Automate SQL Detection
+# 8.Automate SQL Injection
 
 sqlmap
 
 ```
-
+sqlmap -u "https://target.com/index.php?id=1" --dbs --batch --random-agent
 ```
+
+---
+9.
