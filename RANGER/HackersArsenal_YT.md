@@ -224,4 +224,12 @@ python3 AWSBucketDump.py -l target-buckets.txt
 ```
 
 ---
-# 16.Automating CMS E
+# 16.Automating CMS Enumaration
+
+CMSeek
+
+```
+python3 cmseek.py -u target.com
+```
+
+---
