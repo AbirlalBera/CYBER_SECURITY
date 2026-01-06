@@ -96,11 +96,15 @@ cat js_files.txt | gf apikey > secrets.txt
 Arjun
 
 ```
-python3 paramspider.py -d target.com --level high -o params.txt
+arjun -u https://target.com/api -m GET -o params.json
 ```
 
 paramspider
 
 ```
-arjun -u https://
+python3 paramspider.py -d target.com --level high -o params.txt
 ```
+
+---
+
+# 7.Automate XSS Detection
