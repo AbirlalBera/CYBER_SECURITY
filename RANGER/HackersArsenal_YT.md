@@ -54,3 +54,8 @@ cat subdomains.txt | aquatone -out screenshots/
 
 # 4.Automating Directory BruteForcing
 
+Ffuf
+
+Gobuster
+
+Feroxbuster
