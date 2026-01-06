@@ -84,3 +84,6 @@ feroxbuster -u http://target.com/ -s 200,300,301
 
 # 5.Automating JavaScript Ananlysis
 
+```
+python3 linkfinder.py -i https://target.com/script.js -o results.html
+```
