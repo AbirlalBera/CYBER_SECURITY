@@ -79,3 +79,8 @@ Feroxbuster
 ```
 feroxbuster -u http://target.com/ -s 200,300,301
 ```
+
+---
+
+# 5.Automating JavaScript Ananlysis
+
