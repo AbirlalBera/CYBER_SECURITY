@@ -112,8 +112,11 @@ python3 paramspider.py -d target.com --level high -o params.txt
 dalfox
 
 ```
-
+cat params.txt | dalfox pipe -o xss_results.txt
 ```
 
 XSStrike
 
+```
+python3 XSStrike/xsstike.py -u "https://target.com/indexe"
+```
