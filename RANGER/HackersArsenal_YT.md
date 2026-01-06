@@ -238,5 +238,8 @@ python3 cmseek.py -u target.com
 wafwoof
 
 ```
-
+waffwoof https://target.com
 ```
+
+---
+# 18.Automating Information Disclosure D
