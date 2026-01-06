@@ -160,4 +160,5 @@ fimap -u "https://target.com/index.php?file=test"
 ```
 
 ---
-11.
+# 11.Automating Open Redirect Detection
+
