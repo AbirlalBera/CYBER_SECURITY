@@ -220,5 +220,8 @@ waybackurls target.com > waybacktxt
 AWSBucketDump
 
 ```
-
+python3 AWSBucketDump.py -l target-buckets.txt
 ```
+
+---
+# 16.Automating CMS E
