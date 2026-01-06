@@ -200,4 +200,8 @@ kiterunner -u https://target.com -w wordlists/apis.txt
 ```
 
 ---
-#
+# 14.Automating Content Discovery
+
+gau
+
+waybackurls
