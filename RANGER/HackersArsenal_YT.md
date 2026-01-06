@@ -63,9 +63,16 @@ cat subdomains.txt | aquatone -out screenshots/
 Ffuf
 
 ```
-ffuf -u https://target.com/FUZZ -w /usr/share/wordlists/dirbu
+
+ffuf -u https://target.com/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o ffuf_results.txt
+
 ```
+
 Gobuster
+
+```
+gobuster
+```
 
 Feroxbuster
 
