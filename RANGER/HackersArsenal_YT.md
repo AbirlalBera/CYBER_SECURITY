@@ -34,6 +34,12 @@ Nmap
 nmap -p- --open -sV -sC -T4 -oN nmap_results.txt target.com
 ```
 
+Rustscan
+
+```
+rustscan -a testfire.net -- -sC -sV -O
+```
+
 ---
 
 # 3.Automating Screenshot Capture For Subdomains
@@ -59,3 +65,5 @@ Ffuf
 Gobuster
 
 Feroxbuster
+
+	
