@@ -255,3 +255,6 @@ python3 GitDumper.py https://target.com/.git /output-folder/
 
 msfvenom
 
+```
+
+```
