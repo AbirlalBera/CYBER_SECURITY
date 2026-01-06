@@ -189,4 +189,15 @@ nikto -h target.com
 
 postman
 
+```
+
+```
+
 kiterunner
+
+```
+kiterunner -u https://target.com -w wordlists/apis.txt
+```
+
+---
+#
