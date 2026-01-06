@@ -71,7 +71,7 @@ ffuf -u https://target.com/FUZZ -w /usr/share/wordlists/dirbuster/directory-list
 Gobuster
 
 ```
-gobuster
+gobuster dir -u https://target.com -w /usr/share/wordlists/dirb/common.txt -o gobuster_results.txt
 ```
 
 Feroxbuster
