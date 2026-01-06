@@ -162,9 +162,14 @@ fimap -u "https://target.com/index.php?file=test"
 ---
 # 11.Automating Open Redirect Detection
 
+Oralyzer
+
 ```
 python3 oralyzer.py -l urls.txt -p payloads.txt
 ```
 
 ---
-12
+# 12.Automating Security header check
+
+httpx
+
