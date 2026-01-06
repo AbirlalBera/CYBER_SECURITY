@@ -135,11 +135,14 @@ sqlmap -u "https://target.com/index.php?id=1" --dbs --batch --random-agent
 Gopherus
 
 ```
-
+python3 gopherus.py
 ```
 
 interactsh
 
 ```
-
+interactsh-client -v
 ```
+
+---
+# 10.
