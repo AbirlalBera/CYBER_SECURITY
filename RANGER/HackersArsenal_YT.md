@@ -204,4 +204,14 @@ kiterunner -u https://target.com -w wordlists/apis.txt
 
 gau
 
+```
+gau target.com | tee urls.txt
+```
+
 waybackurls
+
+```
+waybackurls target.com > waybacktxt
+```
+
+---
