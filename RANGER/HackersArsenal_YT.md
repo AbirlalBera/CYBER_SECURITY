@@ -96,10 +96,11 @@ cat js_files.txt | gf apikey > secrets.txt
 Arjun
 
 ```
+python3 paramspider.py -d target.com --level high -o params.txt
 ```
 
 paramspider
 
 ```
-
+arjun -u https://
 ```
