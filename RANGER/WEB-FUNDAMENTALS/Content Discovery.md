@@ -111,6 +111,7 @@ Wordlists are just text files that contain a long list of commonly used words; t
 Although there are many different content discovery tools available, all with their features and flaws, we're going to cover three which are preinstalled on our attack box, **ffuf**, **dirb** and **gobuster**.
 
 
+### **Using ffuf:**
 
 ```shell-session
 
@@ -118,3 +119,10 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http:/
 
 ```
 
+![[Pasted image 20260107202153.png]]
+
+
+### **Using dirb:**
+
+
+dirb http://10.48.158.29/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
