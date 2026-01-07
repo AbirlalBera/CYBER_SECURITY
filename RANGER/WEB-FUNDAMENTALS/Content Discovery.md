@@ -24,7 +24,7 @@ The favicon is a small icon displayed in the browser's address bar or tab used f
 Unlike the robots.txt file, which restricts what search engine crawlers can look at, the sitemap.xml file gives a list of every file the website owner wishes to be listed on a search engine. These can sometimes contain areas of the website that are a bit more difficult to navigate to or even list some old webpages that the current site no longer uses but are still working behind the scenes.
 
 
-**HTTP Headers**
+**4.HTTP Headers**
 
 When we make requests to the web server, the server returns various HTTP headers. These headers can sometimes contain useful information such as the webserver software and possibly the programming/scripting language in use.Try running the below curl command against the web server, where the **-v** switch enables verbose mode, which will output the headers
 
@@ -51,9 +51,12 @@ root@ip-10-48-110-94:~# curl http://10.48.172.79 -v
 ```
 
 
-Framework Stack
+**5.Framework Stack**
 
 Once we've established the framework of a website, either from the above favicon example or by looking for clues in the page source such as comments, copyright notices or credits, you can then locate the framework's website. From there, we can learn more about the software and other information, possibly leading to more content we can discover.
 
 ---
 
+## OSINT Discovery -
+
+1.
