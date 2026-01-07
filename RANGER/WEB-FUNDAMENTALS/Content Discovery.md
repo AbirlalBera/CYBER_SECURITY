@@ -112,3 +112,9 @@ Although there are many different content discovery tools available, all with th
 
 
 
+```shell-session
+
+ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://10.48.158.29/FUZZ
+
+```
+
