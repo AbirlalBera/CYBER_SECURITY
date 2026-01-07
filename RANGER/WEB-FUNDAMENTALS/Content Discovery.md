@@ -124,7 +124,6 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http:/
 
 ### **Using dirb:**
 
-
 ```shell
 dirb http://10.48.158.29/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
@@ -139,3 +138,4 @@ gobuster dir --url http://10.48.158.29/ -w /usr/share/wordlists/SecLists/Discove
 ```
 
 
+![[Pasted image 20260107202535.png]]
