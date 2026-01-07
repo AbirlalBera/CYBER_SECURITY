@@ -76,4 +76,3 @@ Google hacking / Dorking utilizes Google's advanced search engine features, whic
 More information about google hacking can be found here: [https://en.wikipedia.org/wiki/Google_hacking](https://en.wikipedia.org/wiki/Google_hacking)
 
 
-2.
