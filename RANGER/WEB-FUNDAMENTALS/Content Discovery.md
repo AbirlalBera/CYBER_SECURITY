@@ -93,3 +93,8 @@ S3 Buckets are a storage service provided by Amazon AWS, allowing people to sa
 
 ---
 
+## Automated Discovery -
+
+
+
+
