@@ -1,4 +1,13 @@
 
-Types of subdomain enumeration methods
+### Types of subdomain enumeration methods -
 
-three different subdomain enumeration methods: Brute Force, OSINT (Open-Source Intelligence) and Virtual Host.
+There are three different subdomain enumeration methods: 
+
+```
+1.Brute Force
+
+2.OSINT (Open-Source Intelligence) 
+
+3.Virtual Host.
+```
+
