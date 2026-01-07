@@ -53,3 +53,7 @@ root@ip-10-48-110-94:~# curl http://10.48.172.79 -v
 
 Framework Stack
 
+Once we've established the framework of a website, either from the above favicon example or by looking for clues in the page source such as comments, copyright notices or credits, you can then locate the framework's website. From there, we can learn more about the software and other information, possibly leading to more content we can discover.
+
+---
+
