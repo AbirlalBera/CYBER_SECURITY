@@ -125,4 +125,7 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http:/
 ### **Using dirb:**
 
 
+```shell
 dirb http://10.48.158.29/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+```
+
