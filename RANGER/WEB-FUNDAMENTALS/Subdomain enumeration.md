@@ -19,4 +19,8 @@ There are three different subdomain enumeration methods:
 
 https://crt.sh/   =   It offer a searchable database of certificates that shows current and historical results.
 
+![[Pasted image 20260108200428.png]]
+
+
+**Search Engines : **
 
