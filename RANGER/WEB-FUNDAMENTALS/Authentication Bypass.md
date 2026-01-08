@@ -9,3 +9,13 @@ ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "user
 
 ```
 
+This ffuf command is used to **check which usernames already exist** on a signup page.
+
+- **`-w`**: Points to a wordlist containing usernames to test
+- **`FUZZ`**: Placeholder where each username from the wordlist is inserted
+- **`-X POST`**: Sends a POST request (instead of the default GET)
+- **`-d`**: Sends form data (username, email, password, cpassword)
+- **`-H`**: Adds headers, here specifying form data content type
+- **`-u`**: Target URL for the request
+- **`-mr`**: Looks for the response text _"username already exists"_ to confirm a valid username
+
