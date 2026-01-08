@@ -45,3 +45,7 @@ sublist3r -d kali.org -t 3 -e bing
 
 ## Brute Force -
 
+**Dnsrecon**
+
+Bruteforce DNS (Domain Name System) enumeration is the method of trying tens, hundreds, thousands or even millions of different possible subdomains from a pre-defined list of commonly used subdomains. Because this method requires many requests, we automate it with tools to make the process quicker. In this instance, we are using a tool called dnsrecon to perform this
+
