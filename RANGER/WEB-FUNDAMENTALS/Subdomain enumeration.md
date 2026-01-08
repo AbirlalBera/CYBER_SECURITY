@@ -15,6 +15,8 @@ There are three different subdomain enumeration methods:
 ## OSINT -
 
 
-SSL/TLS Certificates
+**SSL/TLS Certificates :**
 
 https://crt.sh/   =   It offer a searchable database of certificates that shows current and historical results.
+
+
