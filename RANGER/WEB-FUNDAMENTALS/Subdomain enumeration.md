@@ -22,5 +22,7 @@ https://crt.sh/   =   It offer a searchable database of certificates that shows 
 ![[Pasted image 20260108200428.png]]
 
 
-**Search Engines : **
+**Search Engines :**
+
+Using advanced search methods on websites like Google, such as the `site: filter`, can narrow the search results. For example, `site:*.domain.com -site:www.domain.com` would only contain results leading to the domain name domain.com but exclude any links to www.domain.com; therefore, it shows us only subdomain names belonging to domain.com.
 
