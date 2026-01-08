@@ -12,3 +12,8 @@ There are three different subdomain enumeration methods:
 ```
 
 ---
+## OSINT -
+
+
+SSL/TLS Certificates
+
