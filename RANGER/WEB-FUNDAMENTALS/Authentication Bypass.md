@@ -19,3 +19,7 @@ This ffuf command is used to **check which usernames already exist** on a signup
 - **`-u`**: Target URL for the request
 - **`-mr`**: Looks for the response text _"username already exists"_ to confirm a valid username
 
+https://github.com/ffuf/ffuf   :   worlist and tool
+
+
+
