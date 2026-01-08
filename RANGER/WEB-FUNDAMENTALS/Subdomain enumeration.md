@@ -76,6 +76,14 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.
 
 ```
 
+```
+EXAMPLE :  
+
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.48.160.174 -fs 2395
+
+```
+
 This command has a similar syntax to the first apart from the **-fs** switch, which tells **ffuf** to ignore any results that are of the specified size.
+
 
 
