@@ -36,3 +36,11 @@ site:*.tryhackme.com -site:www.tryhackme.com
 To speed up the process of OSINT subdomain discovery, we can automate the above methods with the help of tools like [Sublist3r](https://www.kali.org/tools/sublist3r/)
 
 
+```
+sublist3r -d kali.org -t 3 -e bing
+```
+
+
+---
+
+## Brute Force
