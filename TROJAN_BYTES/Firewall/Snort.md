@@ -63,3 +63,65 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 - `-c /etc/snort/snort.conf` → Loads the main Snort configuration file
 
 ---
+## Start Snort (Common Modes)
+
+### 🔍 IDS mode (console alerts)
+
+`sudo snort -i ens33 -c /etc/snort/snort.conf -A console`
+
+- `-i ens33` → network interface
+    
+- `-c snort.conf` → config & rules
+    
+- `-A console` → show alerts on screen
+    
+
+🧠 **Good for learning & labs**
+
+---
+
+### 📝 IDS mode (log alerts to files)
+
+`sudo snort -i ens33 -c /etc/snort/snort.conf -l /var/log/snort`
+
+- Logs alerts to `/var/log/snort`
+    
+
+---
+
+### 🔇 Quiet background mode
+
+`sudo snort -i ens33 -c /etc/snort/snort.conf -q -l /var/log/snort`
+
+- `-q` → quiet (no banner)
+    
+
+---
+
+### 🧪 Quick test (no config, basic detection)
+
+`sudo snort -i ens33 -A console`
+
+---
+
+## Verify it’s running
+
+In another terminal:
+
+`ps aux | grep snort`
+
+Or generate traffic (e.g., ping, nmap) and watch alerts.
+
+---
+
+## Stop Snort
+
+Press:
+
+`CTRL + C`
+
+---
+
+## Memory trick 🧠
+
+> **Remove `-T`, add `-A` or `-l`**
