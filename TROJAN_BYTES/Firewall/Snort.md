@@ -20,9 +20,14 @@ sudo ip link set ens33 promisc on
 man snort
 ```
 
+---
+
 ```
 ls -al /etc/snort
 ```
 
 ![[Pasted image 20260109214745.png]]
 
+```
+sudo vim /etc/snort/snort.conf
+```
