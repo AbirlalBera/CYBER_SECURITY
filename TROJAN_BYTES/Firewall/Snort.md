@@ -6,6 +6,9 @@ snort --version
 
 ![[Pasted image 20260109214335.png]]
 
+---
+
+
 ```
-sudo ip link s
+sudo ip link set ens33 promisc on
 ```
