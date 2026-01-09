@@ -31,3 +31,4 @@ ls -al /etc/snort
 ```
 sudo vim /etc/snort/snort.conf
 ```
+
