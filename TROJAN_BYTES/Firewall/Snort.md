@@ -23,7 +23,7 @@ man snort
 ---
 
 ```
-ls -al /etc/snort
+ls -al /etc/snort [Lists all fil]
 ```
 
 ![[Pasted image 20260109214745.png]]
@@ -36,6 +36,6 @@ sudo vim /etc/snort/snort.conf
 
 ```
 ipvar HOME_NET any ->  ipvar HOME_NET 192.168.229.130/24 [Machine IP]
-
-
 ```
+
+---
