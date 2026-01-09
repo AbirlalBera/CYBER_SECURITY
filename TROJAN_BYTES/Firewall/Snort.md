@@ -44,8 +44,22 @@ ipvar HOME_NET any ->  ipvar HOME_NET 192.168.229.130/24 [Machine IP]
 ```
 
 ---
-### Lets start snort :
+### Lets test Snort’s configuration :
 
 ```
 sudo snort -T -i ens33 -c /etc/snort/snort.conf
 ```
+
+- `sudo`   → Runs Snort with root privileges (needed for network access)
+
+- `snort`  → Starts the Snort IDS/IPS program
+
+- `-T` (**Test mode**)  
+   → Checks the configuration and rule files  
+   → **Does NOT capture traffic**
+   
+- `-i ens33` → Specifies the network interface to test (e.g., `ens33`)
+
+- `-c /etc/snort/snort.conf`  
+    → Loads the main Snort configuration file
+---
