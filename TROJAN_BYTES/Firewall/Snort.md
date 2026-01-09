@@ -35,5 +35,7 @@ sudo vim /etc/snort/snort.conf
 ![[Pasted image 20260109215450.png]]
 
 ```
-ipvar HOME_NET any ->  ipvar HOME_NET 192.168.229.130/
+ipvar HOME_NET any ->  ipvar HOME_NET 192.168.229.130/24 [Machine IP]
+
+
 ```
