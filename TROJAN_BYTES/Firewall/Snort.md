@@ -60,6 +60,6 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
    
 - `-i ens33` → Specifies the network interface to test (e.g., `ens33`)
 
-- `-c /etc/snort/snort.conf`  
-    → Loads the main Snort configuration file
+- `-c /etc/snort/snort.conf` → Loads the main Snort configuration file
+
 ---
