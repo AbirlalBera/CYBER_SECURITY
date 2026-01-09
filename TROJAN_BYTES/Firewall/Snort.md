@@ -46,4 +46,6 @@ ipvar HOME_NET any ->  ipvar HOME_NET 192.168.229.130/24 [Machine IP]
 ---
 ### Lets start snort :
 
-
+```
+sudo snort -T -i ens33 -c /etc/snort/snort.conf
+```
