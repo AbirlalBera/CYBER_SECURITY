@@ -25,3 +25,4 @@ ls -al /etc/snort
 ```
 
 ![[Pasted image 20260109214745.png]]
+
