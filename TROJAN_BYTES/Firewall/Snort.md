@@ -14,3 +14,8 @@ snort --version
 sudo ip link set ens33 promisc on
 ```
 
+---
+
+```
+man snort
+```
