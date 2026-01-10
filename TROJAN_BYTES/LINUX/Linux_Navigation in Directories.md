@@ -108,11 +108,7 @@ drwxr-xr-x 2 user users 4096 Jul 29 08:24 Videos
 -rwxr-xr-x 1 user users  500 Aug 01 11:00 script.sh
 ```
 
-In the output obtained with the
-
--l
-
-parameter, we see columns with the following structure:
+In the output obtained with the -l parameter, we see columns with the following structure:
 
 |**Field**|**Description**|
 |---|---|
