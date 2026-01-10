@@ -13,17 +13,15 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 
 3.**Create Burp Proxy Configuration:** In the FoxyProxy options pop-up, click the **Options** button. This will open a new browser tab with the FoxyProxy configurations. Click the **Add** button to create a new proxy configuration.
 
-![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/5a73425b5de3395c5db2962b9d613506.png)
-    
-4. **Add Proxy Details:** On the "Add Proxy" page, fill in the following values:
-    
-    - Title: `Burp` (or any preferred name)
-    - Proxy IP: `127.0.0.1`
-    - Port: `8080`
-    
-      
-    
-    ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/b2d6f2b724f123070ca434bf2759df91.png)
+![[Pasted image 20260110195000.png]]   
+
+4.**Add Proxy Details:** On the "Add Proxy" page, fill in the following values:
+ 
+- Title: `Burp` (or any preferred name)
+- Proxy IP: `127.0.0.1`
+- Port: `8080`
+
+ ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/b2d6f2b724f123070ca434bf2759df91.png)
     
 5. **Save Configuration:** Click **Save** to save the Burp Proxy configuration.
     
