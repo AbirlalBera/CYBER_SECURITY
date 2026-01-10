@@ -41,8 +41,15 @@ There is not a single shell in Linux. You can change it according to your needs.
 **To find out which shell you are using:**
 
 ```
-```auto
 user@hackerbox:~$ echo $SHELL
 /bin/bash
 ```
-```
+
+
+### What is a Terminal?
+
+The terminal application acts as a gateway allowing users to interact with the shell, offering a text-based interface where commands can be entered and their outputs seen.
+
+**Useful Terminal Commands:**
+
+1. **clear (Clear Screen):** Used to clean the terminal screen when it gets filled with commands.
