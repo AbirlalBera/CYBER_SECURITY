@@ -111,6 +111,7 @@ The first command finishes, and then the second one runs immediately, even if th
 
 ```
 user@hackerbox:~$ echo "First Command" ; date
+
 First Command
 Fri Oct 20 14:30:00 UTC 2026
 ```
@@ -154,11 +155,11 @@ The **Shebang** is a special character sequence at the very beginning of a scrip
 ### Common Shebang Examples:
 
 - **Bash Script:** `#!/bin/bash`
-    
+
 - **Python Script:** `#!/usr/bin/python3`
-    
+
 - **Perl Script:** `#!/usr/bin/perl`
-    
+
 
 ### Example Script:
 
