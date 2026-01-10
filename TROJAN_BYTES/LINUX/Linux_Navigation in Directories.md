@@ -36,7 +36,6 @@ Example:
 dirname /home/user/notes.txt → /home/user
 ```
 
-
 ---
 
 ## 2. Changing Directory (`cd`)
