@@ -37,4 +37,8 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 
 ![[Pasted image 20260110195601.png]]
 
+```
+http://burp/
+```
+
 
