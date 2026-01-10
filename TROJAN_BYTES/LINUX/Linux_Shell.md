@@ -66,29 +66,13 @@ Every time the terminal opens, the shell reads some hidden settings files in you
 
 **If using Zsh:**  .zshrc
 
+**Example Scenario:** We want to clear the screen by typing just c instead of clear every time.
 
-**Example Scenario:** We want to clear the screen by typing just
+1 . Open the file with nano editor:  nano ~/.bashrc
 
-c
+2 . Add this line to the bottom:  alias c='clear'
 
-instead of
-
-clear
-
-every time.
-
-1. Open the file with nano editor: 
-    
-    nano ~/.bashrc
-    
-2. Add this line to the bottom: 
-    
-    alias c='clear'
-    
-3. Save and exit (
-    
-    CTRL+O
-    
+3 . Save and exit ( CTRL+O   
     , 
     
     Enter
@@ -98,6 +82,6 @@ every time.
     CTRL+X
     
     ).
-4. Load settings: 
+4 . Load settings: 
     
     source ~/.bashrc
