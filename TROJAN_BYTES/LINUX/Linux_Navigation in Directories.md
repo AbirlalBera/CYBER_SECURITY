@@ -185,7 +185,13 @@ Sometimes you need to temporarily check another place while working in a directo
 
 ### Usage
 
-`user@hackerbox:~/project$ pushd /var/log /var/log ~/project user@hackerbox:/var/log$ popd ~/project user@hackerbox:~/project$`
+```
+user@hackerbox:~/project$ pushd /var/log
+/var/log ~/project
+user@hackerbox:/var/log$ popd
+~/project
+user@hackerbox:~/project$
+```
 
 With `pushd` we teleported to `/var/log` but threw our old location into memory.  
 When we said `popd`, we returned exactly to where we left off (`~/project`).
@@ -196,7 +202,18 @@ When we said `popd`, we returned exactly to where we left off (`~/project`).
 
 Visualizes the directory structure like a tree branch.
 
-`user@hackerbox:~$ tree -L 2 . ├── Desktop ├── Documents │   ├── Work │   │   └── ProjectA │   └── Personal │       └── Photos └── Downloads     └── installer.zip`
+```
+user@hackerbox:~$ tree -L 2
+.
+├── Desktop
+├── Documents
+│   ├── Work
+│   │   └── ProjectA
+│   └── Personal
+│       └── Photos
+└── Downloads
+    └── installer.zip
+```
 
 Allows us to understand the nested structure of directories at a glance.  
 The `-L 2` parameter tells it to only go **2 levels deep**.
