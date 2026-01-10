@@ -94,7 +94,7 @@ The **`ls`** command lists the contents of a directory. Flags are used to custom
 |**`-R`**|Recursive|Lists all subdirectories and their contents.|
 |**`-S`**|Size Sort|Sorts files by size (largest first).|
 
-### Detailed Analysis of `ls -l` Output
+### Detailed Analysis of `ls -l` : **Detailed Listing**
 
 ```auto
 user@hackerbox:~$ ls -l
@@ -121,11 +121,19 @@ In the output obtained with the -l parameter, we see columns with the following 
 |`Desktop`|Name of the file/directory|
 Here we see that **Desktop** and **Documents** are directories (`d`), others are files (`-`), along with their sizes and dates.
 
----
-
 ## Example Scenario 2: Seeing Hidden Files (`ls -la`)
 
-`user@hackerbox:~$ ls -la total 32 drwxr-xr-x 5 user user 4096 Oct 20 10:00 . drwxr-xr-x 3 root root 4096 Oct 20 09:00 .. -rw------- 1 user user  220 Oct 20 09:00 .bash_logout -rw------- 1 user user 3771 Oct 20 09:00 .bashrc -rw------- 1 user user  807 Oct 20 09:00 .profile drwxr-xr-x 2 user user 4096 Oct 20 10:00 Documents drwxr-xr-x 2 user user 4096 Oct 20 10:00 Downloads`
+```auto
+user@hackerbox:~$ ls -la
+total 32
+drwxr-xr-x 5 user user 4096 Oct 20 10:00 .
+drwxr-xr-x 3 root root 4096 Oct 20 09:00 ..
+-rw------- 1 user user  220 Oct 20 09:00 .bash_logout
+-rw------- 1 user user 3771 Oct 20 09:00 .bashrc
+-rw------- 1 user user  807 Oct 20 09:00 .profile
+drwxr-xr-x 2 user user 4096 Oct 20 10:00 Documents
+drwxr-xr-x 2 user user 4096 Oct 20 10:00 Downloads
+```
 
 Normally hidden configuration files like `.bashrc` appeared.  
 `.` (current directory) and `..` (parent directory) are also listed.
