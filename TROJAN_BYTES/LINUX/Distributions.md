@@ -39,33 +39,33 @@ Based on Debian.
 - **Features:** The most popular distribution. It is the system where solutions are easiest to find on the internet when you encounter problems.
 - **Desktop:** Uses GNOME by default.
 
-Fedora
+## Fedora
 
 Based on Red Hat.
 
 - **Target Audience:** Developers.
 - **Features:** The first distribution to use innovative technologies. The distribution used by Linus Torvalds.
 
-CentOS / Rocky Linux
+## CentOS / Rocky Linux
 
 Based on Red Hat (RHEL).
 
 - **Target Audience:** Servers.
 - **Features:** Free copy of paid RHEL. Very stable, can run for years without shutting down.
 
-Debian
+## Debian
 
 - **Target Audience:** Those wanting stability.
 - **Features:** A system that is "very hard to break". Packages are heavily tested, so they might be slightly older versions but very reliable.
 
-Kali Linux
+## Kali Linux
 
 Based on Debian.
 
 - **Target Audience:** Penetration Testers.
 - **Features:** Not suitable for daily use. Comes ready with tools like Wireshark, Metasploit, Nmap. Tends to run with root privileges.
 
-Arch Linux
+## Arch Linux
 
 - **Target Audience:** Advanced users.
 - **Features:** No installation wizard, installed via commands. Uses "Rolling Release" model, meaning no versions, always the latest.
