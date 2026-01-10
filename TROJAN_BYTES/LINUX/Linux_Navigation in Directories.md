@@ -70,12 +70,14 @@ user@hackerbox:~$
 Wherever you are, it teleports you to your home directory `/home/username`.
 ### Returning to Previous Directory (`cd -`)
 
-```user@hackerbox:~$ cd /etc user@hackerbox:/etc$ cd - /home/user user@hackerbox:~$```
+```
+
+user@hackerbox:~$ cd /etc user@hackerbox:/etc$ cd - /home/user user@hackerbox:~$
+```
 
 First we went to the `/etc` directory, then by saying `cd -` we returned to where we came from.
 
 ---
-
 ## 3. Listing Contents (`ls`)
 
 The **`ls`** command lists the contents of a directory. Flags are used to customize the view.
@@ -92,11 +94,8 @@ The **`ls`** command lists the contents of a directory. Flags are used to custom
 |**`-R`**|Recursive|Lists all subdirectories and their contents.|
 |**`-S`**|Size Sort|Sorts files by size (largest first).|
 
----
-
 ### Detailed Analysis of `ls -l` Output
 
-Bash
 
 ```
 -rw-r--r-- 1 user users 2100 Aug 01 12:00 notes.txt
