@@ -58,3 +58,46 @@ The terminal application acts as a gateway allowing users to interact with the s
 
 3 . **type (Command Type):** Shows what a command really is (alias, builtin, file).
 
+### Shell Configuration Files ( .bashrc , .zshrc)
+
+Every time the terminal opens, the shell reads some hidden settings files in your home directory ( /home/user). You can add your own shortcuts to these files.
+
+**If using Bash:**  .bashrc
+
+**If using Zsh:**  .zshrc
+
+
+**Example Scenario:** We want to clear the screen by typing just
+
+c
+
+instead of
+
+clear
+
+every time.
+
+1. Open the file with nano editor: 
+    
+    nano ~/.bashrc
+    
+2. Add this line to the bottom: 
+    
+    alias c='clear'
+    
+3. Save and exit (
+    
+    CTRL+O
+    
+    , 
+    
+    Enter
+    
+    , 
+    
+    CTRL+X
+    
+    ).
+4. Load settings: 
+    
+    source ~/.bashrc
