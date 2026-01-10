@@ -52,4 +52,12 @@ The terminal application acts as a gateway allowing users to interact with the s
 
 **Useful Terminal Commands:**
 
-1. **clear (Clear Screen):** Used to clean the terminal screen when it gets filled with commands.
+1 . **clear (Clear Screen):** Used to clean the terminal screen when it gets filled with commands.
+
+2 . **history (Past Commands):** Gives a list of commands you ran before. Great for finding a command you forgot.
+
+3 . **
+
+type
+
+(Command Type):** Shows what a command really is (alias, builtin, file).
