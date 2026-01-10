@@ -50,6 +50,29 @@ Switch between directories using the **`cd`** command.
 |**`cd ~`**|Go Home|Returns to your user home directory (`/home/username`).|
 |**`cd -`**|Toggle|Returns to the previous directory you were in.|
 
+## Practical Examples
+
+### Going Up One Directory (`cd ..`)
+
+```
+user@hackerbox:/var/www$ cd .. 
+user@hackerbox:/var$
+```
+
+We went up from the `/var/www` directory to the `/var` directory.
+### Returning to Home Directory (`cd ~`)
+
+```
+user@hackerbox:/var/log$ cd ~ 
+user@hackerbox:~$
+```
+
+Wherever you are, it teleports you to your home directory `/home/username`.
+### Returning to Previous Directory (`cd -`)
+
+```user@hackerbox:~$ cd /etc user@hackerbox:/etc$ cd - /home/user user@hackerbox:~$```
+
+First we went to the `/etc` directory, then by saying `cd -` we returned to where we came from.
 
 ---
 
