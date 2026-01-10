@@ -2,8 +2,10 @@
 Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 
 1. **Install FoxyProxy:** Download and install the [FoxyProxy Basic extension](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/).
-    
-    **Note: FoxyProxy is already installed on the AttackBox.**
+
+
+
+ **Note: FoxyProxy is already installed on the AttackBox.**
     
 2. **Access FoxyProxy Options:** Once installed, a button will appear at the top right of the Firefox browser. Click on the FoxyProxy button to access the FoxyProxy options pop-up.
     
