@@ -25,6 +25,8 @@ It is an interface managed with windows, icons, and mouse, just like in Windows 
 
 ![](https://storage.hackviser.com/file/hackviser-prod/trainings/sections/images/68a4d2f6-4913-4850-b2cd-ec08a7918b4c/gui-example-50294f77d.webp)
 
+
+---
 ### Shell Types (Bash, Zsh, Fish)
 
 There is not a single shell in Linux. You can change it according to your needs.
@@ -45,7 +47,7 @@ user@hackerbox:~$ echo $SHELL
 /bin/bash
 ```
 
-
+---
 ### What is a Terminal?
 
 The terminal application acts as a gateway allowing users to interact with the shell, offering a text-based interface where commands can be entered and their outputs seen.
@@ -75,3 +77,21 @@ Every time the terminal opens, the shell reads some hidden settings files in you
 3 . Save and exit ( CTRL+O , Enter, CTRL+X).
 
 4 . Load settings: source ~/.bashrc
+
+---
+### Environment Variables
+
+Dynamic values that affect how the operating system and programs work.
+
+**Most Important Variables:**
+
+|Variable|Description|
+|---|---|
+|$HOME|User's home directory.|
+|$USER|Current username.|
+|$PWD|Present Working Directory.|
+|$SHELL|Shell program used.|
+|$PATH|List of directories where commands are searched.|
+
+---
+
