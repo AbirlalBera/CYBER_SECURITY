@@ -44,3 +44,4 @@ http://burp/
 
 ![[Pasted image 20260110195730.png]]
 
+![[Pasted image 20260110195938.png]]
