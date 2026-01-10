@@ -33,4 +33,8 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
     
     ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/645b19f5d5848d004ab9c9e2/room-content/9e0f6f47486737deff0e16c4e066120f.png)  
     
-8. **Test the Proxy:** Open Firefox and try accessing a website, such as the homepage for `http://10.48.181.147/`. Your browser will hang, and the proxy will populate with the HTTP request. Congratulations, you have successfully intercepted your first request!
+6. **Test the Proxy:** Open Firefox and try accessing a website,
+
+![[Pasted image 20260110195601.png]]
+
+
