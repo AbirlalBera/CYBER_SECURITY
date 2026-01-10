@@ -44,14 +44,19 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 http://burp/
 ```
 
-Then Download the CA certificate : 
+**Then Download the CA certificate :** 
 
 ![[Pasted image 20260110195730.png]]
 
+After that go to the browser setting : 
 ![[Pasted image 20260110195938.png]]
+
+Now Import the certificate :
 
 ![[Pasted image 20260110200041.png]]
 
 ![[Pasted image 20260110200108.png]]
 
 ![[Pasted image 20260110200138.png]]
+
+And Done !!!!!!!
