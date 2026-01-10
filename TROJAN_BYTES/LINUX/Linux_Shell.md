@@ -72,16 +72,6 @@ Every time the terminal opens, the shell reads some hidden settings files in you
 
 2 . Add this line to the bottom:  alias c='clear'
 
-3 . Save and exit ( CTRL+O   
-    , 
-    
-    Enter
-    
-    , 
-    
-    CTRL+X
-    
-    ).
-4 . Load settings: 
-    
-    source ~/.bashrc
+3 . Save and exit ( CTRL+O , Enter, CTRL+X).
+
+4 . Load settings: source ~/.bashrc
