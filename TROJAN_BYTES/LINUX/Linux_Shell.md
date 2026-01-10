@@ -95,3 +95,79 @@ Dynamic values that affect how the operating system and programs work.
 
 ---
 
+## Command Chaining Operators
+
+Command chaining allows you to execute multiple commands in a single line, creating simple "one-liner" logic flows based on success or failure.
+
+| **Operator** | **Name**        | **Logic**                                                                                      |
+| ------------ | --------------- | ---------------------------------------------------------------------------------------------- |
+| **`;`**      | **Semicolon**   | Runs commands **sequentially**. The second command runs regardless of the first one's outcome. |
+| **`&&`**     | **Logical AND** | Runs the second command **only if** the first one succeeds (Exit Code 0).                      |
+
+
+### 1. Sequential Execution (`;`)
+
+The first command finishes, and then the second one runs immediately, even if the first one results in an error.
+
+```
+user@hackerbox:~$ echo "First Command" ; date
+First Command
+Fri Oct 20 14:30:00 UTC 2026
+```
+
+> **Result:** The text is printed, and the date is shown immediately after.
+
+### 2. Continue if Successful (`&&`)
+
+This is commonly used for installing software or compiling code where the second step depends on the first one working.
+
+Bash
+
+```
+user@hackerbox:~$ mkdir test_folder && cd test_folder
+user@hackerbox:~/test_folder$ pwd
+/home/user/test_folder
+```
+
+> **Result:** Since `mkdir` successfully created the folder, the `cd` command executed. If the folder already existed, `mkdir` would error, and you would **not** move into the directory.
+
+### 3. Run if Error (`||`)
+
+This acts as an "error handler." It is frequently used to provide custom error messages or fallback actions.
+
+Bash
+
+```
+user@hackerbox:~$ cd secret_vault || echo "Access Denied or Directory Missing!"
+-bash: cd: secret_vault: No such file or directory
+Access Denied or Directory Missing!
+```
+
+> **Result:** Because the `cd` command failed, the `echo` command was triggered to notify the user.
+
+---
+
+## Script Start: The Shebang (`#!`)
+
+The **Shebang** is a special character sequence at the very beginning of a script that tells the operating system which interpreter to use to execute the file.
+
+### Common Shebang Examples:
+
+- **Bash Script:** `#!/bin/bash`
+    
+- **Python Script:** `#!/usr/bin/python3`
+    
+- **Perl Script:** `#!/usr/bin/perl`
+    
+
+### Example Script:
+
+Bash
+
+```
+#!/bin/bash
+echo "Hello World"
+echo "Current user: $USER"
+```
+
+> **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
