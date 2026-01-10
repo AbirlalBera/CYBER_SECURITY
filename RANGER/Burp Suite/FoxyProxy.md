@@ -21,19 +21,19 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 - Proxy IP: `127.0.0.1`
 - Port: `8080`
 
- ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/b2d6f2b724f123070ca434bf2759df91.png)
+ ![[Pasted image 20260110200411.png]]
 
 5. **Save Configuration:** Click **Save** to save the Burp Proxy configuration.
 
 6. **Activate Proxy Configuration:** Click on the FoxyProxy icon at the top-right of the Firefox browser and select the `Burp` configuration. This will redirect your browser traffic through `127.0.0.1:8080`. Note that Burp Suite must be running for your browser to make requests when this configuration is activated.
-    
-    ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/20f5e9db304d164b57c7f7d89fabc63a.png)
-    
+
+![[Pasted image 20260110200448.png]]
+
 7. **Enable Proxy Intercept in Burp Suite:** Switch to Burp Suite and ensure that Intercept is turned on in the **Proxy** tab.
     
     ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/645b19f5d5848d004ab9c9e2/room-content/9e0f6f47486737deff0e16c4e066120f.png)  
     
-6. **Test the Proxy:** Open Firefox and try accessing a website,
+8. **Test the Proxy:** Open Firefox and try accessing a website,
 
 ![[Pasted image 20260110195601.png]]
 
