@@ -96,10 +96,23 @@ The **`ls`** command lists the contents of a directory. Flags are used to custom
 
 ### Detailed Analysis of `ls -l` Output
 
-
-```
+```auto
+user@hackerbox:~$ ls -l
+total 16
+drwxr-xr-x 2 user users 4096 Jul 29 08:24 Desktop
+drwxr-xr-x 2 user users 4096 Jul 29 08:24 Documents
+drwxr-xr-x 2 user users 4096 Jul 29 08:24 Downloads
+drwxr-xr-x 2 user users 4096 Jul 29 08:24 Pictures
+drwxr-xr-x 2 user users 4096 Jul 29 08:24 Videos
 -rw-r--r-- 1 user users 2100 Aug 01 12:00 notes.txt
+-rwxr-xr-x 1 user users  500 Aug 01 11:00 script.sh
 ```
+
+In the output obtained with the
+
+-l
+
+parameter, we see columns with the following structure:
 
 |**Field**|**Description**|
 |---|---|
