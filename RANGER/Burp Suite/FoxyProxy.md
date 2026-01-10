@@ -48,10 +48,10 @@ http://burp/
 
 ![[Pasted image 20260110195730.png]]
 
-After that go to the browser setting : 
+**After that go to the browser setting :** 
 ![[Pasted image 20260110195938.png]]
 
-Now Import the certificate :
+**Now Import the certificate :**
 
 ![[Pasted image 20260110200041.png]]
 
