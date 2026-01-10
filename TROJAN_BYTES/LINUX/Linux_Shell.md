@@ -159,11 +159,7 @@ The **Shebang** is a special character sequence at the very beginning of a scrip
 - **Python Script:** `#!/usr/bin/python3`
 
 - **Perl Script:** `#!/usr/bin/perl`
-
-
 ### Example Script:
-
-Bash
 
 ```
 #!/bin/bash
@@ -172,3 +168,6 @@ echo "Current user: $USER"
 ```
 
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
+
+
+
