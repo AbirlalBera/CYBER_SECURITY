@@ -12,18 +12,30 @@ user@hackerbox:~$ pwd
 
 ### Path Manipulation Utilities
 
-realpath: Shows the absolute (full) path of a specific file.
+**realpath:** Shows the absolute (full) path of a specific file.
 
-Example: realpath notes.txt → /home/user/notes.txt
+```
+Example: 
 
-basename: Strips the directory path and returns only the filename.
+realpath notes.txt → /home/user/notes.txt
+```
 
-    Example: basename /home/user/notes.txt → notes.txt
+**basename:** Strips the directory path and returns only the filename.
 
-dirname: Strips the filename and returns only the directory path.
-    
-    Example: dirname /home/user/notes.txt → /home/user
-        
+```
+Example: 
+
+basename /home/user/notes.txt → notes.txt
+```
+
+**dirname:** Strips the filename and returns only the directory path.
+
+```
+Example: 
+
+dirname /home/user/notes.txt → /home/user
+```
+
 
 ---
 
