@@ -50,6 +50,7 @@ Switch between directories using the **`cd`** command.
 |**`cd ~`**|Go Home|Returns to your user home directory (`/home/username`).|
 |**`cd -`**|Toggle|Returns to the previous directory you were in.|
 
+
 ---
 
 ## 3. Listing Contents (`ls`)
