@@ -123,7 +123,7 @@ Here we see that **Desktop** and **Documents** are directories (`d`), others are
 
 ## Example Scenario 2: Seeing Hidden Files (`ls -la`)
 
-```auto
+```
 user@hackerbox:~$ ls -la
 total 32
 drwxr-xr-x 5 user user 4096 Oct 20 10:00 .
@@ -135,22 +135,34 @@ drwxr-xr-x 2 user user 4096 Oct 20 10:00 Documents
 drwxr-xr-x 2 user user 4096 Oct 20 10:00 Downloads
 ```
 
-Normally hidden configuration files like `.bashrc` appeared.  
-`.` (current directory) and `..` (parent directory) are also listed.
-
----
+Normally hidden configuration files like `.bashrc` appeared. `.` (current directory) and `..` (parent directory) are also listed.
 
 ## Example Scenario 3: Sorting by Time (`ls -lt`)
 
-`user@hackerbox:~$ ls -lt total 16 -rw-r--r-- 1 user user 2100 Oct 20 12:00 notes.txt -rwxr-xr-x 1 user user  500 Oct 20 11:00 script.sh drwxr-xr-x 2 user user 4096 Oct 20 10:00 Documents drwxr-xr-x 2 user user 4096 Oct 20 10:00 Downloads`
+```
+user@hackerbox:~$ ls -lt
+total 16
+-rw-r--r-- 1 user user 2100 Oct 20 12:00 notes.txt
+-rwxr-xr-x 1 user user  500 Oct 20 11:00 script.sh
+drwxr-xr-x 2 user user 4096 Oct 20 10:00 Documents
+drwxr-xr-x 2 user user 4096 Oct 20 10:00 Downloads
+```
 
 The most recently modified file (`notes.txt`) appears at the top.
 
----
-
 ## Example Scenario 4: Listing All Subdirectories (`ls -R`)
 
-`user@hackerbox:~$ ls -R .: Documents  Downloads  notes.txt  ./Documents: Report.pdf  Picture.jpg  ./Downloads: installer.zip`
+```
+user@hackerbox:~$ ls -R
+.:
+Documents  Downloads  notes.txt
+
+./Documents:
+Report.pdf  Picture.jpg
+
+./Downloads:
+installer.zip
+```
 
 Not only listed our current directory, but also dumped the contents of its subdirectories.
 
