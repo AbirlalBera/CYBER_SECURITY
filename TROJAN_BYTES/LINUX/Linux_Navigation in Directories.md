@@ -166,11 +166,14 @@ installer.zip
 
 Not only listed our current directory, but also dumped the contents of its subdirectories.
 
----
-
 ## Example Scenario 5: Sorting by Size (`ls -lS`)
 
-`user@hackerbox:~$ ls -lS -rw-r--r-- 1 user user 10485760 Oct 20 12:00 large_file.iso drwxr-xr-x 2 user user     4096 Oct 20 10:00 Documents -rw-r--r-- 1 user user     2100 Oct 20 12:00 notes.txt`
+```
+user@hackerbox:~$ ls -lS
+-rw-r--r-- 1 user user 10485760 Oct 20 12:00 large_file.iso
+drwxr-xr-x 2 user user     4096 Oct 20 10:00 Documents
+-rw-r--r-- 1 user user     2100 Oct 20 12:00 notes.txt
+```
 
 The largest file (`large_file.iso`) is at the top.
 
