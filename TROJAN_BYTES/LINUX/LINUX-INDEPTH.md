@@ -24,14 +24,27 @@ The Linux operating system offers a layered structure between the hardware and t
 
 ![](https://storage.hackviser.com/file/hackviser-prod/trainings/sections/images/68a4d2f6-4913-4850-b2cd-ec08a7918b4c/linux-layers-a4d3a0334.webp)
 
-1. **Hardware Layer:** Physical components like CPU, RAM, Disk, Network Card.
-    
-2. **Kernel Layer:** The brain of the operating system.
-    
-    - **Kernel Space:** Secure memory area accessible only by the kernel, talking directly to hardware. Drivers run here.
-    - **User Space:** Restricted area where user applications run. They ask permission from the kernel to access hardware (System Call).
-3. **System Libraries:** Translators that convert complex kernel functions into simple commands that applications can understand (e.g., glibc).
-    
+1 . **Hardware Layer:** Physical components like CPU, RAM, Disk, Network Card.
+
+2 . **Kernel Layer:** The brain of the operating system.
+- **Kernel Space:** Secure memory area accessible only by the kernel, talking directly to hardware. Drivers run here.
+- **User Space:** Restricted area where user applications run. They ask permission from the kernel to access hardware (System Call).
+
+3.   **System Libraries:** Translators that convert complex kernel functions into simple commands that applications can understand (e.g., glibc).
+
 4. **Shell Layer:** Interface that takes commands from the user and forwards them to the kernel (Bash, Zsh).
-    
+
 5. **Application Layer:** Programs that the user runs, such as browsers, text editors, database servers.
+### Linux Boot Process
+
+To better understand a Linux system, it is important to know what happens in the background after pressing the power button.
+
+1. **BIOS/UEFI:** Performs hardware checks (POST) and looks for a bootable device.
+2. **MBR/GPT:** Reads the boot record in the first sector of the disk.
+3. **Bootloader (GRUB):** Shows the operating system selection screen and loads the selected Linux kernel into RAM.
+4. **Kernel:** Recognizes hardware, loads drivers, and mounts the root file system (
+    
+    /
+    
+    ).
+5. **Init System (Systemd/SysVinit):** Runs as the first process (PID 1). Starts background services, network, and login screen.
