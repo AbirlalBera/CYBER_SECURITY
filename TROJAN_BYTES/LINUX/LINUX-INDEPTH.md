@@ -42,11 +42,11 @@ The Linux operating system offers a layered structure between the hardware and t
 To better understand a Linux system, it is important to know what happens in the background after pressing the power button.
 
 1 . **BIOS/UEFI:** Performs hardware checks (POST) and looks for a bootable device.
+
 2 . **MBR/GPT:** Reads the boot record in the first sector of the disk.
+
 3 . **Bootloader (GRUB):** Shows the operating system selection screen and loads the selected Linux kernel into RAM.
-4 . **Kernel:** Recognizes hardware, loads drivers, and mounts the root file system (
-    
-    /
-    
-    ).
+
+4 . **Kernel:** Recognizes hardware, loads drivers, and mounts the root file system ( / ).
+
 5 . **Init System (Systemd/SysVinit):** Runs as the first process (PID 1). Starts background services, network, and login screen.
