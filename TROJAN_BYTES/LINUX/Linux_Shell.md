@@ -56,8 +56,5 @@ The terminal application acts as a gateway allowing users to interact with the s
 
 2 . **history (Past Commands):** Gives a list of commands you ran before. Great for finding a command you forgot.
 
-3 . **
+3 . **type (Command Type):** Shows what a command really is (alias, builtin, file).
 
-type
-
-(Command Type):** Shows what a command really is (alias, builtin, file).
