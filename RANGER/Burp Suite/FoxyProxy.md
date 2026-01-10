@@ -34,13 +34,17 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 8 . **Test the Proxy:** Open Firefox and try accessing a website,
 
 ---
-If it 
+**If it gives error then dont worry follow these steps :**
+
 ![[Pasted image 20260110195601.png]]
+
+**First visit this URL** 
 
 ```
 http://burp/
 ```
 
+Then Download the CA certificate : 
 
 ![[Pasted image 20260110195730.png]]
 
