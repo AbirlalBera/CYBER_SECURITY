@@ -50,3 +50,15 @@ To better understand a Linux system, it is important to know what happens in the
 4 . **Kernel:** Recognizes hardware, loads drivers, and mounts the root file system ( / ).
 
 5 . **Init System (Systemd/SysVinit):** Runs as the first process (PID 1). Starts background services, network, and login screen.
+
+---
+### Main Families by Package Management System
+
+The Linux world is divided into major families based on the package format they use (.deb,.rpm). Commands from one family do not work in another.
+
+| Family      | Package Format | Package Manager | Example Distros             | Feature                                         |
+| ----------- | -------------- | --------------- | --------------------------- | ----------------------------------------------- |
+| **Debian**  | .deb           | apt,dpkg        | Ubuntu, Kali, Mint, Debian  | Most common family. Has wide community support. |
+| **Red Hat** | .rpm           | dnf,yum, rpm    | Fedora, CentOS, RHEL, Rocky | Standard in the corporate world.                |
+| **Arch**    | .pkg.tar.zst   | pacman          | Arch, Manjaro               | Constantly up to date (Rolling Release).        |
+
