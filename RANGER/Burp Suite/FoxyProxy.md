@@ -42,3 +42,5 @@ http://burp/
 ```
 
 
+![[Pasted image 20260110195730.png]]
+
