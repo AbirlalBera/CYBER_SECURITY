@@ -8,12 +8,9 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 
 2 **Access FoxyProxy Options:** Once installed, a button will appear at the top right of the Firefox browser. Click on the FoxyProxy button to access the FoxyProxy options pop-up.
 
-![[Pasted image 20260110194835.png]]
-
-
 3.**Create Burp Proxy Configuration:** In the FoxyProxy options pop-up, click the **Options** button. This will open a new browser tab with the FoxyProxy configurations. Click the **Add** button to create a new proxy configuration.
 
-![[Pasted image 20260110195000.png]]   
+![[Pasted image 20260110194835.png]]
 
 4.**Add Proxy Details:** On the "Add Proxy" page, fill in the following values:
  
@@ -21,6 +18,7 @@ Here are the steps to configure the Burp Suite Proxy with FoxyProxy:
 - Proxy IP: `127.0.0.1`
 - Port: `8080`
 
+![[Pasted image 20260110195000.png]]
  ![[Pasted image 20260110200411.png]]
 
 5. **Save Configuration:** Click **Save** to save the Burp Proxy configuration.
