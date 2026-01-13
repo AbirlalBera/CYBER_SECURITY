@@ -166,8 +166,6 @@ Acknowledges received data.
 
 ➡️ Captures packets with **ACK flag set**
 
----
-
 #### **tcp-fin**
 
 **Definition:**  
@@ -179,8 +177,6 @@ Gracefully **closes a TCP connection**.
 
 ➡️ Captures packets used to **end connections**
 
----
-
 #### **tcp-rst**
 
 **Definition:**  
@@ -191,8 +187,6 @@ Abruptly **resets a TCP connection**.
 `tcpdump "tcp[tcpflags] & tcp-rst != 0"`
 
 ➡️ Captures **reset packets**
-
----
 
 #### **tcp-push**
 
