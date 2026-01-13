@@ -38,16 +38,16 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 **PCAP File Filtering Expression :**
 
-- -host [IP]: Capture traffic from or to a specific host.
+|Command|Explanation|
+|---|---|
+|`tcpdump host IP` or `tcpdump host HOSTNAME`|Filters packets by IP address or hostname|
+|`tcpdump src host IP` or|Filters packets by a specific source host|
+|`tcpdump dst host IP`|Filters packets by a specific destination host|
+|`tcpdump port PORT_NUMBER`|Filters packets by port number|
+|`tcpdump src port PORT_NUMBER`|Filters packets by the specified source port number|
+|`tcpdump dst port PORT_NUMBER`|Filters packets by the specified destination port number|
+|`tcpdump PROTOCOL`|Filters packets by protocol; examples include `ip`, `ip6`, and `icmp`|
 
-- -port [number]: Capture traffic from/to a specific port.
-
-- -src [IP]: Source IP address filter.
-
-- -dst [IP]: Destination IP address filter.
-
-- -tcp, udp, icmp: Capture only specific protocols.
-- 
 ------------------
 
 ### **Basic Capture & Output**
