@@ -57,3 +57,15 @@ Encoders
 
 Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
 
+```
+
+```
+
+Evasion
+
+While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
+
+```
+
+```
+
