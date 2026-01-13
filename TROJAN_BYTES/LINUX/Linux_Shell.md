@@ -51,6 +51,12 @@ user@hackerbox:~$ echo $SHELL
 cat /etc/shells
 ```
 
+If we want to permanently change your default shell, you can use the command: 
+
+```
+chsh -s /usr/bin/zsh
+```
+
 ---
 ### What is a Terminal?
 
