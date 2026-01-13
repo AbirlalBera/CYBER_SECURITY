@@ -49,6 +49,7 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 |`tcpdump PROTOCOL`|Filters packets by protocol; examples include `ip`, `ip6`, and `icmp`|
 
 ------------------
+# Advanced Filtering
 
 ### **Basic Capture & Output**
 
