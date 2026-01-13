@@ -11,3 +11,9 @@ The main components of the Metasploit Framework are :
 - **msfconsole**: The main command-line interface.
 - **Modules**: supporting modules such as exploits, scanners, payloads, etc.
 - **Tools**: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing. Some of these tools are msfvenom, pattern_create and pattern_offset. pattern_create and pattern_offset are tools useful in exploit development.
+
+---
+# **Modules** 
+
+Auxiliary : Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+
