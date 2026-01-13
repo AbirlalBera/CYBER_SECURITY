@@ -232,6 +232,20 @@ echo $i
 done
 ```
 
+```shell
+# Defining the Interpreter 
+#!/bin/bash
+echo "Please enter your name first:"
+read name
+if [ "$name" = "Stewart" ]; 
+then
+   echo "Welcome Stewart! Here is the secret: THM_Script"
+else
+   echo "Sorry! You are not authorized to access the secret."
+fi
+```
+
+
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
 
 >We use `./` before the script to run rather than typing the script name directly because `./` tells the shell to execute the file that is present in the current directory. If you don't define `./` before the script name, the shell will search the script in the PATH environment variable (that contains all the directories except the current one), and it will not find the defined script in any of those directories and generate an error
