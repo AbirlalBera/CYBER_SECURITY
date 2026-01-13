@@ -41,11 +41,17 @@ Bash (Bourne Again Shell) is the most common and standard shell. Comes by defaul
 
 
 
+2 . Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
 
+## Friendly Interactive Shell
 
-Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
+3 . Fish: User-friendly, colors commands as you type and offers suggestions.Friendly Interactive Shell (Fish) is also not default in most Linux distributions. As its name suggests, it focuses more on user-friendliness than other shells. Some of the key features provided by fish are listed below:
 
-3 . Fish: User-friendly, colors commands as you type and offers suggestions.
+- It offers a very simple syntax, which is feasible for beginner users.
+- Unlike bash, it has auto spell correction for the commands you write.
+- You can customize the command prompt with some cool themes using fish.
+- The syntax highlighting feature of fish colors different parts of a command based on their roles, which can improve the readability of commands. It also helps us to spot errors with their unique colors.
+- Fish also provides scripting, tab completion, and command history functionality like the shells mentioned in this task.
 
 
 **To find out which shell you are using:**
