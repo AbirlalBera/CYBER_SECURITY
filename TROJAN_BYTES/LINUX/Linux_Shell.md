@@ -254,6 +254,37 @@ else
 fi
 ```
 
+```shell
+#!/bin/bash
+
+# Defining the variables
+username="" 
+companyname="" 
+pin=""
+
+# Defining the loop
+for i in {1..3}; do
+
+# Defining the conditional statements
+        if [ "$i" -eq 1 ]; then
+                echo "Enter your Username:"
+                read username
+        elif [ "$i" -eq 2 ]; then
+                echo "Enter your Company name:"
+                read companyname else
+                echo "Enter your PIN:"
+                read pin
+        fi
+done
+```
+
+# Checking if the user entered the correct details
+if [ "$username" = "John" ] && [ "$companyname" = "Tryhackme" ] && [ "$pin"= "7385">
+        echo "Authentication Successful. You can now access your locker,John."
+else 
+        echo "Authentication Denied!!"
+fi
+
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
 
 >We use `./` before the script to run rather than typing the script name directly because `./` tells the shell to execute the file that is present in the current directory. If you don't define `./` before the script name, the shell will search the script in the PATH environment variable (that contains all the directories except the current one), and it will not find the defined script in any of those directories and generate an error
