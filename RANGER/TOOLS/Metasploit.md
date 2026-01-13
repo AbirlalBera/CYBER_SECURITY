@@ -350,3 +350,14 @@ info
 **Example (from main prompt):**
 
 `info exploit/windows/smb/ms17_010_eternalblue`
+
+|Command|Purpose|
+|---|---|
+|`setg`|Set a global value for all modules|
+|`unset`|Clear a set value in current module|
+|`unset all`|Clear all values in current module|
+|`unsetg`|Clear a global value|
+|`exploit`|Run the exploit (same as `run`)|
+|`exploit -z`|Run exploit and background session|
+|`background`|Background the current session|
+|`sessions -i`|Interact with an existing session|
