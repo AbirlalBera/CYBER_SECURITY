@@ -53,7 +53,7 @@ auxiliary/
 └── vsploit
 ```
 
-Encoders
+## Encoders
 
 Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
 
@@ -71,7 +71,7 @@ encoders/
 └── x86
 ```
 
-Evasion
+## Evasion
 
 While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
 
@@ -143,13 +143,9 @@ nops/
 Payloads are the **code executed on the target system** after exploitation.
 
 Examples:
-
 - Open a shell
-    
 - Run a command
-    
 - Add a user
-    
 - Launch `calc.exe` (proof of concept)
 
 ```
@@ -185,7 +181,6 @@ generic/shell_reverse_tcp                      → Single
 Used **after a successful compromise**.
 
 Typical actions:
-
 - Privilege escalation
 - Credential harvesting
 - System enumeration
