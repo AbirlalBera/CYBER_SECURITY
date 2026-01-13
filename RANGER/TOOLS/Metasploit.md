@@ -139,3 +139,52 @@ nops/
 └── x86
 ```
 
+**Purpose:**  
+Payloads are the **code executed on the target system** after exploitation.
+
+Examples:
+
+- Open a shell
+    
+- Run a command
+    
+- Add a user
+    
+- Launch `calc.exe` (proof of concept)
+
+```
+payloads/
+├── adapters
+├── singles
+├── stagers
+└── stages
+```
+
+### Payload Types Explained
+
+#### 🔌 Adapters : Wrap payloads into different formats.
+
+- Example: PowerShell wrapper
+    
+
+#### 📦 Singles (Inline Payloads)
+
+Self-contained payloads.
+
+- No additional downloads required
+    
+
+#### 📡 Stagers
+
+Small initial payloads that:
+
+- Create a connection
+    
+- Download the full payload (stage)
+    
+
+#### 📥 Stages
+
+Downloaded by stagers.
+
+- Larger, more complex payloads
