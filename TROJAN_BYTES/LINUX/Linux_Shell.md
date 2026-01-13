@@ -45,6 +45,12 @@ user@hackerbox:~$ echo $SHELL
 /bin/bash
 ```
 
+ We can list down the available shells in your Linux OS by typing :
+ 
+```
+cat /etc/shells
+```
+
 ---
 ### What is a Terminal?
 
