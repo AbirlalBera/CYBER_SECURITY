@@ -56,15 +56,15 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 **greater LENGTH** : Displays packets whose size is **greater than or equal to** the specified length (in bytes).
 
-**Example:** `tcpdump greater 1000`
-
-➡️ Shows packets **≥ 1000 bytes**
+```
+Example: tcpdump greater 1000   [Shows packets ≥ 1000 bytes]
+```
 
 **less LENGTH :** Displays packets whose size is **less than or equal to** the specified length (in bytes).
 
-**Example:** `tcpdump less 64`
-
-➡️ Shows packets **≤ 64 bytes**
+```
+Example: tcpdump less 64     [Shows packets ≤ 64 bytes]
+```
 
 
 
