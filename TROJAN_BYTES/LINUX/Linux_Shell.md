@@ -33,9 +33,17 @@ There is not a single shell in Linux. You can change it according to your needs.
 
 ## 1. Bourne Again Shell
 
-Bash (Bourne Again Shell) is the most common and standard shell. Comes by default in most Linux distributions.
+Bash (Bourne Again Shell) is the most common and standard shell. Comes by default in most Linux distributions.Before bash, some shells like sh, ksh, and csh had different capabilities. Bash came as an enhanced replacement for these shells, borrowing capabilities from all of them. This means that it has many of the features of these old shells and some of its unique abilities. Some of the key features provided by bash are listed below:
 
-2 . Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
+- Bash is a widely used shell with scripting capabilities.
+- It offers a tab completion feature, which means if you are in the middle of completing a command, you can press the tab key on your keyboard. It will automatically complete the command based on a possible match or give you multiple suggestions for completing it.
+- Bash keeps a history file and logs all of your commands. You can use the up and down arrow keys to use the previous commands without typing them again. You can also type `history` to display all your previous commands
+
+
+
+
+
+Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
 
 3 . Fish: User-friendly, colors commands as you type and offers suggestions.
 
