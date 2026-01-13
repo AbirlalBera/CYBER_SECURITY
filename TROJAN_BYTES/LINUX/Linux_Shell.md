@@ -251,6 +251,16 @@ fi
 >We use `./` before the script to run rather than typing the script name directly because `./` tells the shell to execute the file that is present in the current directory. If you don't define `./` before the script name, the shell will search the script in the PATH environment variable (that contains all the directories except the current one), and it will not find the defined script in any of those directories and generate an error
 
 
+#!/bin/bash
+
+echo "Please enter your name first:"
+read -r name
+
+if [ "$name" = "Stewart" ]; then
+    echo "Welcome Stewart! Here is the secret: THM_Script"
+else
+    echo "Sorry! You are not authorized to access the secret."
+fi
 
 
 
