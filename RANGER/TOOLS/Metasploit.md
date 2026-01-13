@@ -58,7 +58,17 @@ Encoders
 Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
 
 ```
-
+encoders/
+├── cmd
+├── generic
+├── mipsbe
+├── mipsle
+├── php
+├── ppc
+├── ruby
+├── sparc
+├── x64
+└── x86
 ```
 
 Evasion
@@ -66,6 +76,16 @@ Evasion
 While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
 
 ```
-
+evasion/
+└── windows
+   ├── applocker_evasion_install_util.rb
+   ├── applocker_evasion_msbuild.rb
+   ├── applocker_evasion_presentationhost.rb
+   ├── applocker_evasion_regasm_regsvcs.rb
+   ├── applocker_evasion_workflow_compiler.rb
+   ├── process_herpaderping.rb
+   ├── syscall_inject.rb
+   ├── windows_defender_exe.rb
+   └── windows_defender_js_hta.rb
 ```
 
