@@ -27,8 +27,13 @@ It is an interface managed with windows, icons, and mouse, just like in Windows 
 
 
 ---
-### Shell Types (Bash, Zsh, Fish)
+### Shell Types {Bash, Zsh, Fish}
 
+Bash : Bourne Again Shell
+
+Zsh :
+
+Fish : 
 There is not a single shell in Linux. You can change it according to your needs.
 
 ```
