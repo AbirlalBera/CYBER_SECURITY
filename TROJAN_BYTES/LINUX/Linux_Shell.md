@@ -27,23 +27,16 @@ It is an interface managed with windows, icons, and mouse, just like in Windows 
 
 
 ---
-### Shell Types {Bash, Zsh, Fish}
+### Shell Types (Bash, Zsh, Fish)
 
-Bash : Bourne Again Shell
-
-Zsh :
-
-Fish : 
 There is not a single shell in Linux. You can change it according to your needs.
 
-```
+1 . Bash (Bourne Again Shell): The most common and standard shell. Comes by default in most Linux distributions.
 
-1. Bash (Bourne Again Shell): The most common and standard shell. Comes by default in most Linux distributions.
+2 . Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
 
-2. Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
+3 . Fish: User-friendly, colors commands as you type and offers suggestions.
 
-3. Fish: User-friendly, colors commands as you type and offers suggestions.
-```
 
 **To find out which shell you are using:**
 
