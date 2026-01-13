@@ -162,29 +162,20 @@ payloads/
 
 ### Payload Types Explained
 
-#### 🔌 Adapters : Wrap payloads into different formats.
+####  Adapters : Wrap payloads into different formats.
 
 - Example: PowerShell wrapper
-    
 
-#### 📦 Singles (Inline Payloads)
-
-Self-contained payloads.
+####  Singles (Inline Payloads) : Self-contained payloads.
 
 - No additional downloads required
-    
 
-#### 📡 Stagers
-
-Small initial payloads that:
+####  Stagers : Small initial payloads that:
 
 - Create a connection
-    
 - Download the full payload (stage)
-    
 
-#### 📥 Stages
-
-Downloaded by stagers.
+#### Stages : Downloaded by stagers. 
 
 - Larger, more complex payloads
+
