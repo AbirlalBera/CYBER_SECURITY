@@ -197,7 +197,7 @@ Access Denied or Directory Missing!
 
 ## Script Start: The Shebang (`#!`)
 
-The **Shebang** is a special character sequence at the very beginning of a script that tells the operating system which interpreter to use to execute the file.
+Every script should start from shebang. Shebang is a combination of some characters that are added at the beginning of a script, starting with `#!` followed by the name of the interpreter to use while executing the script. As we are writing our script in bash, let’s define it as the interpreter in the shebang.
 
 ### Common Shebang Examples:
 
