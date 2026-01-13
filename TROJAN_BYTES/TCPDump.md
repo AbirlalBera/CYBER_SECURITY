@@ -66,7 +66,163 @@ Example: tcpdump greater 1000   [Shows packets ≥ 1000 bytes]
 Example: tcpdump less 64     [Shows packets ≤ 64 bytes]
 ```
 
+## 2️⃣ Binary Operations (Used in Filters)
 
+### **AND (`&`)**
+
+**Definition:**  
+Returns true (`1`) only if **both bits are 1**.
+
+```
+Example: tcpdump "tcp[tcpflags] & tcp-syn != 0" 
+
+[Captures TCP packets where the SYN flag is set]
+```
+
+### **OR (`|`)**
+
+**Definition:**  
+Returns true if **at least one bit is 1**.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"`
+
+ Captures packets with **SYN or ACK** flag set
+
+---
+
+### **NOT (`!`)**
+
+**Definition:**  
+Inverts the bit value (`1 → 0`, `0 → 1`).
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & tcp-rst == 0"`
+
+➡️ Captures TCP packets **without the RST flag**
+
+---
+
+## 3️⃣ Header Byte Filtering Syntax
+
+### **proto[expr:size]**
+
+**Definition:**  
+Accesses a specific byte (or bytes) in a protocol header.
+
+- `proto` → protocol (tcp, ip, udp, icmp, etc.)
+    
+- `expr` → byte offset (starting from 0)
+    
+- `size` → number of bytes (optional)
+    
+
+---
+
+### Example 1: Ethernet Multicast
+
+`tcpdump "ether[0] & 1 != 0"`
+
+**Definition:**  
+Filters Ethernet packets sent to **multicast addresses**.
+
+---
+
+### Example 2: IP Packets with Options
+
+`tcpdump "ip[0] & 0xf != 5"`
+
+**Definition:**  
+Filters IP packets that contain **IP header options**.
+
+---
+
+## 4️⃣ TCP Flag Filtering (Most Common Use)
+
+### **tcp[tcpflags]**
+
+**Definition:**  
+Refers to the **TCP flags field** in the TCP header.
+
+---
+
+### TCP Flags Definitions & Examples
+
+#### **tcp-syn**
+
+**Definition:**  
+Used to **start a TCP connection**.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] == tcp-syn"`
+
+➡️ Captures packets with **only SYN set**
+
+---
+
+#### **tcp-ack**
+
+**Definition:**  
+Acknowledges received data.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & tcp-ack != 0"`
+
+➡️ Captures packets with **ACK flag set**
+
+---
+
+#### **tcp-fin**
+
+**Definition:**  
+Gracefully **closes a TCP connection**.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & tcp-fin != 0"`
+
+➡️ Captures packets used to **end connections**
+
+---
+
+#### **tcp-rst**
+
+**Definition:**  
+Abruptly **resets a TCP connection**.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & tcp-rst != 0"`
+
+➡️ Captures **reset packets**
+
+---
+
+#### **tcp-push**
+
+**Definition:**  
+Forces data to be pushed to the application immediately.
+
+**Example:**
+
+`tcpdump "tcp[tcpflags] & tcp-push != 0"`
+
+➡️ Captures packets with **PSH flag set**
+
+---
+
+## 5️⃣ Combined Flag Filters
+
+### SYN + ACK (Handshake Response)
+
+`tcpdump "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"`
+
+**Definition:**  
+Captures packets used in the **TCP three-way handshake**.
 
 
 ---
