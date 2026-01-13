@@ -120,20 +120,19 @@ Accesses a specific byte (or bytes) in a protocol header.
 
 ### Example 1: Ethernet Multicast
 
-`tcpdump "ether[0] & 1 != 0"`
+```
+tcpdump "ether[0] & 1 != 0"
  
-Filters Ethernet packets sent to **multicast addresses**.
-
----
+Filters Ethernet packets sent to multicast addresses.
+```
 
 ### Example 2: IP Packets with Options
 
-`tcpdump "ip[0] & 0xf != 5"`
+```
+tcpdump "ip[0] & 0xf != 5"
 
-**Definition:**  
-Filters IP packets that contain **IP header options**.
-
----
+Filters IP packets that contain IP header options.
+```
 
 ## 4️⃣ TCP Flag Filtering (Most Common Use)
 
@@ -141,8 +140,6 @@ Filters IP packets that contain **IP header options**.
 
 **Definition:**  
 Refers to the **TCP flags field** in the TCP header.
-
----
 
 ### TCP Flags Definitions & Examples
 
