@@ -21,5 +21,9 @@ Command to check all the modules :
 cd /opt/metasploit-framework/embedded/framework/modules
 ```
 
-Auxiliary : Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+![[Pasted image 20260113210232.png]]
+
+### **1_Auxiliary :**
+
+Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
 
