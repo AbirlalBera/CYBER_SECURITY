@@ -216,14 +216,12 @@ echo "Current user: $USER"
 
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
 
-```
 ```shell
 # Defining the Interpreter 
 #!/bin/bash
 echo "Hey, what’s your name?"
 read name
 echo "Welcome, $name"
-```
 ```
 
 
