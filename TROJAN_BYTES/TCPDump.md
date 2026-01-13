@@ -134,6 +134,7 @@ tcpdump "ip[0] & 0xf != 5"
 Filters IP packets that contain IP header options.
 ```
 
+---
 ## 4️⃣ TCP Flag Filtering (Most Common Use)
 
 ### **tcp[tcpflags]**
@@ -153,8 +154,6 @@ Used to **start a TCP connection**.
 `tcpdump "tcp[tcpflags] == tcp-syn"`
 
 ➡️ Captures packets with **only SYN set**
-
----
 
 #### **tcp-ack**
 
