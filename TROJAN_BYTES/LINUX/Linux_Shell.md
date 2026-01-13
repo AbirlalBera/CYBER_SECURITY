@@ -57,6 +57,12 @@ If we want to permanently change your default shell, you can use the command: 
 chsh -s /usr/bin/zsh
 ```
 
+Switch between shells :
+
+```
+user@tryhackme:~$ zsh 
+tryhackme%
+```
 ---
 ### What is a Terminal?
 
