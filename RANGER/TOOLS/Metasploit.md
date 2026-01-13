@@ -27,3 +27,6 @@ cd /opt/metasploit-framework/embedded/framework/modules
 
 Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
 
+```
+auxiliary/ ├── admin ├── analyze ├── bnat ├── client ├── cloud ├── crawler ├── docx ├── dos ├── example.py ├── example.rb ├── fileformat ├── fuzzers ├── gather ├── parser ├── pdf ├── scanner ├── server ├── sniffer ├── spoof ├── sqli ├── voip └── vsploit
+```
