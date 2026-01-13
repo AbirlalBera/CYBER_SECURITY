@@ -216,7 +216,6 @@ Launches the Metasploit Framework console.
 msfconsole
 ```
 
-
 ## 2️⃣ `search`
 
 **Definition:**  
@@ -224,11 +223,11 @@ Searches Metasploit modules by name, CVE, type, or platform.
 
 **Example:**
 
-`search ms17-010`
+```
+search ms17-010
+```
 
 ➡️ Lists all modules related to the MS17-010 vulnerability.
-
----
 
 ## 3️⃣ `use`
 
@@ -243,8 +242,6 @@ Selects a module to work with (enters module context).
 
 `use 2`
 
----
-
 ## 4️⃣ `show options`
 
 **Definition:**  
@@ -255,8 +252,6 @@ Displays required and optional parameters for the selected module.
 `show options`
 
 ➡️ Shows options like `RHOSTS`, `RPORT`, `LHOST`, etc.
-
----
 
 ## 5️⃣ `set`
 
@@ -271,8 +266,6 @@ Another example:
 
 `set LHOST 10.10.16.17`
 
----
-
 ## 6️⃣ `show payloads`
 
 **Definition:**  
@@ -285,13 +278,10 @@ Lists payloads compatible with the selected exploit.
 ➡️ Helps you choose between:
 
 - `shell_reverse_tcp`
-    
-- `meterpreter/reverse_tcp`
-    
-- staged vs single payloads
-    
 
----
+- `meterpreter/reverse_tcp`
+
+- staged vs single payloads
 
 ## 7️⃣ `run`
 
@@ -304,8 +294,6 @@ Executes the selected module with the configured options.
 
 (You can also use `exploit`, which does the same thing.)
 
----
-
 ## 8️⃣ `sessions`
 
 **Definition:**  
@@ -313,13 +301,14 @@ Lists all active sessions created after exploitation.
 
 **Example:**
 
-`sessions`
+```
+sessions
+```
 
 **Interact with a session:**
 
-`sessions -i 1`
-
----
+```sessions -i 1
+```
 
 ## 9️⃣ `back`
 
@@ -328,9 +317,9 @@ Exits the current module context and returns to the main prompt.
 
 **Example:**
 
-`back`
-
----
+```
+back
+```
 
 ## 🔟 `info`
 
@@ -339,7 +328,9 @@ Displays detailed information about a module (author, CVE, description, options)
 
 **Example (inside module):**
 
-`info`
+```
+info
+```
 
 **Example (from main prompt):**
 
