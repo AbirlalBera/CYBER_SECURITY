@@ -276,7 +276,6 @@ for i in {1..3}; do
                 read pin
         fi
 done
-```
 
 # Checking if the user entered the correct details
 if [ "$username" = "John" ] && [ "$companyname" = "Tryhackme" ] && [ "$pin"= "7385">
@@ -284,6 +283,7 @@ if [ "$username" = "John" ] && [ "$companyname" = "Tryhackme" ] && [ "$pin"= "73
 else 
         echo "Authentication Denied!!"
 fi
+```
 
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
 
