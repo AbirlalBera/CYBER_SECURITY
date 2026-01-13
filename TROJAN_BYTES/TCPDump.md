@@ -256,6 +256,32 @@ Displays packet payload as **ASCII text** (readable characters).Works well for *
 tcpdump -r TwoPackets.pcap -A
 ```
 
+## 4️⃣ `-xx` — Display Packet Contents in Hexadecimal
+
+**Definition:**  
+Displays packet data **byte-by-byte in hexadecimal** format.Works for **any protocol**, including encrypted or binary data.
+
+**Use case:**
+- Inspecting **IP/TCP headers**
+- Malware analysis
+- Low-level packet inspection
+
+```
+tcpdump -r TwoPackets.pcap -xx
+```
+
+## 5️⃣ `-X` — Hexadecimal + ASCII (Best of Both)
+
+**Definition:**  
+Displays packet contents in **both hexadecimal and ASCII** side by side.Combines readability with completeness.
+
+**Use case:**  
+Best option when you want to:
+- See raw bytes **and**
+- Understand readable content at the same time
+
+`tcpdump -r TwoPackets.pcap -X`
+
 
 
 ---
