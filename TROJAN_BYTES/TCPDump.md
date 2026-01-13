@@ -9,7 +9,8 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 3. Security investigation and forensics 
 4. Pinpoint traffic issues
 ----------------------------
-**tcpdump command Format :**
+# **tcpdump command Format :**
+
 
 ```
    tcpdump [options] [expressions ]
@@ -35,8 +36,8 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 - `-nn` : Don’t resolve IP addresses and don’t resolve protocol numbers.
 
-
-**PCAP File Filtering Expression :**
+---
+# **PCAP File Filtering Expression :**
 
 |Command|Explanation|
 |---|---|
@@ -51,6 +52,8 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 ------------------
 # Advanced Filtering
 
+
+---
 ### **Basic Capture & Output**
 
 ```
