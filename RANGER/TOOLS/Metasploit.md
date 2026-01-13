@@ -89,3 +89,53 @@ evasion/
    └── windows_defender_js_hta.rb
 ```
 
+## Exploits
+
+Exploits take advantage of vulnerabilities to gain access to a system.
+
+```
+exploits/
+├── aix
+├── android
+├── apple_ios
+├── bsd
+├── bsdi
+├── dialup
+├── example_linux_priv_esc.rb
+├── example.py
+├── example.rb
+├── example_webapp.rb
+├── firefox
+├── freebsd
+├── hpux
+├── irix
+├── linux
+├── mainframe
+├── multi
+├── netware
+├── openbsd
+├── osx
+├── qnx
+├── solaris
+├── unix
+└── windows
+```
+
+## NOPs (No Operation)
+
+NOPs do nothing and are used as **buffers** to achieve consistent payload sizes.
+
+```
+nops/
+├── aarch64
+├── armle
+├── cmd
+├── mipsbe
+├── php
+├── ppc
+├── sparc
+├── tty
+├── x64
+└── x86
+```
+
