@@ -258,31 +258,35 @@ fi
 #!/bin/bash
 
 # Defining the variables
-username="" 
-companyname="" 
+username=""
+companyname=""
 pin=""
 
 # Defining the loop
 for i in {1..3}; do
 
-# Defining the conditional statements
-        if [ "$i" -eq 1 ]; then
-                echo "Enter your Username:"
-                read username
-        elif [ "$i" -eq 2 ]; then
-                echo "Enter your Company name:"
-                read companyname else
-                echo "Enter your PIN:"
-                read pin
-        fi
+    # Defining the conditional statements
+    if [ "$i" -eq 1 ]; then
+        echo "Enter your Username:"
+        read -r username
+
+    elif [ "$i" -eq 2 ]; then
+        echo "Enter your Company name:"
+        read -r companyname
+
+    else
+        echo "Enter your PIN:"
+        read -r pin
+    fi
 done
 
 # Checking if the user entered the correct details
-if [ "$username" = "John" ] && [ "$companyname" = "Tryhackme" ] && [ "$pin"= "7385">
-        echo "Authentication Successful. You can now access your locker,John."
-else 
-        echo "Authentication Denied!!"
+if [ "$username" = "John" ] && [ "$companyname" = "Tryhackme" ] && [ "$pin" = "7385" ]; then
+    echo "Authentication Successful. You can now access your locker, John."
+else
+    echo "Authentication Denied!!"
 fi
+
 ```
 
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
