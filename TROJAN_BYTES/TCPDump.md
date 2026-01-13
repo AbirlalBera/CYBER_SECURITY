@@ -230,9 +230,19 @@ Displays **shorter output lines**. Shows only essential details such as:
 Useful when you want a **high-level overview** of traffic.
 
 ```
-user@TryHackMe$ tcpdump -r TwoPackets.pcap 
-reading from file TwoPackets.pcap,ink-type EN10MB (Ethernet),snapshot length 262144 
-18:59:59.979771 IP 104.18.12.149.https > g5000.45248: Flags [P.], seq 2695955324:2695955349, ack 2856007037, win 16, options [nop,nop,TS val 412758285 ecr 3959057198], length 25 18:59:59.980574 IP g5000.45248 > 104.18.12.149.https: Flags [P.], seq 1:30, ack 25, win 2175, options [nop,nop,TS val 3959057384 ecr 412758285], length 29
+tcpdump -r TwoPackets.pcap -q
+```
+
+## 2️⃣ `-e` — Display Link-Layer (MAC) Headers
+
+**Definition:**  
+Includes **link-layer information**, such as:
+- Source and destination **MAC addresses**
+- Ethernet type
+Very useful for **ARP, DHCP, and LAN-level analysis**.
+
+```
+tcpdump -r TwoPackets.pcap -e
 ```
 
 
