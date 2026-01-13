@@ -7,8 +7,7 @@ Metasploit has two main versions:
 
 The Metasploit Framework is a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more. While the primary usage of the Metasploit Framework focuses on the penetration testing domain, it is also useful for vulnerability research and exploit development.
 
-The main components of the Metasploit Framework can be summarized as follows;
-
+The main components of the Metasploit Framework are :
 - **msfconsole**: The main command-line interface.
 - **Modules**: supporting modules such as exploits, scanners, payloads, etc.
-- **Tools**: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing. Some of these tools are msfvenom, pattern_create and pattern_offset. We will cover msfvenom within this module, but pattern_create and pattern_offset are tools useful in exploit development which is beyond the scope of this module.
+- **Tools**: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing. Some of these tools are msfvenom, pattern_create and pattern_offset. pattern_create and pattern_offset are tools useful in exploit development.
