@@ -15,5 +15,11 @@ The main components of the Metasploit Framework are :
 ---
 # **Modules** 
 
+Command to check all the modules :
+
+```
+cd /opt/metasploit-framework/embedded/framework/modules
+```
+
 Auxiliary : Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
 
