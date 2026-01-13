@@ -172,9 +172,38 @@ payloads/
 
 ### Single vs Staged Payload Naming
 
-`generic/shell_reverse_tcp      → Single 
-(inline) windows/x64/shell/reverse_tcp  → Staged`
+```
+generic/shell_reverse_tcp                      → Single 
+(inline) windows/x64/shell/reverse_tcp         → Staged
+```
 
 - `_` → Single payload
-    
 - `/` → Staged payload
+
+## Post Modules (Post-Exploitation)
+
+Used **after a successful compromise**.
+
+Typical actions:
+
+- Privilege escalation
+- Credential harvesting
+- System enumeration
+- Persistence
+
+```
+post/
+├── aix
+├── android
+├── apple_ios
+├── bsd
+├── firefox
+├── hardware
+├── linux
+├── multi
+├── networking
+├── osx
+├── solaris
+└── windows
+
+```
