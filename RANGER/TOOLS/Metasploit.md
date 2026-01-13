@@ -236,11 +236,15 @@ Selects a module to work with (enters module context).
 
 **Example (by name):**
 
-`use exploit/windows/smb/ms17_010_eternalblue`
+```
+use exploit/windows/smb/ms17_010_eternalblue
+```
 
 **Example (by index):**
 
-`use 2`
+```
+use 2
+```
 
 ## 4️⃣ `show options`
 
@@ -249,7 +253,9 @@ Displays required and optional parameters for the selected module.
 
 **Example:**
 
-`show options`
+```
+show options
+```
 
 ➡️ Shows options like `RHOSTS`, `RPORT`, `LHOST`, etc.
 
@@ -260,11 +266,15 @@ Sets a value for a module option.
 
 **Example:**
 
-`set RHOSTS 10.10.29.187`
+```
+set RHOSTS 10.10.29.187
+```
 
 Another example:
 
-`set LHOST 10.10.16.17`
+```
+set LHOST 10.10.16.17
+```
 
 ## 6️⃣ `show payloads`
 
@@ -273,7 +283,9 @@ Lists payloads compatible with the selected exploit.
 
 **Example:**
 
-`show payloads`
+```
+show payloads
+```
 
 ➡️ Helps you choose between:
 
@@ -290,7 +302,9 @@ Executes the selected module with the configured options.
 
 **Example:**
 
-`run`
+```
+run
+```
 
 (You can also use `exploit`, which does the same thing.)
 
@@ -307,7 +321,8 @@ sessions
 
 **Interact with a session:**
 
-```sessions -i 1
+```
+sessions -i 1
 ```
 
 ## 9️⃣ `back`
