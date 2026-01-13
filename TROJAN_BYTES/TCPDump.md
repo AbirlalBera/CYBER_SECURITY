@@ -245,6 +245,18 @@ Very useful for **ARP, DHCP, and LAN-level analysis**.
 tcpdump -r TwoPackets.pcap -e
 ```
 
+## 3️⃣ `-A` — Display Packet Contents as ASCII
+
+**Definition:**  
+Displays packet payload as **ASCII text** (readable characters).Works well for **plain-text protocols** like HTTP, FTP, SMTP.
+
+**Use case:** Viewing usernames, URLs, headers, or messages sent in **unencrypted traffic**.
+
+```
+tcpdump -r TwoPackets.pcap -A
+```
+
+
 
 ---
 ### **Basic Capture & Output**
