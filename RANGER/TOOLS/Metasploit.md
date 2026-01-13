@@ -162,20 +162,19 @@ payloads/
 
 ### Payload Types Explained
 
-####  Adapters : Wrap payloads into different formats.
+- **Adapters:** An adapter wraps single payloads to convert them into different formats. For example, a normal single payload can be wrapped inside a Powershell adapter, which will make a single powershell command that will execute the payload.  
 
-- Example: PowerShell wrapper
+- **Singles:** Self-contained payloads (add user, launch notepad.exe, etc.) that do not need to download an additional component to run.
 
-####  Singles (Inline Payloads) : Self-contained payloads.
+- **Stagers:** Responsible for setting up a connection channel between Metasploit and the target system. Useful when working with staged payloads. “Staged payloads” will first upload a stager on the target system then download the rest of the payload (stage). This provides some advantages as the initial size of the payload will be relatively small compared to the full payload sent at once.
 
-- No additional downloads required
+- **Stages:** Downloaded by the stager. This will allow you to use larger sized payloads.
 
-####  Stagers : Small initial payloads that:
+### Single vs Staged Payload Naming
 
-- Create a connection
-- Download the full payload (stage)
+`generic/shell_reverse_tcp      → Single 
+(inline) windows/x64/shell/reverse_tcp  → Staged`
 
-#### Stages : Downloaded by stagers. 
-
-- Larger, more complex payloads
-
+- `_` → Single payload
+    
+- `/` → Staged payload
