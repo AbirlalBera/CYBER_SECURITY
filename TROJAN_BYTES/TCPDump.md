@@ -86,11 +86,11 @@ Returns true if **at least one bit is 1**.
 
 **Example:**
 
-`tcpdump "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"`
+```
+tcpdump "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"
 
- Captures packets with **SYN or ACK** flag set
-
----
+[Captures packets with SYN or ACK flag set]
+```
 
 ### **NOT (`!`)**
 
@@ -99,11 +99,11 @@ Inverts the bit value (`1 → 0`, `0 → 1`).
 
 **Example:**
 
-`tcpdump "tcp[tcpflags] & tcp-rst == 0"`
+```
+tcpdump "tcp[tcpflags] & tcp-rst == 0"
 
-➡️ Captures TCP packets **without the RST flag**
-
----
+[Captures TCP packets without the RST flag]
+```
 
 ## 3️⃣ Header Byte Filtering Syntax
 
@@ -113,19 +113,15 @@ Inverts the bit value (`1 → 0`, `0 → 1`).
 Accesses a specific byte (or bytes) in a protocol header.
 
 - `proto` → protocol (tcp, ip, udp, icmp, etc.)
-    
-- `expr` → byte offset (starting from 0)
-    
-- `size` → number of bytes (optional)
-    
 
----
+- `expr` → byte offset (starting from 0)
+
+- `size` → number of bytes (optional)
 
 ### Example 1: Ethernet Multicast
 
 `tcpdump "ether[0] & 1 != 0"`
-
-**Definition:**  
+ 
 Filters Ethernet packets sent to **multicast addresses**.
 
 ---
