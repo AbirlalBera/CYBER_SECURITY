@@ -223,7 +223,14 @@ read name
 echo "Welcome, $name"
 ```
 
-
+```shell
+# Defining the Interpreter 
+#!/bin/bash
+for i in {1..10};
+do
+echo $i
+done
+```
 
 > **Note:** For a script to run, you must also give it "execute" permissions using the command: `chmod +x script_name.sh`.
 
