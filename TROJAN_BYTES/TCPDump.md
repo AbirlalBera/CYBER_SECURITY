@@ -280,8 +280,9 @@ Best option when you want to:
 - See raw bytes **and**
 - Understand readable content at the same time
 
-`tcpdump -r TwoPackets.pcap -X`
-
+```
+tcpdump -r TwoPackets.pcap -X
+```
 
 
 ---
