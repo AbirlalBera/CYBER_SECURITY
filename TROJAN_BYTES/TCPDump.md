@@ -33,6 +33,9 @@ History : The Tcpdump tool and its `libpcap` library are written in C and C++ 
 
 - -s [snaplen] : Specify the snapshot length(number of bytes per packet to capture).
 
+- `-nn` : Don’t resolve IP addresses and don’t resolve protocol numbers.
+
+
 **Expression :**
 
 - -host [IP]: Capture traffic from or to a specific host.
