@@ -40,12 +40,19 @@ Bash (Bourne Again Shell) is the most common and standard shell. Comes by defaul
 - Bash keeps a history file and logs all of your commands. You can use the up and down arrow keys to use the previous commands without typing them again. You can also type `history` to display all your previous commands
 
 
+## Z Shell
 
-2 . Zsh (Z Shell): Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).
+Zsh (Z Shell) Compatible with Bash but offers more advanced auto-completion and theme support (macOS default).Z Shell (Zsh) is not installed by default in most Linux distributions. It is considered a modern shell that combines the functionalities of some previous shells. Some of the key features provided by zsh are listed below:
+
+- Zsh provides advanced tab completion and is also capable of writing scripts.
+- Just like fish, it also provides auto spell correction for the commands.
+- It offers extensive customization that may make it slower than other shells.
+- It also provides tab completion, command history functionality, and several other features.
+
 
 ## Friendly Interactive Shell
 
-3 . Fish: User-friendly, colors commands as you type and offers suggestions.Friendly Interactive Shell (Fish) is also not default in most Linux distributions. As its name suggests, it focuses more on user-friendliness than other shells. Some of the key features provided by fish are listed below:
+User-friendly, colors commands as you type and offers suggestions.Friendly Interactive Shell (Fish) is also not default in most Linux distributions. As its name suggests, it focuses more on user-friendliness than other shells. Some of the key features provided by fish are listed below:
 
 - It offers a very simple syntax, which is feasible for beginner users.
 - Unlike bash, it has auto spell correction for the commands you write.
