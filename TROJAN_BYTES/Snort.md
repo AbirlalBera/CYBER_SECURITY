@@ -67,7 +67,9 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 
 ### 🔍 IDS mode (console alerts)
 
-`sudo snort -i ens33 -c /etc/snort/snort.conf -A console`
+```
+sudo snort -i ens33 -c /etc/snort/snort.conf -A console
+```
 
 - `-i ens33` → network interface
 
@@ -78,7 +80,9 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 ---
 ### 📝 IDS mode (log alerts to files)
 
-`sudo snort -i ens33 -c /etc/snort/snort.conf -l /var/log/snort`
+```
+sudo snort -i ens33 -c /etc/snort/snort.conf -l /var/log/snort
+```
 
 - Logs alerts to `/var/log/snort`
 
@@ -86,7 +90,9 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 ---
 ### 🔇 Quiet background mode
 
-`sudo snort -i ens33 -c /etc/snort/snort.conf -q -l /var/log/snort`
+```
+sudo snort -i ens33 -c /etc/snort/snort.conf -q -l /var/log/snort
+```
 
 - `-q` → quiet (no banner)
 
@@ -95,7 +101,9 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 
 ### 🧪 Quick test (no config, basic detection)
 
-`sudo snort -i ens33 -A console`
+```
+sudo snort -i ens33 -A console
+```
 
 ---
 
@@ -103,7 +111,9 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 
 In another terminal:
 
-`ps aux | grep snort`
+```
+ps aux | grep snort
+```
 
 Or generate traffic (e.g., ping, nmap) and watch alerts.
 
