@@ -8,3 +8,5 @@ snort --version
 
 ![[Pasted image 20260116233027.png]]
 
+![[Pasted image 20260116233135.png]]
+
