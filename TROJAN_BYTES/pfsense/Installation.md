@@ -1,3 +1,6 @@
+![[Pasted image 20260116224958.png]]
+
+
 ```
 pfctl -d
 ```
