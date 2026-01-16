@@ -16,3 +16,11 @@ Lets setup promiscuous mode so snort can monitor all the traaffic :
 sudo ip link set ens33 promisc on
 ```
 
+---
+open snort manual :
+
+```
+man snort
+```
+
+---
