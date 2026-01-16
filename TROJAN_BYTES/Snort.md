@@ -70,31 +70,26 @@ sudo snort -T -i ens33 -c /etc/snort/snort.conf
 `sudo snort -i ens33 -c /etc/snort/snort.conf -A console`
 
 - `-i ens33` → network interface
-    
-- `-c snort.conf` → config & rules
-    
-- `-A console` → show alerts on screen
-    
 
-🧠 **Good for learning & labs**
+- `-c snort.conf` → config & rules
+
+- `-A console` → show alerts on screen
 
 ---
-
 ### 📝 IDS mode (log alerts to files)
 
 `sudo snort -i ens33 -c /etc/snort/snort.conf -l /var/log/snort`
 
 - Logs alerts to `/var/log/snort`
-    
+
 
 ---
-
 ### 🔇 Quiet background mode
 
 `sudo snort -i ens33 -c /etc/snort/snort.conf -q -l /var/log/snort`
 
 - `-q` → quiet (no banner)
-    
+
 
 ---
 
