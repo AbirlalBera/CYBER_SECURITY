@@ -16,3 +16,6 @@ New admin Password : pfsense
 ```
 again stop the firewall 
 ```
+
+![[Pasted image 20260116215627.png]]
+
