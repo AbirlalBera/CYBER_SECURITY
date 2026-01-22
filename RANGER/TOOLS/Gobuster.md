@@ -303,17 +303,13 @@ Target web server to send requests to.
 
 ```-u http://10.48.128.79```
 
----
-
 ### **`-w`** — Wordlist
 
 List of possible virtual host names.
 
-```-w subdomains.txt```
-
----
-
-## Common Flags (with examples)
+```
+-w subdomains.txt
+```
 
 ### **`--domain`** — Domain name
 
@@ -323,46 +319,45 @@ Sets the domain part of the Host header.
 --domain example.thm
 ```
 
----
-
 ### **`--append-domain`** — Append domain to wordlist entries
 
 Turns `blog` → `blog.example.thm`.
 
-```--append-domain```
-
----
+```
+--append-domain
+```
 
 ### **`-m` / `--method`** — HTTP method
 
 Specify GET, POST, etc.
 
-```-m GET```
-
----
+```
+-m GET
+```
 
 ### **`--exclude-length`** — Filter false positives
 
 Hide responses with common body sizes.
 
-```--exclude-length 250-320```
-
----
+```
+--exclude-length 250-320
+```
 
 ### **`-r` / `--follow-redirect`** — Follow redirects
 
 Useful when vhosts redirect to other pages.
 
-```-r```
-
----
+```
+-r
+```
 
 ### **`-t`** — Threads
 
 Increase scan speed.
 
-```-t 50```
-
+```
+-t 50
+```
 
 ### **`-o`** — Output to file
 
