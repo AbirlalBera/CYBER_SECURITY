@@ -292,7 +292,7 @@ gobuster vhost -u http://IP -w wordlist.txt
 ```
 
 ```Example
-gobuster vhost -u http://10.48.128.79 -w wordlist.txt
+gobuster vhost -u http://10.48.128.79 -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
 ```
 
 ## Required Flags
