@@ -380,30 +380,18 @@ gobuster vhost -u "http://www.offensivetools.thm/" --domain offensivetools.thm -
  **`gobuster vhost`** : Uses **virtual host enumeration mode**.
 
 
-### **`-u "http://www.offensivetools.thm/"`**
-
-Base URL to send HTTP requests to  
+**`-u "http://www.offensivetools.thm/"`** : Base URL to send HTTP requests to  
 (Gobuster changes the **Host header**, not the URL path).
 
----
 
-### **`--domain offensivetools.thm`**
+**`--domain offensivetools.thm`** : Sets the domain part of the Host header.Used to build hostnames like:  `blog.offensivetools.thm admin.offensivetools.thm`
 
-Sets the domain part of the Host header.  
-Used to build hostnames like:
-
-`blog.offensivetools.thm admin.offensivetools.thm`
-
----
-
-### **`-w subdomains-top1million-5000.txt`**
+**`-w subdomains-top1million-5000.txt`**
 
 Wordlist containing possible virtual host names  
 (e.g., `blog`, `shop`, `dev`).
 
----
-
-### **`--append-domain`**
+**`--append-domain`**
 
 Appends the domain to each wordlist entry.  
 Example:
