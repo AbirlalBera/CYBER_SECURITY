@@ -323,7 +323,7 @@ Sets the domain part of the Host header. ==(Mention the domain we want to append
 
 ### **`--append-domain`** — Append domain to wordlist entries
 
-Turns `blog` → `blog.example.thm`. (It appends or adds the mentioned domain on the --domain flag)
+Turns `blog` → `blog.example.thm`. ==(It appends or adds the mentioned domain on the --domain flag )==
 
 ```
 --append-domain
