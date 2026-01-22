@@ -24,28 +24,19 @@ gobuster --help
 ---
 ## Understanding Gobuster modes 
 
-## Commonly used modes in this room
+##### Commonly used modes in this room
 
-- **`dir`** → directories & files
-    
+- **`dir`** → directories & files   
 - **`dns`** → subdomains
-    
 - **`vhost`** → virtual hosts
-    
 
 Each mode:
 
 - Uses a **different technique**
-    
 - Targets a **different layer**
-    
 - Requires **different assumptions**
-    
-
-Knowing _when_ to use which mode matters more than memorizing flags.
 
 ---
-
 ## Flags you should actually care about
 
 These are the ones that come up constantly in labs and assessments:
