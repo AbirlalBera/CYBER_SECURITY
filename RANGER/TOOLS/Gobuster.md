@@ -301,7 +301,9 @@ gobuster vhost -u http://10.48.128.79 -w wordlist.txt
 
 Target web server to send requests to.
 
-```-u http://10.48.128.79```
+```
+-u http://10.48.128.79
+```
 
 ### **`-w`** — Wordlist
 
