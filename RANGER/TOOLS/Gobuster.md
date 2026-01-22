@@ -118,6 +118,10 @@ gobuster gcs -w buckets.txt
 ---
 ## **Directory and File Enumeration (Advance)**
 
+```
+gobuster dir --help
+```
+
 ### `-u` — Target URL
 
 Base path to start enumeration.
@@ -199,3 +203,10 @@ Ignore invalid/self-signed HTTPS certs.
 gobuster dns --help
 ```
 
+```Syntax
+gobuster dns -d example.thm -w /path/to/wordlist
+```
+
+```Example
+
+```
