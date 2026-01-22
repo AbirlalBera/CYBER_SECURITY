@@ -42,14 +42,33 @@ gobuster dns -d target.com -w subdomains.txt
 
 **`vhost`** → virtual hosts
 
+**Example:**  
+```
+gobuster vhost -u http://IP -w vhosts.txt
+```
 
+### **fuzz ->
 
-Each mode:
+Replaces `FUZZ` in a request to discover inputs or paths.  
 
-- Uses a **different technique**
-- Targets a **different layer**
-- Requires **different assumptions**
+**Example:**  
+`gobuster fuzz -u http://TARGET/FUZZ -w wordlist.txt`
 
+---
+
+### **s3 — AWS S3 bucket enumeration**
+
+Finds public or misconfigured S3 buckets.  
+**Example:**  
+`gobuster s3 -w buckets.txt`
+
+---
+
+### **gcs — Google Cloud Storage enumeration**
+
+Finds GCS buckets by name.  
+**Example:**  
+`gobuster gcs -w buckets.txt`
 ---
 ## Flags you should actually care about
 
