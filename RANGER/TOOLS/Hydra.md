@@ -75,3 +75,6 @@ hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER
 hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -s <port> -V
 ```
 
+---
+EXAMPLE :
+
