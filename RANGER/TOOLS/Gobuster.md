@@ -208,7 +208,7 @@ gobuster dns -d example.thm -w /path/to/wordlist
 ```
 
 ```Example
-gobuster dns -d example.thm -w wordlist.txt
+gobuster dns -d example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
 ```
 
 ## Required Flags
