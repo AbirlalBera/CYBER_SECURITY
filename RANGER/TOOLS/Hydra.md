@@ -13,4 +13,10 @@ It supports a **very wide range of protocols** (SSH, FTP, HTTP forms, databases,
 - Hydra comes **pre-installed in Kali Linux** and many security-focused environments, and is easily installable on other Linux distributions.
 
 ---
+## Hydra Commands
 
+
+The options we pass into Hydra depend on which service (protocol) we’re attacking. For example, if we wanted to brute force FTP with the username being `user` and a password list being `passlist.txt`, we’d use the following command:
+
+```hydra -l user -P passlist.txt ftp://10.48.162.202
+```
