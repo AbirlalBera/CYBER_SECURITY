@@ -87,12 +87,19 @@ gobuster gcs -w buckets.txt
 
 - `-w` → wordlist
 
-- `-t` → threads (speed)
+- `-t` → threads (speed)  
+
+```
+-t 50
+```
 
 - `-o` → output file
 
 - `--delay` → slow scan
+```
+--delay 1500ms
 
+```
 - `--debug` → troubleshoot
 
 ---
