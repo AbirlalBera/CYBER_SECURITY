@@ -6,6 +6,8 @@ Gobuster is an open-source offensive tool written in Golang. It enumerates web 
 
 we can place Gobuster between the reconnaissance and scanning phases.
 
+Gobuster is powerful because it allows you to scan the website and return the status codes. These status codes immediately tell you if you, as an outside user, can request that directory or not.
+
 **Enumeration** : Enumeration is the act of listing all the available resources, whether they are accessible or not. For example, Gobuster enumerates web directories.
 
 **==Example:==**
@@ -93,3 +95,5 @@ gobuster gcs -w buckets.txt
 
 - `--debug` → troubleshoot
 
+---
+Directory and File Enu
