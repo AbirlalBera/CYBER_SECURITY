@@ -182,7 +182,7 @@ Add headers like authorization tokens.
 -H "Authorization: Bearer TOKEN"
 ```
 
-### `-k` — Skip TLS validation
+### `-k` — Skip TLS validation(--no-tls-validation)
 
 Ignore invalid/self-signed HTTPS certs.
 
