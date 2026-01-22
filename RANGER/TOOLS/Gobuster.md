@@ -26,37 +26,43 @@ gobuster --help
 
 ##### Commonly used modes in this room
 
-**dir** → directories & files   
+### **dir** → 
+
+directories & files   
 
 **Example:**  
 ```
 gobuster dir -u http://TARGET -w wordlist.txt
 ```
 
-**dns** → subdomains
+### **dns** →
+
+subdomains
 
 **Example:**  
 ```
 gobuster dns -d target.com -w subdomains.txt
 ```
 
-**`vhost`** → virtual hosts
+### **vhost** → 
+
+virtual hosts
 
 **Example:**  
 ```
 gobuster vhost -u http://IP -w vhosts.txt
 ```
 
-### **fuzz ->
+### **fuzz ->**
 
 Replaces `FUZZ` in a request to discover inputs or paths.  
 
 **Example:**  
 `gobuster fuzz -u http://TARGET/FUZZ -w wordlist.txt`
 
----
+### **s3 -> 
 
-### **s3 — AWS S3 bucket enumeration**
+AWS S3 bucket enumeration**
 
 Finds public or misconfigured S3 buckets.  
 **Example:**  
