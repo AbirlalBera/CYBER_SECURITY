@@ -98,3 +98,92 @@ gobuster gcs -w buckets.txt
 ---
 ## **Directory and File Enumeration**
 
+### `-u` — Target URL
+
+Base path to start enumeration.
+
+```-u http://example.thm```
+
+---
+
+### `-w` — Wordlist
+
+List of directory/file names to try.
+
+`-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+
+---
+
+### `-x` — File extensions
+
+Search for specific file types.
+
+`-x .php,.js`
+
+---
+
+### `-r` — Follow redirects
+
+Follows 301/302 responses automatically.
+
+`-r`
+
+---
+
+### `-s` — Show status codes
+
+Only display selected response codes.
+
+`-s 200,301`
+
+---
+
+### `-b` — Blacklist status codes
+
+Hide unwanted responses (e.g., 404).
+
+`-b 404`
+
+---
+
+### `-c` — Cookies
+
+Send session cookies with requests.
+
+`-c "PHPSESSID=abc123"`
+
+---
+
+### `-H` — Custom headers
+
+Add headers like authorization tokens.
+
+`-H "Authorization: Bearer TOKEN"`
+
+---
+
+### `-k` — Skip TLS validation
+
+Ignore invalid/self-signed HTTPS certs.
+
+`-k`
+
+---
+
+## Example Commands
+
+### 🔹 Directory enumeration
+
+`gobuster dir -u http://example.thm -w wordlist.txt`
+
+---
+
+### 🔹 Directory + PHP/JS files
+
+`gobuster dir -u http://example.thm -w wordlist.txt -x .php,.js`
+
+---
+
+### 🔹 Follow redirects
+
+`gobuster dir -u http://example.thm -w wordlist.txt -r`
