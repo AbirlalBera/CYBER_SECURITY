@@ -28,7 +28,7 @@ hydra -l user -P passlist.txt ftp://10.48.162.202
 
 ## SSH
 
-```
+```SYNTAX
 hydra -l <username> -P <full path to pass> 10.48.162.202 -t 4 ssh
 ```
 
@@ -39,13 +39,13 @@ hydra -l <username> -P <full path to pass> 10.48.162.202 -t 4 ssh
 |`-t`|sets the number of threads to spawn|
 
 ```Example
-
+hydra -l root -P passwords.txt 10.48.162.202 -t 4 ssh
 ```
 ## Post Web Form
 
 We can use Hydra to brute force web forms too. You must know which type of request it is making; GET or POST methods are commonly used. You can use your browser’s network tab (in developer tools) to see the request types or view the source code.
 
-```
+```SYNTAX
 sudo hydra <username> <wordlist> 10.48.162.202 http-post-form "<path>:<login_credentials>:<invalid_response>"
 ```
 
@@ -58,3 +58,7 @@ sudo hydra <username> <wordlist> 10.48.162.202 http-post-form "<path>:<login_cre
 |`<login_credentials>`|the username and password used to log in, for example, `username=^USER^&password=^PASS^`|
 |`<invalid_response>`|part of the response when the login fails|
 |`-V`|verbose output for every attempt|
+```Example
+hydra -l root -P passwords.txt 10.48.162.202 -t 4 ssh
+```
+
