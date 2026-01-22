@@ -104,71 +104,61 @@ Base path to start enumeration.
 
 ```-u http://example.thm```
 
----
-
 ### `-w` — Wordlist
 
 List of directory/file names to try.
 
-`-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+```-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt```
 
----
 
 ### `-x` — File extensions
 
 Search for specific file types.
 
-`-x .php,.js`
+```-x .php,.js```
 
----
 
 ### `-r` — Follow redirects
 
 Follows 301/302 responses automatically.
 
-`-r`
+```-r```
 
----
 
 ### `-s` — Show status codes
 
 Only display selected response codes.
 
-`-s 200,301`
+```-s 200,301```
 
----
 
 ### `-b` — Blacklist status codes
 
 Hide unwanted responses (e.g., 404).
 
-`-b 404`
+```-b 404```
 
----
 
 ### `-c` — Cookies
 
 Send session cookies with requests.
 
-`-c "PHPSESSID=abc123"`
+```-c "PHPSESSID=abc123"```
 
----
 
 ### `-H` — Custom headers
 
 Add headers like authorization tokens.
 
-`-H "Authorization: Bearer TOKEN"`
+```-H "Authorization: Bearer TOKEN"```
 
----
 
 ### `-k` — Skip TLS validation
 
 Ignore invalid/self-signed HTTPS certs.
 
-`-k`
+```-k```
 
----
 
 ## Example Commands
 
