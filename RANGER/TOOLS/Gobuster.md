@@ -126,8 +126,9 @@ gobuster dir -u http://example.thm -w wordlist.txt -x .php,.js
 
 Follows 301/302 responses automatically.
 
-```-r```
-
+```
+gobuster dir -u http://example.thm -w wordlist.txt -r
+```
 
 ### `-s` — Show status codes
 
@@ -164,20 +165,5 @@ Ignore invalid/self-signed HTTPS certs.
 ```-k```
 
 
-## Example Commands
-
-### 🔹 Directory enumeration
-
-`gobuster dir -u http://example.thm -w wordlist.txt`
-
 ---
 
-### 🔹 Directory + PHP/JS files
-
-
-
----
-
-### 🔹 Follow redirects
-
-`gobuster dir -u http://example.thm -w wordlist.txt -r`
