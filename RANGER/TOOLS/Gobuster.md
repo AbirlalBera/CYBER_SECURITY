@@ -277,3 +277,7 @@ Save results to a file.
 ---
 ## **Vhost Enumeration (Advance)**
 
+```Help
+gobuster vhost --help
+```
+
