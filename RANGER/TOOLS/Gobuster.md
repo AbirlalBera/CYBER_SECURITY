@@ -136,13 +136,11 @@ Only display selected response codes.
 
 ```-s 200,301```
 
-
 ### `-b` — Blacklist status codes
 
 Hide unwanted responses (e.g., 404).
 
 ```-b 404```
-
 
 ### `-c` — Cookies
 
@@ -150,13 +148,11 @@ Send session cookies with requests.
 
 ```-c "PHPSESSID=abc123"```
 
-
 ### `-H` — Custom headers
 
 Add headers like authorization tokens.
 
 ```-H "Authorization: Bearer TOKEN"```
-
 
 ### `-k` — Skip TLS validation
 
