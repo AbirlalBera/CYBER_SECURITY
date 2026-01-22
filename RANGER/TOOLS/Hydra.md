@@ -4,12 +4,13 @@ It supports a **very wide range of protocols** (SSH, FTP, HTTP forms, databases,
 
 - Penetration testing
 
- Red-team exercises
+- Red-team exercises
 
-    - Security research and training labs
+- Security research and training labs
 
 - Because it can rapidly try large password lists, **weak, short, common, or default credentials are easily compromised**.
-    
 - Devices and applications that ship with **default credentials** (e.g., `admin:password`) are especially vulnerable.
-    
 - Hydra comes **pre-installed in Kali Linux** and many security-focused environments, and is easily installable on other Linux distributions.
+
+---
+
