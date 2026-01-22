@@ -44,7 +44,7 @@ subdomains
 gobuster dns -d target.com -w subdomains.txt
 ```
 
-### **vhost** → 
+### **vhost** ->
 
 virtual hosts
 
@@ -58,23 +58,25 @@ gobuster vhost -u http://IP -w vhosts.txt
 Replaces `FUZZ` in a request to discover inputs or paths.  
 
 **Example:**  
-`gobuster fuzz -u http://TARGET/FUZZ -w wordlist.txt`
+```
+gobuster fuzz -u http://TARGET/FUZZ -w wordlist.txt
+```
 
 ### **s3 -> 
 
-AWS S3 bucket enumeration**
+AWS S3 bucket enumeration.Finds public or misconfigured S3 buckets.  
 
-Finds public or misconfigured S3 buckets.  
 **Example:**  
-`gobuster s3 -w buckets.txt`
+```
+gobuster s3 -w buckets.txt
+```
 
----
-
-### **gcs — Google Cloud Storage enumeration**
+### **gcs — (Google Cloud Storage enumeration**
 
 Finds GCS buckets by name.  
 **Example:**  
 `gobuster gcs -w buckets.txt`
+
 ---
 ## Flags you should actually care about
 
