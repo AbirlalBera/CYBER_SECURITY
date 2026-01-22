@@ -62,7 +62,7 @@ Replaces `FUZZ` in a request to discover inputs or paths.
 gobuster fuzz -u http://TARGET/FUZZ -w wordlist.txt
 ```
 
-### **s3 -> 
+### **s3(Simple Storage Service) -> 
 
 AWS S3 bucket enumeration.Finds public or misconfigured S3 buckets.  
 
@@ -71,11 +71,14 @@ AWS S3 bucket enumeration.Finds public or misconfigured S3 buckets.
 gobuster s3 -w buckets.txt
 ```
 
-### **gcs — (Google Cloud Storage enumeration**
+### **gcs (Google Cloud Storage enumeration) ->**
 
 Finds GCS buckets by name.  
+
 **Example:**  
-`gobuster gcs -w buckets.txt`
+```
+gobuster gcs -w buckets.txt
+```
 
 ---
 ## Flags you should actually care about
