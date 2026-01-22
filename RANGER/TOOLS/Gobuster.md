@@ -291,5 +291,83 @@ gobuster vhost --help
 gobuster vhost -u http://IP -w wordlist.txt
 ```
 
+```Example
+gobuster vhost -u http://10.48.128.79 -w wordlist.txt
 ```
+
+## Required Flags
+
+### **`-u` / `--url`** — Base URL (IP or hostname)
+
+Target web server to send requests to.
+
+```-u http://10.48.128.79```
+
+---
+
+### **`-w`** — Wordlist
+
+List of possible virtual host names.
+
+```-w subdomains.txt```
+
+---
+
+## Common Flags (with examples)
+
+### **`--domain`** — Domain name
+
+Sets the domain part of the Host header.
+
+```
+--domain example.thm
+```
+
+---
+
+### **`--append-domain`** — Append domain to wordlist entries
+
+Turns `blog` → `blog.example.thm`.
+
+```--append-domain```
+
+---
+
+### **`-m` / `--method`** — HTTP method
+
+Specify GET, POST, etc.
+
+```-m GET```
+
+---
+
+### **`--exclude-length`** — Filter false positives
+
+Hide responses with common body sizes.
+
+```--exclude-length 250-320```
+
+---
+
+### **`-r` / `--follow-redirect`** — Follow redirects
+
+Useful when vhosts redirect to other pages.
+
+```-r```
+
+---
+
+### **`-t`** — Threads
+
+Increase scan speed.
+
+```-t 50```
+
+
+### **`-o`** — Output to file
+
+Save results.
+
+```
+-o vhost_results.txt
 ```
