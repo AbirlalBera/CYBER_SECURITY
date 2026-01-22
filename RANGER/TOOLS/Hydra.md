@@ -80,7 +80,7 @@ EXAMPLE :
 
 ![[Pasted image 20260122192603.png]]
 
-When we enters wrong passwords it gives `Your username or password is incorrect` error.
+When we enters wrong passwords it gives ==`Your username or password is incorrect`== error.
 
 ```
 
