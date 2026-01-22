@@ -96,4 +96,5 @@ gobuster gcs -w buckets.txt
 - `--debug` → troubleshoot
 
 ---
-Directory and File Enu
+## **Directory and File Enumeration**
+
