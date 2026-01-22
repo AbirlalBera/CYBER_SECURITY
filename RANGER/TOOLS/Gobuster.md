@@ -315,7 +315,7 @@ List of possible virtual host names.
 
 ### **`--domain`** — Domain name
 
-Sets the domain part of the Host header.
+Sets the domain part of the Host header. ==(Mention the domain we want to appends)==
 
 ```
 --domain example.thm
@@ -323,7 +323,7 @@ Sets the domain part of the Host header.
 
 ### **`--append-domain`** — Append domain to wordlist entries
 
-Turns `blog` → `blog.example.thm`.
+Turns `blog` → `blog.example.thm`. (It appends or adds the mentioned domain on the --domain flag)
 
 ```
 --append-domain
