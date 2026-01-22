@@ -199,7 +199,7 @@ Ignore invalid/self-signed HTTPS certs.
 
 ## **Subdomain Enumeration (Advance)**
 
-```
+```Help
 gobuster dns --help
 ```
 
@@ -231,13 +231,12 @@ List of possible subdomain names.
 ```
 
 
-## Common Flags (with examples)
-
 ### **`-i`** — Show IP addresses
 
 Displays the IP each subdomain resolves to.
 
-```-i
+```
+-i
 ```
 
 
@@ -245,25 +244,32 @@ Displays the IP each subdomain resolves to.
 
 Shows CNAME mappings (cannot be used with `-i`).
 
-`-c`
+```
+-c
+```
 
 
 ### **`-r`** — Custom DNS resolver
 
 Use a specific DNS server.
 
-`-r 10.48.128.79`
+```
+-r 10.48.128.79
+```
 
 
 ### **`-t`** — Threads
 
 Increase speed of enumeration.
 
-`-t 50`
-
+```
+-t 50
+```
 
 ### **`-o`** — Output to file
 
 Save results to a file.
 
-`-o dns_results.txt`
+```
+-o dns_results.txt
+```
