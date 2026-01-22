@@ -8,6 +8,11 @@ we can place Gobuster between the reconnaissance and scanning phases.
 
 **Enumeration** : Enumeration is the act of listing all the available resources, whether they are accessible or not. For example, Gobuster enumerates web directories.
 
+**Example:**
+Directories
+Subdomains
+Virtual hosts
+
 **Brute Force** : Brute force is the act of trying every possibility until a match is found. It is like having ten keys and trying them all on a lock until one fits. Gobuster uses wordlists for this purpose.
 
 **For more details :** 
