@@ -213,7 +213,7 @@ gobuster dns -d example.thm -w wordlist.txt
 
 ## Required Flags
 
-### **`-d`** — Domain
+### **`-d`** — Domainls 
 
 Target domain to enumerate.
 
