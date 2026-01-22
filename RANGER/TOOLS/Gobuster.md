@@ -384,13 +384,13 @@ gobuster vhost -u "http://www.offensivetools.thm/" --domain offensivetools.thm -
 
 **==`--domain offensivetools.thm`==** : Sets the domain part of the Host header.Used to build hostnames like:  `blog.offensivetools.thm admin.offensivetools.thm`
 
-**`-w subdomains-top1million-5000.txt`** : Wordlist containing possible virtual host names  
+**==`-w subdomains-top1million-5000.txt`==** : Wordlist containing possible virtual host names  
 (e.g., `blog`, `shop`, `dev`).
 
-**`--append-domain`** : Appends the domain to each wordlist entry.  
+**==`--append-domain`==** : Appends the domain to each wordlist entry.  
 Example: `blog → blog.offensivetools.thm`
 
-**`--exclude-length 250-320`** : Filters out **false positives** based on response size.  
+**==`--exclude-length 250-320`==** : Filters out **false positives** based on response size.  
 Pages returning sizes in this range are ignored.
 
 
