@@ -368,3 +368,10 @@ Save results.
 ```
 -o vhost_results.txt
 ```
+
+example :
+
+```
+gobuster vhost -u "http://www.offensivetools.thm/" --domain offensivetools.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain --exclude-length 250-320 
+```
+
