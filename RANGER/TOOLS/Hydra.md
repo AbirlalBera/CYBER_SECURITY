@@ -78,3 +78,10 @@ hydra -l <username> -P <wordlist> 10.48.162.202 http-post-form "/:username=^USER
 ---
 EXAMPLE :
 
+![[Pasted image 20260122192603.png]]
+
+When we enters wrong passwords it gives `Your username or password is incorrect` error.
+
+```
+
+```
