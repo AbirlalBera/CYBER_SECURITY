@@ -81,113 +81,15 @@ gobuster gcs -w buckets.txt
 ```
 
 ---
-## Flags you should actually care about
+## Common Flags (quick)
 
-These are the ones that come up constantly in labs and assessments:
+- `-w` → wordlist
 
-### `-w / --wordlist`
+- `-t` → threads (speed)
 
-- Core of brute force
-    
-- Determines **what guesses are made**
-    
+- `-o` → output file
 
-### `-t / --threads`
+- `--delay` → slow scan
 
-- Controls speed
-    
-- Too low → slow
-    
-- Too high → noisy / unstable
-    
+- `--debug` → troubleshoot
 
-### `--delay`
-
-- Makes enumeration look more “human”
-    
-- Useful against basic detection mechanisms
-    
-
-### `-o / --output`
-
-- Saves results
-    
-- Important for reporting and later analysis
-    
-
-### `--debug`
-
-- Troubleshooting unexpected behavior
-    
-- Especially useful when responses don’t make sense
-    
-
----
-
-## Why the example command matters conceptually
-
-The example shows **three key principles**:
-
-1. **Mode selection** (`dir`)
-    
-2. **Target definition** (`-u`)
-    
-3. **Guess strategy** (wordlist + threads)
-    
-
-Gobuster:
-
-- Appends each wordlist entry
-    
-- Sends requests
-    
-- Interprets responses
-    
-- Reports only _meaningful differences_
-    
-
-That’s the entire mental model.
-
----
-
-## Big defensive takeaway 🛡️
-
-Gobuster demonstrates why defenders must:
-
-- Remove unused directories
-    
-- Hide admin panels properly
-    
-- Secure CMS defaults (WordPress, Joomla)
-    
-- Avoid predictable naming
-    
-- Monitor high-rate request patterns
-    
-
-If it’s guessable, it’s discoverable.
-
----
-
-## What you’re ready for next
-
-You now have enough foundation to:
-
-- Understand **why results appear**
-    
-- Interpret Gobuster output correctly
-    
-- Avoid common beginner mistakes
-    
-
-If you want, I can help you:
-
-- 📘 Turn this into **concise study notes**
-    
-- 🧠 Compare `dir` vs `dns` vs `vhost` in practice
-    
-- 🧪 Explain **why CMSs are easy to enumerate**
-    
-- 🛡️ Flip this into a **blue-team detection view**
-    
-- ❓ Prepare for **TryHackMe task questions**
