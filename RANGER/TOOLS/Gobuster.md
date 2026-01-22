@@ -208,5 +208,62 @@ gobuster dns -d example.thm -w /path/to/wordlist
 ```
 
 ```Example
+gobuster dns -d example.thm -w wordlist.txt
+```
+
+## Required Flags
+
+### **`-d`** — Domain
+
+Target domain to enumerate.
 
 ```
+-d example.thm
+```
+
+
+### **`-w`** — Wordlist
+
+List of possible subdomain names.
+
+```
+-w subdomains.txt
+```
+
+
+## Common Flags (with examples)
+
+### **`-i`** — Show IP addresses
+
+Displays the IP each subdomain resolves to.
+
+```-i
+```
+
+
+### **`-c`** — Show CNAME records
+
+Shows CNAME mappings (cannot be used with `-i`).
+
+`-c`
+
+
+### **`-r`** — Custom DNS resolver
+
+Use a specific DNS server.
+
+`-r 10.48.128.79`
+
+
+### **`-t`** — Threads
+
+Increase speed of enumeration.
+
+`-t 50`
+
+
+### **`-o`** — Output to file
+
+Save results to a file.
+
+`-o dns_results.txt`
