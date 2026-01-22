@@ -26,9 +26,23 @@ gobuster --help
 
 ##### Commonly used modes in this room
 
-- **`dir`** → directories & files   
-- **`dns`** → subdomains
-- **`vhost`** → virtual hosts
+**dir** → directories & files   
+
+**Example:**  
+```
+gobuster dir -u http://TARGET -w wordlist.txt
+```
+
+**dns** → subdomains
+
+**Example:**  
+```
+gobuster dns -d target.com -w subdomains.txt
+```
+
+**`vhost`** → virtual hosts
+
+
 
 Each mode:
 
