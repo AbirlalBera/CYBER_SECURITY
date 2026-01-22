@@ -32,3 +32,11 @@ hydra -l user -P passlist.txt ftp://10.48.162.202
 hydra -l <username> -P <full path to pass> 10.48.162.202 -t 4 ssh
 ```
 
+## Post Web Form
+
+We can use Hydra to brute force web forms too. You must know which type of request it is making; GET or POST methods are commonly used. You can use your browser’s network tab (in developer tools) to see the request types or view the source code.
+
+```
+sudo hydra <username> <wordlist> 10.48.162.202 http-post-form "<path>:<login_credentials>:<invalid_response>"
+```
+
