@@ -273,3 +273,7 @@ Save results to a file.
 ```
 -o dns_results.txt
 ```
+
+---
+## **Vhost Enumeration (Advance)**
+
