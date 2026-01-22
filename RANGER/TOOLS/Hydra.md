@@ -62,3 +62,10 @@ sudo hydra <username> <wordlist> 10.48.162.202 http-post-form "<path>:<login_cre
 hydra -l root -P passwords.txt 10.48.162.202 -t 4 ssh
 ```
 
+- The login page is only `/`, i.e., the main IP address.
+- The `username` is the form field where the username is entered
+- The specified username(s) will replace `^USER^`
+- The `password` is the form field where the password is entered
+- The provided passwords will be replacing `^PASS^`
+- Finally, `F=incorrect` is a string that appears in the server reply when the login fails.
+
