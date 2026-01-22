@@ -96,27 +96,31 @@ gobuster gcs -w buckets.txt
 - `--debug` → troubleshoot
 
 ---
-## **Directory and File Enumeration**
+## **Directory and File Enumeration (Advance)**
 
 ### `-u` — Target URL
 
 Base path to start enumeration.
 
-```-u http://example.thm```
+```
+-u http://example.thm
+```
 
 ### `-w` — Wordlist
 
 List of directory/file names to try.
 
-```-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt```
-
+```
+-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
 
 ### `-x` — File extensions
 
 Search for specific file types.
 
-```-x .php,.js```
-
+```
+gobuster dir -u http://example.thm -w wordlist.txt -x .php,.js
+```
 
 ### `-r` — Follow redirects
 
@@ -170,7 +174,7 @@ Ignore invalid/self-signed HTTPS certs.
 
 ### 🔹 Directory + PHP/JS files
 
-`gobuster dir -u http://example.thm -w wordlist.txt -x .php,.js`
+
 
 ---
 
