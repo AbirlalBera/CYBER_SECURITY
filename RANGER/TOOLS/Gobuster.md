@@ -369,9 +369,64 @@ Save results.
 -o vhost_results.txt
 ```
 
-example :
+### **Example :**
 
 ```
 gobuster vhost -u "http://www.offensivetools.thm/" --domain offensivetools.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain --exclude-length 250-320 
 ```
 
+## Flag-by-flag explanation
+
+ **`gobuster vhost`** : Uses **virtual host enumeration mode**.
+
+
+### **`-u "http://www.offensivetools.thm/"`**
+
+Base URL to send HTTP requests to  
+(Gobuster changes the **Host header**, not the URL path).
+
+---
+
+### **`--domain offensivetools.thm`**
+
+Sets the domain part of the Host header.  
+Used to build hostnames like:
+
+`blog.offensivetools.thm admin.offensivetools.thm`
+
+---
+
+### **`-w subdomains-top1million-5000.txt`**
+
+Wordlist containing possible virtual host names  
+(e.g., `blog`, `shop`, `dev`).
+
+---
+
+### **`--append-domain`**
+
+Appends the domain to each wordlist entry.  
+Example:
+
+`blog → blog.offensivetools.thm`
+
+⚠️ Without this, results would be incorrect.
+
+---
+
+### **`--exclude-length 250-320`**
+
+Filters out **false positives** based on response size.  
+Pages returning sizes in this range are ignored.
+
+---
+
+## What Gobuster is actually testing 🧠
+
+For each word, it sends:
+
+`GET / HTTP/1.1 Host: <word>.offensivetools.thm`
+
+If the response is **different** (status/size), it’s likely a **real vhost**.
+
+![[Pasted image 20260122224600.png]]
