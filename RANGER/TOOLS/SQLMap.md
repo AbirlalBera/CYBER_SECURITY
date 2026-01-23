@@ -1,3 +1,5 @@
+Normal USER :
+
 Let’s take an example of a login page that asks you to enter your username and password to log in. Let’s provide it with the following data:
 
 `Username: John`
@@ -11,6 +13,7 @@ SELECT * FROM users WHERE username = 'John' AND password = 'Un@detectable444';
 ```
 
 ---
+**==Attacker :==**
 
 `Username: John`
 
@@ -21,3 +24,4 @@ This time, the attacker typed a random string `abc` and an injected string `'
 ```php
 SELECT * FROM users WHERE username = 'John' AND password = 'abc' OR 1=1;-- -';
 ```
+
