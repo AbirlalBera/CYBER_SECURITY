@@ -120,13 +120,11 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ==`--risk=3`== → allows more dangerous payloads
 
-|Risk|Behavior|
-|---|---|
-|`--risk=1`|Safe, read-only, minimal impact|
-|`--risk=2`|Moderate, may stress DB|
-|`--risk=3`|**Potentially destructive**|
-
-
+| Risk       | Behavior                        |
+| ---------- | ------------------------------- |
+| `--risk=1` | Safe, read-only, minimal impact |
+| `--risk=2` | Moderate, may stress DB         |
+| `--risk=3` | **Potentially destructive**     |
 
 ---
 ## **POST-Based SQL Injection Testing**
