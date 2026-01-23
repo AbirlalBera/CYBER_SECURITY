@@ -75,3 +75,5 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 ==`sqlmap --wizard`==
 
+![[Pasted image 20260123225041.png]]
+
