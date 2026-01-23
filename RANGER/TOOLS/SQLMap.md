@@ -110,13 +110,15 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 - `-D <db> -T <table> --dump` → Dump table records
 
-==`--level`== → helps to scan quickly
+==`--level`== → helps to scan quickly (It test _everything_, everywhere, using _all_ payloads — even if it’s slow and loud.)
 
 - Range: **1 → 5**
-    
 - Default: **1**
-    
 - Higher level = **more payloads, more parameters tested, more HTTP headers checked**
+
+==`--risk=3`== → allows more dangerous payloads
+
+
 
 
 
