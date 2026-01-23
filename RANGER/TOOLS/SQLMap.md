@@ -1,4 +1,4 @@
-Normal USER :
+**==`Normal USER :`==**
 
 Let’s take an example of a login page that asks you to enter your username and password to log in. Let’s provide it with the following data:
 
@@ -13,7 +13,7 @@ SELECT * FROM users WHERE username = 'John' AND password = 'Un@detectable444';
 ```
 
 ---
-**==Attacker :==**
+**==`Attacker :`==**
 
 `Username: John`
 
