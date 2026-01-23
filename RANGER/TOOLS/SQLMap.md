@@ -71,3 +71,7 @@ That’s what makes the injection syntactically valid.
 ---
 #### ==`Automated SQL Injection`==
 
+SQLMap is an automated tool for detecting and exploiting SQL injection vulnerabilities in web applications. It simplifies the process of identifying these vulnerabilities.
+
+==`sqlmap --wizard`==
+
