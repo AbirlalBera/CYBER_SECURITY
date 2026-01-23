@@ -92,7 +92,6 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 ==`--cookie`== → Use authenticated session cookies
 
 
-
 **Database Enumeration**
 
 ==`--dbs`== → List database names
@@ -111,4 +110,6 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 - `-D <db> -T <table> --dump` → Dump table records
 
+---
+## **POST-Based SQL Injection Testing**
 
