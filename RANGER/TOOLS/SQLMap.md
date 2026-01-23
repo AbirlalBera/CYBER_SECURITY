@@ -92,7 +92,7 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 ==`--cookie`== → Use authenticated session cookies
 
 
-**Database Enumeration**
+#### **Database Enumeration**
 
 ==`--dbs`== → List database names
 
@@ -106,9 +106,11 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ![[Pasted image 20260123235044.png]]
 
-**Data Extraction**
+#### **Data Extraction**
 
 - `-D <db> -T <table> --dump` → Dump table records
+
+#### **Usefull** 
 
 ==`--level`== → helps to scan quickly (It test _everything_, everywhere, using _all_ payloads — even if it’s slow and loud.)
 
@@ -118,7 +120,11 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ==`--risk=3`== → allows more dangerous payloads
 
-
+|Risk|Behavior|
+|---|---|
+|`--risk=1`|Safe, read-only, minimal impact|
+|`--risk=2`|Moderate, may stress DB|
+|`--risk=3`|**Potentially destructive**|
 
 
 
