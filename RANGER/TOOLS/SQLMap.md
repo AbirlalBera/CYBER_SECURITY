@@ -77,3 +77,31 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 ![[Pasted image 20260123225041.png]]
 
+### SQLMap Commands (Organized)
+
+**Target**
+
+- `-u` → Specify target URL (GET-based testing)
+
+
+
+
+**Session Handling**
+
+- `--cookie` → Use authenticated session cookies
+
+
+**Database Enumeration**
+
+- `--dbs` → List database names
+
+- `-D <db> --tables` → List tables in a database
+
+- `-D <db> -T <table> --columns` → List columns in a table
+
+
+
+
+**Data Extraction**
+
+- `-D <db> -T <table> --dump` → Dump table records
