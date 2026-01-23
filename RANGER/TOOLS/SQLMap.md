@@ -1,5 +1,3 @@
-
-
 Let’s take an example of a login page that asks you to enter your username and password to log in. Let’s provide it with the following data:
 
 `Username: John`
@@ -11,3 +9,4 @@ Once you enter your username and password, the website will receive it, make an 
 ```php
 SELECT * FROM users WHERE username = 'John' AND password = 'Un@detectable444';
 ```
+
