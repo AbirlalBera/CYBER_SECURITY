@@ -126,8 +126,13 @@ Remember :
 
 Sometimes we cant show the values on the GET request also for that follow these steps :
 
+
+Go to the developer mode and navigate to the ==`Network`== tab =
+
 ![[Pasted image 20260124003739.png]]
 
+Cop
 
+![[Pasted image 20260124003816.png]]
 
 ![[Pasted image 20260124003652.png]]
