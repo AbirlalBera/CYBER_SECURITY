@@ -67,3 +67,7 @@ The attacker:
 3. Comments out the trailing `'` added by the application
 
 That’s what makes the injection syntactically valid.
+
+---
+==`Automated SQL Injection`==
+
