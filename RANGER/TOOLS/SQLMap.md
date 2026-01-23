@@ -38,8 +38,8 @@ So the query is interpreted as:
 Now evaluate it:
 
 ```sql
-`username = 'John' AND password = 'abc'` → **false** (password is wrong)
-`OR 1=1` → true
+username = 'John' AND password = 'abc' → false (password is wrong)
+OR 1=1 → true
 ```
 
 Since **one side of the OR is true**, the entire `WHERE` clause becomes true.
@@ -48,13 +48,9 @@ Since **one side of the OR is true**, the entire `WHERE` clause becomes true.
 
 ### Why the single quote `'` is crucial
 
-You’re absolutely right here.
+Without the quote, SQL would treat the entire string as the password value, which would **not break out of the string literal**, and the attack would fail.:  `abc OR 1=1;-- -`
 
-Without the quote:
 
-`abc OR 1=1;-- -`
-
-SQL would treat the entire string as the password value, which would **not break out of the string literal**, and the attack would fail.
 
 With the quote:
 
