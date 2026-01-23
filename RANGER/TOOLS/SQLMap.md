@@ -110,6 +110,16 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 - `-D <db> -T <table> --dump` → Dump table records
 
+==`--level`== → helps to scan quickly
+
+- Range: **1 → 5**
+    
+- Default: **1**
+    
+- Higher level = **more payloads, more parameters tested, more HTTP headers checked**
+
+
+
 ---
 ## **POST-Based SQL Injection Testing**
 
