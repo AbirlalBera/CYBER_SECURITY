@@ -97,7 +97,11 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ==`--dbs`== → List database names
 
+![[Pasted image 20260123235008.png]]
+
 ==`-D <db> --tables`== → List tables in a database
+
+![[Pasted image 20260123235029.png]]
 
 ==`-D <db> -T <table> --columns`== → List columns in a table
 
