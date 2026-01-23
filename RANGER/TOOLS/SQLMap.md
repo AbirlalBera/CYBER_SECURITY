@@ -81,7 +81,7 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 **Target**
 
-- `-u` → Specify target URL (GET-based testing)
+ ==`-u`== → Specify target URL (GET-based testing)
 
 The first step is to identify a potentially vulnerable URL. Web applications that use GET parameters (for example, `http://sqlmaptesting.thm/search?cat=1`) can be tested for SQL injection. In such cases, the URL is supplied to SQLMap using the `-u` flag, which is known as HTTP GET-based testing.
 
@@ -89,16 +89,19 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 **Session Handling**
 
-- `--cookie` → Use authenticated session cookies
+==`--cookie`== → Use authenticated session cookies
+
+
+
 
 
 **Database Enumeration**
 
-- `--dbs` → List database names
+==`--dbs`== → List database names
 
-- `-D <db> --tables` → List tables in a database
+==`-D <db> --tables`== → List tables in a database
 
-- `-D <db> -T <table> --columns` → List columns in a table
+==`-D <db> -T <table> --columns`== → List columns in a table
 
 
 
