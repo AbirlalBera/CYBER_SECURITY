@@ -10,3 +10,14 @@ Once you enter your username and password, the website will receive it, make an 
 SELECT * FROM users WHERE username = 'John' AND password = 'Un@detectable444';
 ```
 
+---
+
+`Username: John`
+
+`Password: abc' OR 1=1;-- -`
+
+This time, the attacker typed a random string `abc` and an injected string `' OR 1=1;-- -`. The SQL query that the website would send to the database will now become the following:
+
+```php
+SELECT * FROM users WHERE username = 'John' AND password = 'abc' OR 1=1;-- -';
+```
