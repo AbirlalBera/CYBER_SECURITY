@@ -87,11 +87,9 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ![[Pasted image 20260123233141.png]]
 
-**Session Handling**
+#### **Session Handling**
 
 ==`--cookie`== → Use authenticated session cookies
-
-
 
 
 
