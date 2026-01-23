@@ -27,20 +27,20 @@ SELECT * FROM users WHERE username = 'John' AND password = 'abc' OR 1=1;-- -';
 
 ### Why this works
 
-In SQL, **operator precedence matters**:
-
-- `AND` is evaluated **before** `OR`
+In SQL, **operator precedence matters**:  `AND` is evaluated **before** `OR`
   
 So the query is interpreted as:
 
-`(username = 'John' AND password = 'abc') OR 1=1`
+```sql
+(username = 'John' AND password = 'abc') OR 1=1
+```
 
 Now evaluate it:
 
-- `username = 'John' AND password = 'abc'` → **false** (password is wrong)
-    
-- `OR 1=1` → **true**
-    
+```sql
+`username = 'John' AND password = 'abc'` → **false** (password is wrong)
+`OR 1=1` → true
+```
 
 Since **one side of the OR is true**, the entire `WHERE` clause becomes true.
 
