@@ -126,4 +126,8 @@ Remember :
 
 Sometimes we cant show the values on the GET request also for that follow these steps :
 
+![[Pasted image 20260124003739.png]]
+
+
+
 ![[Pasted image 20260124003652.png]]
