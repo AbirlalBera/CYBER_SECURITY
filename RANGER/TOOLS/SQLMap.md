@@ -69,5 +69,5 @@ The attacker:
 That’s what makes the injection syntactically valid.
 
 ---
-==`Automated SQL Injection`==
+#### ==`Automated SQL Injection`==
 
