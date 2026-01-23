@@ -83,7 +83,7 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 - `-u` → Specify target URL (GET-based testing)
 
-The first step is to look for a possible vulnerable URL or request. You may often come across some URLs that use GET parameters to retrieve the data. For example, a URL like `http://sqlmaptesting.thm/search?cat=1` uses a parameter `cat` that takes the value `1`. If you see any web application using GET parameters in the URLs to retrieve data, you can test that URL with the -u flag in the SQLMap tool. This is considered to be HTTP GET-based testing. This approach is followed when the application uses GET parameters in the URL to retrieve data from the searches.
+The first step is to identify a potentially vulnerable URL. Web applications that use GET parameters (for example, `http://sqlmaptesting.thm/search?cat=1`) can be tested for SQL injection. In such cases, the URL is supplied to SQLMap using the `-u` flag, which is known as HTTP GET-based testing.
 
 ![[Pasted image 20260123233141.png]]
 
