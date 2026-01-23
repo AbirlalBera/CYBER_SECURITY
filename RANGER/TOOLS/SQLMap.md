@@ -77,9 +77,9 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 ![[Pasted image 20260123225041.png]]
 
-### SQLMap Commands (Organized)
+## SQLMap Commands (Organized)
 
-**Target**
+#### **Target**
 
  ==`-u`== → Specify target URL (GET-based testing)
 
