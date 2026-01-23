@@ -113,3 +113,11 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 ---
 ## **POST-Based SQL Injection Testing**
 
+In some cases, applications send user input in the **request body** instead of the URL. This is known as **POST-based testing** and is commonly used in Login forms , Registration forms , Search forms.
+
+To test such cases, the POST request must first be **intercepted and saved to a text file**. SQLMap can then read and test this request directly.
+
+```EXAMPLE
+sqlmap -r intercepted_request.txt
+```
+
