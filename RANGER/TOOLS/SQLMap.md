@@ -121,3 +121,7 @@ To test such cases, the POST request must first be **intercepted and saved to a 
 sqlmap -r intercepted_request.txt
 ```
 
+---
+Remember :
+
+Sometimes we cant show the values on the GET req
