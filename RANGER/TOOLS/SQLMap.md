@@ -25,3 +25,48 @@ This time, the attacker typed a random string `abc` and an injected string `'
 SELECT * FROM users WHERE username = 'John' AND password = 'abc' OR 1=1;-- -';
 ```
 
+### Why this works
+
+In SQL, **operator precedence matters**:
+
+- `AND` is evaluated **before** `OR`
+  
+So the query is interpreted as:
+
+`(username = 'John' AND password = 'abc') OR 1=1`
+
+Now evaluate it:
+
+- `username = 'John' AND password = 'abc'` → **false** (password is wrong)
+    
+- `OR 1=1` → **true**
+    
+
+Since **one side of the OR is true**, the entire `WHERE` clause becomes true.
+
+👉 Result: **the query returns rows**, and the application thinks authentication succeeded.
+
+### Why the single quote `'` is crucial
+
+You’re absolutely right here.
+
+Without the quote:
+
+`abc OR 1=1;-- -`
+
+SQL would treat the entire string as the password value, which would **not break out of the string literal**, and the attack would fail.
+
+With the quote:
+
+`'abc' OR 1=1 -- -`
+
+The attacker:
+
+1. Properly closes the password string
+    
+2. Injects a new logical condition
+    
+3. Comments out the trailing `'` added by the application
+    
+
+That’s what makes the injection syntactically valid.
