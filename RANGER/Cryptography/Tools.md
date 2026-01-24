@@ -8,4 +8,9 @@ For cryptographical math :
 
 https://www.wolframalpha.com/
 
-RSA 
+RSA decrypt tools :
+
+https://github.com/RsaCtfTool/RsaCtfTool
+
+https://github.com/ius/rsatool
+
