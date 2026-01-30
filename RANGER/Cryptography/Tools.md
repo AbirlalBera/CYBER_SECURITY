@@ -14,3 +14,14 @@ https://github.com/RsaCtfTool/RsaCtfTool
 
 https://github.com/ius/rsatool
 
+Hash Cracking :
+
+https://crackstation.net/
+
+https://hashes.com/en/decrypt/hash
+
+Automatic hash recognizing tool :
+
+https://pypi.org/project/hashID/
+
+
