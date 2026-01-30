@@ -28,4 +28,4 @@ Automatic hash recognizing tool :
 
 https://pypi.org/project/hashID/
 
-
+Has
