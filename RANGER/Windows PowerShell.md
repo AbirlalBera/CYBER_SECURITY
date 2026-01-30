@@ -69,6 +69,10 @@ You can download and install new cmdlets from online repositories like the **Po
 
 - **Install a module:** `Install-Module -Name "ModuleName"`
 
+![[Pasted image 20260131012849.png]]
+
+
+
 Questions :
 
 1 > How would you retrieve a list of commands that **start with** the verb `Remove`? [for the sake of this question, avoid the use of quotes (" or ') in your answer]
