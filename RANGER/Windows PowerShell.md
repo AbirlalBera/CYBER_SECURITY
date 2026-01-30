@@ -67,9 +67,9 @@ PowerShell commands are called **cmdlets** and follow a consistent naming patt
 
 You can download and install new cmdlets from online repositories like the **PowerShell Gallery**.
 
-- `**Search for a module`:** `Find-Module -Name "ModuleName*"`
+- **==`Search for a module:`==** `Find-Module -Name "ModuleName*"`
 
-- **Install a module:** `Install-Module -Name "ModuleName"`
+- **==`Install a module:`==** `Install-Module -Name "ModuleName"`
 
 ![[Pasted image 20260131012849.png]]
 
