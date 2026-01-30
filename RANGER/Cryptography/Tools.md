@@ -31,3 +31,5 @@ https://pypi.org/project/hashID/
 Hashcat Exaple hashes with code :
 
 https://hashcat.net/wiki/doku.php?id=example_hashes
+
+Must expore : https://tryhackme.com/room/cryptographyintro
