@@ -3,9 +3,7 @@
 A cross-platform task automation tool from Microsoft that combines:
 
 - A **command-line shell**
-
 - A **scripting language**
-
 - A **configuration management framework**
 
 It is built on the .NET framework.
