@@ -20,6 +20,10 @@ https://crackstation.net/
 
 https://hashes.com/en/decrypt/hash
 
+https://hashcat.net/hashcat/
+
+https://www.openwall.com/john/
+
 Automatic hash recognizing tool :
 
 https://pypi.org/project/hashID/
