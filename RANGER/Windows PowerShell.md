@@ -53,7 +53,9 @@ PowerShell commands are called **cmdlets** and follow a consistent naming patt
 | **`Get-Alias`**      | Lists all command aliases (shortcuts, e.g., `dir` for `Get-ChildItem`).            |
 | **`Find-Module`**    | Searches online repositories (like the PowerShell Gallery) for modules.            |
 | **`Install-Module`** | Downloads and installs a module from a repository, making its cmdlets available.   |
+![[Pasted image 20260131012913.png]]
 
+![[Pasted image 20260131012934.png]]
 ### Common Aliases
 
 |Alias|Equivalent Cmdlet|
@@ -65,7 +67,7 @@ PowerShell commands are called **cmdlets** and follow a consistent naming patt
 
 You can download and install new cmdlets from online repositories like the **PowerShell Gallery**.
 
-- **Search for a module:** `Find-Module -Name "ModuleName*"`
+- `**Search for a module`:** `Find-Module -Name "ModuleName*"`
 
 - **Install a module:** `Install-Module -Name "ModuleName"`
 
