@@ -28,4 +28,6 @@ Automatic hash recognizing tool :
 
 https://pypi.org/project/hashID/
 
-Has
+Hashcat Exaple hashes with code :
+
+https://hashcat.net/wiki/doku.php?id=example_hashes
