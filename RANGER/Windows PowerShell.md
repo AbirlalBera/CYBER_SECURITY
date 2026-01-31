@@ -171,7 +171,7 @@ Displays file content (like `type` / `cat`)
 
 - **`Sort-Object`**
     
-    - Sorts objects by a property
+    - Sorts objects by size
         
     - Example:  
         `Get-ChildItem | Sort-Object Length`
