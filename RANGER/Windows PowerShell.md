@@ -215,7 +215,7 @@ Get-ChildItem | Select-Object Name, Length
 ![[Pasted image 20260131220626.png]]
 ### ==`Searching file content`==
 
-**`Select-String :`**Searches text inside files (like `grep` / `findstr`)
+**`Select-String :`** Searches text inside files (like `grep` / `findstr`)
 
 ```
 Select-String -Path <file> -Pattern "text"
