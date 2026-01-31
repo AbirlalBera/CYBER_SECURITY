@@ -169,7 +169,10 @@ Displays file content (like `type` / `cat`)
 
 ### Sorting objects
 
-- **`Sort-Object :`**   Sorts objects by size
-        
-    - Example:  
-        `Get-ChildItem | Sort-Object Length`
+**`Sort-Object :`**  Sorts objects by size
+```
+Get-ChildItem | Sort-Object Length
+```
+
+Here, `Get-ChildItem` retrieves the files (as objects), and the pipe (`|`) sends those file objects to `Sort-Object`, which then sorts them by their `Length` (size) property.
+
