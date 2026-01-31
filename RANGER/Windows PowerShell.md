@@ -167,7 +167,7 @@ Displays file content (like `type` / `cat`)
 
 **==`|`== (pipe)** passes output of one cmdlet as input to another. PowerShell pipes **objects**, not plain text (includes properties & methods) .
 
-### Sorting objects
+### ==`Sorting objects`==
 
 **`Sort-Object :`**  Sorts objects by size
 ```
@@ -176,3 +176,30 @@ Get-ChildItem | Sort-Object Length
 
 Here, `Get-ChildItem` retrieves the files (as objects), and the pipe (`|`) sends those file objects to `Sort-Object`, which then sorts them by their `Length` (size) property.
 
+### `Filtering objects`
+
+- **`Where-Object :`**Filters objects based on conditions
+
+```
+Get-ChildItem | Where-Object Extension -eq ".txt"
+```
+
+    - Example (by name pattern):  
+        `Get-ChildItem | Where-Object Name -like "ship*"`
+        
+
+#### Common comparison operators
+
+- `-eq` → equal
+    
+- `-ne` → not equal
+    
+- `-gt` → greater than
+    
+- `-ge` → greater than or equal
+    
+- `-lt` → less than
+    
+- `-le` → less than or equal
+    
+- `-like` → matches pattern (wildcards)
