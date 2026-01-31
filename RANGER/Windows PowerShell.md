@@ -413,12 +413,7 @@ Get-Item -Path <file> -Stream *
 
 ## Remote Execution with `Invoke-Command`
 
-### Purpose
+==`Invoke-Command`== is essential for executing commands on remote systems, making it fundamental for system administrators, security engineers and penetration testers. `Invoke-Command` enables efficient remote management and—combining it with scripting—automation of tasks across multiple machines. It can also be used to execute payloads or commands on target systems during an engagement by penetration testers—or attackers alike.
 
-- Executes commands **locally or on remote systems**
-- Enables **remote management and automation**
 
-Critical for:
-- System administrators
-- Security engineers
-- Penetration testers
+
