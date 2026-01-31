@@ -380,44 +380,30 @@ Get-Item -Path <file> -Stream *
 Automates:
 - Log analysis
 - Anomaly detection
+- IOC extraction
 
-    - IOC extraction
-        
-- Used for:
-    
-    - Incident response
-        
-    - Threat hunting
-        
-    - Malware analysis
-        
-    - Reverse engineering malicious scripts
-        
-    - System scanning for compromise
-        
+**Used for:**
+- Incident response
+- Threat hunting
+- Malware analysis
+- Reverse engineering malicious scripts
+- System scanning for compromise
 
----
 
 ### Red Team (Offensive)
 
-- Automates:
-    
-    - System enumeration
-        
-    - Remote command execution
-        
-    - Payload delivery
-        
-    - Script obfuscation to bypass defenses
-        
-- Useful for:
-    
-    - Penetration testing
-        
-    - Simulating real-world attacks
-        
+Automates:
 
----
+- System enumeration
+- Remote command execution
+- Payload delivery
+- Script obfuscation to bypass defenses
+
+- Useful for:
+- Penetration testing
+- Simulating real-world attacks
+   
+
 
 ### System Administrators
 
