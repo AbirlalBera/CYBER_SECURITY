@@ -368,3 +368,69 @@ Get-Item -Path <file> -Stream *
 
 **Scripting** is the process of writing and executing a series of commands contained in a text file, known as a script, to automate tasks that one would generally perform manually in a shell, like PowerShell.
 
+**Benefits:**
+- Saves time
+- Reduces human error
+- Handles complex or repetitive tasks
+
+## Why PowerShell Scripting Matters in Cybersecurity
+
+### Blue Team (Defensive)
+
+Automates:
+- Log analysis
+- Anomaly detection
+
+    - IOC extraction
+        
+- Used for:
+    
+    - Incident response
+        
+    - Threat hunting
+        
+    - Malware analysis
+        
+    - Reverse engineering malicious scripts
+        
+    - System scanning for compromise
+        
+
+---
+
+### Red Team (Offensive)
+
+- Automates:
+    
+    - System enumeration
+        
+    - Remote command execution
+        
+    - Payload delivery
+        
+    - Script obfuscation to bypass defenses
+        
+- Useful for:
+    
+    - Penetration testing
+        
+    - Simulating real-world attacks
+        
+
+---
+
+### System Administrators
+
+- Automates:
+    
+    - Integrity checks
+        
+    - Configuration management
+        
+    - Security policy enforcement
+        
+    - System health monitoring
+        
+    - Incident response actions
+        
+- Essential for **remote and large-scale environments**
