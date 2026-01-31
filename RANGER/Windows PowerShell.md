@@ -94,7 +94,7 @@ ANS : Get-Help New-LocalUser -examples
 
 PowerShell provides a range of cmdlets for navigating the file system and managing files, many of which have counterparts in the traditional Windows CLI.
 
-### List files & directories
+### ==`List files & directories`==
 
 ```
 Get-ChildItem
@@ -103,7 +103,7 @@ Get-ChildItem -Path <path>
 
 Lists contents of a directory (like `dir` / `ls`)
 
-### Change directory
+### ==`Change directory`==
 
 ```
 Set-Location
@@ -112,7 +112,7 @@ Set-Location -Path <path>
 
 **Changes current directory (like `cd`)**
 
-### Create files & directories
+### ==`Create files & directories`==
 
 **Directory:**  
 ```
@@ -126,16 +126,14 @@ New-Item -Path <path> -ItemType File
 
 **Creates files or directories**
 
-### Delete files & directories
+### ==`Delete files & directories`==
 
 ```
 Remove-Item    
 Remove-Item -Path <path>
 ```
 
-Removes files or directories
-
-### Copy & move items
+### ==`Copy & move items`==
 
 **`Copy-Item`**  
 ```
@@ -149,7 +147,7 @@ Move-Item -Path <source> -Destination <destination>
 ```
 Moves or renames items
 
-### Read file contents
+### ==`Read file contents`==
 
 ```
 Get-Content
