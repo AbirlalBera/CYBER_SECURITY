@@ -254,29 +254,19 @@ Shows:
 - Account status (Enabled/Disabled)
 - Description
 
+## ==`Network Configuration`==
 
----
+```
+Get-NetIPConfiguration
+```
+Displays **active network interface configuration** . **Comparable to:** `ipconfig` (but more detailed)
 
-## Network Configuration
+Includes:
 
-### `Get-NetIPConfiguration`
-
-- Displays **active network interface configuration**
-    
-- Includes:
-    
-    - IP addresses
-        
-    - Default gateways
-        
-    - DNS servers
-        
-    - Network adapter details
-        
-
-**Comparable to:** `ipconfig` (but more detailed)
-
----
+- IP addresses   
+- Default gateways
+- DNS servers
+- Network adapter details
 
 ### `Get-NetIPAddress`
 
