@@ -311,49 +311,33 @@ Get-Service
 ```
 Retrieves **status of system services**
 
-- Shows:
-    
-    - Service name
-        
-    - Display name
-        
-    - Status (Running / Stopped / Paused)
-        
+Shows:
+- Service name    
+- Display name    
+- Status (Running / Stopped / Paused)
 
 **Use cases**
-
 - Troubleshooting service failures
-    
 - Detecting **unexpected or malicious services**
-    
 
----
+## ==`Active Network Connections`==
 
-## Active Network Connections
+```
+Get-NetTCPConnection
+```
+Displays **current TCP connections**
 
-### `Get-NetTCPConnection`
+Shows:
 
-- Displays **current TCP connections**
-    
-- Shows:
-    
-    - Local & remote IP addresses
-        
-    - Ports
-        
-    - Connection state (Listen, Established, TimeWait)
-        
-    - Owning process ID
-        
+- Local & remote IP addresses
+- Ports
+- Connection state (Listen, Established, TimeWait)
+- Owning process ID
 
 **Use cases**
-
 - Incident response
-    
 - Malware detection
-    
 - Finding backdoors or suspicious outbound connections
-    
 
 ---
 
