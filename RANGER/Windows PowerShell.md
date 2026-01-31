@@ -100,7 +100,6 @@ PowerShell provides a range of cmdlets for navigating the file system and man
 Get-ChildItem
 Get-ChildItem -Path <path>
 ```
-
 Lists contents of a directory (like `dir` / `ls`)
 
 ### ==`Change directory`==
@@ -109,7 +108,6 @@ Lists contents of a directory (like `dir` / `ls`)
 Set-Location
 Set-Location -Path <path>
 ```
-
 **Changes current directory (like `cd`)**
 
 ### ==`Create files & directories`==
@@ -123,7 +121,6 @@ New-Item -Path <path> -ItemType Directory
 ```
 New-Item -Path <path> -ItemType File
 ```
-
 **Creates files or directories**
 
 ### ==`Delete files & directories`==
@@ -132,6 +129,7 @@ New-Item -Path <path> -ItemType File
 Remove-Item    
 Remove-Item -Path <path>
 ```
+Removes files or directories
 
 ### ==`Copy & move items`==
 
