@@ -362,5 +362,9 @@ Get-Item -Path <file> -Stream *
 **Use cases**
 - Forensics investigations
 - Detecting hidden or malicious data stored in files
+
 ---
-#Scripting
+# Scripting
+
+**Scripting** is the process of writing and executing a series of commands contained in a text file, known as a script, to automate tasks that one would generally perform manually in a shell, like PowerShell.
+
