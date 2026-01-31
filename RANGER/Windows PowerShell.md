@@ -262,25 +262,18 @@ Get-NetIPConfiguration
 Displays **active network interface configuration** . **Comparable to:** `ipconfig` (but more detailed)
 
 Includes:
-
 - IP addresses   
 - Default gateways
 - DNS servers
 - Network adapter details
 
-### `Get-NetIPAddress`
+```
+Get-NetIPAddress
+```
+Shows **all IP addresses** on the system
 
-- Shows **all IP addresses** on the system
-    
-- Includes:
-    
-    - IPv4 and IPv6
-        
-    - Active and inactive addresses
-        
-    - Loopback addresses
-        
+**Includes:**
+- IPv4 and IPv6
+- Active and inactive addresses
+- Loopback addresses
 - Provides technical details (prefix, origin, lifetime)
-    
-
-**Use case:** Low-level network troubleshooting
