@@ -143,16 +143,17 @@ Copy-Item -Path <source> -Destination <destination>
 ```
 Copies files or directories
 
-- **`Move-Item`**  
-    Moves or renames items
-    
-    - `Move-Item -Path <source> -Destination <destination>`
-        
+**`Move-Item`**  
+```
+Move-Item -Path <source> -Destination <destination>
+```
+Moves or renames items
 
 ### Read file contents
 
-- **`Get-Content`**  
-    Displays file content (like `type` / `cat`)
-    
-    - `Get-Content -Path <file>`
+```
+Get-Content
+Get-Content -Path <file>
+```
+Displays file content (like `type` / `cat`)
 
