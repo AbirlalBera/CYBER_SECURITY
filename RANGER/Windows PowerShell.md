@@ -199,23 +199,21 @@ Get-ChildItem | Where-Object Name -like "ship*"
 - `-le` → less than or equal
 - `-like` → matches pattern (wildcards)
 
-### Selecting output
+### ==`Selecting output`==
 
-- **`Select-Object :`**
-    
-    - Chooses specific properties or limits output
-        
-    - Example:  
-        `Get-ChildItem | Select-Object Name, Length`
-        
+**`Select-Object :`**Chooses specific properties or limits output
+
+```
+Get-ChildItem | Select-Object Name, Length
+```
+
 
 ### Searching file content
 
-- **`Select-String`**
-    
-    - Searches text inside files (like `grep` / `findstr`)
-        
-    - Example:  
-        `Select-String -Path <file> -Pattern "text"`
-        
-    - Supports **regular expressions (regex)**
+**`Select-String :`**Searches text inside files (like `grep` / `findstr`)
+
+```
+Select-String -Path <file> -Pattern "text"
+```
+
+ Supports **regular expressions (regex)**
