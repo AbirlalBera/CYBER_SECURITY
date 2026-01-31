@@ -415,5 +415,23 @@ Get-Item -Path <file> -Stream *
 
 ==`Invoke-Command`== is essential for executing commands on remote systems, making it fundamental for system administrators, security engineers and penetration testers. `Invoke-Command` enables efficient remote management and—combining it with scripting—automation of tasks across multiple machines. It can also be used to execute payloads or commands on target systems during an engagement by penetration testers—or attackers alike.
 
+#### **Example 1: Run a script on a remote server**
 
+```
+Invoke-Command -FilePath C:\scripts\test.ps1 -ComputerName Server01
+```
+
+- Executes `test.ps1` located on the local machine **on a remote server**.
+- Returns results to your local machine.
+- Simple way to combine custom scripts with remote execution.
+
+#### **Example 2: Run a command on a remote server**
+
+```
+Invoke-Command -ComputerName Server01 -Credential Domain01\User01 -ScriptBlock { Get-Culture }
+```
+
+- Runs a command block on `Server01` using specific credentials.
+- PowerShell prompts for the password.
+- **No scripting needed**—you can run individual commands on remote systems as if typing them locally.
 
