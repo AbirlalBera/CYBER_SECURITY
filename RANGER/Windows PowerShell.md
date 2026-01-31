@@ -186,10 +186,14 @@ Example (by extension):
 Get-ChildItem | Where-Object Extension -eq ".txt"
 ```
 
+![[Pasted image 20260131220546.png]]
+
 Example (by name pattern):  
 ```
 Get-ChildItem | Where-Object Name -like "ship*"
 ```
+
+![[Pasted image 20260131220607.png]]
 #### Common comparison operators
 
 - `-eq` → equal
@@ -208,7 +212,7 @@ Get-ChildItem | Where-Object Name -like "ship*"
 Get-ChildItem | Select-Object Name, Length
 ```
 
-
+![[Pasted image 20260131220626.png]]
 ### ==`Searching file content`==
 
 **`Select-String :`**Searches text inside files (like `grep` / `findstr`)
