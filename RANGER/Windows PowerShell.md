@@ -362,3 +362,5 @@ Get-Item -Path <file> -Stream *
 **Use cases**
 - Forensics investigations
 - Detecting hidden or malicious data stored in files
+---
+#Scripting
