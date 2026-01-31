@@ -176,6 +176,7 @@ Get-ChildItem | Sort-Object Length
 
 Here, `Get-ChildItem` retrieves the files (as objects), and the pipe (`|`) sends those file objects to `Sort-Object`, which then sorts them by their `Length` (size) property.
 
+![[Pasted image 20260131220503.png]]
 ### ==`Filtering objects`==
 
 **`Where-Object :`**Filters objects based on conditions
@@ -208,7 +209,7 @@ Get-ChildItem | Select-Object Name, Length
 ```
 
 
-### Searching file content
+### ==`Searching file content`==
 
 **`Select-String :`**Searches text inside files (like `grep` / `findstr`)
 
