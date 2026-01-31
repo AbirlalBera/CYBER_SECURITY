@@ -105,16 +105,17 @@ Lists contents of a directory (like `dir` / `ls`)
 
 ### Change directory
 
-- **`Set-Location`**  
-    Changes current directory (like `cd`)
-    
-    - `Set-Location -Path <path>`
-        
+```
+Set-Location
+Set-Location -Path <path>
+```
+
+Changes current directory (like `cd`)
 
 ### Create files & directories
 
-- **`New-Item`**  
-    Creates files or directories
+New-Item
+Creates files or directories
     
     - Directory:  
         `New-Item -Path <path> -ItemType Directory`
