@@ -167,3 +167,11 @@ Displays file content (like `type` / `cat`)
 
 **==`|`== (pipe)** passes output of one cmdlet as input to another. PowerShell pipes **objects**, not plain text (includes properties & methods) .
 
+### Sorting objects
+
+- **`Sort-Object`**
+    
+    - Sorts objects by a property
+        
+    - Example:  
+        `Get-ChildItem | Sort-Object Length`
