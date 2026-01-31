@@ -339,49 +339,34 @@ Shows:
 - Malware detection
 - Finding backdoors or suspicious outbound connections
 
----
+## ==`File Integrity & Malware Analysis`==
 
-## File Integrity & Malware Analysis
-
-### `Get-FileHash`
+```
+Get-FileHash
+```
 
 - Generates cryptographic hashes for files
-    
 - Default algorithm: **SHA256**
-    
 
 **Use cases**
-
 - Verify file integrity
-    
 - Compare against known malicious hashes
-    
 - Detect file tampering
-    
-
----
-
 ## Alternate Data Streams (ADS)
 
 ### Viewing ADS
 
-`Get-Item -Path <file> -Stream *`
+```
+Get-Item -Path <file> -Stream *
+```
 
-- **:$DATA**
-    
-    - Default NTFS data stream
-        
-    - Normal file contents
-        
+ **:$DATA**
+- Default NTFS data stream
+- Normal file contents
 - **Named streams**
-    
     - Hidden Alternate Data Streams
-        
     - Not visible in standard file listings
-        
 
 **Use cases**
-
 - Forensics investigations
-    
 - Detecting hidden or malicious data stored in files
