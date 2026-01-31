@@ -377,7 +377,7 @@ Get-Item -Path <file> -Stream *
 
 ### Blue Team (Defensive)
 
-Automates:
+**Automates:**
 - Log analysis
 - Anomaly detection
 - IOC extraction
@@ -392,31 +392,22 @@ Automates:
 
 ### Red Team (Offensive)
 
-Automates:
-
+**Automates:**
 - System enumeration
 - Remote command execution
 - Payload delivery
 - Script obfuscation to bypass defenses
 
-- Useful for:
+**Useful for:**
 - Penetration testing
 - Simulating real-world attacks
    
-
-
 ### System Administrators
 
-- Automates:
-    
-    - Integrity checks
-        
-    - Configuration management
-        
-    - Security policy enforcement
-        
-    - System health monitoring
-        
-    - Incident response actions
-        
+**Automates:**
+- Integrity checks
+- Configuration management
+- Security policy enforcement
+- System health monitoring
+- Incident response actions
 - Essential for **remote and large-scale environments**
