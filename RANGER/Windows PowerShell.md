@@ -163,3 +163,7 @@ Displays file content (like `type` / `cat`)
 ---
 # Piping, Filtering, and Sorting Data
 
+### Piping basics
+
+**==`|`== (pipe)** passes output of one cmdlet as input to another. PowerShell pipes **objects**, not plain text (includes properties & methods) .
+
