@@ -178,28 +178,23 @@ Here, `Get-ChildItem` retrieves the files (as objects), and the pipe (`|`) sen
 
 ### `Filtering objects`
 
-- **`Where-Object :`**Filters objects based on conditions
+**`Where-Object :`**Filters objects based on conditions
 
+Example (by extension):
 ```
 Get-ChildItem | Where-Object Extension -eq ".txt"
 ```
 
-    - Example (by name pattern):  
-        `Get-ChildItem | Where-Object Name -like "ship*"`
-        
-
+Example (by name pattern):  
+```
+Get-ChildItem | Where-Object Name -like "ship*"
+```
 #### Common comparison operators
 
 - `-eq` → equal
-    
 - `-ne` → not equal
-    
 - `-gt` → greater than
-    
 - `-ge` → greater than or equal
-    
 - `-lt` → less than
-    
 - `-le` → less than or equal
-    
 - `-like` → matches pattern (wildcards)
