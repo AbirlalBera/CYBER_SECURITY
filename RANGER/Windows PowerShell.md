@@ -417,7 +417,7 @@ Get-Item -Path <file> -Stream *
 
 #### **Example 1: Run a script on a remote server**
 
-```
+```shell
 Invoke-Command -FilePath C:\scripts\test.ps1 -ComputerName Server01
 ```
 
@@ -427,11 +427,12 @@ Invoke-Command -FilePath C:\scripts\test.ps1 -ComputerName Server01
 
 #### **Example 2: Run a command on a remote server**
 
-```
+```shell
 Invoke-Command -ComputerName Server01 -Credential Domain01\User01 -ScriptBlock { Get-Culture }
 ```
 
 - Runs a command block on `Server01` using specific credentials.
 - PowerShell prompts for the password.
 - **No scripting needed**—you can run individual commands on remote systems as if typing them locally.
+
 
