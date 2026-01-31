@@ -389,7 +389,6 @@ Get-Item -Path <file> -Stream *
 - Reverse engineering malicious scripts
 - System scanning for compromise
 
-
 ### Red Team (Offensive)
 
 **Automates:**
