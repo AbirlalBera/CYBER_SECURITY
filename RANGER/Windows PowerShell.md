@@ -110,19 +110,22 @@ Set-Location
 Set-Location -Path <path>
 ```
 
-Changes current directory (like `cd`)
+**Changes current directory (like `cd`)**
 
 ### Create files & directories
 
-New-Item
-Creates files or directories
-    
-    - Directory:  
-        `New-Item -Path <path> -ItemType Directory`
-        
-    - File:  
-        `New-Item -Path <path> -ItemType File`
-        
+**Directory:**  
+```
+New-Item -Path <path> -ItemType Directory
+```
+
+**File:**  
+```
+New-Item -Path <path> -ItemType File
+```
+
+**Creates files or directories**
+
 
 ### Delete files & directories
 
