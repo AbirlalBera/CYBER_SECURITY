@@ -287,38 +287,30 @@ Shows **all IP addresses** on the system
 - Focuses on **running processes, services, network connections, and file integrity**
 - Especially useful for **troubleshooting, incident response, and threat hunting**
 
-## Running Processes
+## ==`Running Processes`==
 
 ```
 Get-Process
 ```
 Lists **currently running processes**
 
-- Displays:
-    - Process name
-    
-    - Process ID (PID)
-        
-    - CPU usage
-        
-    - Memory usage
-        
+Displays:
+- Process name
+- Process ID (PID)
+- CPU usage
+- Memory usage
 
 **Use cases**
-
 - Identify resource-heavy or suspicious processes
-    
 - Troubleshoot performance issues
-    
 
----
+## ==`Services Management`==
 
-## Services Management
+```
+Get-Service
+```
+Retrieves **status of system services**
 
-### `Get-Service`
-
-- Retrieves **status of system services**
-    
 - Shows:
     
     - Service name
