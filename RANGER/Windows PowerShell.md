@@ -277,5 +277,8 @@ Shows **all IP addresses** on the system
 - Active and inactive addresses
 - Loopback addresses
 - Provides technical details (prefix, origin, lifetime)
+
 ---
-#Real-Time System Analysis
+# Real-Time System Analysis
+
+
