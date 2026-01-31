@@ -126,22 +126,23 @@ New-Item -Path <path> -ItemType File
 
 **Creates files or directories**
 
-
 ### Delete files & directories
 
-- **`Remove-Item`**  
-    Removes files or directories
-    
-    - `Remove-Item -Path <path>`
-        
+```
+Remove-Item    
+Remove-Item -Path <path>
+```
+
+Removes files or directories
 
 ### Copy & move items
 
-- **`Copy-Item`**  
-    Copies files or directories
-    
-    - `Copy-Item -Path <source> -Destination <destination>`
-        
+**`Copy-Item`**  
+```
+Copy-Item -Path <source> -Destination <destination>
+```
+Copies files or directories
+
 - **`Move-Item`**  
     Moves or renames items
     
