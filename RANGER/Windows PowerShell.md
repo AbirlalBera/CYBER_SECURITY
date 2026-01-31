@@ -281,4 +281,131 @@ Shows **all IP addresses** on the system
 ---
 # Real-Time System Analysis
 
+### Purpose
 
+- Used for **real-time system monitoring**
+- Focuses on **running processes, services, network connections, and file integrity**
+- Especially useful for **troubleshooting, incident response, and threat hunting**
+
+## Running Processes
+
+```
+Get-Process
+```
+Lists **currently running processes**
+
+- Displays:
+    - Process name
+    
+    - Process ID (PID)
+        
+    - CPU usage
+        
+    - Memory usage
+        
+
+**Use cases**
+
+- Identify resource-heavy or suspicious processes
+    
+- Troubleshoot performance issues
+    
+
+---
+
+## Services Management
+
+### `Get-Service`
+
+- Retrieves **status of system services**
+    
+- Shows:
+    
+    - Service name
+        
+    - Display name
+        
+    - Status (Running / Stopped / Paused)
+        
+
+**Use cases**
+
+- Troubleshooting service failures
+    
+- Detecting **unexpected or malicious services**
+    
+
+---
+
+## Active Network Connections
+
+### `Get-NetTCPConnection`
+
+- Displays **current TCP connections**
+    
+- Shows:
+    
+    - Local & remote IP addresses
+        
+    - Ports
+        
+    - Connection state (Listen, Established, TimeWait)
+        
+    - Owning process ID
+        
+
+**Use cases**
+
+- Incident response
+    
+- Malware detection
+    
+- Finding backdoors or suspicious outbound connections
+    
+
+---
+
+## File Integrity & Malware Analysis
+
+### `Get-FileHash`
+
+- Generates cryptographic hashes for files
+    
+- Default algorithm: **SHA256**
+    
+
+**Use cases**
+
+- Verify file integrity
+    
+- Compare against known malicious hashes
+    
+- Detect file tampering
+    
+
+---
+
+## Alternate Data Streams (ADS)
+
+### Viewing ADS
+
+`Get-Item -Path <file> -Stream *`
+
+- **:$DATA**
+    
+    - Default NTFS data stream
+        
+    - Normal file contents
+        
+- **Named streams**
+    
+    - Hidden Alternate Data Streams
+        
+    - Not visible in standard file listings
+        
+
+**Use cases**
+
+- Forensics investigations
+    
+- Detecting hidden or malicious data stored in files
