@@ -300,10 +300,6 @@ Displays:
 - CPU usage
 - Memory usage
 
-**Use cases**
-- Identify resource-heavy or suspicious processes
-- Troubleshoot performance issues
-
 ## ==`Services Management`==
 
 ```
@@ -315,10 +311,6 @@ Shows:
 - Service name    
 - Display name    
 - Status (Running / Stopped / Paused)
-
-**Use cases**
-- Troubleshooting service failures
-- Detecting **unexpected or malicious services**
 
 ## ==`Active Network Connections`==
 
@@ -352,7 +344,7 @@ Get-FileHash
 - Verify file integrity
 - Compare against known malicious hashes
 - Detect file tampering
-## Alternate Data Streams (ADS)
+## ==`Alternate Data Streams (ADS)`==
 
 ### Viewing ADS
 
