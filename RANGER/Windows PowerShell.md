@@ -102,6 +102,7 @@ Get-ChildItem -Path <path>
 ```
 Lists contents of a directory (like `dir` / `ls`)
 
+![[Pasted image 20260131213817.png]]
 ### ==`Change directory`==
 
 ```
@@ -110,6 +111,7 @@ Set-Location -Path <path>
 ```
 **Changes current directory (like `cd`)**
 
+![[Pasted image 20260131213855.png]]
 ### ==`Create files & directories`==
 
 **Directory:**  
