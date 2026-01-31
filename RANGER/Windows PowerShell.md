@@ -242,26 +242,18 @@ Retrieves **comprehensive system details**
 - Installation data
 - More detailed than `systeminfo`
 
-**Use case:** Full system inventory / diagnostics
+## ==`Local User Accounts`==
 
----
+```
+Get-LocalUser
+```
+Lists **all local user accounts**
 
-## Local User Accounts
+Shows:
+- Username
+- Account status (Enabled/Disabled)
+- Description
 
-### `Get-LocalUser`
-
-- Lists **all local user accounts**
-    
-- Shows:
-    
-    - Username
-        
-    - Account status (Enabled/Disabled)
-        
-    - Description
-        
-
-**Use case:** User management & security auditing
 
 ---
 
