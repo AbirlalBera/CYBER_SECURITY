@@ -228,3 +228,77 @@ Select-String -Path <file> -Pattern "text"
 ---
 # System and Network Information
 
+## ==`System Information`==
+
+```
+Get-ComputerInfo
+```
+Retrieves **comprehensive system details**
+
+**Includes:**
+- OS version & edition
+- Hardware info
+- BIOS details
+- Installation data
+- More detailed than `systeminfo`
+
+**Use case:** Full system inventory / diagnostics
+
+---
+
+## Local User Accounts
+
+### `Get-LocalUser`
+
+- Lists **all local user accounts**
+    
+- Shows:
+    
+    - Username
+        
+    - Account status (Enabled/Disabled)
+        
+    - Description
+        
+
+**Use case:** User management & security auditing
+
+---
+
+## Network Configuration
+
+### `Get-NetIPConfiguration`
+
+- Displays **active network interface configuration**
+    
+- Includes:
+    
+    - IP addresses
+        
+    - Default gateways
+        
+    - DNS servers
+        
+    - Network adapter details
+        
+
+**Comparable to:** `ipconfig` (but more detailed)
+
+---
+
+### `Get-NetIPAddress`
+
+- Shows **all IP addresses** on the system
+    
+- Includes:
+    
+    - IPv4 and IPv6
+        
+    - Active and inactive addresses
+        
+    - Loopback addresses
+        
+- Provides technical details (prefix, origin, lifetime)
+    
+
+**Use case:** Low-level network troubleshooting
