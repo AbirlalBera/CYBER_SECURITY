@@ -226,3 +226,5 @@ Select-String -Path <file> -Pattern "text"
 ![[Pasted image 20260131220747.png]]
 
 ---
+# System and Network Information
+
