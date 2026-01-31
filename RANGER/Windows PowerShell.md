@@ -158,3 +158,8 @@ Get-Content -Path <file>
 ```
 Displays file content (like `type` / `cat`)
 
+![[Pasted image 20260131214016.png]]
+
+---
+# Piping, Filtering, and Sorting Data
+
