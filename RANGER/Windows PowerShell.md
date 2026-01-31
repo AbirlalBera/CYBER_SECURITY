@@ -176,7 +176,7 @@ Get-ChildItem | Sort-Object Length
 
 Here, `Get-ChildItem` retrieves the files (as objects), and the pipe (`|`) sends those file objects to `Sort-Object`, which then sorts them by their `Length` (size) property.
 
-### `Filtering objects`
+### ==`Filtering objects`==
 
 **`Where-Object :`**Filters objects based on conditions
 
@@ -198,3 +198,24 @@ Get-ChildItem | Where-Object Name -like "ship*"
 - `-lt` → less than
 - `-le` → less than or equal
 - `-like` → matches pattern (wildcards)
+
+### Selecting output
+
+- **`Select-Object :`**
+    
+    - Chooses specific properties or limits output
+        
+    - Example:  
+        `Get-ChildItem | Select-Object Name, Length`
+        
+
+### Searching file content
+
+- **`Select-String`**
+    
+    - Searches text inside files (like `grep` / `findstr`)
+        
+    - Example:  
+        `Select-String -Path <file> -Pattern "text"`
+        
+    - Supports **regular expressions (regex)**
