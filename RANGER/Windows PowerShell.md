@@ -125,6 +125,7 @@ New-Item -Path <path> -ItemType File
 ```
 **Creates files or directories**
 
+![[Pasted image 20260131213915.png]]
 ### ==`Delete files & directories`==
 
 ```
@@ -133,6 +134,7 @@ Remove-Item -Path <path>
 ```
 Removes files or directories
 
+![[Pasted image 20260131213937.png]]
 ### ==`Copy & move items`==
 
 **`Copy-Item`**  
@@ -147,6 +149,7 @@ Move-Item -Path <source> -Destination <destination>
 ```
 Moves or renames items
 
+![[Pasted image 20260131213958.png]]
 ### ==`Read file contents`==
 
 ```
