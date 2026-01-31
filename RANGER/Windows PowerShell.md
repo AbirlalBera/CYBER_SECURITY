@@ -410,3 +410,15 @@ Get-Item -Path <file> -Stream *
 - System health monitoring
 - Incident response actions
 - Essential for **remote and large-scale environments**
+
+## Remote Execution with `Invoke-Command`
+
+### Purpose
+
+- Executes commands **locally or on remote systems**
+- Enables **remote management and automation**
+
+Critical for:
+- System administrators
+- Security engineers
+- Penetration testers
