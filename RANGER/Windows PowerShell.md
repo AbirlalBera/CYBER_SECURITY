@@ -222,3 +222,7 @@ Select-String -Path <file> -Pattern "text"
 ```
 
  Supports **regular expressions (regex)**
+
+![[Pasted image 20260131220747.png]]
+
+---
