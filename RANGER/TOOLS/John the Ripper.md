@@ -114,7 +114,7 @@ raw-sha256
 **==`raw`==** is used in John the Ripper to specify that the hash is a **plain, unsalted, standalone hash output** of a hashing algorithm, with no additional data or structure.
 
 ---
-# Cracking Windows Authentication Hashes
+# ==`Cracking Windows Authentication Hashes`==
 
 #### What is Authentication Hashes ?
 Hashed versions of passwords used by operating systems for user authentication.  
@@ -129,47 +129,30 @@ Also known as NTLM (NT LAN Manager).
 
 Used by Windows to authenticate users locally and in domain environments.
 
----
-
 ## Storage Location
 
 - SAM (Security Account Manager) database
-    
 - Active Directory database (NTDS.dit)
-    
-
----
 
 ## Hash Acquisition
 
 NTLM hashes can be obtained using:
 
 - SAM database dumping
-    
 - Credential dumping tools (e.g., Mimikatz)
-    
 - Active Directory database extraction
-    
 
 Requires privileged access.
-
----
-
 ## Attack Usage
 
 - Hash cracking (when passwords are weak)
-    
 - Pass-the-Hash attacks (without cracking)
-    
-
----
-
 ## John the Ripper Format
 
 NTLM hashes are cracked in John using the **`nt`** format.
-
----
-
 ## Practical Command
 
-`john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt`
+```
+john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt
+```
+
