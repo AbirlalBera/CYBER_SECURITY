@@ -21,5 +21,11 @@ A **dictionary attack** uses a **predefined list of words** (called a _wordlist_
 
 ### What is the most popular extended version of John the Ripper?
 
-Jumbo John.
+=> **Jumbo John.**
+
+**How to check is it installed or not ?**
+
+```
+john
+```
 
