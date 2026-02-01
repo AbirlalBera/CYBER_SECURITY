@@ -37,3 +37,12 @@ john
 ```
 
 Wordlists : https://github.com/danielmiessler/SecLists or /usr/share/wordlists/rockyou.txt
+
+---
+## John Basic Syntax
+
+The basic syntax of John the Ripper commands is as follows. 
+```
+john [options] [file path ]
+```
+
