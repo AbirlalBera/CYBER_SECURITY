@@ -215,7 +215,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed
 ```
 
 ---
-## Single Crack Mode
+## ==`Single Crack Mode Technique`==
 
 A John the Ripper cracking mode that generates password guesses **using the username and related user information**, instead of a predefined wordlist.
 ## Purpose of Single Crack Mode
