@@ -283,38 +283,22 @@ To exploit **predictable password creation patterns** used by users and organisa
 ## Common Password Pattern Exploited
 
 - Capital letter at the beginning
-    
 - Numbers at the end
-    
 - Symbols at the end
-    
 
-Example pattern:  
-`Polopassword1!`
-
----
-
+Example pattern:  `Polopassword1!`
 ## john.conf
 
 Configuration file where custom rules are defined.
 
 Common locations:
-
 - `/opt/john/john.conf` (TryHackMe AttackBox)
-    
 - `/etc/john/john.conf` (System install)
-    
-
----
-
 ## Rule Naming
 
 `[List.Rules:RuleName]`
 
 Defines the custom rule name used when calling John.
-
----
-
 ## Common Rule Modifiers
 
 - **Az** → Append characters to the end
