@@ -36,3 +36,4 @@ A **dictionary attack** uses a **predefined list of words** (called a _wordlist_
 john
 ```
 
+Wordlists : https://github.com/danielmiessler/SecLists or /usr/share/wordlists/rockyou.txt
