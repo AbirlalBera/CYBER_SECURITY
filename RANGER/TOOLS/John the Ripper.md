@@ -46,3 +46,13 @@ The basic syntax of John the Ripper commands is as follows.
 john [options] [file path ]
 ```
 
+### Automatic Cracking 
+
+John can **auto-detect hash type** and try cracking it.
+### Command:
+
+`john --wordlist=/path/to/wordlist hash.txt`
+
+### Example:
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt`
