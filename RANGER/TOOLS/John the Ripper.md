@@ -251,21 +251,21 @@ A field in UNIX/Linux user account records that stores user-related information 
 John extracts information from the GECOS field to generate **additional password candidates** when cracking `/etc/shadow` hashes.
 ## Single Crack Mode Syntax
 
-`john --single --format=[format] [hash_file]`
+```
+john --single --format=[format] [hash_file]
+```
 ## Example Command
 
-`john --single --format=raw-sha256 hashes.txt`
+```
+john --single --format=raw-sha256 hashes.txt
+```
 ## Required File Format
 
-For single crack mode, the hash file must be in the format:
-
-`username:hash`
+For single crack mode, the hash file must be in the format: `username:hash`
 ## Example File Format Change
 
-Before:
+Before: `1efee03cdcb96d90ad48ccc7b8666033`
 
-`1efee03cdcb96d90ad48ccc7b8666033`
+After: `mike:1efee03cdcb96d90ad48ccc7b8666033`
 
-After:
-
-`mike:1efee03cdcb96d90ad48ccc7b8666033`
+---
