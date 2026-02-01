@@ -63,4 +63,23 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
 
 ### Identifying Hashes (If john auto fails)
 
+If John struggles, **identify the hash first**.
+### Tool: `hash-identifier`
+
+Download and run:
+```
+wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py python3 hash-id.py
+```
+
+Then paste the hash:
+```
+HASH: 2e728dd31fb5949bc39cac5a9f066498
+```
+
+Output example:
+```
+Possible Hashs: 
+[+] MD5 
+[+] Domain Cached Credentials - MD4
+```
 
