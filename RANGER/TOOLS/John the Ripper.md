@@ -111,6 +111,7 @@ raw-sha1
 raw-sha256
 ```
 
+**==`raw`==** is used in John the Ripper to specify that the hash is a **plain, unsalted, standalone hash output** of a hashing algorithm, with no additional data or structure.
 
 ---
 
