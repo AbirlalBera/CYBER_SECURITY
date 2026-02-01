@@ -155,33 +155,20 @@ john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt
 ```
 
 ---
-# `Cracking /etc/shadow Hashes`
+# =`Cracking /etc/shadow Hashes`=
 
 ## /etc/shadow
 
-A Linux system file that stores **hashed user passwords** along with password aging information such as last change date and expiration.  
-Accessible only by the **root user**.
-
----
-
+A Linux system file that stores **hashed user passwords** along with password aging information such as last change date and expiration. Accessible only by the **root user**.
 ## /etc/passwd
 
-A Linux file that stores **user account information** such as username, UID, GID, home directory, and shell.  
-Does **not** store password hashes.
-
----
-
+A Linux file that stores **user account information** such as username, UID, GID, home directory, and shell. Does **not** store password hashes.
 ## Why /etc/shadow Cracking Is Possible
 
 If an attacker gains **root or sufficient privileges**, they can extract password hashes and attempt to crack them using brute-force or dictionary attacks.
-
----
-
 ## Unshadow
 
 A tool included with John the Ripper used to **combine `/etc/passwd` and `/etc/shadow`** files into a single format that John can understand.
-
----
 
 ## Purpose of Unshadow
 
