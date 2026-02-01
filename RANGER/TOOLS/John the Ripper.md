@@ -155,5 +155,86 @@ john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt
 ```
 
 ---
-# Cracking /etc/shadow Hashes
+# `Cracking /etc/shadow Hashes`
 
+## /etc/shadow
+
+A Linux system file that stores **hashed user passwords** along with password aging information such as last change date and expiration.  
+Accessible only by the **root user**.
+
+---
+
+## /etc/passwd
+
+A Linux file that stores **user account information** such as username, UID, GID, home directory, and shell.  
+Does **not** store password hashes.
+
+---
+
+## Why /etc/shadow Cracking Is Possible
+
+If an attacker gains **root or sufficient privileges**, they can extract password hashes and attempt to crack them using brute-force or dictionary attacks.
+
+---
+
+## Unshadow
+
+A tool included with John the Ripper used to **combine `/etc/passwd` and `/etc/shadow`** files into a single format that John can understand.
+
+---
+
+## Purpose of Unshadow
+
+John requires both:
+
+- Username information (`/etc/passwd`)
+    
+- Password hash information (`/etc/shadow`)
+    
+
+Unshadow merges these into a crackable file.
+
+---
+
+## Unshadow Syntax
+
+`unshadow [passwd_file] [shadow_file]`
+
+---
+
+## Example Usage
+
+`unshadow local_passwd local_shadow > unshadowed.txt`
+
+---
+
+## Input Files Example
+
+### passwd entry
+
+`root:x:0:0::/root:/bin/bash`
+
+### shadow entry
+
+`root:$6$hashvalue:18576::::::`
+
+---
+
+## Hash Type Used
+
+Linux systems commonly use **SHA-512** hashing for passwords.  
+John format name: **sha512crypt**
+
+---
+
+## Cracking the Hash
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt`
+
+---
+
+## Practical Task Goal
+
+Crack the **root user password hash** from `etchashes.txt` located in:
+
+`~/John-the-Ripper-The-Basics/Task06/`
