@@ -355,11 +355,41 @@ john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 ```
 
 ---
-# Cracking Password-Protected RAR Archives
+# ==`Cracking Password-Protected RAR Archives`==
+
+## Password‑Protected RAR Archives
+
+RAR archives are compressed files created using WinRAR and can be protected with passwords that may be cracked if weak.
+## rar2john
+
+A John the Ripper suite tool used to convert a password‑protected RAR archive into a **hash format** that John can process.
+## Purpose of rar2john
+
+To extract the password hash from a RAR file so it can be cracked using John the Ripper.
+## rar2john Syntax
+
+```rar2john [rar_file] > [output_file]```
+
+## rar2john Example
+
+`/opt/john/rar2john rarfile.rar > rar_hash.txt`
 
 ---
 
-# Cracking SSH Keys with John
+## Output File
+
+The output file contains the RAR password hash formatted for John.
+
+---
+
+## Cracking the RAR Hash
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt`
+
+
+---
+
+# ==`Cracking SSH Keys with John`==
 
 ---
 
