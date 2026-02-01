@@ -386,6 +386,12 @@ The output file contains the RAR password hash formatted for John.
 john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
 ```
 
+## Extract RAR file to the current directory
+
+```
+unrar x file.rar
+```
+
 ---
 
 # ==`Cracking SSH Keys with John`==
