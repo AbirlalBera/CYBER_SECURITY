@@ -194,27 +194,22 @@ unshadow local_passwd local_shadow > unshadowed.txt
 
 When using `unshadow`, you can either use the entire `/etc/passwd` and `/etc/shadow` files, assuming you have them available, or you can use the relevant line from each, for example:
 
-**FILE 1 - local_passwd**
+**==FILE 1 - local_passwd==**
 
 Contains the `/etc/passwd` line for the root user:
 
 `root:x:0:0::/root:/bin/bash`
 
-**FILE 2 - local_shadow**
+**==FILE 2 - local_shadow==**
 
 Contains the `/etc/shadow` line for the root user: `root:$6$2nwjN454g.dv4HN/$m9Z/r2xVfweYVkrr.v5Ft8Ws3/YYksfNwq96UL1FX0OJjY1L6l.DS3KEVsZ9rOVLB/ldTeEL/OIhJZ4GMFMGA0:18576::::::`
 
 ## Hash Type Used
 
-Linux systems commonly use **SHA-512** hashing for passwords.  
-John format name: **sha512crypt**
+Linux systems commonly use **SHA-512** hashing for passwords. John format name: **==`sha512crypt`==**
 
 ## Cracking the Hash
 
-`john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt`
-
-## Practical Task Goal
-
-Crack the **root user password hash** from `etchashes.txt` located in:
-
-`~/John-the-Ripper-The-Basics/Task06/`
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt
+```
