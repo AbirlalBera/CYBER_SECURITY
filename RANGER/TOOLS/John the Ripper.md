@@ -246,7 +246,7 @@ A field in UNIX/Linux user account records that stores user-related information 
 - Full name
 - Office number
 - Contact details
-## Role of GECOS in Single Mode
+## Role of GECOS(General Electric Comprehensive Operating System) in Single Mode
 
 John extracts information from the GECOS field to generate **additional password candidates** when cracking ==`/etc/shadow`== hashes.
 ## Single Crack Mode Syntax
