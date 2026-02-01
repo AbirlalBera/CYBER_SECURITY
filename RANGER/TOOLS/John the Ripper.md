@@ -48,11 +48,19 @@ john [options] [file path ]
 
 ### Automatic Cracking 
 
-John can **auto-detect hash type** and try cracking it.
+John can **==`auto-detect hash type`==** and try cracking it.
 ### Command:
 
-`john --wordlist=/path/to/wordlist hash.txt`
+```
+john --wordlist=/path/to/wordlist hash.txt
+```
 
 ### Example:
 
-`john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt`
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
+```
+
+### Identifying Hashes (If john auto fails)
+
+
