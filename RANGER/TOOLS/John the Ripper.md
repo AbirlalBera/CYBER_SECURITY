@@ -269,3 +269,98 @@ Before: `1efee03cdcb96d90ad48ccc7b8666033`
 After: `mike:1efee03cdcb96d90ad48ccc7b8666033`
 
 ---
+## Custom Rules
+
+User-defined rules in John the Ripper that dynamically modify words from a wordlist to generate password guesses based on known or predicted password patterns.
+## Purpose of Custom Rules
+
+To exploit **predictable password creation patterns** used by users and organisations enforcing password complexity.
+## What Custom Rules Exploit
+
+**Password complexity predictability**
+
+✅ **Answer:** **password complexity predictability**
+## Common Password Pattern Exploited
+
+- Capital letter at the beginning
+    
+- Numbers at the end
+    
+- Symbols at the end
+    
+
+Example pattern:  
+`Polopassword1!`
+
+---
+
+## john.conf
+
+Configuration file where custom rules are defined.
+
+Common locations:
+
+- `/opt/john/john.conf` (TryHackMe AttackBox)
+    
+- `/etc/john/john.conf` (System install)
+    
+
+---
+
+## Rule Naming
+
+`[List.Rules:RuleName]`
+
+Defines the custom rule name used when calling John.
+
+---
+
+## Common Rule Modifiers
+
+- **Az** → Append characters to the end
+    
+- **A0** → Prepend characters to the beginning
+    
+- **c** → Capitalise letters
+    
+
+---
+
+## Character Sets
+
+- `[0-9]` → Numbers
+    
+- `[A-Z]` → Uppercase letters
+    
+- `[a-z]` → Lowercase letters
+    
+- `[!£$%@]` → Symbols
+    
+
+---
+
+## Example Custom Rule
+
+`[List.Rules:PoloPassword] cAz"[0-9][!£$%@]"`
+
+---
+
+## Rule to Add All Capital Letters to the End
+
+**Answer:**
+
+`Az"[A-Z]"`
+
+---
+
+## Using a Custom Rule
+
+`john --wordlist=[path] --rule=RuleName [hash_file]`
+
+---
+
+## Flag to Call Custom Rule THMRules
+
+**Answer:**
+
+`--rule=THMRules`
