@@ -259,7 +259,7 @@ john --single --format=[format] [hash_file]
 ```
 john --single --format=raw-sha256 hashes.txt
 ```
-## Required File Format
+## Required File Format (Before )
 
 For single crack mode, the hash file must be in the format: ==`username:hash`==
 ## Example File Format Change
