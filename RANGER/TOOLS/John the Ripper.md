@@ -398,32 +398,19 @@ unrar x file.rar
 
 ## SSH Private Key Authentication
 
-SSH can use **key‑based authentication** instead of passwords.  
-The private key file is usually named **id_rsa** and may be protected with a passphrase.
+SSH can use **key‑based authentication** instead of passwords. The private key file is usually named **id_rsa** and may be protected with a passphrase.
 ## SSH Key Password
 
-The passphrase protects access to the private SSH key.  
-If weak, it can be cracked to allow SSH authentication using the key.
-
----
+The passphrase protects access to the private SSH key. If weak, it can be cracked to allow SSH authentication using the key.
 
 ## ssh2john
 
-A John the Ripper suite tool that converts an **SSH private key (id_rsa)** into a hash format that John can crack.
-
----
-
-## Purpose of ssh2john
-
-To extract the hash from an encrypted SSH private key so it can be cracked using John the Ripper.
-
----
-
+A John the Ripper suite tool that converts an **SSH private key (id_rsa)** into a hash format that John can crack. It used to extract the hash from an encrypted SSH private key so it can be cracked using John the Ripper.
 ## ssh2john Syntax
 
-`ssh2john [id_rsa_file] > [output_file]`
-
----
+```
+ssh2john [id_rsa_file] > [output_file]
+```
 
 ## ssh2john Example
 
