@@ -68,7 +68,11 @@ If John struggles, **identify the hash first**.
 
 **Download and run:**
 ```
-wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py python3 hash-id.py
+wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py 
+```
+
+```
+python3 hash-id.py
 ```
 
 **Then paste the hash:**
