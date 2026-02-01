@@ -116,3 +116,60 @@ raw-sha256
 ---
 # Cracking Windows Authentication Hashes
 
+#### What is Authentication Hashes ?
+Hashed versions of passwords used by operating systems for user authentication.  
+These hashes may be cracked using brute-force or dictionary attacks if weak passwords are used.
+
+### What is NTHash / NTLM ?
+
+The password hash format used by modern Windows operating systems to store user and service account passwords.  
+Also known as NTLM (NT LAN Manager).
+
+## Purpose of NTLM
+
+Used by Windows to authenticate users locally and in domain environments.
+
+---
+
+## Storage Location
+
+- SAM (Security Account Manager) database
+    
+- Active Directory database (NTDS.dit)
+    
+
+---
+
+## Hash Acquisition
+
+NTLM hashes can be obtained using:
+
+- SAM database dumping
+    
+- Credential dumping tools (e.g., Mimikatz)
+    
+- Active Directory database extraction
+    
+
+Requires privileged access.
+
+---
+
+## Attack Usage
+
+- Hash cracking (when passwords are weak)
+    
+- Pass-the-Hash attacks (without cracking)
+    
+
+---
+
+## John the Ripper Format
+
+NTLM hashes are cracked in John using the **`nt`** format.
+
+---
+
+## Practical Command
+
+`john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt`
