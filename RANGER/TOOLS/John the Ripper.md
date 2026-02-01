@@ -173,27 +173,22 @@ A tool included with John the Ripper used to **combine `/etc/passwd` and `/etc/s
 ## Purpose of Unshadow
 
 John requires both:
-
 - Username information (`/etc/passwd`)
-    
 - Password hash information (`/etc/shadow`)
-    
 
 Unshadow merges these into a crackable file.
 
----
-
 ## Unshadow Syntax
 
-`unshadow [passwd_file] [shadow_file]`
-
----
+```
+unshadow [passwd_file] [shadow_file]
+```
 
 ## Example Usage
 
-`unshadow local_passwd local_shadow > unshadowed.txt`
-
----
+```
+unshadow local_passwd local_shadow > unshadowed.txt
+```
 
 ## Input Files Example
 
@@ -205,20 +200,14 @@ Unshadow merges these into a crackable file.
 
 `root:$6$hashvalue:18576::::::`
 
----
-
 ## Hash Type Used
 
 Linux systems commonly use **SHA-512** hashing for passwords.  
 John format name: **sha512crypt**
 
----
-
 ## Cracking the Hash
 
 `john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt`
-
----
 
 ## Practical Task Goal
 
