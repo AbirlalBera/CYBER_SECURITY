@@ -417,10 +417,6 @@ ssh2john [id_rsa_file] > [output_file]
 /opt/john/ssh2john.py id_rsa > id_rsa_hash.txt
 ```
 
-## Tool Location Notes
-
-- TryHackMe AttackBox:  `python3 /opt/john/ssh2john.py`
-- Kali Linux:  `python /usr/share/john/ssh2john.py`
 ## Output File
 
 The output file contains the **SSH private key hash** formatted for John.
