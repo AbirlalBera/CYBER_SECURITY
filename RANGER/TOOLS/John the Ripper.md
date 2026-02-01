@@ -122,8 +122,7 @@ These hashes may be cracked using brute-force or dictionary attacks if weak pass
 
 ### What is NTHash / NTLM ?
 
-The password hash format used by modern Windows operating systems to store user and service account passwords.  
-Also known as NTLM (NT LAN Manager).
+The password hash format used by modern Windows operating systems to store user and service account passwords. Also known as NTLM (NT LAN Manager).
 
 ## Purpose of NTLM
 
@@ -137,7 +136,6 @@ Used by Windows to authenticate users locally and in domain environments.
 ## Hash Acquisition
 
 NTLM hashes can be obtained using:
-
 - SAM database dumping
 - Credential dumping tools (e.g., Mimikatz)
 - Active Directory database extraction
