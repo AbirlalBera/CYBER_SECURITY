@@ -325,10 +325,45 @@ john --wordlist=[path] --rule=RuleName [hash_file]
 ---
 # Cracking Password Protected Zip Files
 
+## Password‑Protected Zip Files
+
+Zip archives can be protected with passwords, and these passwords can be cracked if weak using John the Ripper.
+## zip2john
+
+A tool in the John the Ripper suite that converts a password‑protected Zip file into a **hash format** that John can understand.
+## Purpose of zip2john
+
+To extract the password hash from a Zip archive so it can be cracked using John.
+## zip2john Syntax
+
+`zip2john [options] [zip_file] > [output_file]`
+
 ---
 
-Task 10Cracking Password-Protected RAR Archives
+## zip2john Example
 
-Task 11Cracking SSH Keys with John
+`zip2john zipfile.zip > zip_hash.txt`
 
-Task 12Further Reading
+---
+
+## Output File
+
+The output file contains the Zip password hash in a format compatible with John the Ripper.
+
+---
+
+## Cracking the Zip Hash
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt`
+
+---
+
+# Cracking Password-Protected RAR Archives
+
+---
+
+# Cracking SSH Keys with John
+
+---
+
+# Further Reading
