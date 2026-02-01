@@ -322,7 +322,13 @@ Defines the custom rule name used when calling John.
 john --wordlist=[path] --rule=RuleName [hash_file]
 ```
 
-## Flag to Call Custom Rule THMRules
+---
+# Cracking Password Protected Zip Files
 
-**Answer:** `--rule=THMRules`
+---
 
+Task 10Cracking Password-Protected RAR Archives
+
+Task 11Cracking SSH Keys with John
+
+Task 12Further Reading
