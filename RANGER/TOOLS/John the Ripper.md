@@ -85,7 +85,7 @@ Possible Hashs:
 
 ![[Pasted image 20260201200115.png]]
 
-### Format-Specific Cracking (Most Reliable)
+### 3. Format-Specific Cracking (Most Reliable)
 
 Once the hash type is known, **force John to use it**.
 ### Syntax:
@@ -97,4 +97,6 @@ john --format=[format] --wordlist=[wordlist] [hash_file]
 ```
 john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
 ```
+
+---
 
