@@ -46,7 +46,7 @@ The basic syntax of John the Ripper commands is as follows.
 john [options] [file path ]
 ```
 
-### Automatic Cracking 
+### 1.  Automatic Cracking 
 
 John can **==`auto-detect hash type`==** and try cracking it.
 ### Command:
@@ -61,7 +61,7 @@ john --wordlist=/path/to/wordlist hash.txt
 john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
 ```
 
-### Identifying Hashes (If john auto fails)
+### 2. Identifying Hashes (If john auto fails)
 
 If John struggles, **identify the hash first**.
 ### Tool: ==`hash-identifier`==
@@ -84,4 +84,17 @@ Possible Hashs:
 ```
 
 ![[Pasted image 20260201200115.png]]
+
+### Format-Specific Cracking (Most Reliable)
+
+Once the hash type is known, **force John to use it**.
+### Syntax:
+```
+john --format=[format] --wordlist=[wordlist] [hash_file]
+```
+
+### Example (MD5):
+```
+john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
+```
 
