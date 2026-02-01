@@ -336,28 +336,25 @@ A tool in the John the Ripper suite that converts a password‑protected Zip fil
 To extract the password hash from a Zip archive so it can be cracked using John.
 ## zip2john Syntax
 
-`zip2john [options] [zip_file] > [output_file]`
-
----
+```
+zip2john [options] [zip_file] > [output_file]
+```
 
 ## zip2john Example
 
-`zip2john zipfile.zip > zip_hash.txt`
-
----
-
+```
+zip2john zipfile.zip > zip_hash.txt
+```
 ## Output File
 
 The output file contains the Zip password hash in a format compatible with John the Ripper.
-
----
-
 ## Cracking the Zip Hash
 
-`john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt`
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
+```
 
 ---
-
 # Cracking Password-Protected RAR Archives
 
 ---
