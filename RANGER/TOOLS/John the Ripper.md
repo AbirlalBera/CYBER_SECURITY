@@ -2,8 +2,8 @@ John the Ripper is a well-known, well-loved, and versatile ==`hash-cracking`== 
 
 ## What are Hashes?
 
-A **hash** converts data of _any length_ into a **fixed-length value**.
-- The original data is **masked** and **cannot be reversed directly**.
+A **hash** converts data of _any length_ into a **fixed-length value**.The original data is **masked** and **cannot be reversed directly**.
+
 Common hashing algorithms:
 - **MD4**
 - **MD5**    
