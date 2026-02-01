@@ -221,84 +221,47 @@ A John the Ripper cracking mode that generates password guesses **using the user
 ## Purpose of Single Crack Mode
 
 To exploit **weak, predictable passwords** that are derived from usernames or user-related data.
-
----
-
 ## Word Mangling
 
 A technique where John modifies a base word (such as a username) using predefined rules to generate possible passwords.
-
----
 
 ## Word Mangling Examples
 
 Base word: `Markus`
 
 Generated guesses:
-
 - Markus1, Markus2
-    
 - MArkus, MARKus
-    
 - Markus!, Markus$
-    
-
----
-
 ## Mangling Rules
 
 A set of rules used by John to:
 
 - Change letter cases
-    
 - Append or prepend numbers
-    
 - Add symbols
-    
 - Create variations of a base word
-    
-
----
-
 ## GECOS Field
 
 A field in UNIX/Linux user account records that stores user-related information such as:
 
 - Full name
-    
 - Office number
-    
 - Contact details
-    
-
----
-
 ## Role of GECOS in Single Mode
 
 John extracts information from the GECOS field to generate **additional password candidates** when cracking `/etc/shadow` hashes.
-
----
-
 ## Single Crack Mode Syntax
 
 `john --single --format=[format] [hash_file]`
-
----
-
 ## Example Command
 
 `john --single --format=raw-sha256 hashes.txt`
-
----
-
 ## Required File Format
 
 For single crack mode, the hash file must be in the format:
 
 `username:hash`
-
----
-
 ## Example File Format Change
 
 Before:
