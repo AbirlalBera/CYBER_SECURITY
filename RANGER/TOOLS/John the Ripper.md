@@ -213,3 +213,98 @@ Linux systems commonly use **SHA-512** hashing for passwords. John format name: 
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt
 ```
+
+---
+## Single Crack Mode
+
+A John the Ripper cracking mode that generates password guesses **using the username and related user information**, instead of a predefined wordlist.
+## Purpose of Single Crack Mode
+
+To exploit **weak, predictable passwords** that are derived from usernames or user-related data.
+
+---
+
+## Word Mangling
+
+A technique where John modifies a base word (such as a username) using predefined rules to generate possible passwords.
+
+---
+
+## Word Mangling Examples
+
+Base word: `Markus`
+
+Generated guesses:
+
+- Markus1, Markus2
+    
+- MArkus, MARKus
+    
+- Markus!, Markus$
+    
+
+---
+
+## Mangling Rules
+
+A set of rules used by John to:
+
+- Change letter cases
+    
+- Append or prepend numbers
+    
+- Add symbols
+    
+- Create variations of a base word
+    
+
+---
+
+## GECOS Field
+
+A field in UNIX/Linux user account records that stores user-related information such as:
+
+- Full name
+    
+- Office number
+    
+- Contact details
+    
+
+---
+
+## Role of GECOS in Single Mode
+
+John extracts information from the GECOS field to generate **additional password candidates** when cracking `/etc/shadow` hashes.
+
+---
+
+## Single Crack Mode Syntax
+
+`john --single --format=[format] [hash_file]`
+
+---
+
+## Example Command
+
+`john --single --format=raw-sha256 hashes.txt`
+
+---
+
+## Required File Format
+
+For single crack mode, the hash file must be in the format:
+
+`username:hash`
+
+---
+
+## Example File Format Change
+
+Before:
+
+`1efee03cdcb96d90ad48ccc7b8666033`
+
+After:
+
+`mike:1efee03cdcb96d90ad48ccc7b8666033`
