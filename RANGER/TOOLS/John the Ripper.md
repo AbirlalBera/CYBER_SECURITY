@@ -23,6 +23,8 @@ A **dictionary attack** uses a **predefined list of words** (called a _wordlist_
 
 => **Jumbo John.**
 
+Installation link : https://github.com/openwall/john/tree/bleeding-jumbo
+
 **How to check is it installed or not ?**
 
 ```
