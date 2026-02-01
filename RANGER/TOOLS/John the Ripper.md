@@ -224,19 +224,18 @@ To exploit **weak, predictable passwords** that are derived from usernames or us
 ## Word Mangling
 
 A technique where John modifies a base word (such as a username) using predefined rules to generate possible passwords.
-
 ## Word Mangling Examples
-
+```
 Base word: `Markus`
 
 Generated guesses:
 - Markus1, Markus2
 - MArkus, MARKus
 - Markus!, Markus$
+```
 ## Mangling Rules
 
 A set of rules used by John to:
-
 - Change letter cases
 - Append or prepend numbers
 - Add symbols
@@ -244,7 +243,6 @@ A set of rules used by John to:
 ## GECOS Field
 
 A field in UNIX/Linux user account records that stores user-related information such as:
-
 - Full name
 - Office number
 - Contact details
