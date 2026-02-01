@@ -4,22 +4,17 @@ A shell is software that allows a user to interact with an OS. It can be a grap
 
 ## What attackers can do with a shell
 
-🖥️ ==Remote System Control== : Run commands or software on the target machine from afar.
+🖥️ ==`Remote System Contro`l== : Run commands or software on the target machine from afar.
  
-⬆️ ==Privilege Escalation== : Upgrade from limited access (user) to higher access (admin/root).
+⬆️ ==`Privilege Escalation`== : Upgrade from limited access (user) to higher access (admin/root).
 
-📤 ==Data Exfiltration== : Search for, read, and copy sensitive files or data.
+📤 ==`Data Exfiltration`== : Search for, read, and copy sensitive files or data.
 
-🔁 ==Persistence== : Maintain access by:
-- Creating users
-- Adding credentials
-- Installing backdoors
+🔁 ==`Persistence`== : Maintain access by:  Creating users, Adding credentials ,Installing backdoors
 
-🧪 ==Post‑Exploitation== : Perform actions after initial access, such as:
-- Deploying malware
-- Creating hidden accounts
-- Deleting logs or data
+🧪 ==`Post‑Exploitation`== : 
+Perform actions after initial access, such as: Deploying malware, Creating hidden accounts ,Deleting logs or data
 
-🌐 ==Pivoting== : Use the compromised system as a **launch point** to attack other systems on the same network.
+🌐 ==`Pivoting`== : Use the compromised system as a **launch point** to attack other systems on the same network.
 
 ---
