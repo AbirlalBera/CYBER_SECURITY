@@ -192,13 +192,17 @@ unshadow local_passwd local_shadow > unshadowed.txt
 
 ## Input Files Example
 
-### passwd entry
+When using `unshadow`, you can either use the entire `/etc/passwd` and `/etc/shadow` files, assuming you have them available, or you can use the relevant line from each, for example:
+
+**FILE 1 - local_passwd**
+
+Contains the `/etc/passwd` line for the root user:
 
 `root:x:0:0::/root:/bin/bash`
 
-### shadow entry
+**FILE 2 - local_shadow**
 
-`root:$6$hashvalue:18576::::::`
+Contains the `/etc/shadow` line for the root user: `root:$6$2nwjN454g.dv4HN/$m9Z/r2xVfweYVkrr.v5Ft8Ws3/YYksfNwq96UL1FX0OJjY1L6l.DS3KEVsZ9rOVLB/ldTeEL/OIhJZ4GMFMGA0:18576::::::`
 
 ## Hash Type Used
 
