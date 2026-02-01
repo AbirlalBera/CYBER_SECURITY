@@ -302,49 +302,26 @@ Defines the custom rule name used when calling John.
 ## Common Rule Modifiers
 
 - **Az** → Append characters to the end
-    
 - **A0** → Prepend characters to the beginning
-    
 - **c** → Capitalise letters
-    
-
----
-
 ## Character Sets
 
 - `[0-9]` → Numbers
-    
 - `[A-Z]` → Uppercase letters
-    
 - `[a-z]` → Lowercase letters
-    
 - `[!£$%@]` → Symbols
-    
-
----
-
 ## Example Custom Rule
 
 `[List.Rules:PoloPassword] cAz"[0-9][!£$%@]"`
-
----
-
 ## Rule to Add All Capital Letters to the End
 
-**Answer:**
-
-`Az"[A-Z]"`
-
----
-
+**Answer:**`Az"[A-Z]"`
 ## Using a Custom Rule
 
-`john --wordlist=[path] --rule=RuleName [hash_file]`
-
----
+```syntax
+john --wordlist=[path] --rule=RuleName [hash_file]
+```
 
 ## Flag to Call Custom Rule THMRules
 
-**Answer:**
-
-`--rule=THMRules`
+**Answer:** `--rule=THMRules`
