@@ -325,3 +325,4 @@ john --wordlist=[path] --rule=RuleName [hash_file]
 ## Flag to Call Custom Rule THMRules
 
 **Answer:** `--rule=THMRules`
+
