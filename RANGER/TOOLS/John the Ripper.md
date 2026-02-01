@@ -380,13 +380,11 @@ rar2john [rar_file] > [output_file]
 ## Output File
 
 The output file contains the RAR password hash formatted for John.
-
----
-
 ## Cracking the RAR Hash
 
-`john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt`
-
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
+```
 
 ---
 
