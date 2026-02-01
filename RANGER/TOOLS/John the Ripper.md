@@ -248,7 +248,7 @@ A field in UNIX/Linux user account records that stores user-related information 
 - Contact details
 ## Role of GECOS(General Electric Comprehensive Operating System) in Single Mode
 
-John extracts information from the GECOS field to generate **additional password candidates** when cracking ==`/etc/shadow`== hashes.
+If we looked at the entries for both `/etc/shadow` and `/etc/passwd`. Looking closely, you will notice that The fields are separated by a colon `:`. The fifth field in the user account record is the GECOS field. It stores general information about the user, such as the user’s full name, office number, and telephone number, among other things. John can take information stored in those records, such as full name and home directory name, to add to the wordlist it generates when cracking `/etc/shadow` hashes with single crack mode.
 ## Single Crack Mode Syntax
 
 ```
