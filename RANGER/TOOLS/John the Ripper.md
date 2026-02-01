@@ -368,14 +368,15 @@ A John the Ripper suite tool used to convert a password‑protected RAR archive 
 To extract the password hash from a RAR file so it can be cracked using John the Ripper.
 ## rar2john Syntax
 
-```rar2john [rar_file] > [output_file]```
+```
+rar2john [rar_file] > [output_file]
+```
 
 ## rar2john Example
 
-`/opt/john/rar2john rarfile.rar > rar_hash.txt`
-
----
-
+```
+/opt/john/rar2john rarfile.rar > rar_hash.txt
+```
 ## Output File
 
 The output file contains the RAR password hash formatted for John.
