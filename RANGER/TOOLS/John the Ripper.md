@@ -102,5 +102,15 @@ john --format=[format] --wordlist=[wordlist] [hash_file]
 john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt
 ```
 
+## ⚠️ Important Note About Formats
+
+For **standard hashes** (MD5, SHA1, etc.), use:
+```
+raw-md5
+raw-sha1 
+raw-sha256
+```
+
+
 ---
 
