@@ -15,4 +15,11 @@ Common hashing algorithms:
 |---|---|
 |`polo`|`b53759f3ce692de7aff1b5779d3964da`|
 |`polomints`|`584b6e4f4586e136bc280f27f9c64f3b`|
-what is dictionary attack ?
+### what is dictionary attack ?
+
+A **dictionary attack** uses a **predefined list of words** (called a _wordlist_ or _dictionary_) to guess passwords or crack hashes.
+
+### What is the most popular extended version of John the Ripper?
+
+Jumbo John.
+
