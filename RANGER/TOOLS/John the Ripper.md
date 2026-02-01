@@ -396,6 +396,66 @@ unrar x file.rar
 
 # ==`Cracking SSH Keys with John`==
 
+## SSH Private Key Authentication
+
+SSH can use **key‑based authentication** instead of passwords.  
+The private key file is usually named **id_rsa** and may be protected with a passphrase.
+## SSH Key Password
+
+The passphrase protects access to the private SSH key.  
+If weak, it can be cracked to allow SSH authentication using the key.
+
 ---
 
-# Further Reading
+## ssh2john
+
+A John the Ripper suite tool that converts an **SSH private key (id_rsa)** into a hash format that John can crack.
+
+---
+
+## Purpose of ssh2john
+
+To extract the hash from an encrypted SSH private key so it can be cracked using John the Ripper.
+
+---
+
+## ssh2john Syntax
+
+`ssh2john [id_rsa_file] > [output_file]`
+
+---
+
+## ssh2john Example
+
+`/opt/john/ssh2john.py id_rsa > id_rsa_hash.txt`
+
+---
+
+## Tool Location Notes
+
+- TryHackMe AttackBox:
+    
+    `python3 /opt/john/ssh2john.py`
+    
+- Kali Linux:
+    
+    `python /usr/share/john/ssh2john.py`
+    
+
+---
+
+## Output File
+
+The output file contains the **SSH private key hash** formatted for John.
+
+---
+
+## Cracking the SSH Key Hash
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt`
+
+---
+
+## Result
+
+Once cracked, the recovered passphrase can be used to unlock the SSH private key and authenticate over SSH.
