@@ -147,10 +147,13 @@ Requires privileged access.
 - Pass-the-Hash attacks (without cracking)
 ## John the Ripper Format
 
-NTLM hashes are cracked in John using the **`nt`** format.
+NTLM hashes are cracked in John using the **==`nt`==** format.
 ## Practical Command
 
 ```
 john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt
 ```
+
+---
+# Cracking /etc/shadow Hashes
 
