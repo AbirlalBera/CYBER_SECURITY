@@ -1,1 +1,1 @@
-https://docs.rapid7.com/metasploit/installing-metasploit-pro/
+https://docs.rapid7.com/metasploit/
