@@ -22,14 +22,21 @@ DNS is organized in an "inverted tree" structure. It is decentralized so that no
 
 When you manage a website, you use different "records" to tell the internet where to send traffic:
 
-|**Record Type**|**Full Name**|**Purpose**|
-|---|---|---|
-|**A**|Address Record|Maps a domain to an **IPv4** address.|
-|**AAAA**|IPv6 Address Record|Maps a domain to an **IPv6** address.|
-|**CNAME**|Canonical Name|Creates an alias (points one domain to another domain).|
-|**MX**|Mail Exchanger|Specifies where to send emails for that domain.|
-|**TXT**|Text Record|Used for verification (like proving you own the site to Google).|
+| **Record Type** | **Full Name**       | **Purpose**                                                      |
+| --------------- | ------------------- | ---------------------------------------------------------------- |
+| **A**           | Address Record      | Maps a domain to an **IPv4** address.                            |
+| **AAAA**        | IPv6 Address Record | Maps a domain to an **IPv6** address.                            |
+| **CNAME**       | Canonical Name      | Creates an alias (points one domain to another domain).          |
+| **MX**          | Mail Exchanger      | Specifies where to send emails for that domain.                  |
+| **TXT**         | Text Record         | Used for verification (like proving you own the site to Google). |
 
+
+
+- **NS** – Name server
+
+- **TXT** – Verification, SPF, DKIM
+
+- **PTR** – Reverse DNS lookup
 ---
 ## How DNS Works (The Lookup Process)
 
