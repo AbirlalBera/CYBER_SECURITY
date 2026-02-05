@@ -10,3 +10,7 @@ https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjm
 
 https://chromewebstore.google.com/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=en
 
+## Hack-Tools
+
+https://chromewebstore.google.com/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi?hl=en
+
