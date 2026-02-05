@@ -156,3 +156,6 @@ In the storage tab we can also found the session id :
 ==`PHPSESSID `== : 0rtiauhibqlbt6er35nb6hkh45
 
 ![[Pasted image 20260124003652.png]]
+
+---
+## SQLi 
