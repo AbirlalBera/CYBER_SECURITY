@@ -46,7 +46,7 @@ Since **one side of the OR is true**, the entire `WHERE` clause becomes true.
 
 👉 Result: **the query returns rows**, and the application thinks authentication succeeded.
 
-### Why the single quote `'` is crucial
+### Why the single quote ==`'`== is crucial
 
 Without the quote, SQL would treat the entire string as the password value, which would **not break out of the string literal**, and the attack would fail.
 
@@ -77,7 +77,7 @@ SQLMap is an automated tool for detecting and exploiting SQL injection vulner
 
 ![[Pasted image 20260123225041.png]]
 
-## SQLMap Commands (Organized)
+## SQLMap Commands 
 
 #### **Target**
 
