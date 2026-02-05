@@ -108,7 +108,7 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 #### **Data Extraction**
 
-- `-D <db> -T <table> --dump` → Dump table records
+`-D <db> -T <table> --dump` → Dump table records
 
 #### **Usefull** 
 
