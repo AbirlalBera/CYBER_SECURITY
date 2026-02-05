@@ -25,4 +25,7 @@ dirb <URL< -X
 ffuf -u <URL>/FUZZ -w wordlist
 ```
 
+```
+gobuster dir -u <URL> -w wordlist 
+```
 ---
