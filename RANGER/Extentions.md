@@ -6,3 +6,7 @@ https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfn
 
 https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjmcnefhjlbohackpeeknd?hl=en
 
+## HackBar
+
+https://chromewebstore.google.com/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=en
+
