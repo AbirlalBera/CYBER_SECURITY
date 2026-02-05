@@ -15,9 +15,9 @@ dvwa -stop
 ---
 **Login Credentials :**
 
-USERNAME : admin 
+**USERNAME :** admin 
 
-PASSWORD : password
+**PASSWORD :** password
 
 ---
 
