@@ -135,43 +135,43 @@ Depends on the database:
 Not literally _all_ (there are 65,535), but here are **important ones**:
 ## Well-Known & Basic Ports (0–1023)
 
-| Port | Protocol | Service           |
-| ---- | -------- | ----------------- |
-| 20   | TCP      | ==FTP (Data)==    |
-| 21   | TCP      | ==FTP (Control)== |
-| 22   | TCP      | ==SSH==           |
-| 23   | TCP      | ==Telnet==        |
-| 25   | TCP      | ==SMTP==          |
-| 53   | TCP/UDP  | ==DNS==           |
-| 67   | UDP      | ==DHCP (Server)== |
-| 68   | UDP      | ==DHCP (Client)== |
-| 69   | UDP      | ==TFTP==          |
-| 80   | TCP      | ==HTTP==          |
-| 110  | TCP      | ==POP3==          |
-| 119  | TCP      | NNTP              |
-| 123  | UDP      | NTP               |
-| 137  | UDP      | NetBIOS Name      |
-| 138  | UDP      | NetBIOS Datagram  |
-| 139  | TCP      | NetBIOS Session   |
-| 143  | TCP      | ==IMAP==          |
-| 161  | UDP      | ==SNMP==          |
-| 162  | UDP      | SNMP Trap         |
-| 179  | TCP      | BGP               |
-| 194  | TCP      | IRC               |
-| 389  | TCP/UDP  | ==LDAP==          |
-| 443  | TCP      | ==HTTPS==         |
-| 445  | TCP      | ==SMB==           |
-| 465  | TCP      | ==SMTPS==         |
-| 500  | UDP      | ISAKMP (IPSec)    |
-| 514  | UDP      | Syslog            |
-| 515  | TCP      | LPD Printing      |
-| 520  | UDP      | ==RIP==           |
-| 587  | TCP      | SMTP (TLS)        |
-| 636  | TCP      | LDAPS             |
-| 989  | TCP      | FTPS (Data)       |
-| 990  | TCP      | FTPS (Control)    |
-| 993  | TCP      | IMAPS             |
-| 995  | TCP      | POP3S             |
+| Port | Protocol | Service            |
+| ---- | -------- | ------------------ |
+| 20   | TCP      | ==FTP (Data)==     |
+| 21   | TCP      | ==FTP (Control)==  |
+| 22   | TCP      | ==SSH==            |
+| 23   | TCP      | ==Telnet==         |
+| 25   | TCP      | ==SMTP==           |
+| 53   | TCP/UDP  | ==DNS==            |
+| 67   | UDP      | ==DHCP (Server)==  |
+| 68   | UDP      | ==DHCP (Client)==  |
+| 69   | UDP      | ==TFTP==           |
+| 80   | TCP      | ==HTTP==           |
+| 110  | TCP      | ==POP3==           |
+| 119  | TCP      | NNTP               |
+| 123  | UDP      | NTP                |
+| 137  | UDP      | NetBIOS Name       |
+| 138  | UDP      | NetBIOS Datagram   |
+| 139  | TCP      | NetBIOS Session    |
+| 143  | TCP      | ==IMAP==           |
+| 161  | UDP      | ==SNMP==           |
+| 162  | UDP      | SNMP Trap          |
+| 179  | TCP      | ==BGP==            |
+| 194  | TCP      | IRC                |
+| 389  | TCP/UDP  | ==LDAP==           |
+| 443  | TCP      | ==HTTPS==          |
+| 445  | TCP      | ==SMB==            |
+| 465  | TCP      | ==SMTPS==          |
+| 500  | UDP      | ISAKMP (IPSec)     |
+| 514  | UDP      | Syslog             |
+| 515  | TCP      | LPD Printing       |
+| 520  | UDP      | ==RIP==            |
+| 587  | TCP      | ==SMTP (TLS)==     |
+| 636  | TCP      | ==LDAPS==          |
+| 989  | TCP      | ==FTPS (Data)==    |
+| 990  | TCP      | ==FTPS (Control)== |
+| 993  | TCP      | ==IMAPS==          |
+| 995  | TCP      | ==POP3S==          |
 ## 🔹 Registered Ports (1024–49151)
 
 | Port | Service           |
@@ -186,7 +186,7 @@ Not literally _all_ (there are 65,535), but here are **important ones**:
 | 3306 | ==MySQL==         |
 | 3389 | ==RDP==           |
 | 3690 | Subversion        |
-| 4444 | Metasploit        |
+| 4444 | ==Metasploit==    |
 | 5432 | ==PostgreSQL==    |
 | 5601 | Kibana            |
 | 5900 | VNC               |
