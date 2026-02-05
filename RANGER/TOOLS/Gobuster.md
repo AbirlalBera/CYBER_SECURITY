@@ -11,6 +11,7 @@ Gobuster is powerful because it allows you to scan the website and return the st
 **Enumeration** : Enumeration is the act of listing all the available resources, whether they are accessible or not. For example, Gobuster enumerates web directories.
 
 **==Example:==**
+
 Directories
 Subdomains
 Virtual hosts
