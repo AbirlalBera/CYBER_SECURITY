@@ -17,8 +17,12 @@ dirsearch -u <URL> -i 200 -r -w /usr/share/wordlists/dirb/big.txt
 ```
 
 ```
-dirb <URL
-dirb <URL< 
+dirb <URL>
+dirb <URL< -X
+```
+
+```
+ffuf -u <URL>/FUZZ -w wordlist
 ```
 
 ---
