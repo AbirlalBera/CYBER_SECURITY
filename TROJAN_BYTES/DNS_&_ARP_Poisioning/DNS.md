@@ -29,14 +29,9 @@ When you manage a website, you use different "records" to tell the internet wher
 | **CNAME**       | Canonical Name      | Creates an alias (points one domain to another domain).          |
 | **MX**          | Mail Exchanger      | Specifies where to send emails for that domain.                  |
 | **TXT**         | Text Record         | Used for verification (like proving you own the site to Google). |
+| **NS**          | Name server         |                                                                  |
+| **PTR**         | Reverse DNS lookup  |                                                                  |
 
-
-
-- **NS** – Name server
-
-- **TXT** – Verification, SPF, DKIM
-
-- **PTR** – Reverse DNS lookup
 ---
 ## How DNS Works (The Lookup Process)
 
