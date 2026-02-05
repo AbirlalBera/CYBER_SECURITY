@@ -104,11 +104,12 @@ The first step is to identify a potentially vulnerable URL. Web applications tha
 
 ==`-D <db> -T <table> --columns`== → List columns in a table
 
-![[Pasted image 20260123235044.png]]
 
 #### **Data Extraction**
 
 `-D <db> -T <table> --dump` → Dump table records
+
+![[Pasted image 20260123235044.png]]
 
 #### **Usefull** 
 
