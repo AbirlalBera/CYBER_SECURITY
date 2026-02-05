@@ -1,3 +1,5 @@
+**Set-up :**
+
 ```
 sudo apt install dvwa
 ```
@@ -11,8 +13,11 @@ dvwa -stop
 ```
 
 ---
-Login Credentials :
+**Login Credentials :**
 
-USERNAME admin 
+USERNAME : admin 
 
-password
+PASSWORD : password
+
+---
+
