@@ -10,5 +10,8 @@ Subdomain Discovery :
 
 ---
 Directory Finding :
+```
+dirsearch –u <URL>
 
+```
 ---
