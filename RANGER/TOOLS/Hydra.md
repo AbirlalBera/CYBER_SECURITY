@@ -23,7 +23,7 @@ The options we pass into Hydra depend on which service (protocol) we’re atta
 For example, if we wanted to brute force FTP with the username being `user` and a password list being `passlist.txt`, we’d use the following command:
 
 ```
-hydra -l user -P passlist.txt ftp://10.48.162.202
+hydra -l username.txt -P passlist.txt ftp://10.48.162.202
 ```
 
 ## SSH
