@@ -3,9 +3,7 @@
 **Sniffing** is the process of **capturing and analyzing network traffic**.
 
 - An attacker or admin uses a **packet sniffer** (like Wireshark)
-    
-- It captures data packets traveling over a network
-    
+- It captures data packets traveling over a networ
 - Can be **legitimate** (troubleshooting) or **malicious** (stealing passwords)
 
 👉 Example: Capturing usernames/passwords sent over **HTTP** (not encrypted)
@@ -19,16 +17,11 @@ An **IP address** is a **unique numerical identifier** assigned to a device on a
 ### Types:
 
 - **IPv4**: `192.168.1.1` (32-bit)
-    
 - **IPv6**: `2001:0db8::1` (128-bit)
-    
-
 ### Categories:
 
 - **Public IP** – used on the internet
-    
 - **Private IP** – used inside local networks
-    
 
 ---
 
@@ -39,25 +32,15 @@ The **OWASP Top 10** is a list of the **most critical web application security r
 ### Common OWASP Top 10 (latest themes):
 
 1. Broken Access Control
-    
 2. Cryptographic Failures
-    
 3. Injection (SQL Injection, XSS, etc.)
-    
 4. Insecure Design
-    
 5. Security Misconfiguration
-    
 6. Vulnerable & Outdated Components
-    
 7. Identification & Authentication Failures
-    
 8. Software & Data Integrity Failures
-    
 9. Security Logging & Monitoring Failures
-    
 10. Server-Side Request Forgery (SSRF)
-    
 
 ---
 
@@ -66,19 +49,18 @@ The **OWASP Top 10** is a list of the **most critical web application security r
 The **OSI model** has **7 layers** (bottom → top):
 
 1. **Physical** – cables, signals
-    
+
 2. **Data Link** – MAC address, switches
-    
+
 3. **Network** – IP address, routers
-    
+
 4. **Transport** – TCP / UDP
-    
+
 5. **Session** – session management
-    
+
 6. **Presentation** – encryption, compression
-    
+
 7. **Application** – HTTP, FTP, SMTP
-    
 
 📌 Mnemonic: **Please Do Not Throw Sausage Pizza Away**
 
@@ -89,16 +71,14 @@ The **OSI model** has **7 layers** (bottom → top):
 **ARP Poisoning (ARP Spoofing)** is a **Man-in-the-Middle attack**.
 
 - Attacker sends fake ARP messages
-    
+
 - Associates attacker’s MAC address with victim’s IP
-    
+
 - Attacker intercepts or modifies traffic
-    
 
 👉 Common in local networks
 
 ---
-
 ## 6. DNS Records
 
 **DNS records** tell the internet how to handle domain requests.
