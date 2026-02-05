@@ -32,3 +32,5 @@ gobuster dir -u <URL> -w wordlist
 # Tactics
 
 https://hackviser.com/tactics/tools/gobuster
+
+https://hackviser.com/tactics/pentesting
