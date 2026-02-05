@@ -29,3 +29,6 @@ ffuf -u <URL>/FUZZ -w wordlist
 gobuster dir -u <URL> -w wordlist 
 ```
 ---
+# Tactics
+
+https://hackviser.com/tactics/tools/gobuster
