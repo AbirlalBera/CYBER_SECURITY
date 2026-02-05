@@ -174,33 +174,32 @@ Not literally _all_ (there are 65,535), but here are **important ones**:
 | 995  | TCP      | POP3S             |
 ## 🔹 Registered Ports (1024–49151)
 
-|Port|Service|
-|---|---|
-|1433|MS SQL Server|
-|1521|Oracle DB|
-|2049|NFS|
-|2082|cPanel|
-|2083|cPanel SSL|
-|2181|ZooKeeper|
-|3000|Dev Servers|
-|3306|MySQL|
-|3389|RDP|
-|3690|Subversion|
-|4444|Metasploit|
-|5432|PostgreSQL|
-|5601|Kibana|
-|5900|VNC|
-|5985|WinRM|
-|5986|WinRM SSL|
-|6379|Redis|
-|7001|WebLogic|
-|8000|HTTP Alternate|
-|8080|HTTP Proxy|
-|8443|HTTPS Alternate|
-|9000|PHP-FPM|
+| Port | Service         |
+| ---- | --------------- |
+| 1433 | MS SQL Server   |
+| 1521 | Oracle DB       |
+| 2049 | NFS             |
+| 2082 | cPanel          |
+| 2083 | cPanel SSL      |
+| 2181 | ZooKeeper       |
+| 3000 | Dev Servers     |
+| 3306 | ==MySQL==       |
+| 3389 | ==RDP==         |
+| 3690 | Subversion      |
+| 4444 | Metasploit      |
+| 5432 | PostgreSQL      |
+| 5601 | Kibana          |
+| 5900 | VNC             |
+| 5985 | WinRM           |
+| 5986 | WinRM SSL       |
+| 6379 | Redis           |
+| 7001 | WebLogic        |
+| 8000 | HTTP Alternate  |
+| 8080 | ==HTTP Proxy==  |
+| 8443 | HTTPS Alternate |
+| 9000 | PHP-FPM         |
 
 ---
-
 ## 10. Service Operations like Apache
 
 **Apache** is a **web server service**.
