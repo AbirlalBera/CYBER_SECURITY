@@ -22,15 +22,31 @@ DNS is organized in an "inverted tree" structure. It is decentralized so that no
 
 When you manage a website, you use different "records" to tell the internet where to send traffic:
 
-| **Record Type** | **Full Name**       | **Purpose**                                                      |
-| --------------- | ------------------- | ---------------------------------------------------------------- |
-| **A**           | Address Record      | Maps a domain to an **IPv4** address.                            |
-| **AAAA**        | IPv6 Address Record | Maps a domain to an **IPv6** address.                            |
-| **CNAME**       | Canonical Name      | Creates an alias (points one domain to another domain).          |
-| **MX**          | Mail Exchanger      | Specifies where to send emails for that domain.                  |
-| **TXT**         | Text Record         | Used for verification (like proving you own the site to Google). |
-| **NS**          | Name server         |                                                                  |
-| **PTR**         | Reverse DNS lookup  |                                                                  |
+|**Record**|**Full Name**|**Purpose**|
+|---|---|---|
+|**A**|Address Record|Domain → **IPv4 address**|
+|**AAAA**|IPv6 Address Record|Domain → **IPv6 address**|
+|**CNAME**|Canonical Name|Alias of another domain|
+|**MX**|Mail Exchanger|Mail server for domain|
+|**NS**|Name Server|Authoritative DNS servers|
+|**TXT**|Text Record|Verification, SPF, DKIM, DMARC|
+|**PTR**|Pointer Record|**Reverse DNS** (IP → domain)|
+|**SOA**|Start of Authority|Domain DNS admin info|
+|**SRV**|Service Record|Defines services (host + port)|
+|**CAA**|Certification Authority Authorization|Controls which CA can issue SSL|
+|**SPF**|Sender Policy Framework|Email sender validation (now via TXT)|
+|**DKIM**|DomainKeys Identified Mail|Email integrity/authentication|
+|**DMARC**|Domain-based Message Authentication|Email policy & reporting|
+|**NAPTR**|Naming Authority Pointer|Used in VoIP, SIP|
+|**HINFO**|Host Information|Host OS and CPU info|
+|**LOC**|Location Record|Geographic location|
+|**RP**|Responsible Person|Admin contact info|
+|**SSHFP**|SSH Fingerprint|SSH key verification|
+|**TLSA**|TLS Authentication|Certificate verification (DANE)|
+|**DS**|Delegation Signer|DNSSEC delegation|
+|**DNSKEY**|DNSSEC Key|Public key for DNSSEC|
+|**RRSIG**|Resource Record Signature|DNSSEC signature|
+|**NSEC / NSEC3**|Next Secure Record|DNSSEC proof of non-existence|
 
 ---
 ## How DNS Works (The Lookup Process)
