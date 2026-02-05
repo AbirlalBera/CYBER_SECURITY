@@ -4,7 +4,9 @@
 
 # Scanning using RustScan 
 
+```
 rustscan -a 10.201.76.54 -- -sC -sV 
+```
 
 ![[Pasted image 20251025174816.png]]
 
