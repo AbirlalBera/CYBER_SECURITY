@@ -86,19 +86,19 @@ The **OSI model** has **7 layers** (bottom → top):
 ### Common DNS records:
 
 - **A** – Maps domain → IPv4 address
-    
+
 - **AAAA** – Maps domain → IPv6 address
-    
+
 - **CNAME** – Alias of another domain
-    
+
 - **MX** – Mail server
-    
+
 - **NS** – Name server
-    
+
 - **TXT** – Verification, SPF, DKIM
-    
+
 - **PTR** – Reverse DNS lookup
-    
+
 
 ---
 
