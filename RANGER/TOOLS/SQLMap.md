@@ -158,4 +158,7 @@ In the storage tab we can also found the session id :
 ![[Pasted image 20260124003652.png]]
 
 ---
-## SQLi 
+## SQLi Dorks :
+
+Github Link ->
+https://gist.github.com/12458/75971f70c084a3db47b8173e96875f69
