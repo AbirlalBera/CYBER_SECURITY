@@ -146,13 +146,9 @@ Each protocol has a **specific role**, making email more reliable and scalable.
 Depends on the database:
 
 - **MySQL** → `3306`
-    
 - **PostgreSQL** → `5432`
-    
 - **MS SQL Server** → `1433`
-    
 - **Oracle DB** → `1521`
-    
 
 ---
 
@@ -248,4 +244,6 @@ Not literally _all_ (there are 65,535), but here are **important ones**:
 ```
 systemctl start apache2 
 systemctl stop apache2 
-systemctl restart apache2 systemctl status apache2```
+systemctl restart apache2 
+systemctl status apache2
+```
