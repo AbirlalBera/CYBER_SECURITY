@@ -9,7 +9,6 @@
 👉 Example: Capturing usernames/passwords sent over **HTTP** (not encrypted)
 
 ---
-
 ## 2. What is an IP Address?
 
 An **IP address** is a **unique numerical identifier** assigned to a device on a network.
@@ -65,7 +64,6 @@ The **OSI model** has **7 layers** (bottom → top):
 📌 Mnemonic: **Please Do Not Throw Sausage Pizza Away**
 
 ---
-
 ## 5. What is ARP Poisoning?
 
 **ARP Poisoning (ARP Spoofing)** is a **Man-in-the-Middle attack**.
