@@ -109,7 +109,6 @@ The **OSI model** has **7 layers** (bottom → top):
 
 - **PTR** – Reverse DNS lookup
 
-
 ---
 
 ## 7. What is SMTP & Why Multiple Protocols?
