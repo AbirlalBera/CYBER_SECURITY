@@ -240,4 +240,13 @@ systemctl status apache2
 ---
 IPV4 Classification 
 
-Clas
+Class A = 0-127
+
+Class B = 128-191
+
+Class C = 192 - 223
+
+Class D = 
+
+Class E
+
