@@ -246,7 +246,7 @@ Class B = 128-191
 
 Class C = 192 - 223
 
-Class D = 
+Class D = 224 - 239
 
-Class E
+Class E = 240 - 255
 
