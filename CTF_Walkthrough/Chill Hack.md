@@ -196,3 +196,11 @@ steghide extract -sf  hacker-with-laptop_23-2147985341.jpg
 ![[Pasted image 20260210021102.png]]
 
 ![[Pasted image 20260210021152.png]]
+
+```
+echo "IWQwbnRLbjB3bVlwQHNzdzByZA==" | base64 -d
+!d0ntKn0wmYp@ssw0rd 
+```
+
+
+![[Pasted image 20260210021319.png]]
