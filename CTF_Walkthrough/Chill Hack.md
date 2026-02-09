@@ -67,7 +67,10 @@ Anurodh told me that there is some filtering on strings being put in the command
 -- Apaar
 ```
 
-Here we got  two name : Anurodh and Apaar
+Here we got  two name : 
+Anurodh 
+
+Apaar
 
 ---
 
