@@ -120,7 +120,8 @@ Now we trick this to bypass the shell script and finally we got access to the **
 ![[Pasted image 20260209232058.png]]
 
 ---
-#
+# SSH Persistence
+
 I wanted to try and get a better shell environment to not have to go through the same steps again so I created an SSH key pair using ssh-keygen. This gives me a Public and Private key.
 
 ==`passphrase`== : A passphrase is like a password for your private SSH key.
@@ -134,10 +135,10 @@ Another way :
 go to .ssh folder to get the key :
 ![[Pasted image 20260210002537.png]]
 
-Now copy the ==id_rsa.pub== key and paste it into victims ==authorized_keys==
+Now copy the ==`id_rsa.pub`== key and paste it into victims ==`authorized_keys`==
 ![[Pasted image 20260210003113.png]]
 
-Now give the 400 permissioon to the key and connect through ssh :
+Now give the ==`400`== permissioon to the key and connect through **ssh** :
 ![[Pasted image 20260210003249.png]]
 
 Then download linpeas.sh file and start a python server on attacker machine :
