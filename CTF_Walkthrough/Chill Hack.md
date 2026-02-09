@@ -179,7 +179,7 @@ http://127.0.0.1:6969/
 ```
 ![[Pasted image 20260210011904.png]]
 
-This website was vuSQL Injection
+This website was vulnerable to SQL Injection :
 Payload : ==`admin' OR 1=1#`==
 
 ![[Pasted image 20260210015155.png]]
