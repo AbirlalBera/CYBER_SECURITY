@@ -181,12 +181,16 @@ After linpeas had finished, while checking its results, 2 active listening ports
 Basically Port 3306 used for MySQL but we dont know about 9001.
 ![[Pasted image 20260210005917.png]]
 
+---
+# Port Forwarding
+
 As the port 9001 running on local Ip
 Now we use port forwarding to access it because this service was accessible on localy.
 
 ```
 ssh -L 6969:127.0.0.1:9001 apaar@10.49.160.137   //Do it attacker machine
 ```
+
 ![[Pasted image 20260210012108.png]]
 
 ```
