@@ -23,25 +23,15 @@ The following services were running on the server :
 A web service was running on **port 80**.
 
 ---
-Now we are trying to find the subdomains :
+# Directory Enumeration
 
-```
-subfinder -d http://10.49.160.137
-```
-
-![[Pasted image 20260209215314.png]]
-
-We would not find any subdomains.
-
----
 Now we are trying to find the directories :
-
 ```
 dirsearch -u "http://10.49.160.137"
 ```
 ![[Pasted image 20260209215627.png]]
 
-**From these we found a juicy directory :**
+Interesting Directory Found :
 ```
 http://10.49.160.137/secret/ 
 ```
