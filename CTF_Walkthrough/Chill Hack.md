@@ -49,23 +49,24 @@ ftp 10.49.160.137
 A file named **note.txt** was found. We downloaded it :
 ```
 get note.txt
+```
 
+```
 cat note.txt 
 ```
 
 ```
-
-
 Anurodh told me that there is some filtering on strings being put in the command 
 -- Apaar
 ```
 
-Here we got  two name : 
-Anurodh 
-
-Apaar
+From this note, we identified two usernames:
+- **Anurodh**
+- **Apaar**
 
 ---
+# Command Injection
+
 Now lets try command Injection :
 
 If we try ls it filters the command
