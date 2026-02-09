@@ -93,3 +93,7 @@ nc -lvnp 8888
 
 ![[Pasted image 20260209225622.png]]
 
+Now we use the command to stabilize the shell.
+```
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
