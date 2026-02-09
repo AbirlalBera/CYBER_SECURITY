@@ -54,4 +54,17 @@ We are trying to login with ftp
 ftp 10.49.160.137 
 ```
 
-we found a note.txt file. Lets download it
+we found a note.txt file. Lets download it -
+
+```
+get note.txt
+```
+
+```
+cat note.txt 
+
+Anurodh told me that there is some filtering on strings being put in the command -- Apaar
+```
+
+Here we got 
+---
