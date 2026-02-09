@@ -166,3 +166,7 @@ After linpeas had finished, while checking its results, 2 active listening ports
 Basically Port 3306 used for MySQL but we dont know about 9001.
 ![[Pasted image 20260210005917.png]]
 
+
+
+
+Now we use port forwarding to access it because this service was accessible on 
