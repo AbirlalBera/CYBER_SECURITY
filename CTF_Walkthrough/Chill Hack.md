@@ -119,3 +119,5 @@ This
 Now we trick this to bypass the shell script and finally we got access to the **==`apaar`==** user :
 ![[Pasted image 20260209231905.png]]
 
+Finally we got the user flag :
+![[Pasted image 20260209232058.png]]
