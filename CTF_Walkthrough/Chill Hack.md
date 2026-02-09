@@ -116,8 +116,9 @@ sudo -u apaar /home/apaar/.helpline.sh
 This 
 ![[Pasted image 20260209231739.png]]
 
-Now we trick this to bypass the shell script and finally we got access to the **==`apaar`==** user :
+Now we trick this to bypass the shell script and finally we got access to the **==`apaar`==** user using the command injection ==`/bin/sh`== :
 ![[Pasted image 20260209231905.png]]
 
-Finally we got the user flag :
+**Finally we got the user flag :**
 ![[Pasted image 20260209232058.png]]
+
