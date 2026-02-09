@@ -160,3 +160,6 @@ chmod +x linpeas.sh
 ==`linpeas.sh`== is a Linux privilege-escalation enumeration script.
 
 ![[Pasted image 20260210004837.png]]
+
+After linpeas had finished, while checking its results, 2 active listening ports looked very interesting. Port 9001 and Port 3306.
+
