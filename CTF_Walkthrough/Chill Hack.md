@@ -17,3 +17,8 @@ Open 10.49.160.137:21
 Open 10.49.160.137:80
 ```
 
+These are the service running on the server :
+![[Pasted image 20260209215212.png]]
+
+---
+
