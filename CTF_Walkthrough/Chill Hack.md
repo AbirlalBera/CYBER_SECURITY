@@ -182,3 +182,4 @@ http://127.0.0.1:6969/
 Payload : `admin' OR 1=1 #--`
 
 ![[Pasted image 20260210015155.png]]
+Now Download the hacker image it might con
