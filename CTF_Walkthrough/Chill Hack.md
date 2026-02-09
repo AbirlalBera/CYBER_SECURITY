@@ -202,6 +202,9 @@ unzip backup.zip      //password : pass1word
 ![[Pasted image 20260210021008.png]]
 ![[Pasted image 20260210021102.png]]
 
+```
+cat source_code.php 
+```
 
 ![[Pasted image 20260210021152.png]]
 
@@ -210,5 +213,6 @@ echo "IWQwbnRLbjB3bVlwQHNzdzByZA==" | base64 -d
 !d0ntKn0wmYp@ssw0rd 
 ```
 
+SSH Password : !d0ntKn0wmYp@ssw0rd
 
 ![[Pasted image 20260210021319.png]]
