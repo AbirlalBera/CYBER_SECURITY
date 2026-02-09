@@ -10,6 +10,11 @@ rustscan -a 10.49.160.137 -- -sC -sV
 ---
 Subdomain Discovery :
 
+
+```
+subfinder -d <domain>
+```
+
 ---
 Directory Finding :
 
