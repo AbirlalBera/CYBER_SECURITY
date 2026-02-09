@@ -139,11 +139,16 @@ Now copy the ==`id_rsa.pub`== key and paste it into victims ==`authorized_keys`=
 ![[Pasted image 20260210003113.png]]
 
 Now give the ==`400`== permissioon to the key and connect through **ssh** :
+
 ```
 chmod 400 id_rsa
-ssh -i 
+ssh -i id_rsa apaar@10.49.160.137
 ```
+
 ![[Pasted image 20260210003249.png]]
+We then connected via SSH successfully.
+
+---
 
 Then download linpeas.sh file and start a python server on attacker machine :
 https://github.com/peass-ng/PEASS-ng/releases/tag/20260201-2ddf3a96
