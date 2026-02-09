@@ -151,8 +151,13 @@ We then connected via SSH successfully.
 ---
 # Privilege Escalation Enumeration (linPEAS)
 
-We downloaded **linpeas.sh** by hosting it on the attacker machine::
+We downloaded **linpeas.sh** by hosting it on the attacker machine :
 https://github.com/peass-ng/PEASS-ng/releases/tag/20260201-2ddf3a96
+
+Start python server :
+```
+sudo python3 -m http.server 80
+```
 
 ![[Pasted image 20260210004509.png]]
 
