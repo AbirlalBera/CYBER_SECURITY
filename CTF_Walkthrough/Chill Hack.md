@@ -47,3 +47,11 @@ http://10.49.160.137/secret/
 ```
 
 ---
+We are trying to login with ftp 
+![[Pasted image 20260209223506.png]]
+
+```
+ftp 10.49.160.137 
+```
+
+we found a note.txt file. Lets download it
