@@ -184,7 +184,8 @@ Payload : `admin' OR 1=1 #--`
 ![[Pasted image 20260210015155.png]]
 Now Download the hacker image it might contains something.
 
-
+Now we use steghide to extract the image :
 ```
 steghide extract -sf  hacker-with-laptop_23-2147985341.jpg
 ```
+
