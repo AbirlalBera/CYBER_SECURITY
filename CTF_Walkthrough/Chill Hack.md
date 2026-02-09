@@ -106,4 +106,4 @@ sudo -l
 ```
 
 ![[Pasted image 20260209231214.png]]
-We can use the **==`helpline.sh`==** 
+We can use the **==`helpline.sh`==** without password.
