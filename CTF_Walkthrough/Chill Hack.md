@@ -199,11 +199,17 @@ http://127.0.0.1:6969/       //Search it on attacker browser
 
 ![[Pasted image 20260210011904.png]]
 
+---
+# SQL Injection
+
 This website was vulnerable to **SQL Injection** :
 Payload : ==`admin' OR 1=1#`==
 
 ![[Pasted image 20260210015155.png]]
 Now Download the hacker image it might contains something.
+
+---
+# Steganography
 
 Now we use steghide to extract the image :
 ```
