@@ -138,7 +138,7 @@ go to .ssh folder to get the key :
 Now copy the ==id_rsa.pub== key and paste it into victims ==authorized_keys==
 ![[Pasted image 20260210003113.png]]
 
-Now give the 400 permissioon to the key and co
+Now give the 400 permissioon to the key and connect through ssh :
 ![[Pasted image 20260210003249.png]]
 
 
