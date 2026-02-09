@@ -63,8 +63,10 @@ get note.txt
 ```
 cat note.txt 
 
-Anurodh told me that there is some filtering on strings being put in the command -- Apaar
+Anurodh told me that there is some filtering on strings being put in the command 
+-- Apaar
 ```
 
-Here we got 
+Here we got  two name : Anurodh and Apaar
+
 ---
