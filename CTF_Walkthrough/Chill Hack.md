@@ -170,3 +170,8 @@ Basically Port 3306 used for MySQL but we dont know about 9001.
 
 
 Now we use port forwarding to access it because this service was accessible on localy.
+
+```
+ssh -L 6969:127.0.0.1:9001 apaar@10.49.160.137 -i id_rsa 
+
+```
