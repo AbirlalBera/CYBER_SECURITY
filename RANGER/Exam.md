@@ -18,7 +18,7 @@ subfinder -d <domain>
 Directory Finding :
 
 ```
-dirsearch –u <URL>
+dirsearch -u <URL>
 dirsearch -u <URL> -i 200 -r -w /usr/share/wordlists/dirb/big.txt
 ```
 
