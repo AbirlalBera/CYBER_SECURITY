@@ -92,3 +92,4 @@ nc -lvnp 8888
 ```
 
 ![[Pasted image 20260209225622.png]]
+
