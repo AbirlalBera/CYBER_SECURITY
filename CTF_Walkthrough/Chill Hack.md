@@ -37,7 +37,9 @@ http://10.49.160.137/secret/
 ```
 
 ---
-We are trying to login with ftp 
+# FTP Enumeration
+
+We attempted to log in via FTP :
 ![[Pasted image 20260209223506.png]]
 
 ```
