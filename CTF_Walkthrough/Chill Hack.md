@@ -124,7 +124,9 @@ Now we trick this to bypass the shell script and finally we got access to the **
 
 I wanted to try and get a better shell environment to not have to go through the same steps again so I created an SSH key pair using ssh-keygen. This gives me a Public and Private key.
 
-I use the passphrase ==`ranger`== 
+passphrase : A passphrase is like a password for your private SSH key.
+
+I use the passphrase ==`ranger`==  we can also avoid it by just only clicking ==`enter`==
 ![[Pasted image 20260209235549.png]]
 
 
