@@ -122,3 +122,6 @@ Now we trick this to bypass the shell script and finally we got access to the **
 **Finally we got the user flag :**
 ![[Pasted image 20260209232058.png]]
 
+I wanted to try and get a better shell environment to not have to go through the same steps again so I created an SSH key pair using ssh-keygen. This gives me a Public and Private key.
+
+
