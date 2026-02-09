@@ -213,7 +213,10 @@ echo "IWQwbnRLbjB3bVlwQHNzdzByZA==" | base64 -d
 !d0ntKn0wmYp@ssw0rd 
 ```
 
-SSH Password : !d0ntKn0wmYp@ssw0rd
+SSH Password : ==`!d0ntKn0wmYp@ssw0rd`==
+```
+ssh anurodh@10.49.160.137   
+```
 
 ```
 id
