@@ -215,4 +215,9 @@ echo "IWQwbnRLbjB3bVlwQHNzdzByZA==" | base64 -d
 
 SSH Password : !d0ntKn0wmYp@ssw0rd
 
+```
+id
+
+```
+
 ![[Pasted image 20260210021319.png]]
