@@ -126,3 +126,4 @@ I wanted to try and get a better shell environment to not have to go through the
 
 I use the passphrase ==`ranger`== 
 ![[Pasted image 20260209235549.png]]
+![[Pasted image 20260209235807.png]]
