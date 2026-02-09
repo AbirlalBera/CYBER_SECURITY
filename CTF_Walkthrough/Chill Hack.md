@@ -130,3 +130,6 @@ I use the passphrase ==`ranger`==
 
 ![[Pasted image 20260209235807.png]]
 
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP2XkEfZsrnD3lwt/7suV2Hmssfp0nWeJTm00jDyFUzO ranger@KALI
+```
