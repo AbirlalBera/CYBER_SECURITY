@@ -219,6 +219,9 @@ steghide extract -sf  hacker-with-laptop_23-2147985341.jpg
 ![[Pasted image 20260210020826.png]]
 
 After extracting the stegnography we got a ==`backup.sh`== file.
+
+#### Cracking the Backup:
+
 ```
 zip2john backup.zip > hash
 john hash
