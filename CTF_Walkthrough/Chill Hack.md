@@ -189,3 +189,5 @@ Now we use steghide to extract the image :
 steghide extract -sf  hacker-with-laptop_23-2147985341.jpg
 ```
 
+![[Pasted image 20260210020826.png]]
+
