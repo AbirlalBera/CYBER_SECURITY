@@ -87,12 +87,15 @@ nc -lvnp 8888
 ![[Pasted image 20260209225622.png]]
 
 ---
-#Shell Stabilization :
+# Shell Stabilization :
+
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
 ---
+# Privilege Enumeration (Apaar)
+
 Now we go to the ==`/home/apaar`== directory.
 
 ```
