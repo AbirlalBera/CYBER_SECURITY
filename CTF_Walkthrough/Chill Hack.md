@@ -132,13 +132,17 @@ I use the passphrase ==`ranger`==  we can also avoid it by just only clicking ==
 Another way :
 ![[Pasted image 20260210002350.png]]
 
-go to .ssh folder to get the key :
+go to ==`.ssh`== folder to get the key :
 ![[Pasted image 20260210002537.png]]
 
 Now copy the ==`id_rsa.pub`== key and paste it into victims ==`authorized_keys`==
 ![[Pasted image 20260210003113.png]]
 
 Now give the ==`400`== permissioon to the key and connect through **ssh** :
+```
+chmod 400 id_rsa
+ssh -i 
+```
 ![[Pasted image 20260210003249.png]]
 
 Then download linpeas.sh file and start a python server on attacker machine :
