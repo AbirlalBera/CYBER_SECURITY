@@ -135,6 +135,7 @@ Another way :
 go to .ssh folder to get the key :
 ![[Pasted image 20260210002537.png]]
 
-Now copy the id_rsa.pub key and past
+Now copy the ==id_rsa.pub== key and paste it into victims ==authorized_keys==
+
 
 
