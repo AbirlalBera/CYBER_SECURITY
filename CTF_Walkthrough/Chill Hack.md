@@ -194,7 +194,12 @@ steghide extract -sf  hacker-with-laptop_23-2147985341.jpg
 After extracting the stegnography we got a ==`backup.sh`== file.
 ![[Pasted image 20260210021008.png]]
 
-
+```
+zip2john backup.zip > hash
+john hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+unzip backup.zip  //password : pass1word
+```
 
 ![[Pasted image 20260210021102.png]]
 
