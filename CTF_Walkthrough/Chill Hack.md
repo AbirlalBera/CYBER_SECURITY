@@ -172,8 +172,10 @@ Now we use port forwarding to access it because this service was accessible on l
 ```
 ssh -L 6969:127.0.0.1:9001 apaar@10.49.160.137   //Do it attacker machine
 ```
+![[Pasted image 20260210012108.png]]
 
 ```
 http://127.0.0.1:6969/
 ```
 ![[Pasted image 20260210011904.png]]
+
