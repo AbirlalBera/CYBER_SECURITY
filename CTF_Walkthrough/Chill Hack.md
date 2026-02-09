@@ -194,11 +194,12 @@ ssh -L 6969:127.0.0.1:9001 apaar@10.49.160.137   //Do it attacker machine
 ![[Pasted image 20260210012108.png]]
 
 ```
-http://127.0.0.1:6969/
+http://127.0.0.1:6969/       //Search it on attacker browser
 ```
+
 ![[Pasted image 20260210011904.png]]
 
-This website was vulnerable to SQL Injection :
+This website was vulnerable to **SQL Injection** :
 Payload : ==`admin' OR 1=1#`==
 
 ![[Pasted image 20260210015155.png]]
