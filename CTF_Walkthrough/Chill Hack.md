@@ -132,10 +132,9 @@ I use the passphrase ==`ranger`==  we can also avoid it by just only clicking ==
 Another way :
 ![[Pasted image 20260210002350.png]]
 
-go to .ssh folder to get the key.
+go to .ssh folder to get the key :
+![[Pasted image 20260210002537.png]]
 
-![[Pasted image 20260209235807.png]]
+Now copy the id_rsa.pub key and past
 
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP2XkEfZsrnD3lwt/7suV2Hmssfp0nWeJTm00jDyFUzO ranger@KALI
-```
+
