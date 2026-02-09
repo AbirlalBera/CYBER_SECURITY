@@ -125,3 +125,4 @@ Now we trick this to bypass the shell script and finally we got access to the **
 I wanted to try and get a better shell environment to not have to go through the same steps again so I created an SSH key pair using ssh-keygen. This gives me a Public and Private key.
 
 
+![[Pasted image 20260209234707.png]]
