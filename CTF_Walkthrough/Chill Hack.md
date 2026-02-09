@@ -141,4 +141,6 @@ Now copy the ==id_rsa.pub== key and paste it into victims ==authorized_keys==
 Now give the 400 permissioon to the key and connect through ssh :
 ![[Pasted image 20260210003249.png]]
 
+Then download linpeas.sh file
+https://github.com/peass-ng/PEASS-ng/releases/tag/20260201-2ddf3a96
 
