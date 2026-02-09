@@ -107,6 +107,8 @@ sudo -l
 
 ![[Pasted image 20260209231214.png]]
 We can use the **==`helpline.sh`==** without password.
-Running .helpline.sh as Apaar with the command :
 
+Running .helpline.sh as Apaar with the command :
+```
 sudo -u apaar /home/apaar/.helpline.sh
+```
