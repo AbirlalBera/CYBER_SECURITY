@@ -46,14 +46,15 @@ We attempted to log in via FTP :
 ftp 10.49.160.137 
 ```
 
-we found a note.txt file. Lets download it -
-
+A file named **note.txt** was found. We downloaded it :
 ```
 get note.txt
+
+cat note.txt 
 ```
 
 ```
-cat note.txt 
+
 
 Anurodh told me that there is some filtering on strings being put in the command 
 -- Apaar
