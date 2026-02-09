@@ -21,4 +21,10 @@ These are the service running on the server :
 ![[Pasted image 20260209215212.png]]
 
 ---
+Now we are trying to find the subdomians.
 
+```
+subfinder -d http://10.49.160.137
+```
+
+![[Pasted image 20260209215314.png]]
