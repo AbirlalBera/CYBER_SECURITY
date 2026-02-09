@@ -101,4 +101,9 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 ---
 Now we go to the ==`/home/apaar`== directory.
 
+```
+sudo -l
+```
 
+![[Pasted image 20260209231214.png]]
+We can use the **==`helpline.sh`==** 
