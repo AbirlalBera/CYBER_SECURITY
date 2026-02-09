@@ -98,4 +98,7 @@ Now we use the command to stabilize the shell.
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
---
+---
+Now we go to the ==`/home/apaar`== directory.
+
+
