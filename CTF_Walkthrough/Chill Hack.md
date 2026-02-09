@@ -157,4 +157,6 @@ chmod +x linpeas.sh
 ./linpeas.sh 
 ```
 
+==`linpeas.sh`== is a Linux privilege-escalation enumeration script.
+
 ![[Pasted image 20260210004837.png]]
