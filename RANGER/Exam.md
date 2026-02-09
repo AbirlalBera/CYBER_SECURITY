@@ -4,7 +4,9 @@ Nmap or Rustscan Scanning :
 nmap -Pn -n -A -sV -sC -O target.com
 ```
 
-
+```
+rustscan -a 10.49.160.137 -- -sC -sV 
+```
 ---
 Subdomain Discovery :
 
