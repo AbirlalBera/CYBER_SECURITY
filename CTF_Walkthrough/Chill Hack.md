@@ -112,3 +112,6 @@ Running .helpline.sh as Apaar with the command :
 ```
 sudo -u apaar /home/apaar/.helpline.sh
 ```
+
+This 
+![[Pasted image 20260209231739.png]]
