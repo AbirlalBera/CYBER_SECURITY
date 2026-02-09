@@ -40,7 +40,10 @@ Now we are trying to find the directories :
 dirsearch -u "http://10.49.160.137"
 ```
 ![[Pasted image 20260209215627.png]]
-From these we found a juicy directory :
+
+**From these we found a juicy directory :**
 ```
 http://10.49.160.137/secret/ 
 ```
+
+---
