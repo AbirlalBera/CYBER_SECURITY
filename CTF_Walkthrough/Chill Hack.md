@@ -149,8 +149,9 @@ ssh -i id_rsa apaar@10.49.160.137
 We then connected via SSH successfully.
 
 ---
+# Privilege Escalation Enumeration (linPEAS)
 
-Then download linpeas.sh file and start a python server on attacker machine :
+We downloaded **linpeas.sh** by hosting it on the attacker machine::
 https://github.com/peass-ng/PEASS-ng/releases/tag/20260201-2ddf3a96
 
 ![[Pasted image 20260210004509.png]]
