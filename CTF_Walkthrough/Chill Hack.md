@@ -217,7 +217,9 @@ SSH Password : !d0ntKn0wmYp@ssw0rd
 
 ```
 id
-
+uid=1002(anurodh) gid=1002(anurodh) groups=1002(anurodh),999(docker)
 ```
+
+Now we have to docker
 
 ![[Pasted image 20260210021319.png]]
