@@ -115,3 +115,6 @@ sudo -u apaar /home/apaar/.helpline.sh
 
 This 
 ![[Pasted image 20260209231739.png]]
+
+Now we trick this to bypass the shell script 
+![[Pasted image 20260209231905.png]]
