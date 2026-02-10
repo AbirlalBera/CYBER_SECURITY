@@ -297,14 +297,15 @@ Web shells can be written in several languages supported by web servers, like P
 
 Let’s look at an example PHP web shell to understand how this process works:
 ![[Pasted image 20260211005654.png]]
+- Saved as `shell.php`
+- Uploaded via vulnerabilities (file upload, file inclusion, command injection, etc.)
 
- The above shell can be saved into a file with the PHP extension, like `shell.php`, and then uploaded into the web server by the attacker by exploiting vulnerabilities such as [Unrestricted File Upload](https://tryhackme.com/r/room/uploadvulns), [File Inclusion](https://tryhackme.com/r/room/fileinc), [Command Injection](https://tryhackme.com/r/room/oscommandinjection), among others, or by gaining unauthorized access to it. 
+Accessed through:
+```
+http://victim.com/uploads/shell.php?cmd=whoami
+```
 
-After the web shell is deployed in the server, it can be accessed through the URL where the web shell is hosted, in this example http://victim.com/uploads/shell.php. As we observed from the code in `shell.php`, we need to provide a GET method and the value of the variable `cmd`, which should contain the command the attacker wants to execute. For example, if we want to execute the command **whoami** the request to the URL should be:
-
-### http://victim.com/uploads/shell.php?cmd=whoami
-
-### The above will execute the command **whoami** and display the result in the web browser.
+- Executes the command and displays output in the browser.
 
 ### Existing Web Shells Available Online
 
