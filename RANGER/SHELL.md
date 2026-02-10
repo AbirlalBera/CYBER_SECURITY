@@ -315,12 +315,13 @@ The power of supported languages by the web servers can result in web shells wit
  ![The image is a screenshot of the web shell p0wny-shell showing commands being executed in a GUI similar to a real terminal](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529557.png)
 
 [b374k shell](https://github.com/b374k/b374k) - A more feature-rich PHP web shell with file management and command execution, among other functionalities.  
-    
-    ![The image is a screenshot of b374k shell displaying the file manager feature that allows to manipulate files](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529904.png)
-    
-- [c99 shell](https://www.r57shell.net/single.php?id=13) - A well-known and robust PHP web shell with extensive functionality.  
-    
-    ![The image is a screenshot of  c99 shell displaying the command execution feature and the file manipulation one](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563530257.png)
-    
+
+![The image is a screenshot of b374k shell displaying the file manager feature that allows to manipulate files](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529904.png)
+
+ [c99 shell](https://www.r57shell.net/single.php?id=13) - A well-known and robust PHP web shell with extensive functionality.  
+
+![The image is a screenshot of  c99 shell displaying the command execution feature and the file manipulation one](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563530257.png)
 
 You can find more web shells at: [https://www.r57shell.net/index.php](https://www.r57shell.net/index.php).
+
+---
