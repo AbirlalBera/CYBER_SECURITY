@@ -19,4 +19,6 @@ Perform actions after initial access, such as: Deploying malware, Creating hidde
 
 🌐 ==`Pivoting`== : Use the compromised system as a **launch point** to attack other systems on the same network.
 
+![[Pasted image 20260210233811.png]]
+
 ---
