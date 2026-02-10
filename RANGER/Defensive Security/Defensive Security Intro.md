@@ -53,6 +53,7 @@ A **SOC** monitors networks and systems to detect and respond to cyber threats. 
     - **Analysis**
 - Identifies attackers’ **TTPs** (Tactics, Techniques, Procedures)
 - Enables prediction, mitigation, and response planning
+![[Pasted image 20260211013954.png]]
 ## **Digital Forensics and Incident Response (DFIR)**
 
 ### **Digital Forensics** : Investigates cyber attacks and gathers evidence.
@@ -70,6 +71,7 @@ Focus areas:
 2. **Detection & Analysis** → Identify and assess incidents
 3. **Containment, Eradication & Recovery** → Stop, remove, restore
 4. **Post-Incident Activity** → Reporting and lessons learned
+![[Pasted image 20260211014023.png]]
 ## **Malware Analysis** : **Malware:** Malicious software (virus, trojan, ransomware, etc.)
 
 ### **Common Types**
@@ -79,5 +81,5 @@ Focus areas:
 ### **Analysis Methods**
 - **Static analysis** → Inspect malware without running it
 - **Dynamic analysis** → Run malware in a controlled environment
-
+![[Pasted image 20260211014045.png]]
 ---
