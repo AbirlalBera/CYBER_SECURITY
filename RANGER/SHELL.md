@@ -123,36 +123,28 @@ nc -lvnp 443
 
 ### **Rlwrap (Netcat enhancement)** : Adds **arrow keys, command history, and editing**.
 
-
-```rlwrap nc -lvnp 443
+```
+rlwrap nc -lvnp 443
 ```
 
 - Wraps Netcat for better shell usability.
 
+### **Ncat (Netcat by Nmap)** :  More features, including **SSL encryption**.
 
----
-
-### **Ncat (Netcat by Nmap)**
-
-- More features, including **SSL encryption**.
-    
 
 **Basic listener:**
-
-`ncat -lvnp 4444`
+```
+ncat -lvnp 4444
+```
 
 **SSL-encrypted listener:**
+```
+ncat --ssl -lvnp 4444
+```
 
-`ncat --ssl -lvnp 4444`
+ `--ssl` encrypts the reverse shell traffic.
 
-- `--ssl` encrypts the reverse shell traffic.
-    
-
----
-
-### **Socat**
-
-- Powerful tool for connecting data streams/sockets.
+### **Socat** : - Powerful tool for connecting data streams/sockets.
     
 
 **Listener example:**
