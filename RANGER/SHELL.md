@@ -87,41 +87,30 @@ target@tryhackme:~$
 ```
 
 ---
-
-**Shell Listeners 
+# **Shell Listeners 
 
 A **listener** waits for an incoming reverse shell connection and lets the attacker interact with it.
 
+### **Netcat (basic)** : Common, simple listener
 
 
-### **Netcat (basic)**
-
-- Common, simple listener
-    
-
-`nc -lvnp 443`
+```
+nc -lvnp 443
+```
 
 - No line editing or history by default.
-    
 
----
+### **Rlwrap (Netcat enhancement)** : Adds **arrow keys, command history, and editing**.
 
-### **Rlwrap (Netcat enhancement)**
 
-- Adds **arrow keys, command history, and editing**.
-    
+```
+lwrap nc -lvnp 443
+```
 
-`rlwrap nc -lvnp 443`
+ - Wraps Netcat for better shell usability.
 
-- Wraps Netcat for better shell usability.
-    
+### **Ncat (Netcat by Nmap)** : More features, including **SSL encryption**.
 
----
-
-### **Ncat (Netcat by Nmap)**
-
-- More features, including **SSL encryption**.
-    
 
 **Basic listener:**
 
