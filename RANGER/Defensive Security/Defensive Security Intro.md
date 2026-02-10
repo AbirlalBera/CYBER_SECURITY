@@ -54,45 +54,22 @@ A **SOC** monitors networks and systems to detect and respond to cyber threats. 
 - Enables prediction, mitigation, and response planning
 ## **Digital Forensics and Incident Response (DFIR)**
 
-### **Digital Forensics**
+### **Digital Forensics** : Investigates cyber attacks and gathers evidence.
 
-- Investigates cyber attacks and gathers evidence.
-    
-- Focus areas:
-    
-    - **File systems** → Installed, deleted, modified files
-        
-    - **Memory (RAM)** → In-memory malware
-        
-    - **System logs** → User and process activity
-        
-    - **Network logs** → Traffic and intrusion evidence
-        
+Focus areas:
+- **File systems** → Installed, deleted, modified files
+- **Memory (RAM)** → In-memory malware
+- **System logs** → User and process activity
+- **Network logs** → Traffic and intrusion evidence
 
----
-
-### **Incident Response (IR)**
-
-- Structured approach to handling incidents (breaches, attacks, violations).
-    
+### **Incident Response (IR)** : Structured approach to handling incidents (breaches, attacks, violations).
 
 **Incident Response Phases:**
-
 1. **Preparation** → Tools, training, plans
-    
 2. **Detection & Analysis** → Identify and assess incidents
-    
 3. **Containment, Eradication & Recovery** → Stop, remove, restore
-    
 4. **Post-Incident Activity** → Reporting and lessons learned
-    
-
----
-
-## **Malware Analysis**
-
-- **Malware:** Malicious software (virus, trojan, ransomware, etc.)
-    
+## **Malware Analysis** : **Malware:** Malicious software (virus, trojan, ransomware, etc.)
 
 ### **Common Types**
 
