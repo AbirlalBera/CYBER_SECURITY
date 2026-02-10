@@ -73,3 +73,7 @@ The output above shows the connection coming from the IP `10.10.13.37`, which i
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 ---
+# Bind Shell
+
+As the name indicates, a bind shell will bind a port on the compromised system and listen for a connection; when this connection occurs, it exposes the shell session so the attacker can execute commands remotely.
+
