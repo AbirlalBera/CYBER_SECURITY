@@ -20,3 +20,7 @@ Perform actions after initial access, such as: Deploying malware, Creating hidde
 🌐 ==`Pivoting`== : Use the compromised system as a **launch point** to attack other systems on the same network.
 
 ---
+# Reverse Shell
+
+A reverse shell, sometimes referred to as a "connect back shell," is one of the most popular techniques for gaining access to a system in cyberattacks. The connections initiate from the target system to the attacker's machine, which can help avoid detection from network firewalls and other security appliances.
+
