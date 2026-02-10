@@ -297,25 +297,24 @@ Web shells can be written in several languages supported by web servers, like P
 
 Let’s look at an example PHP web shell to understand how this process works:
 ![[Pasted image 20260211005654.png]]
+
 - Saved as `shell.php`
 - Uploaded via vulnerabilities (file upload, file inclusion, command injection, etc.)
+- Accessed through:
 
-Accessed through:
 ```
 http://victim.com/uploads/shell.php?cmd=whoami
 ```
-
-- Executes the command and displays output in the browser.
+Executes the command and displays output in the browser.
 
 ### Existing Web Shells Available Online
 
 The power of supported languages by the web servers can result in web shells with lots of functionality and avoid detection at the same time. Let's explore some of the most popular web shells that can be found online 
 
-- [p0wny-shell](https://github.com/flozz/p0wny-shell) - A minimalistic single-file PHP web shell that allows remote command execution.
-    
-    ![The image is a screenshot of the web shell p0wny-shell showing commands being executed in a GUI similar to a real terminal](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529557.png)
-    
-- [b374k shell](https://github.com/b374k/b374k) - A more feature-rich PHP web shell with file management and command execution, among other functionalities.  
+[p0wny-shell](https://github.com/flozz/p0wny-shell) - A minimalistic single-file PHP web shell that allows remote command execution.
+ ![The image is a screenshot of the web shell p0wny-shell showing commands being executed in a GUI similar to a real terminal](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529557.png)
+
+[b374k shell](https://github.com/b374k/b374k) - A more feature-rich PHP web shell with file management and command execution, among other functionalities.  
     
     ![The image is a screenshot of b374k shell displaying the file manager feature that allows to manipulate files](https://tryhackme-images.s3.amazonaws.com/user-uploads/66c513e4445cb5649e636a36/room-content/66c513e4445cb5649e636a36-1727563529904.png)
     
