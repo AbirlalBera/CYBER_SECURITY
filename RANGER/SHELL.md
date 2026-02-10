@@ -36,7 +36,7 @@ listening on [any] 4444 ...
 
 - `-l`: listen
 - `-v`: verbose
-- `-n`: no DNS
+- `-n`: no DNS (The `-n` option prevents the connections from using DNS for lookup, so it will not resolve any hostname it will use an IP address)
 - `-p`: port
 - Common ports (53, 80, 443, etc.) help blend with normal traffic.
 
