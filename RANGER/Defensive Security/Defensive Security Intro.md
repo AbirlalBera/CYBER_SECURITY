@@ -72,16 +72,11 @@ Focus areas:
 ## **Malware Analysis** : **Malware:** Malicious software (virus, trojan, ransomware, etc.)
 
 ### **Common Types**
-
 - **Virus** → Spreads by infecting files
-    
 - **Trojan** → Disguised malicious software
-    
 - **Ransomware** → Encrypts data for payment
-    
-
 ### **Analysis Methods**
-
 - **Static analysis** → Inspect malware without running it
-    
 - **Dynamic analysis** → Run malware in a controlled environment
+
+---
