@@ -144,15 +144,13 @@ ncat --ssl -lvnp 4444
 
  `--ssl` encrypts the reverse shell traffic.
 
-### **Socat** : - Powerful tool for connecting data streams/sockets.
-    
+### **Socat** : Powerful tool for connecting data streams/sockets.
 
 **Listener example:**
-
-`socat -d -d TCP-LISTEN:443 STDOUT`
+```
+socat -d -d TCP-LISTEN:443 STDOUT
+```
 
 - `-d -d` → Increased verbosity
-    
 - `TCP-LISTEN:443` → Listen on port 443
-    
 - `STDOUT` → Output received data to terminal
