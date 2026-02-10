@@ -307,8 +307,8 @@ http://victim.com/uploads/shell.php?cmd=whoami
 ```
 Executes the command and displays output in the browser.
 
-### Existing Web Shells Available Online
-
+### ==`Existing Web Shells Available Online`==
+`
 The power of supported languages by the web servers can result in web shells with lots of functionality and avoid detection at the same time. Let's explore some of the most popular web shells that can be found online 
 
 [p0wny-shell](https://github.com/flozz/p0wny-shell) - A minimalistic single-file PHP web shell that allows remote command execution.
