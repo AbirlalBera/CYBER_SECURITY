@@ -27,3 +27,16 @@ A reverse shell, sometimes referred to as a "connect back shell," is one of the 
 ### ==`How Reverse Shells Work`==
 #### **Set up a Netcat (nc) Listener**
 
+As mentioned above, a reverse shell will connect back to the attacker's machine. This machine will be waiting for a connection, so let's use Netcat to listen to a connection using the following command `nc -lvnp 443`.  
+
+```shell-session
+attacker@kali:~$ nc -lvnp 443
+listening on [any] 4444 ...
+```
+
+- `-l`: listen
+- `-v`: verbose
+- `-n`: no DNS
+- `-p`: port
+- Common ports (53, 80, 443, etc.) help blend with normal traffic.
+
