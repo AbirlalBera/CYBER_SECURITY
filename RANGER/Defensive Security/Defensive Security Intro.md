@@ -39,7 +39,7 @@ A **SOC** monitors networks and systems to detect and respond to cyber threats. 
 - **Policy violations** → Detect misuse (e.g., data uploaded to unauthorized services)
 - **Unauthorized activity** → Stolen credentials, abnormal logins
 - **Network intrusions** → Malware, phishing, exploited servers
-
+![[Pasted image 20260211013936.png]]
 ## **Threat Intelligence**
 
 - **Threat intelligence:** Collecting and analyzing information about potential and active attackers.
