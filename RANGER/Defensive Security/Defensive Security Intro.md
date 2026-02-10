@@ -82,4 +82,4 @@ Focus areas:
 - **Static analysis** → Inspect malware without running it
 - **Dynamic analysis** → Run malware in a controlled environment
 ![[Pasted image 20260211014045.png]]
----
+
