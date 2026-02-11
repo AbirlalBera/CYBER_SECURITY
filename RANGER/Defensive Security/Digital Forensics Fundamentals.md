@@ -19,7 +19,7 @@ This evidence is critical for legal proceedings.
 
 ---
 ### **Digital Forensics Process (NIST Framework)**
-
+![[Pasted image 20260211135951.png]]
 The process is defined in **four phases**:
 
 1. **Collection** : Identify and securely collect all potential digital evidence (computers, phones, USBs, etc.).
@@ -37,7 +37,7 @@ The process is defined in **four phases**:
 ### **Types of Digital Forensics**
 
 Different evidence categories require specialized tools and techniques.
-
+![[Pasted image 20260211140003.png]]
 **Computer Forensics:** Investigation of computers and laptops (most common).
 
 **Mobile Forensics:** Investigation of mobile devices (call records, messages, GPS, etc.).
@@ -51,3 +51,4 @@ Different evidence categories require specialized tools and techniques.
 **Email Forensics:** Investigation of emails for phishing, fraud, or other malicious campaigns.
 
 ---
+
