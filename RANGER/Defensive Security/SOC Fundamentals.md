@@ -31,7 +31,7 @@ There are three pillars of a SOC. With all these pillars, a SOC team becomes 
 **==`Pillar 1`== : People**
 
 People are always critical because automation generates alert noise that requires human judgment to filter false positives and identify real threats.
-
+![[Pasted image 20260211132821.png]]
 **SOC Team Roles & Responsibilities**
 
 **SOC Analyst (Level 1): First Responder**  
@@ -51,3 +51,6 @@ Creates and tunes the security rules and logic for detection.
 
 **SOC Manager: Process & Communication Lead**  
 Manages SOC processes and reports to the CISO on security posture.
+
+**==`Pillar 2`== : Process**
+
