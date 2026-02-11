@@ -56,20 +56,17 @@ Different evidence categories require specialized tools and techniques.
 Acquiring evidence securely and without altering the original data is critical. While methods vary by device, general best practices apply.
 
 **1. Proper Authorization**
-
 - Must be obtained **before** collection.
 - Evidence gathered without authorization is likely **inadmissible in court**.
 - Ensures the investigation operates within legal boundaries.
 ![[Pasted image 20260211140127.png]]
 **2. Chain of Custody**
-
 - A **formal document** that tracks evidence from collection to presentation in court.
 - Prevents loss or tampering by creating an **accountable audit trail**.
 - **Key details included:** Evidence description, collector's name, date/time of collection, storage location, and every access record.
 - Proves the **integrity and reliability** of the evidence.
 
 **3. Use of Write Blockers**
-
 - **Hardware or software tools** that prevent any modification to the evidence source.
 - **Purpose:** When connecting a suspect's drive to a forensic workstation, a write blocker ensures the original data remains **unaltered** (e.g., timestamps are preserved).
 - **Essential** for maintaining the integrity of the original evidence.
