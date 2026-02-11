@@ -66,16 +66,15 @@ The foundational process performed first on any alert. It determines the alert's
 - **Where?** The affected system or location.
 - **Who?** The associated user or account.
 - **Why?** The root cause or source (e.g., "Downloaded from a pirated site").
-
+![[Pasted image 20260211133055.png]]
 **2. Reporting & Escalation**  
 Harmful alerts are escalated as tickets to higher-level analysts. A report must include:
 
 - Answers to the 5 Ws.
-    
 - Thorough analysis.
-    
 - Supporting evidence (e.g., screenshots).
-    
 
 **3. Incident Response & Forensics**  
 For critical detections, a formal incident response process is initiated to contain and eradicate the threat. This may be followed by **forensics** to determine the root cause by analyzing system and network artifacts.
+
+
