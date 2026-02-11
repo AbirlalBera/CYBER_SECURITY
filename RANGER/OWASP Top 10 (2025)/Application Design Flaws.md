@@ -190,30 +190,28 @@ These risks make human oversight and validation critical.
 ### Secure Design Principles
 
 - Build threat modeling into every stage of development
-    
-- Define security requirements before implementation
-    
-- Apply least privilege across users, APIs, and services
-    
-- Enforce strong authentication, authorization, and session management
-    
-- Continuously test for logic flaws and abuse paths
-    
 
----
+- Define security requirements before implementation
+
+- Apply least privilege across users, APIs, and services
+
+- Enforce strong authentication, authorization, and session management
+
+- Continuously test for logic flaws and abuse paths
+
 
 ### AI-Specific Secure Design Practices
 
 - Treat AI models as untrusted by default
-    
+
 - Validate and filter all model inputs and outputs
-    
+
 - Separate system prompts from user-controlled input
-    
+
 - Keep sensitive data out of prompts unless strictly necessary
-    
+
 - Require human review for high-risk AI-driven actions
-    
+
 - Log model provenance and monitor runtime behavior
-    
+
 - Apply AI-specific threat modeling (prompt injection, inference risks, agent misuse, supply chain threats)
