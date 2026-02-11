@@ -141,3 +141,79 @@ To avoid cryptographic failures:
 - Ensure AI models and automation systems never expose plaintext secrets or sensitive data
 
 ---
+## Insecure Design
+
+### What It Is
+
+Insecure design occurs when **flawed logic, architecture, or trust assumptions** are built into a system from the beginning. These flaws usually result from missing threat modeling, lack of security requirements, insufficient design reviews, or incorrect assumptions about how users and systems behave.
+
+With the rise of **AI assistants and automation**, insecure design risks have increased. Developers may assume AI-generated code, decisions, or classifications are correct and safe. When AI systems are given broad authority without guardrails, the insecurity becomes part of the system’s design.
+
+### Example
+
+An early example is **Clubhouse**, whose backend API lacked proper authentication. The system assumed users would interact only through the mobile app. As a result, attackers could directly query backend APIs to access user data, room information, and even private conversations, completely breaking the platform’s privacy model.
+### Why It Matters
+
+Insecure design **cannot be fixed with simple patches**. Since the vulnerability exists in the system’s logic and architecture, remediation often requires redesigning workflows, trust boundaries, and decision-making processes.
+
+## Common Insecure Designs (2025)
+
+- Weak business logic controls (approval, recovery, or payment flows)
+
+- Incorrect assumptions about user or AI model behavior
+
+- AI components with excessive authority or unrestricted access
+
+- Missing guardrails for large language models (LLMs) and automation agents
+
+- Debug or test bypasses left enabled in production
+
+- Lack of abuse-case analysis or AI-specific threat modeling
+
+## Insecure Design in the AI Era
+
+AI introduces new architectural risks:
+
+- **Prompt injection**, where user input manipulates system prompts and extracts sensitive data
+
+- Blind trust in AI output without validation or oversight
+
+- Use of poisoned or unverified AI models containing hidden backdoors
+
+- Automation agents acting on AI decisions without human review
+
+
+These risks make human oversight and validation critical.
+
+## How to Design Securely
+
+### Secure Design Principles
+
+- Build threat modeling into every stage of development
+    
+- Define security requirements before implementation
+    
+- Apply least privilege across users, APIs, and services
+    
+- Enforce strong authentication, authorization, and session management
+    
+- Continuously test for logic flaws and abuse paths
+    
+
+---
+
+### AI-Specific Secure Design Practices
+
+- Treat AI models as untrusted by default
+    
+- Validate and filter all model inputs and outputs
+    
+- Separate system prompts from user-controlled input
+    
+- Keep sensitive data out of prompts unless strictly necessary
+    
+- Require human review for high-risk AI-driven actions
+    
+- Log model provenance and monitor runtime behavior
+    
+- Apply AI-specific threat modeling (prompt injection, inference risks, agent misuse, supply chain threats)
