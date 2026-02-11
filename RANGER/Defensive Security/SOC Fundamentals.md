@@ -15,3 +15,17 @@ The main focus of the SOC team is to keep **Detection** and **Response** i
 
 **Detect intrusions**: Detecting unauthorized access to systems/networks (e.g., via exploited web apps, malware from malicious sites).
 
+## **Response**
+
+**Support with the incident response**: Once an incident is detected, certain steps are taken to respond to it. This response includes minimizing its impact and performing the root cause analysis of the incident. The SOC team also helps the incident response team carry out these steps.
+
+
+There are three pillars of a SOC. With all these pillars, a SOC team becomes mature and efficiently detects and responds to different incidents. These pillars are **People**, **Process**, and **Technology**.
+
+![The 3 pillars of SOC.](https://tryhackme-images.s3.amazonaws.com/user-uploads/6645aa8c024f7893371eb7ac/room-content/6645aa8c024f7893371eb7ac-1718954786769)  
+
+  
+
+**People**, **Process**, and **Technology** coexist in a SOC environment. A team of professional individuals working on state-of-the-art security tools in the presence of proper processes is what makes a mature SOC environment.
+
+In the upcoming tasks, we will discuss each of these pillars individually and examine how they are important parts of SOC.
