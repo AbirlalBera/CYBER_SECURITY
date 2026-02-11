@@ -67,6 +67,10 @@ Acquiring evidence securely and without altering the original data is critical. 
 - Proves the **integrity and reliability** of the evidence.
 
 **3. Use of Write Blockers**
+
+Write blockers are an essential part of the digital forensics team’s toolbox. Suppose you are collecting evidence from a suspect’s hard drive and attaching the hard drive to the forensic workstation. While the collection occurs, some background tasks in the forensic workstation may alter the timestamps of the files on the hard drive. This can cause hindrances during the analysis, ultimately producing incorrect results. Suppose the data was collected from the hard drive using a write blocker instead in the same scenario. This time, the suspect’s hard drive would remain in its original state as the write blocker can block any evidence alteration actions.
+
+![A write blocker.](https://tryhackme-images.s3.amazonaws.com/user-uploads/6645aa8c024f7893371eb7ac/room-content/6645aa8c024f7893371eb7ac-1719477004541)
 - **Hardware or software tools** that prevent any modification to the evidence source.
 - **Purpose:** When connecting a suspect's drive to a forensic workstation, a write blocker ensures the original data remains **unaltered** (e.g., timestamps are preserved).
 - **Essential** for maintaining the integrity of the original evidence.
