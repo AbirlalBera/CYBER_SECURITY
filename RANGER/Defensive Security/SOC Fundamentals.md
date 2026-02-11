@@ -28,7 +28,7 @@ There are three pillars of a SOC. With all these pillars, a SOC team becomes 
 
 **People**, **Process**, and **Technology** coexist in a SOC environment. A team of professional individuals working on state-of-the-art security tools in the presence of proper processes is what makes a mature SOC environment.
 
-**==`Pillar 1: People`==**
+**==`Pillar 1`== : People**
 
 People are always critical because automation generates alert noise that requires human judgment to filter false positives and identify real threats.
 
