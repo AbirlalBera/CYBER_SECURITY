@@ -77,4 +77,29 @@ Harmful alerts are escalated as tickets to higher-level analysts. A report must 
 **3. Incident Response & Forensics**  
 For critical detections, a formal incident response process is initiated to contain and eradicate the threat. This may be followed by **forensics** to determine the root cause by analyzing system and network artifacts.
 
+**==`Pillar 3`== : Technology**
 
+Technology refers to the security solutions that centralize information and automate detection and response, minimizing manual effort.
+
+**Key Security Solutions:**
+
+**SIEM (Security Information and Event Management)**
+
+- Central tool that **collects logs** from various network devices (log sources).
+- Uses **configured detection rules** to identify suspicious activity by correlating data from multiple sources.
+- Modern SIEMs include **user behavior analytics** and **threat intelligence**, often enhanced by machine learning.
+- _Note:_ Primarily provides **detection** capabilities.
+
+**EDR (Endpoint Detection and Response)**
+
+- Provides detailed **real-time and historical visibility** into endpoint (device) activities.
+- Operates at the endpoint level with extensive detection capabilities.
+- Enables **automated response** and detailed investigation from a central console.
+
+**Firewall**
+
+- A **network security** barrier between internal and external networks.
+- **Monitors and filters** incoming/outgoing traffic based on security rules.
+- Can **detect and block** suspicious traffic before it enters the internal network.
+
+**Other Solutions:** Antivirus, EPP, IDS/IPS, XDR, and SOAR also play unique roles. Technology selection depends on the organization's threat surface and available resources.
