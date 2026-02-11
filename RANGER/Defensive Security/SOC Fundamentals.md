@@ -54,3 +54,28 @@ Manages SOC processes and reports to the CISO on security posture.
 
 **==`Pillar 2`== : Process**
 
+Processes define the standardized workflows that each SOC role follows to ensure consistent and effective operations.
+
+**Key SOC Processes:**
+
+**1. Alert Triage**  
+The foundational process performed first on any alert. It determines the alert's severity and priority by answering the **5 Ws**:
+
+- **What?** The nature of the activity (e.g., "Malicious file detected").
+- **When?** The timestamp of detection.
+- **Where?** The affected system or location.
+- **Who?** The associated user or account.
+- **Why?** The root cause or source (e.g., "Downloaded from a pirated site").
+
+**2. Reporting & Escalation**  
+Harmful alerts are escalated as tickets to higher-level analysts. A report must include:
+
+- Answers to the 5 Ws.
+    
+- Thorough analysis.
+    
+- Supporting evidence (e.g., screenshots).
+    
+
+**3. Incident Response & Forensics**  
+For critical detections, a formal incident response process is initiated to contain and eradicate the threat. This may be followed by **forensics** to determine the root cause by analyzing system and network artifacts.
