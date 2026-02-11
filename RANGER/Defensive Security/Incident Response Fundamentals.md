@@ -120,15 +120,12 @@ The **Identification** phase in the SANS framework and the **Detection and Analy
 ## Security Solutions Used in Incident Response
 
 ### SIEM (Security Information and Event Management)
-
 SIEM solutions collect logs from multiple sources into a centralized platform. These logs are correlated and analyzed to detect suspicious activity and identify potential security incidents.
 
 ### Antivirus (AV)
-
 Antivirus software detects known malicious programs and regularly scans systems to identify and remove threats.
 
 ### Endpoint Detection and Response (EDR)
-
 EDR solutions are installed on individual endpoints to detect advanced threats. In addition to detection, EDR tools can respond by containing and eradicating threats, such as isolating compromised systems.
 
 ---
