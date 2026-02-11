@@ -128,13 +128,9 @@ Antivirus software detects known malicious programs and regularly scans systems 
 ### Endpoint Detection and Response (EDR)
 EDR solutions are installed on individual endpoints to detect advanced threats. In addition to detection, EDR tools can respond by containing and eradicating threats, such as isolating compromised systems.
 
----
-
 ## Incident Handling After Detection
 
 Once an incident is identified, the security team investigates the scope of the attack, takes action to prevent further damage, and removes the root cause of the incident. The exact response steps depend on the type of incident.
-
----
 
 ## Playbooks
 
@@ -143,15 +139,10 @@ Once an incident is identified, the security team investigates the scope of the 
 ### Example: Phishing Email Playbook
 
 - Notify relevant stakeholders about the phishing incident
-    
 - Analyze the email headers and body to confirm if it is malicious
-    
 - Identify and analyze any attachments
-    
 - Check whether any users opened the attachments
-    
 - Isolate infected systems from the network
-    
 - Block the malicious email sender
     
 
