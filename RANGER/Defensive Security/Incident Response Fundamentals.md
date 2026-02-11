@@ -47,6 +47,87 @@ Insider attacks originate from within an organization. These involve employees o
 ![[Pasted image 20260211142924.png]]
 ### Denial of Service (DoS) Attacks
 Availability is one of the three core principles of cybersecurity. Denial of Service (DoS) attacks aim to disrupt availability by overwhelming a system, network, or application with excessive or fake requests. This exhausts system resources and prevents legitimate users from accessing services.
-
+![[Pasted image 20260211142937.png]]
 ### Impact and Severity
 Each type of incident has a different impact depending on the organization. The severity of an incident cannot be universally defined. For example, a data leak may have minimal impact on one organization but be devastating to another. Similarly, a Denial of Service attack can be catastrophic for businesses that rely heavily on online services.
+
+---
+# Incident Response Process
+
+Handling different types of security incidents can be challenging due to their varying nature. To ensure incidents are managed effectively and consistently, organizations follow **Incident Response Frameworks**. These frameworks provide a structured approach to detecting, handling, and recovering from security incidents.
+
+Two of the most widely used frameworks are **SANS** and **NIST**. Both are developed by well-known cybersecurity organizations and follow similar principles.
+
+## SANS Incident Response Framework (PICERL)
+
+The SANS framework consists of **six phases**, commonly remembered as **PICERL**.
+
+### 1. Preparation
+
+This phase focuses on building the capability to handle incidents before they occur. It includes forming an incident response team, creating an incident response plan, and deploying security tools.  
+**Example:** Conducting phishing awareness training for employees.
+
+### 2. Identification
+
+In this phase, the organization looks for abnormal behavior that may indicate an incident. Security tools and monitoring systems are used to detect suspicious activity.  
+**Example:** Detecting unusually high data transfer from a host that was later found to be compromised by a phishing attachment.
+
+### 3. Containment
+
+Once an incident is confirmed, immediate action is taken to limit its spread and impact. This often involves isolating systems or disabling compromised accounts.  
+**Example:** Isolating the infected host from the network to prevent lateral movement.
+
+### 4. Eradication
+
+The eradication phase involves completely removing the threat from the environment to ensure it does not persist.  
+**Example:** Running deep malware scans to remove malicious software.
+
+### 5. Recovery
+
+Affected systems are restored and returned to normal operation. Systems may be rebuilt, restored from backups, and tested before being put back into production.  
+**Example:** Reconfiguring the compromised system and restoring lost data from backups.
+
+### 6. Lessons Learned
+
+After the incident is resolved, the organization reviews what happened to identify gaps and improve future response efforts.  
+**Example:** Conducting a post-incident review to analyze root causes and enhance security controls.
+
+---
+
+## NIST Incident Response Framework
+
+The **NIST framework** is similar to SANS but simplifies the process into **four phases**:
+
+1. Preparation
+    
+2. Detection and Analysis
+    
+3. Containment, Eradication, and Recovery
+    
+4. Post-Incident Activity
+    
+
+This model groups related activities together while maintaining the same core incident response principles.
+
+---
+
+## Incident Response Plan (IRP)
+
+Organizations usually formalize their response process in a document called the **Incident Response Plan**. This plan defines how incidents are handled before, during, and after they occur. It is officially approved by senior management and ensures consistency in response.
+
+### Key Components of an Incident Response Plan
+
+- Defined roles and responsibilities
+    
+- Incident response methodology
+    
+- Communication plan with stakeholders and law enforcement
+    
+- Escalation procedures
+    
+
+---
+
+### Key Takeaway
+
+Both **SANS and NIST frameworks** provide structured, effective approaches to incident response. Organizations may adapt these frameworks to build their own incident response processes and plans.
