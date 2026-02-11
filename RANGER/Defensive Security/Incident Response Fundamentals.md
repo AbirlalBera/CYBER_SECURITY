@@ -86,6 +86,7 @@ Affected systems are restored and returned to normal operation. Systems may be r
 After the incident is resolved, the organization reviews what happened to identify gaps and improve future response efforts.  
 **Example:** Conducting a post-incident review to analyze root causes and enhance security controls.
 
+![[Pasted image 20260211143208.png]]
 ## NIST Incident Response Framework
 
 The **NIST framework** is similar to SANS but simplifies the process into **four phases**:
@@ -94,7 +95,7 @@ The **NIST framework** is similar to SANS but simplifies the process into **four
 2. Detection and Analysis
 3. Containment, Eradication, and Recovery
 4. Post-Incident Activity
-
+![[Pasted image 20260211143245.png]]
 This model groups related activities together while maintaining the same core incident response principles.
 ## Incident Response Plan (IRP)
 
