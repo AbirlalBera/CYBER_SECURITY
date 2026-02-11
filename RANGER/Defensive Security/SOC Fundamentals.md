@@ -28,4 +28,26 @@ There are three pillars of a SOC. With all these pillars, a SOC team becomes 
 
 **People**, **Process**, and **Technology** coexist in a SOC environment. A team of professional individuals working on state-of-the-art security tools in the presence of proper processes is what makes a mature SOC environment.
 
----
+**==`Pillar 1: People`==**
+
+People are always critical because automation generates alert noise that requires human judgment to filter false positives and identify real threats.
+
+**SOC Team Roles & Responsibilities**
+
+**SOC Analyst (Level 1): First Responder**  
+Performs initial alert triage to determine if a detection is harmful and reports findings.
+
+**SOC Analyst (Level 2): Incident Investigator**  
+Conducts deeper investigation by correlating data from multiple sources.
+
+**SOC Analyst (Level 3): Threat Hunter & Incident Responder**  
+Proactively hunts for threats and leads the response to critical incidents (containment, eradication, recovery).
+
+**Security Engineer: Tool Specialist**  
+Deploys, configures, and maintains security solutions.
+
+**Detection Engineer: Rule Developer**  
+Creates and tunes the security rules and logic for detection.
+
+**SOC Manager: Process & Communication Lead**  
+Manages SOC processes and reports to the CISO on security posture.
