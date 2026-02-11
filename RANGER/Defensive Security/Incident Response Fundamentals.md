@@ -97,6 +97,7 @@ The **NIST framework** is similar to SANS but simplifies the process into **four
 4. Post-Incident Activity
 ![[Pasted image 20260211143245.png]]
 This model groups related activities together while maintaining the same core incident response principles.
+![[Pasted image 20260211143300.png]]
 ## Incident Response Plan (IRP)
 
 Organizations usually formalize their response process in a document called the **Incident Response Plan**. This plan defines how incidents are handled before, during, and after they occur. It is officially approved by senior management and ensures consistency in response.
@@ -111,3 +112,62 @@ Organizations usually formalize their response process in a document called the 
 ### Key Takeaway
 
 Both **SANS and NIST frameworks** provide structured, effective approaches to incident response. Organizations may adapt these frameworks to build their own incident response processes and plans.
+
+---
+## Incident Response Techniques
+
+The **Identification** phase in the SANS framework and the **Detection and Analysis** phase in the NIST framework focus on recognizing abnormal behavior and identifying incidents. Manually detecting incidents is difficult, so organizations rely on specialized **security solutions** to assist in detection and response.
+## Security Solutions Used in Incident Response
+
+### SIEM (Security Information and Event Management)
+
+SIEM solutions collect logs from multiple sources into a centralized platform. These logs are correlated and analyzed to detect suspicious activity and identify potential security incidents.
+
+### Antivirus (AV)
+
+Antivirus software detects known malicious programs and regularly scans systems to identify and remove threats.
+
+### Endpoint Detection and Response (EDR)
+
+EDR solutions are installed on individual endpoints to detect advanced threats. In addition to detection, EDR tools can respond by containing and eradicating threats, such as isolating compromised systems.
+
+---
+
+## Incident Handling After Detection
+
+Once an incident is identified, the security team investigates the scope of the attack, takes action to prevent further damage, and removes the root cause of the incident. The exact response steps depend on the type of incident.
+
+---
+
+## Playbooks
+
+**Playbooks** provide structured guidelines for responding to specific types of incidents. They help security teams respond quickly and consistently by outlining recommended actions.
+
+### Example: Phishing Email Playbook
+
+- Notify relevant stakeholders about the phishing incident
+    
+- Analyze the email headers and body to confirm if it is malicious
+    
+- Identify and analyze any attachments
+    
+- Check whether any users opened the attachments
+    
+- Isolate infected systems from the network
+    
+- Block the malicious email sender
+    
+
+---
+
+## Runbooks
+
+**Runbooks** are more detailed than playbooks. They contain step-by-step technical instructions for executing specific response actions. Runbooks may vary depending on available tools and resources.
+
+---
+
+### Key Difference
+
+- **Playbooks** define _what_ should be done
+    
+- **Runbooks** explain _how_ each step is executed
