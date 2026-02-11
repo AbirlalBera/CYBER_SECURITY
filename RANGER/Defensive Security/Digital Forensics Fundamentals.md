@@ -91,35 +91,27 @@ Windows is a common OS encountered in investigations. Evidence acquisition invol
 - Contains **runtime data** lost on shutdown: running processes, open files, network connections, etc.    
 - **Priority:** Must be captured **before** the system is powered down to preserve volatile evidence.  
 
----
+**==`Key Tools`==**
 
-**Key Tools**
+**FTK Imager**
 
-- **FTK Imager**
-    
-    - Widely used tool for **creating and analyzing** disk images.
-        
-    - Features a graphical interface and supports multiple image formats.
-        
-- **Autopsy**
-    
-    - Popular **open-source platform** for disk image analysis.
-        
-    - Features include keyword search, deleted file recovery, metadata analysis, and extension mismatch detection.
-        
-- **DumpIt**
-    
-    - **Command-line tool** for capturing memory images from Windows systems.
-        
-    - Creates memory images in various formats.
-        
-- **Volatility**
-    
-    - Powerful **open-source framework** for memory image analysis.
-        
-    - Uses plugins to analyze specific artifacts (processes, network connections, etc.).
-        
-    - Supports Windows, Linux, macOS, and Android.
-        
+- Widely used tool for **creating and analyzing** disk images.    
+- Features a graphical interface and supports multiple image formats.
+
+**Autopsy**
+
+- Popular **open-source platform** for disk image analysis.
+- Features include keyword search, deleted file recovery, metadata analysis, and extension mismatch detection.
+
+**DumpIt**
+
+- **Command-line tool** for capturing memory images from Windows systems.    
+- Creates memory images in various formats.
+
+**Volatility**
+
+- Powerful **open-source framework** for memory image analysis.
+- Uses plugins to analyze specific artifacts (processes, network connections, etc.).        
+- Supports Windows, Linux, macOS, and Android.
 
 _Note: Many other specialized tools exist for Windows forensics._
