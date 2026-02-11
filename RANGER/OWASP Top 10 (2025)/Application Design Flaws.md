@@ -97,3 +97,47 @@ To reduce supply chain risk:
 - Integrate supply chain threat modeling into the SDLC, including testing, deployment, and update stages
 
 ---
+## Cryptographic Failures
+
+### What It Is
+
+Cryptographic failures occur when encryption is **missing, weak, or incorrectly implemented**. This includes the use of weak or deprecated algorithms, hard-coded secrets, poor key management, or storing/transmitting sensitive data without encryption. These weaknesses allow attackers to access information that should remain confidential.
+### Why It Matters
+
+Cryptography is fundamental to web application security. It protects network traffic, stored data, identities, and secrets such as passwords and tokens. When cryptographic controls fail, attackers can expose sensitive information, leading to account compromise or large-scale data breaches.
+
+Attackers may exploit cryptographic failures through man-in-the-middle attacks, brute-forcing weak keys, or discovering secrets that were never properly protected.
+
+### Common Patterns
+
+Typical cryptographic failure patterns include:
+
+- Use of weak or deprecated algorithms (MD5, SHA-1, ECB mode)
+
+- Hard-coded encryption keys or secrets in code or configuration
+
+- Poor key rotation or lifecycle management
+
+- Missing encryption for sensitive data at rest or in transit
+
+- Self-signed, expired, or invalid TLS certificates
+
+- Improper secret handling in AI or ML systems
+
+### How to Prevent It
+
+To avoid cryptographic failures:
+
+- Use modern, strong algorithms such as **AES-GCM**, **ChaCha20-Poly1305**, and enforce **TLS 1.3** with valid certificates
+
+- Store and manage secrets using secure key management services (AWS KMS, Azure Key Vault, HashiCorp Vault)
+
+- Rotate keys and secrets regularly according to defined cryptographic lifetimes
+
+- Establish and enforce key lifecycle management policies
+
+- Maintain an inventory of all certificates, keys, and their ownership
+
+- Ensure AI models and automation systems never expose plaintext secrets or sensitive data
+
+---
