@@ -30,3 +30,28 @@ A **true positive alert** is classified as an **incident**. Incidents represent 
 Once an incident is identified, it is assigned a **severity level** to prioritize response efforts. Severity levels include **low, medium, high, and critical**. Critical incidents are addressed first due to their potential impact, followed by high, medium, and low severity incidents.
 
 ---
+# Types of Incidents
+
+Not all harmful digital activities are the same, even though they are often generically called “hacking.” In cybersecurity, **security incidents** are categorized into different types. These incidents may occur independently or multiple types may occur together in a single attack.
+### Malware Infections
+
+Malware is a malicious program designed to damage systems, networks, or applications. Most security incidents involve some form of malware. There are many types of malware, each capable of causing different levels of harm. Malware infections often occur through files such as documents, text files, or executable programs that users download or open.
+### Security Breaches
+
+A security breach occurs when an unauthorized individual gains access to confidential or sensitive data. These incidents are extremely critical because organizations rely on the confidentiality of their data, which should only be accessible to authorized users.
+### Data Leaks
+
+Data leaks involve the exposure of confidential information to unauthorized parties. Attackers may use leaked data for reputational damage, blackmail, or extortion. Unlike security breaches, data leaks can also happen unintentionally due to human error or system misconfiguration.
+### Insider Attacks
+
+Insider attacks originate from within an organization. These involve employees or trusted individuals intentionally causing harm, such as infecting the network with malware using a USB device. Insider attacks are particularly dangerous because insiders often have higher access privileges than external attackers.
+
+### Denial of Service (DoS) Attacks
+
+Availability is one of the three core principles of cybersecurity. Denial of Service (DoS) attacks aim to disrupt availability by overwhelming a system, network, or application with excessive or fake requests. This exhausts system resources and prevents legitimate users from accessing services.
+
+---
+
+### Impact and Severity
+
+Each type of incident has a different impact depending on the organization. The severity of an incident cannot be universally defined. For example, a data leak may have minimal impact on one organization but be devastating to another. Similarly, a Denial of Service attack can be catastrophic for businesses that rely heavily on online services.
