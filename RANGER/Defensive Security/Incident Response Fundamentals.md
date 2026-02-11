@@ -144,18 +144,13 @@ Once an incident is identified, the security team investigates the scope of the 
 - Check whether any users opened the attachments
 - Isolate infected systems from the network
 - Block the malicious email sender
-    
-
----
-
 ## Runbooks
 
 **Runbooks** are more detailed than playbooks. They contain step-by-step technical instructions for executing specific response actions. Runbooks may vary depending on available tools and resources.
 
----
-
 ### Key Difference
 
 - **Playbooks** define _what_ should be done
-    
 - **Runbooks** explain _how_ each step is executed
+
+---
