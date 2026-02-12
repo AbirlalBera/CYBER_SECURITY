@@ -309,35 +309,33 @@ Linux uses a **DAC (Discretionary Access Control)** model.
 **Types:**
 
 1. **In-band (Classic):** Uses the same channel to launch attack and gather results (e.g., Union-based, Error-based).
-    
+
 2. **Inferential (Blind):** No data is transferred via the web application. Attacker reconstructs data by sending payloads and observing responses.
-    
-    - _Boolean-based:_ Different page content (True/False).
-        
-    - _Time-based:_ Database pauses (e.g., `WAITFOR DELAY`).
-        
-3. **Out-of-band:** Data is exfiltrated via a different channel (e.g., HTTP/DNS requests to attacker server).
-    
+
+- _Boolean-based:_ Different page content (True/False).
+
+- _Time-based:_ Database pauses (e.g., `WAITFOR DELAY`).
+
+1. **Out-of-band:** Data is exfiltrated via a different channel (e.g., HTTP/DNS requests to attacker server).
 
 **Example:**
 
 - Vulnerable: `SELECT * FROM users WHERE username = '$username';`
-    
+
 - Input: `admin' OR '1'='1' --`
-    
+
 - Result: `SELECT * FROM users WHERE username = 'admin' OR '1'='1' -- ';` (Bypasses login)
-    
+
 
 **Prevention:**
 
 - **Parameterized Queries (Prepared Statements):** Defines the SQL code structure first, passes parameters separately (No concatenation). _The ONLY definitive defense._
-    
+
 - **Stored Procedures:** (If implemented safely).
-    
+
 - **Allow-list Input Validation:** For expected items (e.g., table/column names).
-    
+
 - **Principle of Least Privilege:** App DB user should not be `sa`/`root`.
-    
 
 ---
 
@@ -346,9 +344,8 @@ Linux uses a **DAC (Discretionary Access Control)** model.
 These are flags set on **HTTP Cookies** to enhance security.
 
 - **Secure Flag:** Instructs the browser to only send the cookie over **encrypted HTTPS** connections, never HTTP. Prevents network sniffing attacks.
-    
+
 - **HTTPOnly Flag:** Prevents client-side JavaScript (e.g., `document.cookie`) from accessing the cookie. **Critical mitigation against XSS attacks.** Even if an attacker can run JS, they cannot steal the session cookie.
-    
 
 ---
 
@@ -357,18 +354,17 @@ These are flags set on **HTTP Cookies** to enhance security.
 **Cross-Site Request Forgery (CSRF)** forces an authenticated user to execute unintended actions on a web application in which they are currently authenticated.
 
 - **Entails:** Attacker tricks victim into visiting a malicious site. That site sends a forged request (e.g., `POST` to `/changePassword`) to the vulnerable app. The browser automatically includes the victim's session cookie, making the request appear legitimate.
-    
+
 
 **Prevention:**
 
 - **Anti-CSRF Tokens (Synchronizer Tokens):** A unique, secret, unpredictable token embedded in the request (form/hidden field). Server validates token on state-changing requests.
-    
+
 - **SameSite Cookies:** Set `SameSite=Strict` or `Lax` attribute on cookies, preventing them from being sent in cross-site requests.
-    
+
 - **Double Submit Cookies.**
-    
+
 - **Re-authentication** for critical actions (password change, money transfer).
-    
 
 ---
 
@@ -379,9 +375,8 @@ These are flags set on **HTTP Cookies** to enhance security.
 **Example:**
 
 - URL: `https://example.com/download?invoice=12345`
-    
+
 - Attacker changes it to: `.../download?invoice=12346` and accesses another user's invoice.
-    
 
 **Consequences:**
 
