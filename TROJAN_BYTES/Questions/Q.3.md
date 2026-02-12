@@ -35,37 +35,36 @@ The **OSI (Open Systems Interconnection) model** is a conceptual framework use
 ### **3. What are some of the most common services and what ports do they run on?**
 
 - **FTP:** 20 (Data), 21 (Control)
-    
+
 - **SSH:** 22
-    
+
 - **Telnet:** 23
-    
+
 - **SMTP:** 25
-    
+
 - **DNS:** 53
-    
+
 - **HTTP:** 80
-    
+
 - **HTTPS:** 443
-    
+
 - **POP3:** 110
-    
+
 - **IMAP:** 143
-    
+
 - **SMB/NetBIOS:** 139, 445
-    
+
 - **RDP:** 3389
-    
+
 - **MySQL:** 3306
-    
+
 - **MSSQL:** 1433
-    
+
 - **PostgreSQL:** 5432
-    
+
 - **Kerberos:** 88
-    
+
 - **LDAP:** 389 / 636 (SSL)
-    
 
 ---
 
@@ -97,17 +96,15 @@ A **Media Access Control (MAC) address** is a unique 48-bit (6 pairs of hex) h
 
 A **firewall** is a security system that monitors and controls incoming/outgoing network traffic based on predetermined security rules.
 
-- **How it works:** It establishes a barrier between a trusted internal network and an untrusted external network (like the internet). It inspects packets and allows or blocks them based on source/destination IP, port, or protocol.
-    
+**How it works:** It establishes a barrier between a trusted internal network and an untrusted external network (like the internet). It inspects packets and allows or blocks them based on source/destination IP, port, or protocol.
 
 ---
 
 ### **9. What is the difference between an IDS and an IPS?**
 
 - **IDS (Intrusion Detection System):** **Passive**. Monitors traffic and logs/alerts an admin of suspicious activity. It does **not** stop the traffic.
-    
+
 - **IPS (Intrusion Prevention System):** **Active**. Inline with the traffic flow; it can automatically block or drop malicious packets in real-time.
-    
 
 ---
 
@@ -120,22 +117,20 @@ A **honeypot** is a decoy system designed to lure attackers. It looks like a l
 ### **11. What is the difference between encoding, hashing and encrypting?**
 
 - **Encoding:** Transforms data for usability (not security). It is reversible using the same algorithm. (e.g., Base64, ASCII). **No key required.**
-    
+
 - **Hashing:** One-way function. Maps data to a fixed-length value. It cannot be reversed. Used for integrity checks and passwords. (e.g., MD5, SHA-256).
-    
+
 - **Encrypting:** Two-way function. Transforms data to keep it secret. It requires a key to reverse (decrypt). (e.g., AES, RSA).
-    
 
 ---
 
 ### **12. Name a few type of encoding, hash and encryption**
 
 - **Encoding:** ASCII, Unicode, URL Encoding, Base64.
-    
+
 - **Hash:** MD5, SHA-1, SHA-2 (256/512), NTLM.
-    
+
 - **Encryption:** AES (Symmetric), RSA (Asymmetric), Blowfish, ChaCha20.
-    
 
 ---
 
@@ -143,35 +138,33 @@ A **honeypot** is a decoy system designed to lure attackers. It looks like a l
 
 **Salting** is the process of adding a unique, random string of characters to each password _before_ hashing it.
 
-- **Why?** Prevents rainbow table attacks and ensures that two users with the same password do not have the same hash value.
-    
+**Why?** Prevents rainbow table attacks and ensures that two users with the same password do not have the same hash value.
+
 
 ---
 
 ### **14. What is the fastest way to crack hashes?**
 
 1. **Leverage Hardware:** Using high-end GPUs (like NVIDIA RTX 4090s) with tools like **Hashcat** to brute-force billions of hashes per second.
-    
+
 2. **Online Services:** Using cloud GPU instances.
-    
+
 3. **Rainbow Tables:** Precomputed tables for reversing cryptographic hash functions (largely mitigated by salting).
-    
 
 ---
 
 ### **15. Difference between symmetric and asymmetric encryption**
 
 - **Symmetric:** Uses the **same key** to encrypt and decrypt. Fast, but key distribution is a problem. (e.g., AES, ChaCha20).
-    
+
 - **Asymmetric:** Uses a **public key** to encrypt and a **private key** to decrypt. Slower, but solves the key exchange problem. (e.g., RSA, ECC).
-    
 
 ---
 
 ### **16. In what format are Windows and Linux hashes stored?**
 
 - **Windows:** NTLM hashes (MD4) or LAN Manager (LM) hashes (deprecated). NTLM hashes are stored in the SAM file in a specific binary format (no salt).
-    
+
 - **Linux:** Typically `$type$salt$hash`. Common formats include `$y$` (yescrypt), `$6$` (SHA-512), `$5$` (SHA-256), or `$2y$` (bcrypt) in the `/etc/shadow` file.
     
 
