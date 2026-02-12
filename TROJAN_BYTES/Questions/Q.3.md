@@ -166,16 +166,14 @@ A **honeypot** is a decoy system designed to lure attackers. It looks like a l
 - **Windows:** NTLM hashes (MD4) or LAN Manager (LM) hashes (deprecated). NTLM hashes are stored in the SAM file in a specific binary format (no salt).
 
 - **Linux:** Typically `$type$salt$hash`. Common formats include `$y$` (yescrypt), `$6$` (SHA-512), `$5$` (SHA-256), or `$2y$` (bcrypt) in the `/etc/shadow` file.
-    
 
 ---
 
 ### **17. Where are Windows and Linux hashes stored, how can you retrieve them?**
 
 - **Windows:** Stored in `C:\Windows\System32\config\SAM`. **Retrieval:** Cannot be copied while OS is running (locked by kernel). Extracted via `reg save HKLM\SAM sam.save`, using Mimikatz (`lsadump::sam`), or dumping memory.
-    
+
 - **Linux:** Stored in `/etc/shadow`. **Retrieval:** Readable only by root. Extracted via `cat /etc/shadow` or `john --wordlist=rockyou.txt shadow`.
-    
 
 ---
 
@@ -184,33 +182,30 @@ A **honeypot** is a decoy system designed to lure attackers. It looks like a l
 Mechanisms for scheduling scripts or commands to run automatically at specific times/dates.
 
 - **Linux:** Cron jobs (managed via `crontab`).
-    
+
 - **Windows:** Scheduled Tasks (managed via `taskschd.msc` or `schtasks.exe`).
-    
 
 ---
 
 ### **19. Where are cron jobs stored in Windows and Linux?**
 
 - **Linux:** System-wide: `/etc/crontab`, `/etc/cron.d/`. User-specific: `/var/spool/cron/crontabs/`.
-    
+
 - **Windows:** `C:\Windows\System32\Tasks\` (XML format) and the Registry.
-    
 
 ---
 
 ### **20. What are the different package managers used in Linux and where are they used?**
 
 - **APT (Debian, Ubuntu):** `.deb` packages.
-    
+
 - **YUM / DNF (Red Hat, CentOS, Fedora):** `.rpm` packages.
-    
+
 - **Pacman (Arch Linux):** `.pkg.tar.zst` packages.
-    
+
 - **Zypper (openSUSE):** `.rpm` packages.
-    
+
 - **Portage (Gentoo):** Source-based.
-    
 
 ---
 
@@ -219,20 +214,18 @@ Mechanisms for scheduling scripts or commands to run automatically at specific t
 Linux uses a **DAC (Discretionary Access Control)** model.
 
 - **Classes:** **U**ser (owner), **G**roup, **O**thers.
-    
+
 - **Permissions:** **R**ead (4), **W**rite (2), e**X**ecute (1).
-    
+
 - Represented as octal (e.g., `755`) or string (e.g., `-rwxr-xr-x`).
-    
 
 ---
 
 ### **22. What are SUID and sudo?**
 
 - **SUID (Set owner User ID):** A special permission bit. When set on an executable file, the program runs with the **owner's privileges**, not the user who executed it. (e.g., `passwd` runs as root). **Security Risk:** If set improperly, it can lead to privilege escalation.
-    
+
 - **Sudo:** A program that allows users to run programs with the security privileges of another user (default: root). Permissions are defined in `/etc/sudoers`.
-    
 
 ---
 
@@ -242,26 +235,24 @@ Linux uses a **DAC (Discretionary Access Control)** model.
 **How it works:**
 
 1. Client requests a ticket from the **AS (Authentication Service)**.
-    
+
 2. AS gives back a **TGT (Ticket Granting Ticket)** encrypted with the user's password hash.
-    
+
 3. Client presents TGT to the **TGS (Ticket Granting Service)** to request access to a specific service.
-    
+
 4. TGS gives a **Service Ticket**.
-    
+
 5. Client presents Service Ticket to the target server.
-    
 
 ---
 
 ### **24. What is the difference between WEP, WPA and WPA2?**
 
 - **WEP (Wired Equivalent Privacy):** Broken. Uses RC4, weak IVs. Can be cracked in minutes.
-    
+
 - **WPA (Wi-Fi Protected Access):** Improved over WEP. Still used TKIP/RC4 but added per-packet key mixing and message integrity check (MIC).
-    
+
 - **WPA2:** Current standard. Mandates **AES** and **CCMP**. Replaced RC4 entirely. Vulnerable to KRACK (Key Reinstallation Attack).
-    
 
 ---
 
@@ -269,7 +260,8 @@ Linux uses a **DAC (Discretionary Access Control)** model.
 
 **Wi-Fi Protected Setup (WPS)** is a network security standard designed to make connecting devices to a wireless network easier (push button or 8-digit PIN).
 
-- **Why it's insecure:** The 8-digit PIN is split into two halves (4 digits + 3 digits + checksum). This reduces the total attempts to **11,000** possibilities, allowing it to be brute-forced in hours.
+**Why it's insecure:** The 8-digit PIN is split into two halves (4 digits + 3 digits + checksum). This reduces the total attempts to **11,000** possibilities, allowing it to be brute-forced in hours.
+
 ---
 # SECTION 1: WEB APPLICATION VULNERABILITIES & ATTACKS
 
@@ -280,35 +272,33 @@ Linux uses a **DAC (Discretionary Access Control)** model.
 **Types:**
 
 1. **Reflected XSS (Non-Persistent):** The malicious script comes from the current HTTP request. The payload is reflected immediately in the response (e.g., search results, error messages). Requires the victim to click a crafted link.
-    
+
 2. **Stored XSS (Persistent):** The malicious script is permanently stored on the target server (database, comment field, forum post). The victim retrieves the script when requesting the stored information.
-    
+
 3. **DOM-based XSS:** The vulnerability exists in client-side JavaScript code, not the server response. The payload never reaches the server; it modifies the DOM environment.
-    
 
 **Consequences:**
 
 - Session hijacking (stealing cookies).
-    
+
 - Defacement of the website.
-    
+
 - Redirecting users to malicious sites.
-    
+
 - Performing actions on behalf of the user (e.g., password change, wire transfer).
-    
+
 - Keylogging, phishing (capturing credentials via fake forms).
-    
+
 
 **Prevention:**
 
 - **Contextual Output Encoding:** Encode data before inserting it into HTML, JavaScript, CSS, or URL contexts (e.g., `&` -> `&amp;`).
-    
+
 - **Use safe frameworks:** Modern frameworks (React, Angular) auto-escape by default.
-    
+
 - **Content Security Policy (CSP):** A browser header that restricts which sources scripts can be loaded from.
-    
+
 - **Input Validation:** Whitelist expected characters (not a primary defense).
-    
 
 ---
 
