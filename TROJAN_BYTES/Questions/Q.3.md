@@ -524,34 +524,32 @@ Primarily classified based on the amount of information provided to the tester:
 ### 7. What are the most common types of malware?
 
 - **Virus:** Self-replicating, attaches to clean files.
-    
+
 - **Worm:** Self-replicating, spreads across networks without human interaction.
-    
+
 - **Trojan:** Disguises as legitimate software.
-    
+
 - **Ransomware:** Encrypts data and demands payment.
-    
+
 - **Spyware:** Secretly records user activity.
-    
+
 - **Rootkit:** Designed to gain administrative control while hiding presence.
-    
+
 - **Keylogger:** Records keystrokes.
-    
 
 ---
 
 ### 8. What are some of the most common vulnerability databases?
 
 - **NVD (National Vulnerability Database):** U.S. government repository of standards-based vulnerability management data (CVSS scores, CPEs).
-    
+
 - **CVE (Common Vulnerabilities and Exposures):** Dictionary of publicly disclosed vulnerabilities (assigned IDs: `CVE-YYYY-N`).
-    
+
 - **Exploit-DB:** Archive of public exploits and corresponding vulnerable software (maintained by OffSec).
-    
+
 - **Packet Storm:** Security resource site with exploits, advisories, tools.
-    
+
 - **VulnHub:** Provides vulnerable virtual machines for practice.
-    
 
 ---
 
@@ -560,11 +558,10 @@ Primarily classified based on the amount of information provided to the tester:
 **CVSS** is a free and open industry standard for assessing the severity of security vulnerabilities.
 
 - **Scores:** Ranging from 0.0 to 10.0.
-    
+
 - **Metrics:** Base (intrinsic characteristics), Temporal (changes over time), Environmental (customized to specific organization).
-    
+
 - **Rating:** 0.0 = None, 0.1-3.9 = Low, 4.0-6.9 = Medium, 7.0-8.9 = High, 9.0-10.0 = Critical.
-    
 
 ---
 
@@ -574,10 +571,10 @@ Using a **Risk Matrix**.
 **Risk = Likelihood x Impact**
 
 1. **Likelihood:** How easy is it to exploit? (Authentication required? User interaction? Complexity?)
-    
+
 2. **Impact:** What data is exposed? (PII? Financial? Availability loss?) Ransomware vs. Information leak.  
-    We combine the technical severity (CVSS) with **business context** to assign a priority (Critical, High, Medium, Low, Info).
-    
+
+We combine the technical severity (CVSS) with **business context** to assign a priority (Critical, High, Medium, Low, Info).
 
 ---
 
@@ -586,15 +583,14 @@ Using a **Risk Matrix**.
 After **Scoping and Rules of Engagement (RoE)** have been signed off.
 
 - Authorization letter is in place.
-    
+
 - Target scope (IPs/URLs) is defined.
-    
+
 - Testing times/dates are agreed upon.
-    
+
 - DoS testing permissions are clarified.
-    
+
 - Contacts for emergency stop are identified.
-    
 
 ---
 
@@ -603,25 +599,24 @@ After **Scoping and Rules of Engagement (RoE)** have been signed off.
 Based on the OWASP Top 10 and CWE Top 25:
 
 - Broken Access Control (IDOR)
-    
+
 - Cryptographic Failures (Sensitive data exposure)
-    
+
 - Injection (SQL, NoSQL, Command)
-    
+
 - Insecure Design
-    
+
 - Security Misconfiguration (Default creds, verbose errors)
-    
+
 - Vulnerable and Outdated Components
-    
+
 - Identification and Authentication Failures
-    
+
 - Software and Data Integrity Failures
-    
+
 - Security Logging and Monitoring Failures
-    
+
 - Server-Side Request Forgery (SSRF)
-    
 
 ---
 
