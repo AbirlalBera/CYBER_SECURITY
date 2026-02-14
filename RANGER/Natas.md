@@ -28,3 +28,6 @@ payload : a /etc/natas_webpass/natas8
 ![[Pasted image 20260214194912.png]]
 
 natas11 = UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+
+
+
