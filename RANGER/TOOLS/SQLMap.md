@@ -139,6 +139,13 @@ sqlmap -r intercepted_request.txt
 ```
 
 ---
+### Using username and passwd
+
+```
+sqlmap -u "http://target.com/page.php?id=1" --auth-type=Basic --auth-cred="username:password"
+```
+---
+
 Remember :
 
 Sometimes we cant show the values on the GET request also for that follow these steps :
