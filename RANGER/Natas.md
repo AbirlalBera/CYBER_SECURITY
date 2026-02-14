@@ -116,3 +116,5 @@ HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5
 ![[Pasted image 20260214210404.png]]
 
 ==`natas12`== = yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+
+Here we are actually providing th
