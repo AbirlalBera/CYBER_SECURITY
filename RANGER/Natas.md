@@ -121,3 +121,4 @@ Here we are actually providing the filenaeme with extension.
 ![[Pasted image 20260214211549.png]]
 
 natas13 = trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+
