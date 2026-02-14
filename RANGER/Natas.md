@@ -56,3 +56,10 @@ This gives us a cookie value of : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZm
 
 ### Get the XOR key
 
+cookie : HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=
+
+key : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZmZmZmZmIn0=
+
+![[Pasted image 20260214204430.png]]
+
+final key : 
