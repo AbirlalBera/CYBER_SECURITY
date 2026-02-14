@@ -117,4 +117,7 @@ HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5
 
 ==`natas12`== = yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
 
-Here we are actually providing th
+Here we are actually providing the filenaeme with extension.
+![[Pasted image 20260214211549.png]]
+
+natas13 = trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
