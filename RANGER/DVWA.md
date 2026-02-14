@@ -5,11 +5,11 @@ sudo apt install dvwa
 ```
 
 ```
-dvwa -start
+dvwa-start
 ```
 
 ```
-dvwa -stop
+dvwa-stop
 ```
 
 ---
