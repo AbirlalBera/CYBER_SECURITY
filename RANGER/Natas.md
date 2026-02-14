@@ -66,3 +66,7 @@ This gives us an XOR key of  : eDWo
 
 ### Making a new cookie
 
+```
+("showpassword" => "yes","bgcolor" => "#ffffff")
+```
+
