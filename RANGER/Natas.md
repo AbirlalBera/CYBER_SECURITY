@@ -130,7 +130,7 @@ Upload the file by changing the extension .jpg > .php
 Then upload:
 ![[Pasted image 20260214215241.png]]
 
-natas14 = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+==`natas14`== = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 
 ```
 "OR 1=1 -- -
@@ -138,4 +138,5 @@ natas14 = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 
 ![[Pasted image 20260214220145.png]]
 
-natas15 = SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+==`natas15`== = SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+
