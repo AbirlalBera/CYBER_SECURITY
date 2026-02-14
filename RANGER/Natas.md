@@ -120,7 +120,7 @@ HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5
 Here we are actually providing the filenaeme with extension.
 ![[Pasted image 20260214211549.png]]
 
-natas13 = trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+==`natas13`== = trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 
 ![[Pasted image 20260214215149.png]]
 
@@ -130,4 +130,4 @@ Upload the file by changing the extension .jpg > .php
 Then upload:
 ![[Pasted image 20260214215241.png]]
 
-natas
+natas14 = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
