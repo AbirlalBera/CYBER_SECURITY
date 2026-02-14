@@ -64,3 +64,5 @@ key : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZmZmZmZmIn0=
 
 This gives us an XOR key of  : eDWo
 
+### Making a new cookie
+
