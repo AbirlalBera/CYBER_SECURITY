@@ -122,3 +122,12 @@ Here we are actually providing the filenaeme with extension.
 
 natas13 = trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 
+![[Pasted image 20260214215149.png]]
+
+Upload the file by changing the extension .jpg > .php
+![[Pasted image 20260214215223.png]]
+
+Then upload:
+![[Pasted image 20260214215241.png]]
+
+natas
