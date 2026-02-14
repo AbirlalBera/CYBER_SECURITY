@@ -135,3 +135,7 @@ natas14 = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 ```
 "OR 1=1 -- -
 ```
+
+![[Pasted image 20260214220145.png]]
+
+natas15 = SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
