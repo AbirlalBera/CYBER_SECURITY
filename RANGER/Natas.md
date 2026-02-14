@@ -20,3 +20,5 @@ hex2bin > strrev (reverse) > base64_decode == oubWYf2kBq
 ![[Pasted image 20260214184357.png]]
 
 natas9 = ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+![[Pasted image 20260214185052.png]]
+nata
