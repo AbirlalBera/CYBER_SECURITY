@@ -16,4 +16,5 @@ natas8 = xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
 
 $encodedSecret = "3d3d516343746d4d6d6c315669563362";
 
-### **hex2bin*
+hex2bin > strrev (reverse) > base64_decode == oubWYf2kBq
+
