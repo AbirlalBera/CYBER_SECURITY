@@ -69,7 +69,7 @@ This gives us a cookie value of : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZm
 
 ![[Pasted image 20260214204430.png]]
 
-This gives us an XOR key of  : `eDWo`
+This gives us an XOR key of  : **eDWo**
 
 ### Making a new cookie
 
