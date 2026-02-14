@@ -131,3 +131,7 @@ Then upload:
 ![[Pasted image 20260214215241.png]]
 
 natas14 = z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+
+```
+"OR 1=1 -- -
+```
