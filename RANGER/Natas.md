@@ -70,3 +70,40 @@ This gives us an XOR key of  : eDWo
 ("showpassword" => "yes","bgcolor" => "#ffffff")
 ```
 
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+function xor_encrypt($in) {
+    $key = 'eDWo';
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0; $i<strlen($text); $i++) {
+        $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+$payload = array("showpassword" => "yes", "bgcolor" => "#ffffff");
+
+$adata = base64_encode(xor_encrypt(json_encode($payload)));
+
+echo $adata;
+
+?>
+
+</body>
+</html>
+```
+
+```
+HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5
+```
+
+yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
