@@ -53,3 +53,6 @@ echo base64_encode(json_encode($defaultdata));
 ```
 
 This gives us a cookie value of : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZmZmZmZmIn0=
+
+### Get the XOR key
+
