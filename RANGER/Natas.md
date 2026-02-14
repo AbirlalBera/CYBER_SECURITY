@@ -5,3 +5,5 @@ natas3 = 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 natas4 = QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 ![[Pasted image 20260214182156.png]]
 natas5 = 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+![[Pasted image 20260214182342.png]]
+natas6 = 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
