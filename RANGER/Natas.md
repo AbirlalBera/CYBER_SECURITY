@@ -13,3 +13,5 @@ natas7 = bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
 Hint : /etc/natas_webpass/natas8 
 ![[Pasted image 20260214183728.png]]
 natas8 = xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
