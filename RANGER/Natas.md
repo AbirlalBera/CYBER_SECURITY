@@ -32,6 +32,24 @@ natas11 = UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 Actual cookie HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg%3D
 
 After URL encoding = HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
 
 
+$defaultdata = array(
+    "showpassword" => "no", 
+    "bgcolor" => "#ffffff"
+);
+echo base64_encode(json_encode($defaultdata));
+?>
 
+</body>
+</html>
+
+```
+
+This gives us a cookie value of : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZmZmZmZmIn0=
