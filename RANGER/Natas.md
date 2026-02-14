@@ -23,3 +23,8 @@ natas9 = ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
 ![[Pasted image 20260214185052.png]]
 
 natas10 = t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+
+payload : a /etc/natas_webpass/natas8 
+![[Pasted image 20260214194912.png]]
+
+natas11 = UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
