@@ -62,4 +62,5 @@ key : eyJzaG93cGFzc3dvcmQiOiJubyIsImJnY29sb3IiOiIjZmZmZmZmIn0=
 
 ![[Pasted image 20260214204430.png]]
 
-final key : 
+This gives us an XOR key of  : eDWo
+
