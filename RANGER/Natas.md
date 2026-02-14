@@ -9,3 +9,4 @@ natas5 = 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 natas6 = 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 ![[Pasted image 20260214183454.png]]
 natas7 = bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+Hint : /etc/natas_webpass/natas8 
