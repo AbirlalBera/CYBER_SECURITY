@@ -245,6 +245,12 @@ User: jonsnow
 Pass: Ha1lt0th3k1ng1nth3n0rth!!!
 ```
 
+
+
+![[Pasted image 20260215150320.png]]
+
+
+
 ---
 
 
