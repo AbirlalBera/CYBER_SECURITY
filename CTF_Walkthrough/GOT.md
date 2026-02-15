@@ -549,3 +549,15 @@ telnet 192.168.229.135 143
 
 ![[Pasted image 20260215203131.png]]
 
+```
+
+Congratulations!!
+
+You conquered the Kingdom of the Reach. This is the flag: aee750c2009723355e2ac57564f9c3db
+
+Now you can auth on next Kingdom (The Rock, port 1337) using this user/pass combination:
+User: TywinLannister
+Pass: LannisterN3verDie!
+```
+
+We got 
