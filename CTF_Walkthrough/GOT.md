@@ -624,7 +624,7 @@ db: kingslanding
 user/pass: cerseilannister/_g0dsHaveNoMercy_
 
 ```
-mysql  -h 192.168.229.135  -u cerseilannister -p _g0dsHaveNoMercy_ -D kingslanding
+mysql  -h 192.168.229.135  -u cerseilannister -p _g0dsHaveNoMercy_ -D kingslanding execute="select*from mytable;"
 ```
 
 ----
