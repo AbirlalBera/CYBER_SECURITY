@@ -562,6 +562,8 @@ Pass: LannisterN3verDie!
 
 We got the sixth flag the Kingdom of the Reach : aee750c2009723355e2ac57564f9c3db
 
+also we got a port no : 1337
+
 Now our destination Casterly Rock .
 
 
