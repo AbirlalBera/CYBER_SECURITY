@@ -393,9 +393,11 @@ TmljZSEgeW91IGNvbnF1ZXJlZCB0aGUgS2luZ2RvbSBvZiB0aGUgTW91bnRhaW4gYW5kIHRoZSBWYWxl
 ![[Pasted image 20260215200254.png]]
 
 ```
-
+Nice! you conquered the Kingdom of the Mountain and the Vale. This is your flag: bb3aec0fdcdbc2974890f805c585d432. Next stop the Kingdom of the Reach. You can identify yourself with this user/pass combination: olennatyrell@7kingdoms.ctf/H1gh.Gard3n.powah , but first you must be able to open the gates
 ```
 
+User : olennatyrell@7kingdoms.ctf
+pass combination: olennatyrell@7kingdoms.ctf/H1gh.Gard3n.powah
 
 ```
 \dt
