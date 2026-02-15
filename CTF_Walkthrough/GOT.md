@@ -628,7 +628,7 @@ mysql  -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -D kingslanding exe
 ```
 
 ```
-mysql kingslanding -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -e 'select * from iron' 
+mysql kingslanding -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -e 'select * from iron_throne;' 
 ```
 
 ----
