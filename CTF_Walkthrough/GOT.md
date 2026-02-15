@@ -70,6 +70,9 @@ http://192.168.229.135/the-tree/
 
 ![[Pasted image 20260215121323.png]]
 
+NOTE :
+"You mUSt changE your own shape and foRm if you wAnt to GEt the right aNswer from the Three-eyed raven" - Written on the tree by somebody
+
 ```
 http://192.168.229.135/secret-island/
 ```
