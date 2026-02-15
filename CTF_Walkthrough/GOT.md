@@ -20,16 +20,16 @@ nmap -Pn -n -A -sV -sC -O 192.168.229.135
 ![[Pasted image 20260215180219.png]]
 ### **Open Ports:**
 
-| Port      | Service    | Version / Details                         | Notes                                               |
-| --------- | ---------- | ----------------------------------------- | --------------------------------------------------- |
-| **21**    | FTP        | Pure-FTPd                                 | Anonymous login worth checking                      |
-| **22**    | SSH        | Modified Dropbear (Linksys WRT45G themed) | Possible credential reuse target                    |
-| **53**    | DNS        | BIND                                      | Try zone transfer (`AXFR`)                          |
-| **80**    | HTTP       | Apache                                    | _Game of Thrones CTF_ – robots.txt has hidden paths |
-| **143**   | IMAP       | Filtered                                  | Service exists but blocked by firewall              |
-| **3306**  | MySQL      | Filtered                                  | Not directly accessible                             |
-| **5432**  | PostgreSQL | 9.6.x                                     | Database service (important for your CTF)           |
-| **10000** | HTTP       | Webmin 1.590 (MiniServ)                   | Admin panel – potentially exploitable               |
+| Port      | Service    | Version / Details                         |
+| --------- | ---------- | ----------------------------------------- |
+| **21**    | FTP        | Pure-FTPd                                 |
+| **22**    | SSH        | Modified Dropbear (Linksys WRT45G themed) |
+| **53**    | DNS        | BIND                                      |
+| **80**    | HTTP       | Apache                                    |
+| **143**   | IMAP       | Filtered                                  |
+| **3306**  | MySQL      | Filtered                                  |
+| **5432**  | PostgreSQL | 9.6.x                                     |
+| **10000** | HTTP       | Webmin 1.590 (MiniServ)                   |
 
 ---
 ### Port 80 - Main Website
