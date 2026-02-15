@@ -386,6 +386,9 @@ psql -h 192.168.229.135 -U robinarryn -d mountainandthevale
 SELECT * FROM aryas_kill_list;
 ```
 
+![[Pasted image 20260215170619.png]]
+
+
 
 
 
