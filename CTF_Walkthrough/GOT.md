@@ -474,7 +474,7 @@ SELECT * FROM popular_wisdom_book ;
 6 | The Iron Bank has the control. They can give you anything you want if you pay enough...
 ```
 
-Now lets test all the user to log in using `ValarMorghulis` password
+Now lets test all the user to log in using `ValarMorghulis` password and the database was braavos
 finally we found the username :
 ```
 
