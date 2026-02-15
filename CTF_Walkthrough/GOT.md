@@ -222,7 +222,7 @@ john --format=dynamic_2008 secret.txt
 
 ![[Pasted image 20260215143708.png]]
 
-We got the passphrase of 
+We got the passphrase of the_wall.txt.nc :
 
 ```
 stark
