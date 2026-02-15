@@ -203,7 +203,7 @@ get the_wall.txt.nc
 
 If we read the problems_in_the_north.txt
 ![[Pasted image 20260215143355.png]]
-we will fi
+we will find a hash : 6000e084bf18c302eae4559d48cb520c$2hY68a
 
 Crack the hash of problems_in_the_north.txt
 
@@ -212,3 +212,4 @@ john --format=dynamic_2008 secret.txt
 ```
 
 ![[Pasted image 20260215143251.png]]
+
