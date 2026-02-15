@@ -623,7 +623,7 @@ db: kingslanding
 
 user/pass: cerseilannister/_g0dsHaveNoMercy_
 
-
+mysql kingslanding -h 192.168.229.135 -P 3306 -u cerseilannister -p _g0dsHaveNoMercy_
 
 ----
 # SECRET DATA :
