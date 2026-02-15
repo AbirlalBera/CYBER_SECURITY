@@ -286,9 +286,8 @@ xxd stark_shield.jpg
 
 Now we make a new url by the reference of `http://winterfell.7kingdoms.ctf/------W1nt3rf3ll------` this Url
 
-
 ```
-
+Timef0rconqu3rs.7Kingdoms.ctf
 ```
 
 ---
