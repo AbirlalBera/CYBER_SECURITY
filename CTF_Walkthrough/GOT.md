@@ -245,11 +245,13 @@ User: jonsnow
 Pass: Ha1lt0th3k1ng1nth3n0rth!!!
 ```
 
+Now add the domain winterfell.7kingdoms.ctf to /etc/hosts
+
 
 
 ![[Pasted image 20260215150320.png]]
 
-
+![[Pasted image 20260215150341.png]]
 
 ---
 
