@@ -201,3 +201,6 @@ get the_wall.txt.nc
 
 ![[Pasted image 20260215140736.png]]
 
+Crack the hash of 
+
+![[Pasted image 20260215143251.png]]
