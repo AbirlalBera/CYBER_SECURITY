@@ -451,11 +451,11 @@ SELECT * FROM eyrie;
 ![[Pasted image 20260215171308.png]]
 
 ```
-  1 | Lysa Arryn                   | We were allies for centuries. We can negotiate the peace if you win this mind game
-  2 | Robin Arryn                  | The flag is hidden somewhere on this dungeon. You'll never find it. Ha ha ha!
-  3 | Mord                         | You'll be thrown into one of the sky cells!!
-  4 | Petyr (Littlefinger) Baelish | I'm here to help as always... If you OWN your destiny you can do anything
-  5 | Tyrion Lannister             | Books say stupid things sometimes like people do. You have to decide what to believe and what could be useful. The best choice for me is to be drunk
+1 | Lysa Arryn                   | We were allies for centuries. We can negotiate the peace if you win this mind game
+2 | Robin Arryn                  | The flag is hidden somewhere on this dungeon. You'll never find it. Ha ha ha!
+3 | Mord                         | You'll be thrown into one of the sky cells!!
+4 | Petyr (Littlefinger) Baelish | I'm here to help as always... If you OWN your destiny you can do anything
+5 | Tyrion Lannister             | Books say stupid things sometimes like people do. You have to decide what to believe and what could be useful. The best choice for me is to be drunk
 ```
 
 ```
