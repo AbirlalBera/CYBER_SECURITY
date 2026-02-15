@@ -536,6 +536,7 @@ The IMAP port that was previously filtered is now open :
 
 ![[Pasted image 20260215190746.png]]
 
-Now login through telnet
+Now login through telnet using the credentials we found from the base64 encoded text:
 User : olennatyrell@7kingdoms.ctf
 pass : H1gh.Gard3n.powah
+
