@@ -64,6 +64,11 @@ Disallow: /secret-island/
 Disallow: /direct-access-to-kings-landing/
 ```
 
+```
+http://192.168.229.135/the-tree/
+```
+
+![[Pasted image 20260215121323.png]]
 
 
 
