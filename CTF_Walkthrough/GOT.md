@@ -498,4 +498,10 @@ Finally we got the fifth flag : ==`3f82c41a70a8b0cfec9052252d9fd721`==
 
 **Our next target is  kingdom of the Reach for that we have to connect with the imap**
 
+The High Garden citizens never were great warriors, they are POLITE people. If you want to enter to their fortress you only need to Knock at the gates but following their rules... they like order
+
+popular_wisdom_book 
+
+and the password from 3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them
+
 ---
