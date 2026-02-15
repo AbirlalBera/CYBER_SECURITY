@@ -323,3 +323,5 @@ This is a webmin site :
 ![[Pasted image 20260215154900.png]]
 
 Now search for file manager 
+![[Pasted image 20260215163609.png]]
+
