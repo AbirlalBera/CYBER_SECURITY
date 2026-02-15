@@ -169,4 +169,6 @@ password : A_verySmallManCanCastAVeryLargeShad0w
 ---
 # ftp Bypass 
 
+username : oberynmartell
+password : A_verySmallManCanCastAVeryLargeShad0w
 
