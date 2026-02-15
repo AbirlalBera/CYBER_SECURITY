@@ -277,6 +277,9 @@ Also we have downloaded a image called stark_shield.jpg ,Lets check  if it conta
 xxd stark_shield.jpg
 ```
 
+```
+u3rs TeXT should be asked to enter into the Iron Islands fortress" - Theon Greyjoy
+```
 ---
 
 
