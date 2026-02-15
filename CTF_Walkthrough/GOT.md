@@ -318,3 +318,7 @@ To open the site we add the new domain name to /etc/hosts
 ![[Pasted image 20260215154627.png]]
 user : aryastark
 pass combination: N3ddl3_1s_a_g00d_sword#!
+
+This is a webmin site :
+![[Pasted image 20260215154900.png]]
+
