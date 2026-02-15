@@ -398,7 +398,7 @@ SELECT * FROM braavos_book;
 ![[Pasted image 20260215170729.png]]
 
 ```
---------------------------------------------------------------------------------------
+
  1 | City of Braavos is a very particular place. It is not so far from here.
  2 | "There is only one god, and his name is Death. And there is only one thing we say to Death: Not today" - Syrio Forel
  3 | Braavos have a lot of curious buildings. The Iron Bank of Braavos, The House of Black and White, The Titan of Braavos, etc.
@@ -407,7 +407,7 @@ SELECT * FROM braavos_book;
  7 | City of Braavos is ruled by the Sealord, an elected position.
  8 | "That man's life was not yours to take. A girl stole from the Many-Faced God. Now a debt is owed" - Jaqen H'ghar
  9 | Dro wkxi-pkmon qyn gkxdc iye dy mrkxqo iyeb pkmo. Ro gkxdc iye dy snoxdspi kc yxo yp iyeb usvv vscd. Covomd sd lkcon yx drsc lyyu'c vycd zkqo xewlob. Dro nkdklkco dy myxxomd gsvv lo lbkkfyc kxn iyeb zkccgybn gsvv lo: FkvkbWybqrevsc
-(8 rows)
+
 ```
 
 Here the 9th line might say something:
@@ -456,7 +456,7 @@ SELECT * FROM popular_wisdom_book ;
 6 | The Iron Bank has the control. They can give you anything you want if you pay enough...
 ```
 
-
+Now les
 
 
 
