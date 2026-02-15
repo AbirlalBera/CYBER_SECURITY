@@ -274,7 +274,7 @@ Also we have downloaded a image called stark_shield.jpg ,Lets check  if it conta
 ![[Pasted image 20260215152052.png]]
 
 ```
-
+xxd stark_shield.jpg
 ```
 
 ---
