@@ -368,9 +368,11 @@ db : mountainandthevale
 
 There was a postgresql database running on port 5432 
 
+```
 user : robinarryn
 pass : cr0wn_f0r_a_King-_
 db : mountainandthevale
+```
 
 Lets try to login
 ```
@@ -380,6 +382,7 @@ psql -h 192.168.229.135 -U robinarryn -d mountainandthevale
 ```
 \dt
 ```
+
 ![[Pasted image 20260215165925.png]]
 
 ```
