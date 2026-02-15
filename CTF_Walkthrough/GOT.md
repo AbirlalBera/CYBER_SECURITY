@@ -509,4 +509,5 @@ and the password from : 3487 64535 12345 . Remember these numbers, you'll need t
 knock 192.168.229.135 3487 64535 12345
 ```
 
-Now the imap port was opened that was shows filtered 
+The IMAP port that was previously filtered is now open.
+
