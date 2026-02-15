@@ -13,10 +13,10 @@ Target IP : 192.168.229.135
 # Scanning 
 
 ```
-rustscan -a 192.168.229.135 -- -sC -sV -O
+nmap -Pn -n -A -sV -sC -O 192.168.229.135
 ```
 
-![[Pasted image 20260215115511.png]]
+
 
 ![[Pasted image 20260215115553.png]]
 
