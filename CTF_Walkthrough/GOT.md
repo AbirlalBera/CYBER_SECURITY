@@ -377,7 +377,10 @@ Lets try to login
 psql -h 192.168.229.135 -U robinarryn -d mountainandthevale
 ```
 
-
+```
+\dt
+```
+![[Pasted image 20260215165925.png]]
 
 
 
