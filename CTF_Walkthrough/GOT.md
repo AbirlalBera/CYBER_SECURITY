@@ -408,7 +408,7 @@ SELECT * FROM braavos_book;
 ```
 
 ```
-SELECT * FROM
+SELECT * FROM eyrie;
 ```
 
 ![[Pasted image 20260215171308.png]]
@@ -422,7 +422,7 @@ SELECT * FROM
 ```
 
 ```
-
+SELECT * FROM popular_wisdom_book ;
 ```
 
 ![[Pasted image 20260215171537.png]]
@@ -436,3 +436,4 @@ SELECT * FROM
   6 | The Iron Bank has the control. They can give you anything you want if you pay enough...
 
 ```
+
