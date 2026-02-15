@@ -294,7 +294,6 @@ Now we make a new url by the reference of `http://winterfell.7kingdoms.ctf/-----
 Timef0rconqu3rs.7Kingdoms.ctf
 ```
 
-
 ---
 
 # DNS
