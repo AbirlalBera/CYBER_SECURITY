@@ -75,6 +75,9 @@ http://192.168.229.135/secret-island/
 ```
 
 ![[Pasted image 20260215121440.png]]
+![[Pasted image 20260215121515.png]]
+
+
 
 
 
