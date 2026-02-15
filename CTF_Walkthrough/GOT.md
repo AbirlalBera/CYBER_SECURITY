@@ -193,3 +193,10 @@ password : A_verySmallManCanCastAVeryLargeShad0w
 
 Download the files from ftp :
 
+```
+get problems_in_the_north.txt
+
+get the_wall.txt.nc
+```
+
+![[Pasted image 20260215140736.png]]
