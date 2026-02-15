@@ -116,11 +116,6 @@ NOTE :
 -->
 ```
 
-We found username and password :
-
-username : oberynmartell
-password : 34876453512345
-
 
 ---
 # Directory Bruteforcing
@@ -157,7 +152,7 @@ http://192.168.229.135/css/game_of_thrones.css
 http://192.168.229.135/h/i/d/d/e/n/
 ```
 
-
+![[Pasted image 20260215133948.png]]
 
 ```
 <!--
@@ -165,6 +160,10 @@ http://192.168.229.135/h/i/d/d/e/n/
 "Powerful docker spells were cast over all kingdoms. We must be careful! You can't travel directly from one to another... usually. That's what the Lord of Light has shown me" - The Red Woman Melisandre
 -->
 ```
+
+Finally we found  the credentials for drone :
+username : oberynmartell
+password : 34876453512345
 ---
 # ftp Bypass 
 
