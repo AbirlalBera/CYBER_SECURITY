@@ -94,6 +94,8 @@ http://192.168.229.135/direct-access-to-kings-landing/
 NOTE :
 "I've heard the savages usually play music. They are not as wild as one can expect, are they?" - Sansa Stark
 
+![[Pasted image 20260215123615.png]]
+
 
 
 ---
