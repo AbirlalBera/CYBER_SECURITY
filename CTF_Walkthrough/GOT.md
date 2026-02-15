@@ -120,6 +120,8 @@ NOTE :
 # Directory Bruteforcing
 
 
+
+
 ```
 http://192.168.229.135/js/game_of_thrones.js
 ```
