@@ -322,3 +322,4 @@ pass combination: N3ddl3_1s_a_g00d_sword#!
 This is a webmin site :
 ![[Pasted image 20260215154900.png]]
 
+Now search for file manager 
