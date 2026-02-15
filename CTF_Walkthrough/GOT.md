@@ -515,7 +515,7 @@ SELECT * FROM temple_of_the_faceless_men;
 (1 row)
 ```
 
-Finally we got the fifth flag : ==`3f82c41a70a8b0cfec9052252d9fd721`==
+Finally we got the secret flag : ==`3f82c41a70a8b0cfec9052252d9fd721`==
 
 **Our next target is  kingdom of the Reach for that we have to connect with the imap**
 
