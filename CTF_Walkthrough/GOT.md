@@ -299,4 +299,11 @@ Timef0rconqu3rs.7Kingdoms.ctf
 nslookup -q=txt Timef0rconqu3rs.7Kingdoms.ctf 192.168.229.135
 ```
 
+![[Pasted image 20260215154029.png]]
+
+```
+Timef0rconqu3rs.7kingdoms.ctf   text = "You conquered Iron Islands kingdom flag: 5e93de3efa544e85dcd6311732d28f95. Now you should go to Stormlands at http://stormlands.7kingdoms.ctf:10000 . Enter using this user/pass combination: aryastark/N3ddl3_1s_a_g00d_sword#!"
+```
+
+Finally we got Iron Islands kingdom flag: ==`5e93de3efa544e85dcd6311732d28f95`==
 
