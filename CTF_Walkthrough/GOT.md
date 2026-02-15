@@ -325,3 +325,6 @@ This is a webmin site :
 Now search for file manager 
 ![[Pasted image 20260215163609.png]]
 
+If this problem will occur add into chrome
+![[Pasted image 20260215164622.png]]
+Now to open the page add into chrome
