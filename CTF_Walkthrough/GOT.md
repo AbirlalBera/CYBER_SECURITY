@@ -627,6 +627,10 @@ user/pass: cerseilannister/_g0dsHaveNoMercy_
 mysql  -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -D kingslanding execute="select*from mytable;"
 ```
 
+```
+mysql kingslanding -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -e 'select * from iron' 
+```
+
 ----
 # SECRET DATA :
 
