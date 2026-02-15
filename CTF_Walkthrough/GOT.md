@@ -358,7 +358,7 @@ pgAdmin magic will not work. Command line should be used on that kingdom - Talis
 
 ```
 
-We got the fourth flag : ==`8fc42c6ddf9966db3b09e84365034357`==
+We got the fourth flag Stormlands : ==`8fc42c6ddf9966db3b09e84365034357`==
 
 also we got The credentials to access to the Mountain and the Vale kingdom are:
 
