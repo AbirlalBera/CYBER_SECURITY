@@ -546,7 +546,6 @@ telnet 192.168.229.135 143
 
 ![[Pasted image 20260215203212.png]]
 
-
 ![[Pasted image 20260215203131.png]]
 
 ```
