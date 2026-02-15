@@ -174,10 +174,8 @@ http://192.168.229.135/h/i/d/d/e/n/
 ![[Pasted image 20260215133948.png]]
 
 ```
-<!--
 "My little birds are everywhere. To enter in Dorne you must say: A_verySmallManCanCastAVeryLargeShad0w . Now, you owe me" - Lord (The Spider) Varys
 "Powerful docker spells were cast over all kingdoms. We must be careful! You can't travel directly from one to another... usually. That's what the Lord of Light has shown me" - The Red Woman Melisandre
--->
 ```
 
 Finally we found  the credentials for drone :
