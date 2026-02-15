@@ -211,5 +211,7 @@ Crack the hash of problems_in_the_north.txt
 john --format=dynamic_2008 secret.txt
 ```
 
-![[Pasted image 20260215143251.png]]
+![[Pasted image 20260215143708.png]]
+
+
 
