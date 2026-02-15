@@ -491,7 +491,9 @@ SELECT * FROM temple_of_the_faceless_men;
 ![[Pasted image 20260215175030.png]]
 
 ```
-----------------------------------+-------------------------------------------------------------------------------------------------------------
- 3f82c41a70a8b0cfec9052252d9fd721 | Congratulations. You've found the secret flag at City of Braavos. You've served well to the Many-Faced God.
+3f82c41a70a8b0cfec9052252d9fd721 | Congratulations. You've found the secret flag at City of Braavos. You've served well to the Many-Faced God.
 (1 row)
 ```
+
+Finally we got the fifth flag : ==`3f82c41a70a8b0cfec9052252d9fd721`==
+
