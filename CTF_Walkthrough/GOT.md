@@ -123,7 +123,7 @@ NOTE :
 dirb "http://192.168.229.135/" 
 ```
 
-
+![[Pasted image 20260216033405.png]]
 
 ```
 http://192.168.229.135/js/game_of_thrones.js
