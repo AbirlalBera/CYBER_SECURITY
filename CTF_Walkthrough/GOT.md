@@ -379,7 +379,17 @@ Lets try to login
 psql -h 192.168.229.135 -U robinarryn -d mountainandthevale
 ```
 
-``
+```
+\d+ flag
+```
+
+![[Pasted image 20260215195702.png]]
+
+If we closely look this is a base64 encoding :
+```
+TmljZSEgeW91IGNvbnF1ZXJlZCB0aGUgS2luZ2RvbSBvZiB0aGUgTW91bnRhaW4gYW5kIHRoZSBWYWxlLiBUaGlzIGlzIHlvdXIgZmxhZzogYmIzYWVjMGZkY2RiYzI5NzQ4OTBmODA1YzU4NWQ0MzIuIE5leHQgc3RvcCB0aGUgS2luZ2RvbSBvZiB0aGUgUmVhY2guIFlvdSBjYW4gaWRlbnRpZnkgeW91cnNlbGYgd2l0aCB0aGlzIHVzZXIvcGFzcyBjb21iaW5hdGlvbjogb2xlbm5hdHlyZWxsQDdraW5nZG9tcy5jdGYvSDFnaC5HYXJkM24ucG93YWggLCBidXQgZmlyc3QgeW91IG11c3QgYmUgYWJsZSB0byBvcGVuIHRoZSBnYXRlcw==
+```
+
 
 ```
 \dt
