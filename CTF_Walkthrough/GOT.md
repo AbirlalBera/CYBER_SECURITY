@@ -256,6 +256,18 @@ sudo nano /etc/hosts
 
 ![[Pasted image 20260215150341.png]]
 
+In the viewsource section we found the second flag : ==`639bae9ac6b3e1a84cebb7b403297b79`==
+```
+<!--
+Welcome to Winterfell
+You conquered the Kingdom of the North. This is your second kingdom flag!
+639bae9ac6b3e1a84cebb7b403297b79
+"We must do something here before travelling to Iron Islands, my lady" - Podrick Payne
+"Yeah, I can feel the magic on that shield. Swords are no more use here" - Brienne Tarth
+-->
+```
+
+
 ---
 
 
