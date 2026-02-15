@@ -190,6 +190,8 @@ password : A_verySmallManCanCastAVeryLargeShad0w
 
 ![[Pasted image 20260215140624.png]]
 
+Principality of Dorne was conquered. This is your first kingdom flag : 
+
 Download the files from ftp :
 
 ```
