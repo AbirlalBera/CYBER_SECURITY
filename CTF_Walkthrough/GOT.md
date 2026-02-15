@@ -580,8 +580,6 @@ Pass: LannisterN3verDie!
 2f686f6d652f747972696f6e6c616e6e69737465722f636865636b706f696e742e747874
 ```
 
-
-
 ```
 /home/tyrionlannister/checkpoint.txt
 ```
