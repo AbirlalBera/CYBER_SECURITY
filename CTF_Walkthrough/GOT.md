@@ -334,6 +334,7 @@ Now download the file flag.txt by clicking save button :
 ![[Pasted image 20260215164940.png]]
 
 ![[Pasted image 20260215165007.png]]
+
 ```
 Welcome to:
  _____ _                 _           _     
