@@ -540,3 +540,12 @@ Now login through telnet using the credentials we found from the base64 encoded 
 User : olennatyrell@7kingdoms.ctf
 pass : H1gh.Gard3n.powah
 
+```
+telnet 192.168.229.135 143
+```
+
+![[Pasted image 20260215203212.png]]
+
+
+![[Pasted image 20260215203131.png]]
+
