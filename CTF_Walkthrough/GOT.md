@@ -443,7 +443,7 @@ Decrypted Text
 The many-faced god wants you to change your face. He wants you to identify as one of your kill list. Select it based on this book's lost page number. The database to connect will be braavos and your password will be: ValarMorghulis
 ```
 
-It says that one of the person from the kill list on the basis of book's lost page number we have to connect the database using ValarMorghulis password.
+It says that one of the person from the kill list on the basis of book's lost page number we have to connect the database braavos using ValarMorghulis password.
 
 ```
 SELECT * FROM eyrie;
@@ -481,8 +481,10 @@ password : ValarMorghulis
 database : braavos
 
 ```
-
+psql -h 192.168.229.135 -U TheRedWomanMelisandre -d braavos
 ```
+
+
 
 
 
