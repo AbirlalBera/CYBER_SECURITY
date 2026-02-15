@@ -417,7 +417,7 @@ It might be a ROT cipher
 
 ![[Pasted image 20260215172944.png]]
 
-Decry
+Decrypted Text
 ```
 The many-faced god wants you to change your face. He wants you to identify as one of your kill list. Select it based on this book's lost page number. The database to connect will be braavos and your password will be: ValarMorghulis
 ```
