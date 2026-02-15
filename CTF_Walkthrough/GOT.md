@@ -121,9 +121,15 @@ We found username and password :
 username : oberynmartell
 password : 34876453512345
 
+
+---
+# Directory Bruteforcing
+
+
 ```
 http://192.168.229.135/js/game_of_thrones.js
 ```
+
 
 ![[Pasted image 20260215132926.png]]
 
@@ -133,8 +139,9 @@ http://192.168.229.135/css/game_of_thrones.css
 
 ![[Pasted image 20260215133113.png]]
 
----
-# Directory Bruteforcing
+```
+http://192.168.229.135/h/i/d/d/e/n/
+```
 
 ---
 # ftp Bypass 
