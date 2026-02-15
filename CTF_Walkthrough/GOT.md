@@ -112,11 +112,12 @@ NOTE :
 We found username and password :
 
 username : oberynmartell
-password : 3487 64535 12345
+password : 34876453512345
 
 ---
 # Directory Bruteforcing
 
 ---
+# ftp Bypass 
 
 
