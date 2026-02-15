@@ -311,3 +311,6 @@ It also tells us to visit :
 ```
 http://stormlands.7kingdoms.ctf:10000
 ```
+
+To open the site we add the new domain name to /etc/hosts
+
