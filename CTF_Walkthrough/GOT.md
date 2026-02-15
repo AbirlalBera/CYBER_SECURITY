@@ -203,7 +203,7 @@ get the_wall.txt.nc
 
 If we read the problems_in_the_north.txt
 ![[Pasted image 20260215143355.png]]
-w
+we will fi
 
 Crack the hash of problems_in_the_north.txt
 
