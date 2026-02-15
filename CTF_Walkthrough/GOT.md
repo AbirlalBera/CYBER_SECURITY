@@ -134,10 +134,24 @@ http://192.168.229.135/js/game_of_thrones.js
 ![[Pasted image 20260215132926.png]]
 
 ```
+/*
+"You'll never enter into King's Landing through the main gates. The queen ordered to close them permanently until the end of the war" - Tywin Lannister
+
+"If you put a city under siege, after five attacks you'll be banned two minutes" - Aegon the Conqueror and His Conquest of Westeros Book
+*/
+```
+
+
+```
 http://192.168.229.135/css/game_of_thrones.css
 ```
 
 ![[Pasted image 20260215133113.png]]
+
+```
+"Music reaches where words can't. It's known even for the animals" - Catelyn Stark
+```
+
 
 ```
 http://192.168.229.135/h/i/d/d/e/n/
