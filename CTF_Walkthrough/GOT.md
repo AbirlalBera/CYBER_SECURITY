@@ -205,7 +205,7 @@ If we read the problems_in_the_north.txt
 ![[Pasted image 20260215143355.png]]
 we will find a hash : 6000e084bf18c302eae4559d48cb520c$2hY68a
 
-First analyse the file type :
+First analyse the file type of the_wall.txt.nc :
 ```
 file the_wall.txt.nc 
 ```
@@ -214,15 +214,13 @@ Output : the_wall.txt.nc: mcrypt 2.5 encrypted data, algorithm: rijndael-128, ke
 
 It is a encrypted file.
 
-Crack the hash of problems_in_the_north.txt
+Next Crack the hash of problems_in_the_north.txt
 
 ```
 john --format=dynamic_2008 secret.txt
 ```
 
 ![[Pasted image 20260215143708.png]]
-
-
 
 We got the passphrase of 
 
