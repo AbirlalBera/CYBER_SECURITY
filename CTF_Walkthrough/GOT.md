@@ -39,3 +39,4 @@ rustscan -a 192.168.229.135 -- -sC -sV -O
 
 ![[Pasted image 20260215120528.png]]
 
+There are seven kingdoms or 7 flags 
