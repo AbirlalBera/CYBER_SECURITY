@@ -392,6 +392,24 @@ SELECT * FROM aryas_kill_list;
 ![[Pasted image 20260215170619.png]]
 
 ```
+ id |         name          |                               why                               
+----+-----------------------+-----------------------------------------------------------------
+  1 | WalderFrey            | For orchestrating the Red Wedding
+  2 | CerseiLannister       | For her role in Ned Starks death
+  3 | TheMountain           | For the torture at Harrenhal
+  4 | TheHound              | For killing Mycah, the butchers boy
+  5 | TheRedWomanMelisandre | For kidnapping Gendry
+  6 | BericDondarrion       | For selling Gendry to Melisandre
+  7 | ThorosofMyr           | For selling Gendry to Melisandre
+  8 | IlynPayne             | For executing Ned Stark
+  9 | MerynTrant            | For killing Syrio Forel
+ 10 | JoffreyBaratheon      | For ordering Ned Starks execution
+ 11 | TywinLannister        | For orchestrating the Red Wedding
+ 12 | Polliver              | For killing Lommy, stealing Needle and the torture at Harrenhal
+ 13 | Rorge                 | For the torture at Harrenhal and threatening to rape her
+```
+
+```
 SELECT * FROM braavos_book;
 ```
 
