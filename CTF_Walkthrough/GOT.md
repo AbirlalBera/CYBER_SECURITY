@@ -95,7 +95,35 @@ NOTE :
 "I've heard the savages usually play music. They are not as wild as one can expect, are they?" - Sansa Stark
 
 ![[Pasted image 20260215123615.png]]
+NOTE :
+```
+			<!--
 
+				"I will give you three hints, I can see the future so listen carefully" - The three-eyed raven Bran Stark
 
+				
+
+				"To enter in Dorne you must identify as oberynmartell. You still should find the password"
+
+				"3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them" 
+
+				"The savages never crossed the wall. So you must look for them before crossing it"
+
+			-->
+```
+
+			<!--
+
+				"I will give you three hints, I can see the future so listen carefully" - The three-eyed raven Bran Stark
+
+				
+
+				"To enter in Dorne you must identify as oberynmartell. You still should find the password"
+
+				"3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them" 
+
+				"The savages never crossed the wall. So you must look for them before crossing it"
+
+			-->
 
 ---
