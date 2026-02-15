@@ -121,6 +121,12 @@ We found username and password :
 username : oberynmartell
 password : 34876453512345
 
+```
+http://192.168.229.135/js/game_of_thrones.js
+```
+
+![[Pasted image 20260215132926.png]]
+
 ---
 # Directory Bruteforcing
 
