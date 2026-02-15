@@ -270,9 +270,12 @@ You conquered the Kingdom of the North. This is your second kingdom flag!
 -->
 ```
 
-Also we have downloaded a image called stark_shield.jpg ,Lets check  if it contains a
-
+Also we have downloaded a image called stark_shield.jpg ,Lets check  if it contains anything :
 ![[Pasted image 20260215152052.png]]
+
+```
+
+```
 
 ---
 
