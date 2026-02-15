@@ -232,5 +232,20 @@ stark
 mcrypt -d the_wall.txt.nc
 ```
 
-![[Pasted image 20260215145214.png]]
+![[Pasted image 20260215145305.png]]
+
+```
+"We defended the wall. Thanks for your help. Now you can go to recover Winterfell" - Jeor Mormont, Lord Commander of the Night's Watch
+
+"I'll write on your map this route to get faster to Winterfell. Someday I'll be a great maester" - Samwell Tarly
+
+http://winterfell.7kingdoms.ctf/------W1nt3rf3ll------
+Enter using this user/pass combination:
+User: jonsnow
+Pass: Ha1lt0th3k1ng1nth3n0rth!!!
+
+```
+
+---
+
 
