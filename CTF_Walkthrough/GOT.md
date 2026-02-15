@@ -131,7 +131,7 @@ http://192.168.229.135/js/game_of_thrones.js
 http://192.168.229.135/css/game_of_thrones.css
 ```
 
-
+![[Pasted image 20260215133113.png]]
 
 ---
 # Directory Bruteforcing
