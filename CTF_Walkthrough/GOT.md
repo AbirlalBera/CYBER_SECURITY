@@ -119,6 +119,9 @@ NOTE :
 ---
 # Directory Bruteforcing
 
+```
+dirb "http://192.168.229.135/" 
+```
 
 
 
