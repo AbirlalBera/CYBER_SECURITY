@@ -229,6 +229,8 @@ stark
 ```
 
 ```
-
+mcrypt -d the_wall.txt.nc
 ```
+
+![[Pasted image 20260215145214.png]]
 
