@@ -330,8 +330,8 @@ If this problem will occur add into chrome
 Now to open the page add CheerpJ Applet Runner into chrome :
 ![[Pasted image 20260215164738.png]]
 
-Now download the file by clicking save button :
+Now download the file flag.txt by clicking save button :
 
+![[Pasted image 20260215164940.png]]
 
-
-![[Pasted image 20260215164750.png]]
+![[Pasted image 20260215165007.png]]
