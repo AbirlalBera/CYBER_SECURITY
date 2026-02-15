@@ -6,7 +6,7 @@ sudo netdiscover -f
 
 ![[Pasted image 20260215115159.png]]
 
-GOT IP : 192.168.229.135
+Target IP : 192.168.229.135
 
 ---
 
@@ -290,6 +290,13 @@ Now we make a new url by the reference of `http://winterfell.7kingdoms.ctf/-----
 Timef0rconqu3rs.7Kingdoms.ctf
 ```
 
+
 ---
+
+# DNS
+
+```
+nslookup -q=txt Timef0rconqu3rs.7Kingdoms.ctf 192.168.229.135
+```
 
 
