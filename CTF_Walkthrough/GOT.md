@@ -407,6 +407,8 @@ SELECT * FROM braavos_book;
 (8 rows)
 ```
 
+Here the 9th line might say 
+
 ```
 SELECT * FROM eyrie;
 ```
