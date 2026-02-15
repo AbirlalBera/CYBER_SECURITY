@@ -46,12 +46,24 @@ Hints :
  looking at **ID3 tags**
 
 1. **Hint 1 (Bronn):** _"Everything can be TAGGED in this world, even the magic or the music"_
-    
-    - This strongly suggests looking at **ID3 tags** (metadata) in audio files. There might be a hidden music file on the web server with clues in its tags.
-        
+
+- This strongly suggests looking at **ID3 tags** (metadata) in audio files. There might be a hidden music file on the web server with clues in its tags.
+
 2. **Hint 2 (Ellaria Sand):** _"To enter in Dorne you'll need to be a kind face"_
-    
-    - This points to the first kingdom, **Dorne**. "A kind face" is a reference to the Faceless Men. This hints at some form of **masquerading or impersonation**, perhaps by modifying HTTP headers (like `User-Agent` or `Referer`) to look like a specific client or referrer.
+
+- This points to the first kingdom, **Dorne**. "A kind face" is a reference to the Faceless Men. This hints at some form of **masquerading or impersonation**, perhaps by modifying HTTP headers (like `User-Agent` or `Referer`) to look like a specific client or referrer.
+
+
+```
+http://192.168.229.135/robots.txt
+
+User-agent: Three-eyed-raven
+Allow: /the-tree/
+User-agent: *
+Disallow: /secret-island/
+Disallow: /direct-access-to-kings-landing/
+```
+
 
 
 
