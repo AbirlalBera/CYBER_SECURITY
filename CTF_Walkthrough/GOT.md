@@ -335,3 +335,27 @@ Now download the file flag.txt by clicking save button :
 ![[Pasted image 20260215164940.png]]
 
 ![[Pasted image 20260215165007.png]]
+```
+Welcome to:
+ _____ _                 _           _     
+|   __| |_ ___ ___ _____| |___ ___ _| |___ 
+|__   |  _| . |  _|     | | . |   | . |_ -|
+|_____|_| |___|_| |_|_|_|_|__,|_|_|___|___|
+
+Congratulations! you conquered Stormlands. This is your flag: 8fc42c6ddf9966db3b09e84365034357
+
+Now prepare yourself for the next challenge!
+
+The credentials to access to the Mountain and the Vale kingdom are:
+user/pass: robinarryn/cr0wn_f0r_a_King-_
+db: mountainandthevale
+
+pgAdmin magic will not work. Command line should be used on that kingdom - Talisa Maegyr
+
+```
+
+We got the fourth flag : ==`8fc42c6ddf9966db3b09e84365034357`==
+
+also we got The credentials to access to the Mountain and the Vale kingdom are:
+user/pass: robinarryn/cr0wn_f0r_a_King-_
+db: mountainandthevale
