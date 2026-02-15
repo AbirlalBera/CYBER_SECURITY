@@ -475,7 +475,11 @@ SELECT * FROM popular_wisdom_book ;
 ```
 
 Now lets test all the user to log in using `ValarMorghulis` password and the database was braavos
-finally we found the username :
+finally we found the 
+username : TheRedWomanMelisandre
+password : ValarMorghulis
+database : braavos
+
 ```
 
 ```
