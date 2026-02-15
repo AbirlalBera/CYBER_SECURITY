@@ -147,6 +147,13 @@ http://192.168.229.135/css/game_of_thrones.css
 "Music reaches where words can't. It's known even for the animals" - Catelyn Stark
 ```
 
+```
+http://192.168.229.135/sitemap.xml
+```
+
+![[Pasted image 20260215134739.png]]
+
+``
 
 ```
 http://192.168.229.135/h/i/d/d/e/n/
