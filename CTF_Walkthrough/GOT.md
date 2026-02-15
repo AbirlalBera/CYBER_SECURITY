@@ -506,5 +506,5 @@ and the password from : 3487 64535 12345 . Remember these numbers, you'll need t
 
 ---
 ```
-kn
+knock 192.168.229.135 3487 64535 12345
 ```
