@@ -588,4 +588,13 @@ Pass: LannisterN3verDie!
 
 
 ----
-SECRET DATA :
+# SECRET DATA :
+
+```
+exiftool game_of_thrones.mp3
+```
+
+![[Pasted image 20260215210739.png]]
+
+Savages secret flag: ==`8bf8854bebe108183caeb845c7676ae4`==
+
