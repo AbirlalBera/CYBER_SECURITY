@@ -307,3 +307,7 @@ Timef0rconqu3rs.7kingdoms.ctf   text = "You conquered Iron Islands kingdom flag:
 
 Finally we got Iron Islands kingdom flag: ==`5e93de3efa544e85dcd6311732d28f95`==
 
+It also tells us to visit :
+```
+http://stormlands.7kingdoms.ctf:10000
+```
