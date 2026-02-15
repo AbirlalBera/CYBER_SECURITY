@@ -31,3 +31,9 @@ rustscan -a 192.168.229.135 -- -sC -sV -O
 | **1337**  | HTTP       | nginx - "Welcome to Casterly Rock" (HTTP Basic Auth) |
 | **5432**  | PostgreSQL | 9.6.x                                                |
 | **10000** | HTTP       | Webmin 1.590 - "Login to Stormlands"                 |
+
+---
+### Port 80 - Main Website
+
+![[Pasted image 20260215120513.png]]
+
