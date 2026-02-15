@@ -389,6 +389,5 @@ SELECT * FROM aryas_kill_list;
 ![[Pasted image 20260215170619.png]]
 
 
-
-
+![[Pasted image 20260215170729.png]]
 
