@@ -16,4 +16,7 @@ GOT IP : 192.168.229.135
 rustscan -a 192.168.229.135 -- -sC -sV -O
 ```
 
+![[Pasted image 20260215115511.png]]
+
+![[Pasted image 20260215115553.png]]
 
