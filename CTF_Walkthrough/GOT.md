@@ -564,6 +564,9 @@ We got the sixth flag the Kingdom of the Reach : aee750c2009723355e2ac57564f9c3d
 
 also we got a port no : 1337
 
-Now our destination Casterly Rock .
+Now our destination Casterly Rock :
 
-
+![[Pasted image 20260215204419.png]]
+Now you can auth on next Kingdom using this user/pass combination:
+User: TywinLannister
+Pass: LannisterN3verDie!
