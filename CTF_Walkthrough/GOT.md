@@ -485,7 +485,3 @@ psql -h 192.168.229.135 -U TheRedWomanMelisandre -d braavos
 ```
 
 
-
-
-
-
