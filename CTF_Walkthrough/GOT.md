@@ -243,7 +243,6 @@ http://winterfell.7kingdoms.ctf/------W1nt3rf3ll------
 Enter using this user/pass combination:
 User: jonsnow
 Pass: Ha1lt0th3k1ng1nth3n0rth!!!
-
 ```
 
 ---
