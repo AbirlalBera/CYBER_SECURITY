@@ -422,7 +422,7 @@ Decrypted Text
 The many-faced god wants you to change your face. He wants you to identify as one of your kill list. Select it based on this book's lost page number. The database to connect will be braavos and your password will be: ValarMorghulis
 ```
 
-It says that one of the person from the kill list on the basis of book's lost page number we have to conn
+It says that one of the person from the kill list on the basis of book's lost page number we have to connect the database using ValarMorghulis password.
 
 ```
 SELECT * FROM eyrie;
@@ -445,11 +445,11 @@ SELECT * FROM popular_wisdom_book ;
 ![[Pasted image 20260215171537.png]]
 
 ```
-  1 | The First Men are the original human inhabitants of Westeros
-  2 | The King's Landing main gates are closed by orders of the Queen. Nobody can pass, and it seems something permanent
-  3 | The High Garden citizens never were great warriors, they are POLITE people. If you want to enter to their fortress you only need to Knock at the gates but following their rules... they like order
-  4 | A Lannister always pays his debts
-  5 | The old arcane Docker magic is present over all the kingdoms. Usually you can't use it to move between them but there is a secret tunnel from The Rock to King's Landing, everybody knows that
+1 | The First Men are the original human inhabitants of Westeros
+2 | The King's Landing main gates are closed by orders of the Queen. Nobody can pass, and it seems something permanent
+3 | The High Garden citizens never were great warriors, they are POLITE people. If you want to enter to their fortress you only need to Knock at the gates but following their rules... they like order
+4 | A Lannister always pays his debts
+ 5 | The old arcane Docker magic is present over all the kingdoms. Usually you can't use it to move between them but there is a secret tunnel from The Rock to King's Landing, everybody knows that
   6 | The Iron Bank has the control. They can give you anything you want if you pay enough...
 
 ```
