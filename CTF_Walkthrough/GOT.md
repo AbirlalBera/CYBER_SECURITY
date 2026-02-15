@@ -277,9 +277,14 @@ Also we have downloaded a image called stark_shield.jpg ,Lets check  if it conta
 xxd stark_shield.jpg
 ```
 
+![[Pasted image 20260215153024.png]]
+
 ```
-u3rs TeXT should be asked to enter into the Iron Islands fortress" - Theon Greyjoy
+"Timef0rconqu3rs TeXT should be asked to enter into the Iron Islands fortress" 
+- Theon Greyjoy
 ```
+
+
 ---
 
 
