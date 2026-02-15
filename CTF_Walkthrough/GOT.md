@@ -574,3 +574,9 @@ Pass: LannisterN3verDie!
 ![[Pasted image 20260215205257.png]]
 
 ![[Pasted image 20260215205315.png]]
+
+Convert it to ascii
+```
+2f686f6d652f747972696f6e6c616e6e69737465722f636865636b706f696e742e747874
+```
+
