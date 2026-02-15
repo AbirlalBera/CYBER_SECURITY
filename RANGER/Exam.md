@@ -40,3 +40,9 @@ gobuster dir -u <URL> -w wordlist
 https://hackviser.com/tactics/tools/gobuster
 
 https://hackviser.com/tactics/pentesting
+---
+https://www.hackingarticles.in/hack-game-thrones-vm-ctf-challenge/
+
+https://k3ramas.blogspot.com/2017/11/game-of-thrones-ctf-1-walkthrough_1.html
+https://www.slideshare.net/slideshow/penetration-testing-project-game-of-thrones-ctf-1/89193757#48
+
