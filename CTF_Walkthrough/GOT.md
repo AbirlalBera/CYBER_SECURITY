@@ -502,6 +502,6 @@ The High Garden citizens never were great warriors, they are POLITE people. If y
 
 popular_wisdom_book 
 
-and the password from 3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them
+and the password from : 3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them
 
 ---
