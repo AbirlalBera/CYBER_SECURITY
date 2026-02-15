@@ -213,6 +213,15 @@ john --format=dynamic_2008 secret.txt
 
 ![[Pasted image 20260215143708.png]]
 
+First analyse the file type :
+```
+file the_wall.txt.nc 
+```
+
+Output : the_wall.txt.nc: mcrypt 2.5 encrypted data, algorithm: rijndael-128, keysize: 32 bytes, mode: cbc,
+
+It mig
+
 We got the passphrase of 
 
 ```
