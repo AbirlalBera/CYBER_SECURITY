@@ -397,7 +397,7 @@ Nice! you conquered the Kingdom of the Mountain and the Vale. This is your flag:
 ```
 
 User : olennatyrell@7kingdoms.ctf
-pass combination: olennatyrell@7kingdoms.ctf/H1gh.Gard3n.powah
+pass : H1gh.Gard3n.powah
 
 ```
 \dt
@@ -526,6 +526,8 @@ popular_wisdom_book
 and the password from : 3487 64535 12345 . Remember these numbers, you'll need to use them with POLITE people you'll know when to use them
 
 ---
+# IMAP 
+
 ```
 knock 192.168.229.135 3487 64535 12345
 ```
@@ -534,3 +536,5 @@ The IMAP port that was previously filtered is now open :
 
 ![[Pasted image 20260215190746.png]]
 
+User : olennatyrell@7kingdoms.ctf
+pass : H1gh.Gard3n.powah
