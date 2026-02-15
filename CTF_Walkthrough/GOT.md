@@ -101,7 +101,7 @@ After changing the User-Agent: Three-eyed-raven of  http://192.168.229.135/the-t
 ![[Pasted image 20260215132618.png]]
 
 NOTE :
-
+"Music reaches where words can't. It's known even for the animals" - Catelyn Stark
 
 NOTE :
 ```
