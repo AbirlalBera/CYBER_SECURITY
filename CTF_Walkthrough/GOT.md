@@ -388,6 +388,9 @@ SELECT * FROM aryas_kill_list;
 
 ![[Pasted image 20260215170619.png]]
 
+```
+SELECT * FROM braavos_book;
+```
 
 ![[Pasted image 20260215170729.png]]
 
@@ -403,3 +406,4 @@ SELECT * FROM aryas_kill_list;
  9 | Dro wkxi-pkmon qyn gkxdc iye dy mrkxqo iyeb pkmo. Ro gkxdc iye dy snoxdspi kc yxo yp iyeb usvv vscd. Covomd sd lkcon yx drsc lyyu'c vycd zkqo xewlob. Dro nkdklkco dy myxxomd gsvv lo lbkkfyc kxn iyeb zkccgybn gsvv lo: FkvkbWybqrevsc
 (8 rows)
 ```
+
