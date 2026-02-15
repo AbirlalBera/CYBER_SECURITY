@@ -379,6 +379,8 @@ Lets try to login
 psql -h 192.168.229.135 -U robinarryn -d mountainandthevale
 ```
 
+``
+
 ```
 \dt
 ```
@@ -407,6 +409,7 @@ SELECT * FROM aryas_kill_list;
  12 | Polliver              | For killing Lommy, stealing Needle and the torture at Harrenhal
  13 | Rorge                 | For the torture at Harrenhal and threatening to rape her
 ```
+
 
 ```
 SELECT * FROM braavos_book;
