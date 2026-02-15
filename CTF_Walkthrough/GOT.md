@@ -201,6 +201,14 @@ get the_wall.txt.nc
 
 ![[Pasted image 20260215140736.png]]
 
-Crack the hash of 
+If we read the problems_in_the_north.txt
+![[Pasted image 20260215143355.png]]
+w
+
+Crack the hash of problems_in_the_north.txt
+
+```
+john --format=dynamic_2008 secret.txt
+```
 
 ![[Pasted image 20260215143251.png]]
