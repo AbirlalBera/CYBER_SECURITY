@@ -259,7 +259,7 @@ sudo nano /etc/hosts
 
 ![[Pasted image 20260215150702.png]]
 
-In the viewsource section we found the second flag : ==`639bae9ac6b3e1a84cebb7b403297b79`==
+In the viewsource section we found the second flag winerfall : ==`639bae9ac6b3e1a84cebb7b403297b79`==
 
 ```
 <!--
