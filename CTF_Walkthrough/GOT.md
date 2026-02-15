@@ -313,4 +313,6 @@ http://stormlands.7kingdoms.ctf:10000
 ```
 
 To open the site we add the new domain name to /etc/hosts
+![[Pasted image 20260215154610.png]]
 
+![[Pasted image 20260215154627.png]]
