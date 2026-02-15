@@ -159,6 +159,12 @@ http://192.168.229.135/raven.php
 
 ![[Pasted image 20260215134824.png]]
 
+```
+<!--
+You received a raven with this message:
+"To pass through the wall, mcrypt spell will help you. It doesn't matter who you are, only the key is needed to open the secret door" - Anonymous
+-->
+```
 
 
 ```
