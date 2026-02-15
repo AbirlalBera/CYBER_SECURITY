@@ -327,4 +327,7 @@ Now search for file manager
 
 If this problem will occur add into chrome
 ![[Pasted image 20260215164622.png]]
-Now to open the page add into chrome
+Now to open the page add CheerpJ Applet Runner into chrome :
+![[Pasted image 20260215164738.png]]
+
+![[Pasted image 20260215164750.png]]
