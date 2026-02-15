@@ -569,4 +569,5 @@ Now our destination Casterly Rock :
 Now you can auth on next Kingdom using this user/pass combination:
 User: TywinLannister
 Pass: LannisterN3verDie!
+![[Pasted image 20260215205141.png]]
 
