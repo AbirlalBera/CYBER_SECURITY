@@ -79,9 +79,10 @@ http://192.168.229.135/secret-island/
 We found the full MAP
 ![[Pasted image 20260215121831.png]]
 
+```
+http://192.168.229.135/direct-access-to-kings-landing/
+```
 
-
-
-
+![[Pasted image 20260215121947.png]]
 
 ---
