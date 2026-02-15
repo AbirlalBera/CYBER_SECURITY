@@ -81,7 +81,7 @@ http://192.168.229.135/secret-island/
 NOTE : 
 "Take this map and use it wisely. I want to be your friend" - Petyr (Littlefinger) Baelish
 
-We found the full MAP
+We found the full MAP 
 ![[Pasted image 20260215121831.png]]
 
 ```
