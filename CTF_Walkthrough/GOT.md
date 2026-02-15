@@ -213,5 +213,13 @@ john --format=dynamic_2008 secret.txt
 
 ![[Pasted image 20260215143708.png]]
 
-We got the passp
+We got the passphrase of 
+
+```
+stark
+```
+
+```
+
+```
 
