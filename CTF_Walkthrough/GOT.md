@@ -162,8 +162,10 @@ http://192.168.229.135/h/i/d/d/e/n/
 ```
 
 Finally we found  the credentials for drone :
+
 username : oberynmartell
-password : 34876453512345
+password : A_verySmallManCanCastAVeryLargeShad0w
+
 ---
 # ftp Bypass 
 
