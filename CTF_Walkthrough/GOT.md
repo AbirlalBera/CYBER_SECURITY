@@ -189,3 +189,7 @@ password : A_verySmallManCanCastAVeryLargeShad0w
 username : oberynmartell
 password : A_verySmallManCanCastAVeryLargeShad0w
 
+![[Pasted image 20260215140624.png]]
+
+Download the files from ftp :
+
