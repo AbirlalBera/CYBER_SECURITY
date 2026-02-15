@@ -1,4 +1,4 @@
-Find the system Ip
+# Find the system IP
 
 ```
 sudo netdiscover -f
@@ -6,4 +6,10 @@ sudo netdiscover -f
 
 ![[Pasted image 20260215115159.png]]
 
-GOT IP : 
+GOT IP : 192.168.229.135
+
+---
+
+# Scanning 
+
+
