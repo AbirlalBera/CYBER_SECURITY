@@ -27,5 +27,7 @@ A network mode where the virtual machine connects directly to the physical netwo
 
 # 3️⃣ Host-Only Network
 
-A network mode where the virtual machine can communicate only with the host computer, but not with external networks.
+A network mode where the virtual machine can communicate only with the host computer, but not with external networks.The VM talks only to your computer — not the internet.
+
+
 
