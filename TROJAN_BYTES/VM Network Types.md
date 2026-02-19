@@ -19,3 +19,7 @@ A network mode where the virtual machine accesses external networks through the 
 ![[Pasted image 20260219185904.png]]
 
 
+1️⃣ Bridged Network
+
+A network mode where the virtual machine connects directly to the physical network through the host’s network adapter and acts like an independent physical computer. The VM becomes another device on your real network.
+
