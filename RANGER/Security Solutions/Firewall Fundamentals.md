@@ -106,18 +106,13 @@ Provides comprehensive protection against modern cyber threats.
 
 The table below lists each firewall’s characteristics, which will help you choose the most suitable firewall for different use cases.
 
-Firewalls	Characteristics
-Stateless firewalls	- Basic filtering
-- No track of previous connections
-- Efficient for high-speed networks
-Stateful firewalls	- Recognize traffic by patterns
-- Complex rules can be applicable
-- Monitor the network connections
-Proxy firewalls	- Inspect the data inside the packets as well
-- Provides content filtering options
-- Provides application control
-- Decrypts and inspects SSL/TLS data packets
-Next-generation firewalls	- Provides advanced threat protection
-- Comes with an intrusion prevention system
-- Identify anomalies based on heuristic analysis
-- Decrypts and inspects SSL/TLS data packets
+|Firewalls|Characteristics|
+|---|---|
+|Stateless firewalls|- Basic filtering  <br>- No track of previous connections  <br>- Efficient for high-speed networks|
+|Stateful firewalls|- Recognize traffic by patterns  <br>- Complex rules can be applicable  <br>- Monitor the network connections|
+|Proxy firewalls|- Inspect the data inside the packets as well  <br>- Provides content filtering options  <br>- Provides application control  <br>- Decrypts and inspects SSL/TLS data packets|
+|Next-generation firewalls|- Provides advanced threat protection  <br>- Comes with an intrusion prevention system  <br>- Identify anomalies based on heuristic analysis  <br>- Decrypts and inspects SSL/TLS data packets|
+
+---
+# Rules in Firewalls
+
