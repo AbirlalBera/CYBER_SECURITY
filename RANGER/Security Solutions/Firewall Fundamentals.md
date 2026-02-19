@@ -35,11 +35,27 @@ If one malicious packet is blocked, future packets from the same source are stil
 
 ### ==`Stateful Firewall`==
 
+### 📌 OSI Layers:
 
+- **Layer 3 (Network)**
+- **Layer 4 (Transport)**
+
+### 📌 How It Works:
+
+- Maintains a **state table**
+- Tracks active connections
+- Uses connection history to make decisions
+
+### 📌 Key Characteristics:
+
+- Monitors ongoing session
+- Applies complex policies
+- Automatically allows packets belonging to trusted sessions
+- Denies packets from blocked connections
 
 ### 📌 Advantage:
 
-Can block traffic based on content (e.g., specific websites or file types).
+Smarter than stateless firewalls because it remembers previous activity.
 
 ### ==`Proxy Firewall`==
 
