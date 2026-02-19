@@ -279,4 +279,6 @@ Example:
 - Block browsing (port 80/443)
 
 ---
+# Linux iptables Firewall
 
+Linux also offers the functionality of a built-in firewall. We have multiple firewall options available here. Let’s briefly review most of them and explore one of them in detail.
