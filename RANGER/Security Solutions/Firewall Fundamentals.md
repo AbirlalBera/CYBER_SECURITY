@@ -234,3 +234,29 @@ To create a custom rule, choose "Advanced Settings" from the available options i
 You can see the available options to create inbound and outbound rules.
 ![[Pasted image 20260220004803.png]]
 
+# Example: Block Outgoing HTTP & HTTPS Traffic
+
+Goal:  
+Block web browsing by blocking ports:
+
+- 80 (HTTP)
+- 443 (HTTPS)
+
+### Steps Summary:
+
+1️⃣ Go to **Outbound Rules**  
+2️⃣ Click **New Rule**  
+3️⃣ Select **Custom**  
+4️⃣ Choose **All Programs**  
+5️⃣ Select Protocol: **TCP**  
+6️⃣ Remote Ports: **80,443**  
+7️⃣ Action: **Block the connection**  
+8️⃣ Apply to all profiles  
+9️⃣ Name the rule → Finish
+
+After applying the rule:
+
+- Browsers cannot access websites
+- HTTP/HTTPS traffic is blocked
+
+---
