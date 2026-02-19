@@ -222,5 +222,10 @@ From the main dashboard, you can:
 
 - Resets firewall rules to original configuration
 
+---
+# Custom Rules
+
+Windows Defender Firewall also allows you to create custom rules for your network to allow/disallow specific traffic as needed.
 
 To create a custom rule, choose "Advanced Settings" from the available options in the main dashboard. This will open a new tab where you can create your own rules.
+
