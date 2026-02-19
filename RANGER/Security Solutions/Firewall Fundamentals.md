@@ -312,7 +312,46 @@ Firewall is active and enabled on system startup
 ```
 To turn off the firewall, type “disable” instead of “enable” in the above command.
 
+Allow All Outgoing Traffic (Default Policy)
 
+```
+sudo ufw default allow outgoing
+```
+
+This means:
+- All outgoing traffic is allowed
+- Unless explicitly restricted by another rule
+
+Block Incoming SSH (Port 22)
+
+```
+sudo ufw deny 22/tcp
+```
+
+This blocks:
+
+- All incoming SSH connections
+    
+- TCP port 22
+    
+
+---
+
+### 📋 List Rules with Numbers
+
+`sudo ufw status numbered`
+
+Example output:
+
+`[ 1] 22/tcp     DENY IN     Anywhere [ 2] 22/tcp     DENY IN     Anywhere (v6)`
+
+---
+
+### 🗑️ Delete a Rule
+
+`sudo ufw delete 2`
+
+Deletes rule number 2.
 
 
 
