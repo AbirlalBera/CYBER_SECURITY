@@ -181,6 +181,30 @@ It helps:
 - Create custom security rules
 - Protect systems in different network environments
 
+![[Pasted image 20260220004109.png]]
 
+# Network Profiles
 
+Windows automatically detects your network type using **Network Location Awareness (NLA)** and applies firewall settings based on the profile.
 
+## 1️⃣ Private Network
+
+- Used for trusted networks (e.g., home or office)
+    
+- More relaxed rules
+    
+- Allows file sharing and trusted connections
+    
+
+## 2️⃣ Public (Guest) Network
+
+- Used for untrusted networks (coffee shops, airports, etc.)
+    
+- More restrictive settings
+    
+- Often blocks incoming connections
+    
+- Higher security configuration
+    
+
+You can configure different firewall behaviors for each profile.
