@@ -18,8 +18,10 @@ IDS can be categorized differently depending on certain factors. An IDS’s ma
 
 **Signature-Based IDS:** Signature-based IDS detects attacks by comparing network traffic with a database of known attack patterns called signatures. When traffic matches a stored signature, the system generates an alert for administrators. The effectiveness of this type depends on how strong and updated the signature database is. It is fast and accurate for known attacks but cannot detect zero-day attacks because those attacks do not yet have predefined signatures in the database. An example of a signature-based IDS is Snort.
 
-**Anomaly-Based IDS:** 
+**Anomaly-Based IDS:** Anomaly-based IDS works by first learning the normal behavior (baseline) of a system or network. It then monitors current activity and generates alerts whenever it detects deviations from that baseline. Since it does not rely on stored signatures, it can detect zero-day attacks. However, it may produce many false positives because legitimate activities can sometimes appear abnormal. Fine-tuning and properly defining normal behavior can help reduce these false positives.
 
-**Hybrid IDS:** 
+**Hybrid IDS:** Hybrid IDS combines both signature-based and anomaly-based detection techniques. It uses signature-based detection for known threats and anomaly-based detection for new or unknown attacks. This approach leverages the strengths of both methods, providing broader protection, although it may require more processing power and careful configuration.
+
+In summary, signature-based IDS is efficient and quick for known threats and suitable for smaller threat environments. Anomaly-based and hybrid IDS are more effective in detecting modern and zero-day attacks but may involve higher processing overhead and tuning requirements.
 
 Signature-based IDS can detect threats quickly, while other IDS can have a high processing overhead. However, it is also essential to consider the IDS based on several different factors. Signature-based IDS can be a good option for covering a small threat surface. Anomaly-based IDS and hybrid IDS can help detect modern zero-day attacks, which are increasing daily and can cause massive damage to organizations.
