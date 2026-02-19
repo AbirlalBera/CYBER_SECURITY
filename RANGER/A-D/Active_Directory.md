@@ -226,9 +226,9 @@ A collection of settings applied to OUs to configure computers and users.
 Two main protocols are used:
 
 1. **Kerberos (Modern Default)**
-    
+
 2. **NetNTLM (Legacy, for compatibility)**
-    
+
 
 ### ==`Kerberos Authentication (3-Step Process)`==
 
@@ -265,13 +265,13 @@ Uses "tickets" as proof of authentication.
 A legacy protocol that uses a "challenge-response" method.
 
 1. **Client requests authentication.**
-    
+
 2. **Server sends a random challenge.**
-    
+
 3. **Client calculates a response** using its NTLM password hash and the challenge, then sends it back.
-    
+
 4. **Server sends the challenge and response** to the Domain Controller for verification.
-    
+
 5. **Domain Controller verifies** the response and tells the server if authentication passed or failed.
 
 ![[Pasted image 20251027222035.png]]
@@ -289,20 +289,20 @@ As companies grow, a single domain may become insufficient. AD uses **Trees** 
 ### Trees
 
 - **What it is:** A hierarchy of domains that share a **common namespace**.
-    
+
 - **Example:** A root domain `thm.local` with subdomains `uk.thm.local` and `us.thm.local`.
-    
+
 - **Purpose:** Provides administrative separation. The IT team for `uk.thm.local` manages only their domain, not the US one.
-    
+
 - **New Group:** **Enterprise Admins** have administrative privileges over **all domains** in the entire structure.
 
 ![[Pasted image 20251027222709.png]]
 ### Forests
 
 - **What it is:** A collection of one or more **domain Trees** that have different namespaces.
-    
+
 - **Example:** The `thm.local` tree and the `mht.local` tree from a merged company exist together in one forest.
-    
+
 - **Purpose:** Allows completely separate companies or business units to be managed together under a single umbrella.
 
 ![[Pasted image 20251027222714.png]]
@@ -312,9 +312,9 @@ As companies grow, a single domain may become insufficient. AD uses **Trees** 
 Trusts define how domains in a forest or tree can access each other's resources.
 
 - **What it is:** A bridge that allows users from one domain to be **authenticated** in another domain.
-    
+
 - **Key Point:** A trust relationship **enables** authorization but does **not automatically grant** access. Permissions must still be explicitly given.
-    
+
 
 |Trust Type|Description|Example|
 |---|---|---|
