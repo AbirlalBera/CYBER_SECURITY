@@ -116,3 +116,7 @@ The table below lists each firewall’s characteristics, which will help you cho
 ---
 # Rules in Firewalls
 
+A **firewall rule** tells the firewall how to handle specific network traffic. It defines **what traffic is allowed, blocked, or redirected** based on certain conditions. Organizations create customized rules depending on their security needs.
+
+**Example:** One company may block all SSH traffic.  Another may allow SSH only from specific trusted IP addresses.
+
