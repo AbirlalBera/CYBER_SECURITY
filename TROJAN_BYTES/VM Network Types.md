@@ -9,4 +9,9 @@
 3. Prevents accidental attacks on production systems
 4. Enables realistic attack simulation.
 
+---
+Types :
+
+NAT(Netw)
+
 
