@@ -134,7 +134,7 @@ The basic components of a firewall’s rule are described below:
 
 The component “Action” from a rule indicates the steps to take after a data packet falls under the category of the defined rule. Three main actions that can be applied to a rule are explained below.
 
-### Allow
+### Allow :
 A rule’s “Allow” action indicates that the particular traffic defined inside the rule would be permitted.
 
 For example, let’s create a rule with an action to allow all the outgoing traffic from our network for port 80 (used for HTTP traffic to the Internet).
@@ -143,7 +143,7 @@ For example, let’s create a rule with an action to allow all the outgoing traf
 |---|---|---|---|---|---|
 |Allow|192.168.1.0/24|Any|TCP|80|Outbound|
 
-### Deny
+### Deny :
 A rule’s “Deny” action means that the traffic defined inside the rule would be blocked and not permitted. These rules are fundamental for the security team to deny specific traffic coming from malicious IP addresses and create more rules to reduce the threat surface of the network.
 
 For example, let’s create a rule with an action to deny all the incoming traffic on port 22 (used for remotely connecting to a machine via SSH) of our critical server.
@@ -151,7 +151,7 @@ For example, let’s create a rule with an action to deny all the incoming traff
 |Action|Source|Destination|Protocol|Port|Direction|
 |---|---|---|---|---|---|
 |Deny|Any|192.168.1.0/24|TCP|22|Inbound|
-### Forward
+### Forward :
 The action “Forward” redirects traffic to a different network segment using the forwarding rules created on the firewalls. This applies to the firewalls that provide routing functionality and act as gateways between different network segments.
 
 For example, let’s create a rule with an action to forward all the incoming traffic on port 80 (used for HTTP traffic) to the web server `192.168.1.8`.
@@ -166,11 +166,9 @@ Firewalls have different categories of rules, each categorized based on the traf
 
 **Inbound Rules :** - Apply to incoming traffic. **Example:** Allow incoming HTTP (port 80) to a web server. Block incoming SSH (port 22).
 
-**Outbound Rules :** - Apply to outgoing traffic.
-Example:
-Block all outgoing SMTP (port 25) except from mail server.Allow employees to access web services (port 80/443).
+**Outbound Rules :** - Apply to outgoing traffic. **Example:** Block all outgoing SMTP (port 25) except from mail server. Allow employees to access web services (port 80/443).
 
-**Forward Rules :** Forwarding rules are created to forward specific traffic inside the network. For example, a forwarding rule can be created to forward the incoming HTTP (port 80) traffic to the web server located in your network.
+**Forward Rules :** - Apply when traffic is passing through the firewall to another network segment. **Example:** Forward HTTP traffic to internal web server. Forward VPN traffic to VPN server.
 
 ---
 
