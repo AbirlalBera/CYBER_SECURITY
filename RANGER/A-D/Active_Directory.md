@@ -3,7 +3,7 @@
 **Domain Controller :** The server that runs the Active Directory services is known as a Domain Controller (DC).A domain controller is a server that manages security authentication requests in a Windows Server network. It stores user account information and controls access to resources on the network. It is a critical component for managing and securing a network infrastructure.
 
 ![[Pasted image 20251026234357.png]]
-##  Advantage
+## Advantage
 
 The main advantages of having a configured Windows domain are:
 
