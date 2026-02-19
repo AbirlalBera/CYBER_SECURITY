@@ -243,18 +243,18 @@ Uses "tickets" as proof of authentication.
 ![[Pasted image 20251027215857.png]]
 
 
-2. **Get a Service Ticket (TGS)**
-    
-    - When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
-        
-    - The KDC issues a TGS, which is encrypted with the **service account's password hash**.
+2.**Get a Service Ticket (TGS)**
+
+- When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
+
+- The KDC issues a TGS, which is encrypted with the **service account's password hash**.
 ![[Pasted image 20251027222010.png]]
-2. **Connect to the Service**
-    
-    - The user presents the TGS to the service.
-        
-    - The service decrypts it with its own password hash. If successful, access is granted.
-        
+2.**Connect to the Service**
+
+- The user presents the TGS to the service.
+
+- The service decrypts it with its own password hash. If successful, access is granted.
+
 
 **Key Takeaway:** Kerberos is more secure and efficient. The user's password hash is never sent over the network after the initial login.
 
