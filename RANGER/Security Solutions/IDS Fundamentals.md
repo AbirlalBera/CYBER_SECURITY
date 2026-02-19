@@ -14,7 +14,7 @@ IDS can be categorized differently depending on certain factors. An IDS’s ma
 
 ![Difference between NIDS and HIDS.](https://tryhackme-images.s3.amazonaws.com/user-uploads/6645aa8c024f7893371eb7ac/room-content/6645aa8c024f7893371eb7ac-1723026309300.png)
 
-## Detection Modes
+## ==`Detection Modes`==
 
 **Signature-Based IDS:** Signature-based IDS detects attacks by comparing network traffic with a database of known attack patterns called signatures. When traffic matches a stored signature, the system generates an alert for administrators. The effectiveness of this type depends on how strong and updated the signature database is. It is fast and accurate for known attacks but cannot detect zero-day attacks because those attacks do not yet have predefined signatures in the database. An example of a signature-based IDS is Snort.
 
@@ -24,4 +24,3 @@ IDS can be categorized differently depending on certain factors. An IDS’s ma
 
 In summary, signature-based IDS is efficient and quick for known threats and suitable for smaller threat environments. Anomaly-based and hybrid IDS are more effective in detecting modern and zero-day attacks but may involve higher processing overhead and tuning requirements.
 
-Signature-based IDS can detect threats quickly, while other IDS can have a high processing overhead. However, it is also essential to consider the IDS based on several different factors. Signature-based IDS can be a good option for covering a small threat surface. Anomaly-based IDS and hybrid IDS can help detect modern zero-day attacks, which are increasing daily and can cause massive damage to organizations.
