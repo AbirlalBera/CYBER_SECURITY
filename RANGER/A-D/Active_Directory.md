@@ -18,30 +18,28 @@ The main advantages of having a configured Windows domain are:
 
 #### 👤 1. Users
 
-- These are accounts that can log in and access things (they are "security principals").
-    
-- **Two Types:**
-    
-    - **People:** Regular employees.
-        
-    - **Services:** Special accounts used to run programs (like a web server).
-        
+These are accounts that can log in and access things (they are "security principals").
+
+**Two Types:**    
+- **People:** Regular employees.        
+- **Services:** Special accounts used to run programs (like a web server).
+  
 
 #### 💻 2. Machines (Computers)
 
 - Every computer that joins the network gets its own account in AD.
-    
+
 - They are also "security principals."
-    
+
 - **How to spot them:** Their name ends with a **`$`** (e.g., `DC01$`).
-    
+
 
 #### 👥 3. Security Groups
 
 - This is how you manage permissions efficiently. Instead of giving access to each user individually, you put them in a **group** and give the **group** permission.
-    
+
 - **Key Advantage:** Add a user to a group, and they instantly get all the group's access rights.
-    
+
 - Groups can contain both users and computers.
 
 Several groups are created by default in a domain that can be used to grant specific privileges to users. As an example, here are some of the most important groups in a domain:
@@ -94,6 +92,7 @@ This is a common point of confusion, but the distinction is crucial:
 ## Deleting extra OUs and users
 
 The first thing you should notice is that there is an additional department OU in your current AD configuration that doesn't appear in the chart. We've been told it was closed due to budget cuts and should be removed from the domain. If you try to right-click and delete the OU, you will get the following error:
+
 ![[Pasted image 20251027010147.png]]
 
 ![[Pasted image 20251027010156.png]]
@@ -132,8 +131,6 @@ VERBOSE: Performing the operation "Set-ADAccountPassword" on target "CN=Sophie,O
 Now change the user password
 
 --------------------------
-
-
 ### Organizing Machines in Active Directory (AD)
 
 **Default Location:** All non-Domain Controller machines that join the domain are placed in the default **"Computers" container**. This is not ideal for applying different security policies.
@@ -181,7 +178,7 @@ A collection of settings applied to OUs to configure computers and users.
 **Two Policy Types:**
 
 - **Computer Configuration:** Settings applied to machines (e.g., password policy, lock screen).
-    
+
 - **User Configuration:** Settings applied to users (e.g., blocking Control Panel).
 
 **GPO Distribution & Update:**
@@ -190,10 +187,10 @@ A collection of settings applied to OUs to configure computers and users.
 
 - Changes can take up to 2 hours to apply. Force an immediate update with:
 
-powershell
-    
+    powershell
+
     gpupdate /force
-    
+
 
 
 ### Practical GPO Examples
@@ -201,22 +198,22 @@ powershell
 **1. Restrict Control Panel (User Policy)**
 
 - **GPO Name:** `Restrict Control Panel Access`
-    
+
 - **Policy Path:** `User Configuration -> Administrative Templates -> Control Panel`
-    
+
 - **Setting:** `Prohibit Access to Control Panel and PC settings` -> **Enabled**
-    
+
 - **Linking:** Link to user OUs (e.g., Marketing, Sales) where you want the restriction.
-    
+
 
 **2. Auto Lock Screen (Computer Policy)**
 
 - **GPO Name:** `Auto Lock Screen`
-    
+
 - **Policy Path:** `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options`
-    
+
 - **Setting:** `Interactive logon: Machine inactivity limit` -> **300 seconds** (5 minutes)
-    
+
 - **Linking:** Link to computer OUs (e.g., Workstations, Servers) or the root domain (computer policies are ignored on user-only OUs).
 --------------------------------
 
