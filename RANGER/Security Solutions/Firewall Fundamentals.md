@@ -190,21 +190,36 @@ Windows automatically detects your network type using **Network Location Awarene
 ## 1️⃣ Private Network
 
 - Used for trusted networks (e.g., home or office)
-    
 - More relaxed rules
-    
 - Allows file sharing and trusted connections
-    
 
 ## 2️⃣ Public (Guest) Network
 
 - Used for untrusted networks (coffee shops, airports, etc.)
-    
 - More restrictive settings
-    
 - Often blocks incoming connections
-    
 - Higher security configuration
-    
 
 You can configure different firewall behaviors for each profile.
+
+# Main Options on the Dashboard
+
+From the main dashboard, you can:
+
+### ✅ Allow or Block Apps
+
+- Click **“Allow an app or feature through Windows Defender Firewall”**
+    
+- Check/uncheck apps per network profile
+    
+
+### 🔄 Turn Firewall On/Off
+
+- Not recommended to disable completely
+    
+- Instead, you can block all incoming connections
+    
+
+### 🔁 Restore Defaults
+
+- Resets firewall rules to original configuration
