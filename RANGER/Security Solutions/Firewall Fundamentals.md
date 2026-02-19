@@ -204,22 +204,19 @@ You can configure different firewall behaviors for each profile.
 
 # Main Options on the Dashboard
 
-From the main dashboard, you can:
+![[Pasted image 20260220004320.png]]
 
-### ✅ Allow or Block Apps
+From the main dashboard, you can:
+### Allow or Block Apps
 
 - Click **“Allow an app or feature through Windows Defender Firewall”**
-    
 - Check/uncheck apps per network profile
-    
 
-### 🔄 Turn Firewall On/Off
+### Turn Firewall On/Off
 
 - Not recommended to disable completely
-    
 - Instead, you can block all incoming connections
-    
 
-### 🔁 Restore Defaults
+### Restore Defaults
 
 - Resets firewall rules to original configuration
