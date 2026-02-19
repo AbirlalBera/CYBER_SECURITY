@@ -171,6 +171,7 @@ Firewalls have different categories of rules, each categorized based on the traf
 **Forward Rules :** - Apply when traffic is passing through the firewall to another network segment. **Example:** Forward HTTP traffic to internal web server. Forward VPN traffic to VPN server.
 
 ---
+# Windows Defender Firewall
 
 
 
