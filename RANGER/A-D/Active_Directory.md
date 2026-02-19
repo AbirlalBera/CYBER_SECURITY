@@ -230,11 +230,11 @@ Two main protocols are used:
 2. **NetNTLM (Legacy, for compatibility)**
     
 
-### Kerberos Authentication (3-Step Process)
+### ==`Kerberos Authentication (3-Step Process)`==
 
 Uses "tickets" as proof of authentication.
 
-1 . **Get a Ticket-Granting Ticket (TGT)**
+1.**Get a Ticket-Granting Ticket (TGT)**
 
 - User logs in and sends a request to the **Key Distribution Center (KDC)** on the Domain Controller.
 
