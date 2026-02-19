@@ -52,46 +52,40 @@ Snort’s main files are stored in the `/etc/snort` directory. The most importan
 ### Snort Rule Format
 
 A Snort rule follows a specific structure:
-
-`action protocol source_ip source_port -> destination_ip destination_port (rule options)`
+```
+action protocol source_ip source_port -> destination_ip destination_port (rule options)
+```
 
 Each rule contains two main parts: the rule header and the rule options.
 
 The rule header defines the action (such as `alert`), protocol (e.g., ICMP, TCP, UDP), source IP and port, and destination IP and port. For example, `any` can be used to match any IP or port. Variables like `$HOME_NET` are defined in the configuration file and represent the internal network range.
 
 The rule options are written inside parentheses and include metadata such as:
-
 - `msg` (message displayed when rule triggers),
-    
 - `sid` (unique signature ID),
-    
 - `rev` (revision number of the rule).
-    
 
 Example custom rule:
-
-`alert icmp any any -> 127.0.0.1 any (msg:"Loopback Ping Detected"; sid:10003; rev:1;)`
+```
+alert icmp any any -> 127.0.0.1 any (msg:"Loopback Ping Detected"; sid:10003; rev:1;)
+```
 
 This rule generates an alert whenever an ICMP packet (ping) is sent to the loopback address (127.0.0.1).
 
 ### Running Snort in NIDS Mode
 
 To run Snort for real-time detection:
-
-`sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf`
+```
+sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf
+```
 
 Here:
 
 - `-q` runs in quiet mode,
-    
 - `-l` specifies log directory,
-    
 - `-i` specifies network interface,
-    
 - `-A console` prints alerts to console,
-    
 - `-c` specifies configuration file.
-    
 
 When you ping `127.0.0.1`, Snort detects the ICMP traffic and generates the configured alert, confirming the rule works correctly.
 
