@@ -298,51 +298,41 @@ Netfilter is the framework inside the Linux OS with core firewall functiona
 ufw (Uncomplicated Firewall), as the name says, eliminates the complications of making rules in a complex syntax in “iptables”(or its successor) by giving you an easier interface. It is more beginner-friendly. Basically, whatever rules you need in “iptables”, you can define them with some easy commands via ufw, which would then be configuring your desired rules in “iptables”. Let’s have a look at some basic ufw commands down below.
 
 To check the status of the firewall, you could use the command below:
-
 ```
 user@ubuntu:~$ sudo ufw status 
 Status: inactive
 ```
 
-If it appears inactive, you can enable it using the following command:
 
+If it appears inactive, you can enable it using the following command:
 ```Enable firewall
 user@ubuntu:~$ sudo ufw enable
 Firewall is active and enabled on system startup
 ```
 To turn off the firewall, type “disable” instead of “enable” in the above command.
 
-Allow All Outgoing Traffic (Default Policy)
 
+Allow All Outgoing Traffic (Default Policy)
 ```
 sudo ufw default allow outgoing
 ```
 
-This means:
-- All outgoing traffic is allowed
-- Unless explicitly restricted by another rule
+This means: All outgoing traffic is allowed, Unless explicitly restricted by another rule
+
 
 Block Incoming SSH (Port 22)
-
 ```
 sudo ufw deny 22/tcp
 ```
+This blocks: All incoming SSH connections, TCP port 22
 
-This blocks:
 
-- All incoming SSH connections
-    
-- TCP port 22
-    
-
----
-
-### 📋 List Rules with Numbers
-
-`sudo ufw status numbered`
+List Rules with Numbers
+```
+sudo ufw status numbered
+```
 
 Example output:
-
 `[ 1] 22/tcp     DENY IN     Anywhere [ 2] 22/tcp     DENY IN     Anywhere (v6)`
 
 ---
