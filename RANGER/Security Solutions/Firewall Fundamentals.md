@@ -306,10 +306,13 @@ Status: inactive
 
 If it appears inactive, you can enable it using the following command:
 
-```
+```Enable firewall
 user@ubuntu:~$ sudo ufw enable
 Firewall is active and enabled on system startup
 ```
+To turn off the firewall, type “disable” instead of “enable” in the above command.
+
+
 
 
 
