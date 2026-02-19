@@ -12,7 +12,26 @@ Let’s examine a few of the most common types of firewalls and their roles in t
 
 ### Stateless Firewall
 
-This type of firewall operates on layer 3 and layer 4 of the OSI model and works solely by filtering the data based on predetermined rules without taking note of the state of the previous connections. This means it will match every packet with the rules regardless of whether it is part of a legitimate connection. It maintains no information on the state of the previous connections to make decisions for future packets. Due to this, these firewalls can process the packets quickly. However, they cannot apply complex policies to the data based on its relationship with the previous connections. Suppose the firewall denies a few packets from a single source based on its rules. Ideally, it should drop all the future packets from this source because the previous packets could not comply with the firewall’s rules. However, the firewall keeps forgetting this, and future packets from this source will be treated as new and matched by its rules again.
+### 📌 OSI Working Layers:
+
+- **Layer 3 (Network)**
+- **Layer 4 (Transport)**
+
+### 📌 How It Works:
+
+- Checks each packet individually
+- Matches packets against predefined rules
+- Does NOT remember previous packets or connections
+### 📌 Key Characteristics:
+
+- Basic filtering
+- Fast processing
+- No connection tracking
+- Cannot apply complex security logic
+
+### 📌 Limitation:
+
+If one malicious packet is blocked, future packets from the same source are still treated as new traffic.
 
 ### Stateful Firewall
 
