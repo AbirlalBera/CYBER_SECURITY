@@ -14,6 +14,8 @@ Types :
 
 NAT(Network Address Translation)
 
+A network mode where the virtual machine accesses external networks through the host machine using Network Address Translation (NAT), sharing the host’s IP address. The VM can go out to the internet, but outside devices cannot directly connect to it (unless configured).
+
 
 
 
