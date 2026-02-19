@@ -42,3 +42,67 @@ This is Snort’s primary and most important mode. In NIDS mode, Snort monitors 
 ![[Pasted image 20260220012339.png]]
 In summary, while Snort can operate as a packet sniffer or packet logger, its most significant role as a security solution is in NIDS mode, where it actively detects and alerts on potential threats.
 
+---
+# Snort Usage
+
+During Snort installation, you must specify the network interface and the network range to monitor. By default, Snort captures only the traffic intended for the host system. If you want Snort to monitor the entire network, the network interface must be set to promiscuous mode so it can capture all passing traffic, not just traffic addressed to the host.
+
+Snort’s main files are stored in the `/etc/snort` directory. The most important file is `snort.conf`, which defines network variables such as `$HOME_NET`, specifies which rule files are enabled, and controls other configuration settings. The detection rules are stored inside the `rules` directory. Custom rules are typically added to the `local.rules` file.
+
+### Snort Rule Format
+
+A Snort rule follows a specific structure:
+
+`action protocol source_ip source_port -> destination_ip destination_port (rule options)`
+
+Each rule contains two main parts: the rule header and the rule options.
+
+The rule header defines the action (such as `alert`), protocol (e.g., ICMP, TCP, UDP), source IP and port, and destination IP and port. For example, `any` can be used to match any IP or port. Variables like `$HOME_NET` are defined in the configuration file and represent the internal network range.
+
+The rule options are written inside parentheses and include metadata such as:
+
+- `msg` (message displayed when rule triggers),
+    
+- `sid` (unique signature ID),
+    
+- `rev` (revision number of the rule).
+    
+
+Example custom rule:
+
+`alert icmp any any -> 127.0.0.1 any (msg:"Loopback Ping Detected"; sid:10003; rev:1;)`
+
+This rule generates an alert whenever an ICMP packet (ping) is sent to the loopback address (127.0.0.1).
+
+### Running Snort in NIDS Mode
+
+To run Snort for real-time detection:
+
+`sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf`
+
+Here:
+
+- `-q` runs in quiet mode,
+    
+- `-l` specifies log directory,
+    
+- `-i` specifies network interface,
+    
+- `-A console` prints alerts to console,
+    
+- `-c` specifies configuration file.
+    
+
+When you ping `127.0.0.1`, Snort detects the ICMP traffic and generates the configured alert, confirming the rule works correctly.
+
+### Running Snort on PCAP Files
+
+Snort can also analyze previously captured traffic stored in PCAP files for forensic investigation. This is useful when investigating past incidents.
+
+Command to analyze a PCAP file:
+
+`sudo snort -q -l /var/log/snort -r Task.pcap -A console -c /etc/snort/snort.conf`
+
+The `-r` option allows Snort to read and analyze traffic from a PCAP file instead of live network traffic.
+
+In summary, Snort allows real-time intrusion detection, custom rule creation, and offline traffic analysis, making it a flexible and powerful IDS tool.
