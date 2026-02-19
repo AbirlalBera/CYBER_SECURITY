@@ -48,7 +48,7 @@ In summary, while Snort can operate as a packet sniffer or packet logger, its mo
 During Snort installation, you must specify the network interface and the network range to monitor. By default, Snort captures only the traffic intended for the host system. If you want Snort to monitor the entire network, the network interface must be set to promiscuous mode so it can capture all passing traffic, not just traffic addressed to the host.
 
 Snort’s main files are stored in the `/etc/snort` directory. The most important file is `snort.conf`, which defines network variables such as `$HOME_NET`, specifies which rule files are enabled, and controls other configuration settings. The detection rules are stored inside the `rules` directory. Custom rules are typically added to the `local.rules` file.
-
+![[Pasted image 20260220013335.png]]
 ### Snort Rule Format
 
 A Snort rule follows a specific structure:
