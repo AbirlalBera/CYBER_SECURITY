@@ -30,7 +30,6 @@ Network-related logs are generated when the hosts communicate with each other or
 - Network file sharing Activity
 
 Together, these host-centric and network-centric log sources constantly create numerous logs in a network. 
-
 ## Answers Nowhere
 
 Until now, it seems pretty straightforward that these log sources generate logs, we analyze them, and identify malicious activities. However, it's not that simple. It has some challenges. Some of them are discussed below:
