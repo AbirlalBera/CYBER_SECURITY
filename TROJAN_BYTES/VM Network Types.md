@@ -12,6 +12,8 @@
 ---
 Types :
 
-NAT(Netw)
+NAT(Network Address Translation)
+
+
 
 
