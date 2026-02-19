@@ -229,3 +229,8 @@ Windows Defender Firewall also allows you to create custom rules for your netw
 
 To create a custom rule, choose "Advanced Settings" from the available options in the main dashboard. This will open a new tab where you can create your own rules.
 
+![[Pasted image 20260220004740.png]]
+
+You can see the available options to create inbound and outbound rules.
+![[Pasted image 20260220004803.png]]
+
