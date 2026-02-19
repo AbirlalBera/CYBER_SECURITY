@@ -24,3 +24,20 @@ IDS can be categorized differently depending on certain factors. An IDS’s ma
 
 In summary, signature-based IDS is efficient and quick for known threats and suitable for smaller threat environments. Anomaly-based and hybrid IDS are more effective in detecting modern and zero-day attacks but may involve higher processing overhead and tuning requirements.
 
+---
+# IDS Example: Snort
+
+Snort is one of the most widely used open-source IDS solutions, developed in 1998. It primarily uses signature-based detection and can also support anomaly-based techniques through preprocessing and configuration. Snort identifies threats using rule files that contain known attack signatures. It comes with built-in rule sets capable of detecting a wide range of malicious traffic. Administrators can also create custom rules to detect specific types of traffic not covered by default rules. Additionally, built-in rules can be disabled if they are not relevant to a particular network environment. This flexibility makes Snort highly customizable for different security needs.
+![[Pasted image 20260220012339.png]]
+### Modes of Snort
+
+**Packet Sniffer Mode:**  
+In this mode, Snort reads and displays network packets in real time without analyzing them against detection rules. It does not function as an IDS here but is useful for monitoring traffic and troubleshooting network issues. Administrators can view traffic directly on the console or save it to a file for inspection.
+
+**Packet Logging Mode:**  
+Packet logging mode captures and stores network traffic in PCAP format for later analysis. It logs all observed traffic and related detections. This mode is especially useful for forensic investigations, where security teams need historical traffic data to perform root cause analysis after an attack.
+
+**Network Intrusion Detection System (NIDS) Mode:**  
+This is Snort’s primary and most important mode. In NIDS mode, Snort monitors network traffic in real time and compares it against its rule files. When traffic matches a known attack signature, it generates an alert for security administrators. This mode provides the core IDS functionality.
+
+In summary, while Snort can operate as a packet sniffer or packet logger, its most significant role as a security solution is in NIDS mode, where it actively detects and alerts on potential threats.
