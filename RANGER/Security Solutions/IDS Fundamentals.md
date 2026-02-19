@@ -39,5 +39,6 @@ Packet logging mode captures and stores network traffic in PCAP format for later
 
 **Network Intrusion Detection System (NIDS) Mode:**  
 This is Snort’s primary and most important mode. In NIDS mode, Snort monitors network traffic in real time and compares it against its rule files. When traffic matches a known attack signature, it generates an alert for security administrators. This mode provides the core IDS functionality.
-
+![[Pasted image 20260220012339.png]]
 In summary, while Snort can operate as a packet sniffer or packet logger, its most significant role as a security solution is in NIDS mode, where it actively detects and alerts on potential threats.
+
