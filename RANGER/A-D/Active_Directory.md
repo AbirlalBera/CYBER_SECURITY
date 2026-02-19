@@ -166,32 +166,31 @@ A collection of settings applied to OUs to configure computers and users.
 **How it Works:**
 
 1. Create a GPO in the `Group Policy Objects` folder.
-    
+
 2. **Link** the GPO to an OU.
-    
+
 3. The GPO applies to all users/computers in that OU and any **child OUs**.
-    
+
 
 **Key Concepts:**
 
 - **Scope:** Where the GPO is linked (e.g., an OU or the entire domain).
-    
+
 - **Security Filtering:** Can be refined to apply to specific users/groups within the OU (default is `Authenticated Users`).
+
+**Two Policy Types:**
+
+- **Computer Configuration:** Settings applied to machines (e.g., password policy, lock screen).
     
-- **Two Policy Types:**
-    
-    - **Computer Configuration:** Settings applied to machines (e.g., password policy, lock screen).
-        
-    - **User Configuration:** Settings applied to users (e.g., blocking Control Panel).
-        
+- **User Configuration:** Settings applied to users (e.g., blocking Control Panel).
 
 **GPO Distribution & Update:**
 
 - Distributed via the `SYSVOL` network share on Domain Controllers.
-    
+
 - Changes can take up to 2 hours to apply. Force an immediate update with:
-    
-    powershell
+
+powershell
     
     gpupdate /force
     
@@ -248,6 +247,7 @@ Uses "tickets" as proof of authentication.
 - When the user wants to access a service (e.g., a file share), they present their TGT to the KDC and ask for a **Ticket-Granting Service (TGS)** ticket for that specific service.
 
 - The KDC issues a TGS, which is encrypted with the **service account's password hash**.
+
 ![[Pasted image 20251027222010.png]]
 2.**Connect to the Service**
 
