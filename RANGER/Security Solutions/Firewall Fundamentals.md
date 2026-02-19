@@ -331,12 +331,13 @@ This blocks: All incoming SSH connections, TCP port 22
 ```
 user@ubuntu:~$ sudo ufw status numbered 
 
-To              Action                From 
---              ------                ---- [ 1] 22/tcp DENY IN Anywhere [ 2] 22/tcp (v6) DENY IN Anywhere (v6)
+    To              Action                From 
+    --              ------                ---- 
+[ 1] 22/tcp           DENY IN              Anywhere 
+
+[ 2] 22/tcp (v6)      DENY IN              Anywhere (v6)
 ```
 
-Example output:
-`[ 1] 22/tcp     DENY IN     Anywhere [ 2] 22/tcp     DENY IN     Anywhere (v6)`
 
 
 **Delete a Rule**
