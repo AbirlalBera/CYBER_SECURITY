@@ -35,6 +35,14 @@ If one malicious packet is blocked, future packets from the same source are stil
 
 ### ==`Stateful Firewall`==
 
+
+
+### 📌 Advantage:
+
+Can block traffic based on content (e.g., specific websites or file types).
+
+### ==`Proxy Firewall`==
+
 ### 📌 OSI Layer:
 
 - **Layer 7 (Application Layer)**
@@ -52,14 +60,6 @@ If one malicious packet is blocked, future packets from the same source are stil
 - Content filtering policies
 - SSL/TLS decryption capability
 - Hides internal network structure
-
-### 📌 Advantage:
-
-Can block traffic based on content (e.g., specific websites or file types).
-
-### ==`Proxy Firewall`==
-
-The problem with previous firewalls was their inability to inspect the contents of a packet. Proxy firewalls, or application-level gateways, act as intermediaries between the private network and the Internet and operate on the OSI model’s layer 7. They inspect the content of all packets as well. The requests made by users in a network are forwarded by this proxy after inspection and masking them with their own IP address to provide anonymity for the internal IP addresses. Content filtering policies can be applied to these firewalls to allow/deny incoming and outgoing traffic based on their content.
 
 ### ==`Next-Generation Firewall (NGFW)`==
 
