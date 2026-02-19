@@ -134,7 +134,6 @@ The basic components of a firewall’s rule are described below:
 
 The component “Action” from a rule indicates the steps to take after a data packet falls under the category of the defined rule. Three main actions that can be applied to a rule are explained below.
 
-
 ### Allow
 A rule’s “Allow” action indicates that the particular traffic defined inside the rule would be permitted.
 
@@ -149,20 +148,23 @@ A rule’s “Deny” action means that the traffic defined inside the rule woul
 
 For example, let’s create a rule with an action to deny all the incoming traffic on port 22 (used for remotely connecting to a machine via SSH) of our critical server.
 
-
+|Action|Source|Destination|Protocol|Port|Direction|
+|---|---|---|---|---|---|
+|Deny|Any|192.168.1.0/24|TCP|22|Inbound|
 ### Forward
 The action “Forward” redirects traffic to a different network segment using the forwarding rules created on the firewalls. This applies to the firewalls that provide routing functionality and act as gateways between different network segments.
 
-For example, let’s create a rule with an action to forward all the incoming traffic on port 80 (used for HTTP traffic) to the web server 192.168.1.8.
+For example, let’s create a rule with an action to forward all the incoming traffic on port 80 (used for HTTP traffic) to the web server `192.168.1.8`.
 
-Action	Source	Destination	Protocol	Port	Direction
-Forward	Any	192.168.1.8	TCP	80	Inbound
-Directionality of Rules
+|Action|Source|Destination|Protocol|Port|Direction|
+|---|---|---|---|---|---|
+|Forward|Any|192.168.1.8|TCP|80|Inbound|
+
+# Directionality of Rules
 Firewalls have different categories of rules, each categorized based on the traffic directionality on which the rules are created. Let’s examine each of these directionalities.
 
+Inbound Rules :
 
-
-Inbound Rules
 Rules are categorized as inbound rules when they are meant to be applied to incoming traffic only. For example, you might allow incoming HTTP traffic (port 80) on your web server.
 
 Outbound Rules
