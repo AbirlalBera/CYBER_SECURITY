@@ -12,15 +12,17 @@
 ---
 Types :
 
-# NAT(Network Address Translation)
+# 1️⃣ NAT(Network Address Translation)
 
 A network mode where the virtual machine accesses external networks through the host machine using Network Address Translation (NAT), sharing the host’s IP address. The VM can go out to the internet, but outside devices cannot directly connect to it (unless configured).
 
 ![[Pasted image 20260219185904.png]]
 
 
-1️⃣ Bridged Network
+# 2️⃣Bridged Network
 
 A network mode where the virtual machine connects directly to the physical network through the host’s network adapter and acts like an independent physical computer. In simple terms the VM becomes another device on your real network.
+
+
 
 
