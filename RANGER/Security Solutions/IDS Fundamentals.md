@@ -80,7 +80,6 @@ sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf
 ```
 
 Here:
-
 - `-q` runs in quiet mode,
 - `-l` specifies log directory,
 - `-i` specifies network interface,
@@ -95,8 +94,11 @@ Snort can also analyze previously captured traffic stored in PCAP files for fore
 
 Command to analyze a PCAP file:
 
-`sudo snort -q -l /var/log/snort -r Task.pcap -A console -c /etc/snort/snort.conf`
+```
+sudo snort -q -l /var/log/snort -r Task.pcap -A console -c /etc/snort/snort.conf
+```
 
 The `-r` option allows Snort to read and analyze traffic from a PCAP file instead of live network traffic.
 
 In summary, Snort allows real-time intrusion detection, custom rule creation, and offline traffic analysis, making it a flexible and powerful IDS tool.
+
