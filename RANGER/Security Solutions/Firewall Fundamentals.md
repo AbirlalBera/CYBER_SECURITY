@@ -260,3 +260,23 @@ After applying the rule:
 - HTTP/HTTPS traffic is blocked
 
 ---
+# 📥 Inbound vs 📤 Outbound Rules
+
+### Inbound Rules
+
+Control traffic coming **into** your system.  
+Example:
+
+- Block incoming SSH (port 22)
+- Allow incoming web traffic (port 80)
+
+### Outbound Rules
+
+Control traffic going **out** of your system.  
+Example:
+
+- Block users from sending SMTP emails (port 25)
+- Block browsing (port 80/443)
+
+---
+
