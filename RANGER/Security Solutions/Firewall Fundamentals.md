@@ -173,6 +173,13 @@ Firewalls have different categories of rules, each categorized based on the traf
 ---
 # Windows Defender Firewall
 
+**Windows Defender Firewall** is a built-in firewall in Microsoft Windows that allows you to monitor and control incoming and outgoing network traffic.
+
+It helps:
+- Block unauthorized access
+- Control application network usage
+- Create custom security rules
+- Protect systems in different network environments
 
 
 
