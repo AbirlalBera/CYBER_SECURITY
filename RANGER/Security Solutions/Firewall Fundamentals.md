@@ -329,7 +329,10 @@ This blocks: All incoming SSH connections, TCP port 22
 
 **List Rules with Numbers**
 ```
-sudo ufw status numbered
+user@ubuntu:~$ sudo ufw status numbered 
+
+To              Action                From 
+--              ------                ---- [ 1] 22/tcp DENY IN Anywhere [ 2] 22/tcp (v6) DENY IN Anywhere (v6)
 ```
 
 Example output:
@@ -338,7 +341,11 @@ Example output:
 
 **Delete a Rule**
 ```
-sudo ufw delete 2
+user@ubuntu:~$ sudo ufw delete 2 
+Deleting: 
+  deny 22/tcp 
+Proceed with operation (y|n)? y 
+Rule deleted (v6)
 ```
 Deletes rule number 2.
 
