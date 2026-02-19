@@ -202,6 +202,7 @@ Windows automatically detects your network type using **Network Location Awarene
 
 You can configure different firewall behaviors for each profile.
 
+---
 # Main Options on the Dashboard
 
 ![[Pasted image 20260220004320.png]]
@@ -220,3 +221,6 @@ From the main dashboard, you can:
 ### Restore Defaults
 
 - Resets firewall rules to original configuration
+
+
+To create a custom rule, choose "Advanced Settings" from the available options in the main dashboard. This will open a new tab where you can create your own rules.
