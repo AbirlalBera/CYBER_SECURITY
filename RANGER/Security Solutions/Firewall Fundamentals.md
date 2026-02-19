@@ -79,7 +79,30 @@ Smarter than stateless firewalls because it remembers previous activity.
 
 ### ==`Next-Generation Firewall (NGFW)`==
 
-This is the most advanced type of firewall that operates from layer 3 to layer 7 of the OSI model, offering deep packet inspection and other functionalities that enhance the security of incoming and outgoing network traffic. It has an intrusion prevention system that blocks malicious activities in real time. It offers heuristic analysis by analyzing the patterns of attacks and blocking them instantly before reaching the network. NGFWs have SSL/TLS decryption capabilities, which inspect the packets after decrypting them and correlate the data with the threat intelligence feeds to make efficient decisions.
+### 📌 OSI Layers:
+
+- **Layer 3 to Layer 7**
+
+### 📌 How It Works:
+
+- Combines features of all previous firewalls
+- Performs deep packet inspection (DPI)
+- Integrates Intrusion Prevention System (IPS)
+- Uses threat intelligence feeds
+- Performs SSL/TLS decryption
+- Uses heuristic and behavioral analysis
+
+### 📌 Key Characteristics:
+
+- Advanced threat detection
+- Real-time attack blocking
+- Pattern recognition
+- Application awareness
+- SSL inspection
+
+### 📌 Advantage:
+
+Provides comprehensive protection against modern cyber threats.
 
 The table below lists each firewall’s characteristics, which will help you choose the most suitable firewall for different use cases.
 
