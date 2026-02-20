@@ -168,7 +168,7 @@ We will utilize INetSim's features to simulate a real network in this task.
 
 **Step 1: Identify the REMnux IP Address**
 
-- Run `ifconfig` or note the IP in the terminal prompt (e.g., `ubuntu@10.49.155.52`).
+Run `ifconfig` or note the IP in the terminal prompt (e.g., `ubuntu@10.49.155.52`).
 
 **Step 2: Edit the INetSim Configuration**
 
