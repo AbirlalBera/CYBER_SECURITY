@@ -115,7 +115,7 @@ When you ping `127.0.0.1`, Snort detects the ICMP traffic and generates the conf
 ### Running Snort on PCAP Files
 
 Snort can also analyze previously captured traffic stored in PCAP files for forensic investigation. This is useful when investigating past incidents.
-
+![[Pasted image 20260220200415.png]]
 Command to analyze a PCAP file:
 
 ```
