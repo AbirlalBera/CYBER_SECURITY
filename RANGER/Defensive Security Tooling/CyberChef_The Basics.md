@@ -137,7 +137,7 @@ Ex:  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
 
 ==`URL Decode :`==  Converts percent-encoded characters back to original form.  
 
-Ex: `https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  → https://gchq.github.io/CyberChef/`
+Ex: `https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  → `https://gchq.github.io/CyberChef/`
 
 ==`From Base85 :`== Decodes Base85 encoded ASCII string.  
 
@@ -147,15 +147,9 @@ Ex:  `BOu!rD]j7BEbo7` → `hello world`
 
 Ex:  `AXLU7qR` → `Thm58`
 
----
+==`To Base62 :`== Encodes data using Base62 character set.  
 
-### ==`To Base62 :`==
-
-Encodes data using Base62 character set.  
-Ex:  
-`Thm62` → `6NiRkOY`
-
----
+Ex:  `Thm62` → `6NiRkOY`
 
 # 📌 Base Encodings (Important Concept)
 
@@ -164,15 +158,9 @@ Base encodings convert **binary data (0s and 1s)** into readable ASCII character
 Common Types:
 
 - Base64
-    
 - Base85
-    
 - Base58
-    
 - Base62
-    
-
----
 
 # 🔢 Manual Base64 Encoding Example (“THM”)
 
@@ -182,10 +170,7 @@ T → 01010100
 H → 01001000  
 M → 01001101
 
-Combined (24 bits):  
-`010101000100100001001101`
-
----
+Combined (24 bits):  `010101000100100001001101`
 
 ### Step 2: Split into 6-bit Groups
 
@@ -200,8 +185,6 @@ Convert to Decimal:
 |100001|33|
 |001101|13|
 
----
-
 ### Step 3: Convert to Base64 Index
 
 Using Base64 index table:
@@ -213,10 +196,7 @@ Using Base64 index table:
 |33|h|
 |13|N|
 
-Final Base64 Output:  
-`VEhN`
-
----
+Final Base64 Output:  `VEhN`
 
 # 🌐 URL Encoding (Common UTF-8 Examples)
 
@@ -230,19 +210,4 @@ Final Base64 Output:
 
 Default encoding standard: **UTF-8**
 
----
-
-# 🧪 Practical Exercise Instructions
-
-1. Download the task file.
-    
-2. Open and copy content.
-    
-3. Paste into input field or upload using **Open file as input**.
-    
-4. Use operations under:
-    
-    - Extractors category (first two questions)
-        
-5. Try solving without hints first.
 
