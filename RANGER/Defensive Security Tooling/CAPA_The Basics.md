@@ -61,8 +61,8 @@ The output tells you what the program is capable of, such as:
 #### 1. Basic Usage
 
 **Command:** `capa.exe <path_to_binary>`
-**Process:**
 
+**Process:**
 1.Open PowerShell.
 2.Navigate to the directory with the binary (e.g., `C:\Users\Administrator\Desktop\capa`).
 3.Run the command.
