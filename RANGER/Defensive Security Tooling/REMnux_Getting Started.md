@@ -231,26 +231,26 @@ Save (`CTRL+O`, Enter) and exit (`CTRL+X`).
 
 3. **Read the Report:**
 
-    - Use `sudo cat /var/log/inetsim/report/report.<sessionID>.txt`
+- Use `sudo cat /var/log/inetsim/report/report.<sessionID>.txt`
 
-    - (e.g., `sudo cat /var/log/inetsim/report/report.2594.txt`)
+- (e.g., `sudo cat /var/log/inetsim/report/report.2594.txt`)
 
 **What the Report Shows:**  
 A log of all network connections made while INetSim was running.
 
 - **Timestamp:** When the connection occurred.
-    
+
 - **Protocol & Method:** e.g., `HTTPS connection, method: GET`
-    
+
 - **URL:** The resource requested (e.g., `https://10.49.155.52/second_payload.ps1`).
-    
+
 - **File Served:** The fake file INetSim returned (e.g., `/var/lib/inetsim/http/fakefiles/sample.html`).
-    
+
 
 #### 6. Summary of the Technique
 
 - **Goal:** Observe malware's network communication without letting it connect to a real malicious server.
-    
+
 - **Method:** Configure the malware (or the lab network) to point to your INetSim instance. The malware will attempt to "phone home," and INetSim will log the request and respond with a harmless file.
-    
+
 - **Result:** You can identify **IPs, URLs, protocols, and file types** the malware tries to reach, which is crucial for threat intelligence and creating network-based detections.
