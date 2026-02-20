@@ -236,7 +236,7 @@ Run: `sudo inetsim`
 
 - (e.g., `sudo cat /var/log/inetsim/report/report.2594.txt`)
 
-
+![[Pasted image 20260221013732.png]]
 
 **What the Report Shows:**  
 A log of all network connections made while INetSim was running.
@@ -248,7 +248,6 @@ A log of all network connections made while INetSim was running.
 - **URL:** The resource requested (e.g., `https://10.49.155.52/second_payload.ps1`).
 
 - **File Served:** The fake file INetSim returned (e.g., `/var/lib/inetsim/http/fakefiles/sample.html`).
-
 
 #### 6. Summary of the Technique
 
