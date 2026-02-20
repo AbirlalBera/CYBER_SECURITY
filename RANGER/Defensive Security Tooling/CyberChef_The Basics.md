@@ -22,9 +22,15 @@ Let's discuss each of these areas below.
 
 This is a practical and comprehensive repository of all the diverse operations that CyberChef is equipped to perform. These operations are meticulously categorized, offering users convenient access to various capabilities. Users can utilize the search feature to locate specific operations quickly, enhancing their efficiency and productivity.
 
-Below are some operations you might use throughout your cyber security journey.
+Below are some operations you might use throughout your cyber security journey:
 
-From Morse Code : 
+**1.From Morse Code :** Translates Morse Code into (upper case) alphanumeric characters.
+Ex : `- .... .-. . .- - ...` becomes `THREATS` when used with default parameters
+
+
+
+
+
 
 Alternatively, you can directly check how the operations work by hovering on the specific operation. This should give you a sample or a description and a link to Wikipedia.
 
