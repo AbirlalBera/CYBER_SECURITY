@@ -256,3 +256,7 @@ A log of all network connections made while INetSim was running.
 - **Method:** Configure the malware (or the lab network) to point to your INetSim instance. The malware will attempt to "phone home," and INetSim will log the request and respond with a harmless file.
 
 - **Result:** You can identify **IPs, URLs, protocols, and file types** the malware tries to reach, which is crucial for threat intelligence and creating network-based detections.
+
+---
+# Memory Investigation: Evidence Preprocessing
+
