@@ -147,3 +147,115 @@ During dynamic analysis, it is essential to observe the behaviour of potentiall
 
 We will utilize INetSim's features to simulate a real network in this task.
 
+### Dynamic Analysis with INetSim
+
+#### 1. The Tool: INetSim
+
+- **Full Name:** Internet Services Simulation Suite
+
+- **Purpose:** A tool that simulates real network services (HTTP, HTTPS, DNS, SMTP, etc.) in a lab environment.
+
+- **Goal:** To trick malware into thinking it's communicating with a real C2 server, allowing you to observe its network behavior safely.
+
+
+#### 2. Lab Setup: Two Machines
+
+- **REMnux VM:** The analysis machine that will run INetSim (acting as the "fake internet").
+
+- **AttackBox:** The machine used to interact with the REMnux VM and simulate malware behavior.
+
+#### 3. Configuring INetSim on REMnux
+
+**Step 1: Identify the REMnux IP Address**
+
+- Run `ifconfig` or note the IP in the terminal prompt (e.g., `ubuntu@10.49.155.52`).
+
+**Step 2: Edit the INetSim Configuration**
+
+- Open the config file: `sudo nano /etc/inetsim/inetsim.conf`
+    
+- Find the line: `#dns_default_ip 0.0.0.0`
+    
+- **Modify it:**
+    
+    1. Remove the `#` to uncomment the line.
+        
+    2. Change the IP from `0.0.0.0` to your REMnux machine's IP (e.g., `10.49.155.52`).
+        
+- Save (`CTRL+O`, Enter) and exit (`CTRL+X`).
+    
+
+**Step 3: Verify the Change**
+
+- Run: `cat /etc/inetsim/inetsim.conf | grep dns_default_ip`
+    
+- Confirm the output shows your IP (e.g., `dns_default_ip 10.49.155.52`).
+    
+
+**Step 4: Start INetSim**
+
+- Run: `sudo inetsim`
+    
+- **Success Indicator:** The output should end with "**Simulation running**". (Ignore the `http_80_tcp - failed!` warning; it's not needed for this exercise).
+    
+
+#### 4. Simulating Malware Behavior from the AttackBox
+
+**Step 1: Access the Fake Web Service**
+
+- On the **AttackBox**, open a web browser.
+    
+- Navigate to `https://<REMnux_IP>` (e.g., `https://10.49.155.52`).
+    
+- Ignore the security warning (it's a self-signed certificate) and proceed.
+    
+- You should see the **INetSim homepage**, confirming the service is running.
+    
+
+**Step 2: Simulate a Malware Download**
+
+- Mimic a malware sample that downloads secondary payloads.
+    
+- Use `wget` from the AttackBox terminal (as root) to download fake files from the INetSim server.
+    
+    - **Example 1 (Download a ZIP):**  
+        `sudo wget https://10.49.155.52/second_payload.zip --no-check-certificate`
+        
+    - **Example 2 (Download a PowerShell script):**  
+        `sudo wget https://10.49.155.52/second_payload.ps1 --no-check-certificate`
+        
+- **Result:** The files are downloaded to your AttackBox. They are harmless and will direct you back to the INetSim homepage if opened.
+    
+
+#### 5. Reviewing the INetSim Report (on REMnux)
+
+1. **Stop INetSim:** Go back to the REMnux terminal and press `CTRL+C` to stop the service.
+    
+2. **Locate the Report:** INetSim automatically generates a report of all captured connections. It is saved in: `/var/log/inetsim/report/`
+    
+3. **Read the Report:**
+    
+    - Use `sudo cat /var/log/inetsim/report/report.<sessionID>.txt`
+        
+    - (e.g., `sudo cat /var/log/inetsim/report/report.2594.txt`)
+        
+
+**What the Report Shows:**  
+A log of all network connections made while INetSim was running.
+
+- **Timestamp:** When the connection occurred.
+    
+- **Protocol & Method:** e.g., `HTTPS connection, method: GET`
+    
+- **URL:** The resource requested (e.g., `https://10.49.155.52/second_payload.ps1`).
+    
+- **File Served:** The fake file INetSim returned (e.g., `/var/lib/inetsim/http/fakefiles/sample.html`).
+    
+
+#### 6. Summary of the Technique
+
+- **Goal:** Observe malware's network communication without letting it connect to a real malicious server.
+    
+- **Method:** Configure the malware (or the lab network) to point to your INetSim instance. The malware will attempt to "phone home," and INetSim will log the request and respond with a harmless file.
+    
+- **Result:** You can identify **IPs, URLs, protocols, and file types** the malware tries to reach, which is crucial for threat intelligence and creating network-based detections.
