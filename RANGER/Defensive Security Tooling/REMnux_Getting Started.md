@@ -36,15 +36,16 @@ oledump.py <filename>
 
 - **Target:** `A4: M 688 'VBA/ThisWorkbook'` is identified as the stream of interest.
 
+![[Pasted image 20260221010657.png]]
 
 **Step 2: Select the Data Stream**
 
-- **Command:** `oledump.py <filename> -s <stream_number>`
-    
-- **Example:** `oledump.py agenttesla.xlsm -s 4`
-    
-- **Output:** Displays the raw content of the selected stream in hex dump format.
-    
+**Command:** `oledump.py <filename> -s <stream_number>`
+
+**Example:** `oledump.py agenttesla.xlsm -s 4`
+
+**Output:** Displays the raw content of the selected stream in hex dump format.
+
 
 **Step 3: Decompress the VBA Macro**
 
