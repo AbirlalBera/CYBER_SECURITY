@@ -30,6 +30,10 @@ Ex : `- .... .-. . .- - ...` becomes `THREATS` when used with default paramet
 **2.==`URL Encode :`==** Encodes problematic characters into percent-encoding, a format supported by URIs/URLs.
 Ex : `https://tryhackme.com/r/room/cyberchefbasics` becomes `https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Froom%2Fcyberchefbasics` when used with the parameter “Encode all special chars”
 
+==`3.To Base64 :`==  This operation encodes raw data into an ASCII Base64 string.
+
+Ex : `This is fun!` becomes `VGhpcyBpcyBmdW4h`
+
 
 
 
