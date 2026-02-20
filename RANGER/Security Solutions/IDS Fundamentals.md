@@ -56,7 +56,7 @@ action protocol source_ip source_port -> destination_ip destination_port (rule o
 ```
 
 Each rule contains two main parts: the rule header and the rule options.
-
+![[Pasted image 20260220195445.png]]
 The rule header defines the action (such as `alert`), protocol (e.g., ICMP, TCP, UDP), source IP and port, and destination IP and port. For example, `any` can be used to match any IP or port. Variables like `$HOME_NET` are defined in the configuration file and represent the internal network range.
 
 The rule options are written inside parentheses and include metadata such as:
