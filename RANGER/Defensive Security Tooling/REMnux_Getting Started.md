@@ -193,10 +193,10 @@ Save (`CTRL+O`, Enter) and exit (`CTRL+X`).
 
 **Step 4: Start INetSim**
 
-- Run: `sudo inetsim`
+Run: `sudo inetsim`
 
-- **Success Indicator:** The output should end with "**Simulation running**". (Ignore the `http_80_tcp - failed!` warning; it's not needed for this exercise).
-- 
+**Success Indicator:** The output should end with "**Simulation running**". (Ignore the `http_80_tcp - failed!` warning; it's not needed for this exercise).
+
 ![[Pasted image 20260221013210.png]]
 #### 4. Simulating Malware Behavior from the AttackBox
 
@@ -209,7 +209,7 @@ Save (`CTRL+O`, Enter) and exit (`CTRL+X`).
 - Ignore the security warning (it's a self-signed certificate) and proceed.
 
 - You should see the **INetSim homepage**, confirming the service is running.
-
+![[Pasted image 20260221013315.png]]
 
 **Step 2: Simulate a Malware Download**
 
