@@ -99,3 +99,182 @@ Features include:
 ---
 # Before Anything Else
 
+# 📂 1️⃣ Extractors Category
+
+These operations extract specific data from large inputs.
+
+### ==`Extract IP addresses :`==
+
+Extracts all valid IPv4 and IPv6 addresses from the input.
+
+### ==`Extract URLs :`==
+
+Extracts Uniform Resource Locators (URLs) from input.  
+⚠ Protocol (HTTP, HTTPS, FTP, etc.) must be present to reduce false positives.
+
+### ==`Extract email addresses :`==
+
+Extracts email addresses in the format:  
+`anything@domain.com`  
+Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
+
+---
+
+# 🕒 2️⃣ Date / Time Category
+
+### ==`From UNIX Timestamp :`==
+
+Converts a UNIX timestamp into a readable date-time format.
+
+### ==`To UNIX Timestamp :`==
+
+Converts a date-time string (UTC) into a UNIX timestamp.
+
+### 📌 UNIX Timestamp
+
+- 32-bit value
+    
+- Counts seconds since **January 1, 1970 (UTC)**
+    
+- Example:  
+    `Fri Sep 6 20:30:22 +04 2024` → `1725654622`
+    
+
+---
+
+# 🗂 3️⃣ Data Format Category
+
+These operations encode/decode structured data.
+
+---
+
+### ==`From Base64 :`==
+
+Decodes Base64 string into raw format.  
+Ex:  
+`V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
+
+---
+
+### ==`URL Decode :`==
+
+Converts percent-encoded characters back to original form.  
+Ex:  
+`https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  
+→ `https://gchq.github.io/CyberChef/`
+
+---
+
+### ==`From Base85 :`==
+
+Decodes Base85 encoded ASCII string.  
+Ex:  
+`BOu!rD]j7BEbo7` → `hello world`
+
+---
+
+### ==`From Base58 :`==
+
+Decodes Base58 encoded string (removes confusing characters like l, I, 0, O).  
+Ex:  
+`AXLU7qR` → `Thm58`
+
+---
+
+### ==`To Base62 :`==
+
+Encodes data using Base62 character set.  
+Ex:  
+`Thm62` → `6NiRkOY`
+
+---
+
+# 📌 Base Encodings (Important Concept)
+
+Base encodings convert **binary data (0s and 1s)** into readable ASCII characters.
+
+Common Types:
+
+- Base64
+    
+- Base85
+    
+- Base58
+    
+- Base62
+    
+
+---
+
+# 🔢 Manual Base64 Encoding Example (“THM”)
+
+### Step 1: Convert to Binary
+
+T → 01010100  
+H → 01001000  
+M → 01001101
+
+Combined (24 bits):  
+`010101000100100001001101`
+
+---
+
+### Step 2: Split into 6-bit Groups
+
+`010101 000100 100001 001101`
+
+Convert to Decimal:
+
+|Binary|Decimal|
+|---|---|
+|010101|21|
+|000100|4|
+|100001|33|
+|001101|13|
+
+---
+
+### Step 3: Convert to Base64 Index
+
+Using Base64 index table:
+
+|Index|Character|
+|---|---|
+|21|V|
+|4|E|
+|33|h|
+|13|N|
+
+Final Base64 Output:  
+`VEhN`
+
+---
+
+# 🌐 URL Encoding (Common UTF-8 Examples)
+
+|Character|Encoded|
+|---|---|
+|:|%3A|
+|/|%2F|
+|.|%2E|
+|=|%3D|
+|#|%23|
+
+Default encoding standard: **UTF-8**
+
+---
+
+# 🧪 Practical Exercise Instructions
+
+1. Download the task file.
+    
+2. Open and copy content.
+    
+3. Paste into input field or upload using **Open file as input**.
+    
+4. Use operations under:
+    
+    - Extractors category (first two questions)
+        
+5. Try solving without hints first.
+
