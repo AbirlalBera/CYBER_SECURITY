@@ -196,7 +196,8 @@ Save (`CTRL+O`, Enter) and exit (`CTRL+X`).
 - Run: `sudo inetsim`
 
 - **Success Indicator:** The output should end with "**Simulation running**". (Ignore the `http_80_tcp - failed!` warning; it's not needed for this exercise).
-
+- 
+![[Pasted image 20260221013210.png]]
 #### 4. Simulating Malware Behavior from the AttackBox
 
 **Step 1: Access the Fake Web Service**
