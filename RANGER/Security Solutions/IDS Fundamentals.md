@@ -109,8 +109,8 @@ Here:
 - `-c` specifies configuration file.
 
 When you ping `127.0.0.1`, Snort detects the ICMP traffic and generates the configured alert, confirming the rule works correctly.
-
-
+![[Pasted image 20260220195922.png]]
+![[Pasted image 20260220195939.png]]
 
 ### Running Snort on PCAP Files
 
