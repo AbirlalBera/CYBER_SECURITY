@@ -12,27 +12,30 @@ we will use `oledump.py` to conduct static analysis on a potentially malicious
 
 #### 1. The Tool: Oledump.py
 
-- **Purpose:** A Python tool for analyzing **OLE2 files** (Compound File Binary Format).
+**Purpose:** A Python tool for analyzing **OLE2 files** (Compound File Binary Format).
 
-- **OLE (Object Linking and Embedding):** A Microsoft technology used in files like Office documents (`.doc`, `.xls`, `.ppt`) to store multiple data streams within a single file.
+**OLE (Object Linking and Embedding):** A Microsoft technology used in files like Office documents (`.doc`, `.xls`, `.ppt`) to store multiple data streams within a single file.
 
-- **Use Case:** Essential for forensic analysis and malware detection, particularly for extracting and examining embedded content like VBA macros.
-
+**Use Case:** Essential for forensic analysis and malware detection, particularly for extracting and examining embedded content like VBA macros.
 
 #### 2. Basic Analysis Workflow (Example: AgentTesla)
 
 **Step 1: Scan the File**
 
-- **Command:** `oledump.py <filename>`
-    
-- **Example:** `oledump.py agenttesla.xlsm`
-    
-- **Output:** Lists the data streams inside the OLE file.
-    
-    - **Key Indicator:** A capital **`M`** next to a stream indicates the presence of a **Macro**.
-        
-    - **Target:** `A4: M 688 'VBA/ThisWorkbook'` is identified as the stream of interest.
-        
+**Command:** 
+
+```
+oledump.py <filename>
+```
+
+**Example:** `oledump.py agenttesla.xlsm`
+
+**Output:** Lists the data streams inside the OLE file.
+
+- **Key Indicator:** A capital **`M`** next to a stream indicates the presence of a **Macro**.
+
+- **Target:** `A4: M 688 'VBA/ThisWorkbook'` is identified as the stream of interest.
+
 
 **Step 2: Select the Data Stream**
 
