@@ -63,47 +63,38 @@ oledump.py agenttesla.xlsm -s 4
 oledump.py agenttesla.xlsm -s 4 --vbadecompress
 ```
 
-
-
-
-
+![[Pasted image 20260221011312.png]]
 
 **Output:** Decompresses the VBA code, making it human-readable.
-
-- This reveals the actual malicious script logic.
-
-
+This reveals the actual malicious script logic.
 #### 3. Case Study: Deobfuscating an AgentTesla Payload
 
 **A. The Obfuscated Script**
 
-- The decompressed VBA reveals a variable `Sqtnew` containing a PowerShell command with obfuscation characters (`*` and `^`).
-    
-- The script then defines functions to clean these characters:
-    
-    - `Replace(Sqtnew, "*", "")` (Remove all asterisks)
-        
-    - `Replace(Sqtnew, "^", "")` (Remove all carets)
-        
+The decompressed VBA reveals a variable `Sqtnew` containing a PowerShell command with obfuscation characters (`*` and `^`).
+
+The script then defines functions to clean these characters:
+- `Replace(Sqtnew, "*", "")` (Remove all asterisks)
+- `Replace(Sqtnew, "^", "")` (Remove all carets)
+
+
 
 **B. Deobfuscation with CyberChef**
 
-1. **Input:** Paste the obfuscated string from `Sqtnew` into CyberChef.
-    
-2. **Operation 1:** Use **Find/Replace**.
-    
-    - _Find:_ `*` (as a SIMPLE STRING)
-        
-    - _Replace:_ (leave blank)
-        
-3. **Operation 2:** Add another **Find/Replace**.
-    
-    - _Find:_ `^` (as a SIMPLE STRING)
-        
-    - _Replace:_ (leave blank)
-        
-4. **Output:** The cleaned, readable PowerShell script.
-    
+1.**Input:** Paste the obfuscated string from `Sqtnew` into CyberChef.
+
+2.**Operation 1:** Use **Find/Replace**.
+
+- _Find:_ `*` (as a SIMPLE STRING)    
+- _Replace:_ (leave blank)
+
+3.**Operation 2:** Add another **Find/Replace**.
+
+- _Find:_ `^` (as a SIMPLE STRING)        
+- _Replace:_ (leave blank)
+
+4.**Output:** The cleaned, readable PowerShell script.
+
 
 **C. The Final Payload Explained**  
 The cleaned script reveals a classic malware downloader pattern:
