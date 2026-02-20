@@ -79,3 +79,6 @@ The output tells you what the program is capable of, such as:
 
 **Effect of `-v` and `-vv`:** These options provide more detailed results but significantly increase processing time.
 
+
+==`Get-Content .\cryptbot.txt`== –  `Get-Content` is a **PowerShell command** used to read and display the contents of a file.
+
