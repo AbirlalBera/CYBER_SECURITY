@@ -128,7 +128,6 @@ The cleaned script reveals a classic malware downloader pattern:
 
 - Runs the downloaded executable, completing the infection chain.
 
-
 #### 4. Summary of the Attack Chain
 
 1.**User Action:** Victim opens the `agenttesla.xlsm` file.
@@ -140,3 +139,5 @@ The cleaned script reveals a classic malware downloader pattern:
 4.**Malware Drop:** PowerShell downloads `Doc-3737122pdf.exe` from a remote C2 server.
 
 5.**Infection:** PowerShell executes the downloaded malware (AgentTesla).
+
+---
