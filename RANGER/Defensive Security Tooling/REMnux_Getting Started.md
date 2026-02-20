@@ -283,15 +283,15 @@ The target file is: `wcry.mem`
 **Key Volatility 3 Plugins (Windows Focus)**  
 These plugins extract specific artefacts from the memory image.
 
-|Plugin Command|Purpose|
-|---|---|
-|`windows.pstree.PsTree`|Lists processes in a tree view (shows parent/child relationships).|
-|`windows.pslist.PsList`|Lists all active processes at the time of capture.|
-|`windows.cmdline.CmdLine`|Lists command-line arguments for each process.|
-|`windows.filescan.FileScan`|Scans for file objects (lists files present in memory).|
-|`windows.dlllist.DllList`|Lists loaded DLLs (Dynamic Link Libraries) for processes.|
-|`windows.malfind.Malfind`|Detects hidden or injected code in process memory.|
-|`windows.psscan.PsScan`|Scans for processes (including those hidden by rootkits).|
+| Plugin Command              | Purpose                                                            |
+| --------------------------- | ------------------------------------------------------------------ |
+| `windows.pstree.PsTree`     | Lists processes in a tree view (shows parent/child relationships). |
+| `windows.pslist.PsList`     | Lists all active processes at the time of capture.                 |
+| `windows.cmdline.CmdLine`   | Lists command-line arguments for each process.                     |
+| `windows.filescan.FileScan` | Scans for file objects (lists files present in memory).            |
+| `windows.dlllist.DllList`   | Lists loaded DLLs (Dynamic Link Libraries) for processes.          |
+| `windows.malfind.Malfind`   | Detects hidden or injected code in process memory.                 |
+| `windows.psscan.PsScan`     | Scans for processes (including those hidden by rootkits).          |
 
 **Basic Usage (Single Plugin)**
 
@@ -1925,8 +1925,6 @@ Now, you have the plugins running individually and seeing the result. What you w
 
 The answer? Do a loop statement! See the command below.
 
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; done
 ```
@@ -1943,12 +1941,9 @@ After running the command, you won't see any output from the terminal; you'll se
 ![This image shows the desired output of running the command from the instructions. You should be able to see seven text files generated from running the loop statement](https://tryhackme-images.s3.amazonaws.com/user-uploads/5e6bbe59a46ee9407fd65bbe/room-content/5e6bbe59a46ee9407fd65bbe-1727001460357.png)
 
   
-
 ### Preprocessing With Strings
 
 Next, we will preprocess the memory image with the Linux strings utility. We will extract the **ASCII**, 16-bit **little-endian**, and 16-bit **big-endian** strings. See the command below.
-
-Terminal
 
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ strings wcry.mem > wcry.strings.ascii.txt
