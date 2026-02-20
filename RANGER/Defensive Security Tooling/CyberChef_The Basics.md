@@ -129,31 +129,29 @@ Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 These operations encode/decode structured data.
 
 ==`From Base64 :`== Decodes Base64 string into raw format. 
-Ex:  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
+**Ex:**  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
 
 
 ==`URL Decode :`==  Converts percent-encoded characters back to original form.  
+**Ex:** `https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  → `https://gchq.github.io/CyberChef/`
 
-Ex: `https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  → `https://gchq.github.io/CyberChef/`
 
 ==`From Base85 :`== Decodes Base85 encoded ASCII string.  
+**Ex:**  `BOu!rD]j7BEbo7` → `hello world`
 
-Ex:  `BOu!rD]j7BEbo7` → `hello world`
 
 ==`From Base58 :`== Decodes Base58 encoded string (removes confusing characters like l, I, 0, O).  
+**Ex:**  `AXLU7qR` → `Thm58`
 
-Ex:  `AXLU7qR` → `Thm58`
 
 ==`To Base62 :`== Encodes data using Base62 character set.  
-
-Ex:  `Thm62` → `6NiRkOY`
+**Ex:**  `Thm62` → `6NiRkOY`
 
 # 📌 Base Encodings (Important Concept)
 
 Base encodings convert **binary data (0s and 1s)** into readable ASCII characters.
 
 Common Types:
-
 - Base64
 - Base85
 - Base58
