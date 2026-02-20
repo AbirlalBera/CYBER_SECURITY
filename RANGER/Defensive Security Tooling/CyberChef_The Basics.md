@@ -96,4 +96,6 @@ Features include:
 - `Replace input with output`: This feature allows users to quickly overwrite the input data based on the operations' results.
 - `Maximise output pane`: This feature brings the tool's interface to its default window sizes.
 
--
+---
+# Before Anything Else
+
