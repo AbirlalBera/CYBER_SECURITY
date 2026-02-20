@@ -42,12 +42,12 @@ oledump.py <filename>
 
 **Command:** 
 ```
-`oledump.py <filename> -s <stream_number>`
+oledump.py <filename> -s <stream_number>
 ```
 
 **Example:** 
 ```
-`oledump.py agenttesla.xlsm -s 4`
+oledump.py agenttesla.xlsm -s 4
 ```
 
 ![[Pasted image 20260221011122.png]]
@@ -58,7 +58,13 @@ oledump.py <filename>
 
 **Command:** Add `--vbadecompress` to the previous command.
 
-**Example:** `oledump.py agenttesla.xlsm -s 4 --vbadecompress`
+**Example:** 
+```
+oledump.py agenttesla.xlsm -s 4 --vbadecompress
+```
+
+
+
 
 
 
