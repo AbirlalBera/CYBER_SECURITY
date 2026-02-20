@@ -272,7 +272,6 @@ This allows analysts to quickly search, grep, and review data without re-running
 
 **Tools Covered:** Volatility 3 (for memory analysis) and the Linux `strings` utility.
 
-
 #### 2. Preprocessing with Volatility 3
 
 **Setup**
@@ -308,7 +307,6 @@ Running plugins one by one is inefficient. Use a bash loop to run multiple plugi
 
 **The Command:**
 
-bash
 
 for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do 
 vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; 
