@@ -141,3 +141,9 @@ The cleaned script reveals a classic malware downloader pattern:
 5.**Infection:** PowerShell executes the downloaded malware (AgentTesla).
 
 ---
+# Fake Network to Aid Analysis
+
+During dynamic analysis, it is essential to observe the behaviour of potentially malicious software—especially its network activities. There are many approaches to this. We can create a whole infrastructure, a virtual environment with different core machines, and more. Alternatively, there is a tool inside our REMnux VM called **INetSim: Internet Services Simulation Suite****!**
+
+We will utilize INetSim's features to simulate a real network in this task.
+
