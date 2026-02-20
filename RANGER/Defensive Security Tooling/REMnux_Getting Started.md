@@ -40,23 +40,32 @@ oledump.py <filename>
 
 **Step 2: Select the Data Stream**
 
-**Command:** `oledump.py <filename> -s <stream_number>`
+**Command:** 
+```
+`oledump.py <filename> -s <stream_number>`
+```
 
-**Example:** `oledump.py agenttesla.xlsm -s 4`
+**Example:** 
+```
+`oledump.py agenttesla.xlsm -s 4`
+```
+
+![[Pasted image 20260221011122.png]]
 
 **Output:** Displays the raw content of the selected stream in hex dump format.
 
-
 **Step 3: Decompress the VBA Macro**
 
-- **Command:** Add `--vbadecompress` to the previous command.
-    
-- **Example:** `oledump.py agenttesla.xlsm -s 4 --vbadecompress`
-    
-- **Output:** Decompresses the VBA code, making it human-readable.
-    
-    - This reveals the actual malicious script logic.
-        
+**Command:** Add `--vbadecompress` to the previous command.
+
+**Example:** `oledump.py agenttesla.xlsm -s 4 --vbadecompress`
+
+
+
+**Output:** Decompresses the VBA code, making it human-readable.
+
+- This reveals the actual malicious script logic.
+
 
 #### 3. Case Study: Deobfuscating an AgentTesla Payload
 
