@@ -39,45 +39,21 @@ The output tells you what the program is capable of, such as:
 
 #### 4. Use Cases
 
-- **Malware Analysis:** Quickly understand a suspicious binary's functionality.
-    
-- **Threat Hunting:** Identify binaries with specific, dangerous capabilities.
-    
-- **Incident Response & Defense:** Crucial for understanding threats and planning countermeasures.
-    
+**Malware Analysis:** Quickly understand a suspicious binary's functionality.
+
+**Threat Hunting:** Identify binaries with specific, dangerous capabilities.
+
+**Incident Response & Defense:** Crucial for understanding threats and planning countermeasures.
+
 
 #### 5. Learning Objectives (for the TryHackMe Room)
 
-1. Explore what CAPA is.
-    
-2. Learn how to use CAPA effectively.
-    
-3. Understand common fields and results in CAPA's output.
-    
-4. Leverage the tool to identify a program's potential activity.
-    
+1.Explore what CAPA is.
 
-#### 6. Prerequisites
+2.Learn how to use CAPA effectively.
 
-- Familiarity with the **MITRE ATT&CK Framework** is recommended.
-    
+3.Understand common fields and results in CAPA's output.
 
-#### 7. Virtual Machine / Lab Setup
+4.Leverage the tool to identify a program's potential activity.
 
-- The room provides a pre-configured VM.
-    
-- CAPA is pre-installed.
-    
-- **Note:** Running CAPA in the VM can be slow.
-    
-- Pre-processed reports are available for quick reference at:
-    
-    - `C:\Users\Administrator\Desktop\capa\`
-        
-- **Example files:**
-    
-    - `cryptbot.txt`
-        
-    - `cryptbot_vv.txt`
-        
-    - `cryptbot_vv.json`
+---
