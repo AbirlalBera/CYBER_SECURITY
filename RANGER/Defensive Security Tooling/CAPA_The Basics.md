@@ -62,13 +62,13 @@ The output tells you what the program is capable of, such as:
 
 **Command:** `capa.exe <path_to_binary>`
 **Process:**
+
 1.Open PowerShell.
-
 2.Navigate to the directory with the binary (e.g., `C:\Users\Administrator\Desktop\capa`).
-
 3.Run the command.
 
 **Note:** Analysis can take several minutes.
+
 #### 2. Key Command-Line Options
 
 |Option|Description|Sample Syntax|
@@ -77,4 +77,5 @@ The output tells you what the program is capable of, such as:
 |`-v` or `--verbose`|Enable verbose result document.|`capa.exe .\cryptbot.bin -v`|
 |`-vv` or `--vverbose`|Enable a **very** verbose result document.|`capa.exe .\cryptbot.bin -vv`|
 
-- **Effect of `-v` and `-vv`:** These options provide more detailed results but significantly increase processing time.
+**Effect of `-v` and `-vv`:** These options provide more detailed results but significantly increase processing time.
+
