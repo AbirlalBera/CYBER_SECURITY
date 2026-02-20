@@ -99,30 +99,22 @@ Features include:
 ---
 # Before Anything Else
 
-# 📂 1️⃣ Extractors Category
+# 1️⃣ Extractors Category
 
 These operations extract specific data from large inputs.
 
-### ==`Extract IP addresses :`==
+==`Extract IP addresses :`==  Extracts all valid IPv4 and IPv6 addresses from the input.
 
-Extracts all valid IPv4 and IPv6 addresses from the input.
-
-### ==`Extract URLs :`==
-
-Extracts Uniform Resource Locators (URLs) from input.  
+==`Extract URLs :`==  Extracts Uniform Resource Locators (URLs) from input.  
 ⚠ Protocol (HTTP, HTTPS, FTP, etc.) must be present to reduce false positives.
 
-### ==`Extract email addresses :`==
-
-Extracts email addresses in the format:  
+==`Extract email addresses :`==  Extracts email addresses in the format:  
 `anything@domain.com`  
 Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 
----
+# 2️⃣ Date / Time Category
 
-# 🕒 2️⃣ Date / Time Category
-
-### ==`From UNIX Timestamp :`==
+==`From UNIX Timestamp :`== 
 
 Converts a UNIX timestamp into a readable date-time format.
 
