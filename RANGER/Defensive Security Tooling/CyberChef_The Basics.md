@@ -129,7 +129,6 @@ Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 These operations encode/decode structured data.
 
 ==`From Base64 :`== Decodes Base64 string into raw format. 
-
 Ex:  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
 
 
