@@ -377,19 +377,14 @@ PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	Exit
 ### CmdLine
 
 This plugin is used to list process command line arguments.
-
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ vol3 -f wcry.mem windows.cmdline.CmdLine
 Volatility 3 Framework 2.0.0
 Progress:  100.00		PDB scanning finished
 ```
 
+
 **View Results**
-
-Terminal
-
 ```powershell
 PID	Process	Args
 
@@ -415,26 +410,18 @@ PID	Process	Args
 1168	wscntfy.exe	C:\WINDOWS\system32\wscntfy.exe
 ```
 
-  
-
-  
 
 ### FileScan
 
 This plugin scans for file objects in a particular Windows memory image. The results have more than 1,400 lines.
-
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ vol3 -f wcry.mem windows.filescan.FileScan
 Volatility 3 Framework 2.0.0
 Progress:  100.00		PDB scanning finished
 ```
 
+
 **View Results**
-
-Terminal
-
 ```powershell
 Offset	Name	Size
 0x1f40310	\Endpoint	112
@@ -1867,14 +1854,10 @@ Offset	Name	Size
 0x23eb8e8	\{9B365890-165F-11D0-A195-0020AFD156E4}	112
 ```
 
-  
 
 ### DllList
 
 This plugin lists the loaded modules in a particular Windows memory image. Due to a text limitation, this one won't have a View Results icon.
-
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ vol3 -f wcry.mem windows.dlllist.DllList
 Volatility 3 Framework 2.0.0
@@ -1887,18 +1870,14 @@ Progress:  100.00		PDB scanning finished
 
 This plugin is used to scan for processes present in a particular Windows memory image.
 
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ vol3 -f wcry.mem windows.psscan.PsScan
 Volatility 3 Framework 2.0.0
 Progress:  100.00		PDB scanning finished
 ```
 
+
 **View Results**
-
-Terminal
-
 ```powershell
 PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	File output
 860	1940	taskdl.exe	0x1f4daf0	0	-	0	False	2017-05-12 21:26:23.000000 	2017-05-12 21:26:23.000000 	Disabled
@@ -1932,9 +1911,6 @@ PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	Exit
 ### Malfind
 
 This plugin is used to lists process memory ranges that potentially contain injected code. There won't be any View Results icon for this one due to text limitation.
-
-Terminal
-
 ```powershell
 root@10.49.155.52:/home/ubuntu/Desktop/tasks/Wcry_memory_image$ vol3 -f wcry.mem windows.malfind.Malfind
 Volatility 3 Framework 2.0.0
