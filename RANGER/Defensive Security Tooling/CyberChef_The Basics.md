@@ -193,7 +193,7 @@ Using Base64 index table:
 |4|E|
 |33|h|
 |13|N|
-
+ex
 Final Base64 Output:  `VEhN`
 
 # 🌐 URL Encoding (Common UTF-8 Examples)
