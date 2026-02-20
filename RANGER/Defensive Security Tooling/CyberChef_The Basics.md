@@ -130,34 +130,22 @@ Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 
 These operations encode/decode structured data.
 
-==`From Base64 :`== Decodes Base64 string into raw format.  
+==`From Base64 :`== Decodes Base64 string into raw format. 
 
 Ex:  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
 
----
 
-### ==`URL Decode :`==
+==`URL Decode :`==  Converts percent-encoded characters back to original form.  
 
-Converts percent-encoded characters back to original form.  
-Ex:  
-`https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  
-→ `https://gchq.github.io/CyberChef/`
+Ex: `https%3A%2F%2Fgchq%2Egithub%2Eio%2FCyberChef%2F`  → https://gchq.github.io/CyberChef/`
 
----
+==`From Base85 :`== Decodes Base85 encoded ASCII string.  
 
-### ==`From Base85 :`==
+Ex:  `BOu!rD]j7BEbo7` → `hello world`
 
-Decodes Base85 encoded ASCII string.  
-Ex:  
-`BOu!rD]j7BEbo7` → `hello world`
+==`From Base58 :`== Decodes Base58 encoded string (removes confusing characters like l, I, 0, O).  
 
----
-
-### ==`From Base58 :`==
-
-Decodes Base58 encoded string (removes confusing characters like l, I, 0, O).  
-Ex:  
-`AXLU7qR` → `Thm58`
+Ex:  `AXLU7qR` → `Thm58`
 
 ---
 
