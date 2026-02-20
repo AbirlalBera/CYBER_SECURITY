@@ -79,9 +79,15 @@ The details of the components involved in this rule are given below:
 
 # Example custom rule:
 
+Let’s paste the sample rule explained above into the custom **"local.rules"** file in the Snort rules directory.
 
+Firstly, open the "local.rules" file in a text editor:
 
+```shell-session
+ubuntu@tryhackme:~$ sudo nano /etc/snort/rules/local.rules
+```
 
+Now, add the following rule after the already present rules to the file:
 ```
 alert icmp any any -> 127.0.0.1 any (msg:"Loopback Ping Detected"; sid:10003; rev:1;)
 ```
