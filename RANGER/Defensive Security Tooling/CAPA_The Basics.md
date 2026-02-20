@@ -82,5 +82,23 @@ The output tells you what the program is capable of, such as:
 
 ==`capa.exe .\cryptbot.bin`== – This command runs **CAPA** on the file `cryptbot.bin` to analyze its capabilities.
 
+
+
 ==`Get-Content .\cryptbot.txt`== –  `Get-Content` is a **PowerShell command** used to read and display the contents of a file.
+
+
+---
+# Dissecting CAPA Results Part 1: General Information, MITRE and MAEC
+
+As mentioned in the previous task, the results of running CAPA against cryptbot.bin  will be discussed in the succeeding task. As such, we will dissect the results per block and topic.
+
+The first block contains basic information about the file. This includes the following:
+
+- The cryptographic algorithms, such as the `md5`, and `sha1/256`.
+- The `analysis` field tells us how CAPA performed its analysis on the file.
+- The `os` field reveals the operating system (OS) context for which the identified capabilities apply.
+- The `arch` field allows us to determine whether we are dealing with a binary related to x86 architecture.
+- The `path` where the analyzed file was located.
+
+![[Pasted image 20260221003216.png]]
 
