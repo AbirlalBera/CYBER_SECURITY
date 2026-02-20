@@ -28,7 +28,6 @@ In summary, signature-based IDS is efficient and quick for known threats and sui
 # IDS Example: Snort
 
 Snort is one of the most widely used open-source IDS solutions, developed in 1998. It primarily uses signature-based detection and can also support anomaly-based techniques through preprocessing and configuration. Snort identifies threats using rule files that contain known attack signatures. It comes with built-in rule sets capable of detecting a wide range of malicious traffic. Administrators can also create custom rules to detect specific types of traffic not covered by default rules. Additionally, built-in rules can be disabled if they are not relevant to a particular network environment. This flexibility makes Snort highly customizable for different security needs.
-![[Pasted image 20260220012339.png]]
 ### Modes of Snort
 
 **Packet Sniffer Mode:**  
