@@ -236,6 +236,8 @@ Run: `sudo inetsim`
 
 - (e.g., `sudo cat /var/log/inetsim/report/report.2594.txt`)
 
+
+
 **What the Report Shows:**  
 A log of all network connections made while INetSim was running.
 
