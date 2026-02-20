@@ -226,11 +226,11 @@ Run: `sudo inetsim`
 
 #### 5. Reviewing the INetSim Report (on REMnux)
 
-1. **Stop INetSim:** Go back to the REMnux terminal and press `CTRL+C` to stop the service.
+1.**Stop INetSim:** Go back to the REMnux terminal and press `CTRL+C` to stop the service.
 
-2. **Locate the Report:** INetSim automatically generates a report of all captured connections. It is saved in: `/var/log/inetsim/report/`
+2.**Locate the Report:** INetSim automatically generates a report of all captured connections. It is saved in: `/var/log/inetsim/report/`
 
-3. **Read the Report:**
+3.**Read the Report:**
 
 - Use `sudo cat /var/log/inetsim/report/report.<sessionID>.txt`
 
