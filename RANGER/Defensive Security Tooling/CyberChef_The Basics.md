@@ -114,37 +114,25 @@ Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 
 # 2️⃣ Date / Time Category
 
-==`From UNIX Timestamp :`== 
+==`From UNIX Timestamp :`==  Converts a UNIX timestamp into a readable date-time format.
 
-Converts a UNIX timestamp into a readable date-time format.
-
-### ==`To UNIX Timestamp :`==
-
-Converts a date-time string (UTC) into a UNIX timestamp.
+==`To UNIX Timestamp :`==  Converts a date-time string (UTC) into a UNIX timestamp.
 
 ### 📌 UNIX Timestamp
 
 - 32-bit value
-    
 - Counts seconds since **January 1, 1970 (UTC)**
-    
+
 - Example:  
-    `Fri Sep 6 20:30:22 +04 2024` → `1725654622`
-    
+`Fri Sep 6 20:30:22 +04 2024` → `1725654622`
 
----
-
-# 🗂 3️⃣ Data Format Category
+# 3️⃣ Data Format Category
 
 These operations encode/decode structured data.
 
----
+==`From Base64 :`== Decodes Base64 string into raw format.  
 
-### ==`From Base64 :`==
-
-Decodes Base64 string into raw format.  
-Ex:  
-`V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
+Ex:  `V2VsY29tZSB0byB0cnloYWNrbWUh` → `Welcome to tryhackme!`
 
 ---
 
