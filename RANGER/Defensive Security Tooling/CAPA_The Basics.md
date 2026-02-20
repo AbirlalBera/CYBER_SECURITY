@@ -80,5 +80,7 @@ The output tells you what the program is capable of, such as:
 **Effect of `-v` and `-vv`:** These options provide more detailed results but significantly increase processing time.
 
 
+==`capa.exe .\cryptbot.bin`== – This command runs **CAPA** on the file `cryptbot.bin` to analyze its capabilities.
+
 ==`Get-Content .\cryptbot.txt`== –  `Get-Content` is a **PowerShell command** used to read and display the contents of a file.
 
