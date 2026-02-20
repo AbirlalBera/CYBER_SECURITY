@@ -105,13 +105,14 @@ These operations extract specific data from large inputs.
 
 ==`Extract IP addresses :`==  Extracts all valid IPv4 and IPv6 addresses from the input.
 
-==`Extract URLs :`==  Extracts Uniform Resource Locators (URLs) from input.  
 
+==`Extract URLs :`==  Extracts Uniform Resource Locators (URLs) from input.  
 ⚠ Protocol (HTTP, HTTPS, FTP, etc.) must be present to reduce false positives.
 
-==`Extract email addresses :`==  Extracts email addresses in the format: `anything@domain.com`  
 
-Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
+==`Extract email addresses :`==  Extracts email addresses in the format: `anything@domain.com`  
+**Examples:** hotmail.com, google.com, tryhackme.com, yahoo.com
+
 
 # 2️⃣ Date / Time Category
 
@@ -123,6 +124,7 @@ Examples: hotmail.com, google.com, tryhackme.com, yahoo.com
 - 32-bit value
 - Counts seconds since **January 1, 1970 (UTC)**
 - Example: `Fri Sep 6 20:30:22 +04 2024` → `1725654622`
+
 
 # 3️⃣ Data Format Category
 
@@ -146,6 +148,7 @@ These operations encode/decode structured data.
 
 ==`To Base62 :`== Encodes data using Base62 character set.  
 **Ex:**  `Thm62` → `6NiRkOY`
+
 
 # 📌 Base Encodings (Important Concept)
 
