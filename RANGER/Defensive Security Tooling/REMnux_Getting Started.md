@@ -260,3 +260,98 @@ A log of all network connections made while INetSim was running.
 ---
 # Memory Investigation: Evidence Preprocessing
 
+One of the most common investigative practices in Digital Forensics is the preprocessing of evidence. This involves running tools and saving the results in text or JSON format. The analyst often relies on tools such as Volatility when dealing with memory images as evidence. This tool is already included in the REMnux VM. Volatility commands are executed to identify and extract specific artefacts from memory images, and the resulting output can be saved to text files for further examination. Similarly, we can run a script involving the tool's different parameters to preprocess the acquired evidence faster.
+
+### Preprocessing Evidence for Forensics
+
+#### 1. The Goal: Preprocessing
+
+In Digital Forensics, preprocessing means running tools against evidence (like a memory dump) and saving the raw results to text or JSON files **before** in-depth analysis.
+
+This allows analysts to quickly search, grep, and review data without re-running slow tools.
+
+**Tools Covered:** Volatility 3 (for memory analysis) and the Linux `strings` utility.
+
+
+#### 2. Preprocessing with Volatility 3
+
+**Setup**
+
+Navigate to the memory image directory:  `cd/home/ubuntu/Desktop/tasks/Wcry_memory_image/`
+
+The target file is: `wcry.mem`
+
+**Key Volatility 3 Plugins (Windows Focus)**  
+These plugins extract specific artefacts from the memory image.
+
+|Plugin Command|Purpose|
+|---|---|
+|`windows.pstree.PsTree`|Lists processes in a tree view (shows parent/child relationships).|
+|`windows.pslist.PsList`|Lists all active processes at the time of capture.|
+|`windows.cmdline.CmdLine`|Lists command-line arguments for each process.|
+|`windows.filescan.FileScan`|Scans for file objects (lists files present in memory).|
+|`windows.dlllist.DllList`|Lists loaded DLLs (Dynamic Link Libraries) for processes.|
+|`windows.malfind.Malfind`|Detects hidden or injected code in process memory.|
+|`windows.psscan.PsScan`|Scans for processes (including those hidden by rootkits).|
+
+**Basic Usage (Single Plugin)**
+
+- **Syntax:** `vol3 -f <memory_image> <plugin>`
+
+- **Example:** `vol3 -f wcry.mem windows.pstree.PsTree`
+
+- **Note:** Each plugin can take 2-3 minutes to run.
+
+#### 3. Bulk Preprocessing with a Loop
+
+Running plugins one by one is inefficient. Use a bash loop to run multiple plugins and save the output to files.
+
+**The Command:**
+
+bash
+
+for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do 
+vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; 
+done
+
+**Breakdown:**
+
+- `for plugin in ... ;`: Creates a variable `$plugin` and loops through the list of plugin names.
+    
+- `vol3 -q ...`: Runs Volatility in **quiet mode** (suppresses progress output).
+    
+- `-f wcry.mem`: Specifies the memory image file.
+    
+- `$plugin`: Inserts the current plugin name from the loop.
+    
+- `> wcry.$plugin.txt`: Redirects the output to a text file named after the plugin (e.g., `wcry.windows.pstree.PsTree.txt`).
+    
+
+**Result:** Seven text files are generated in the same directory, ready for analysis.
+
+#### 4. Preprocessing with the `strings` Command
+
+Extracting all human-readable text from a binary file (like a memory dump) is a critical preprocessing step.
+
+**The Commands:**
+
+1. **Extract ASCII strings:**  
+    `strings wcry.mem > wcry.strings.ascii.txt`
+    
+2. **Extract 16-bit little-endian Unicode (common in Windows):**  
+    `strings -e l wcry.mem > wcry.strings.unicode_little_endian.txt`
+    
+3. **Extract 16-bit big-endian Unicode:**  
+    `strings -e b wcry.mem > wcry.strings.unicode_big_endian.txt`
+    
+
+**Why Three Formats?**  
+Different applications and parts of the OS store text in different encodings. Running all three ensures you capture everything, from simple ASCII paths to complex Unicode strings.
+
+#### 5. Summary
+
+- **Goal:** Transform raw evidence (memory.dmp) into searchable text files.
+    
+- **Method:** Use Volatility plugins to extract structured data (processes, files, DLLs) and `strings` to extract unstructured text.
+    
+- **Benefit:** Future analysis becomes a matter of `grep`, `less`, or reviewing text files, which is much faster than re-querying the memory image.
