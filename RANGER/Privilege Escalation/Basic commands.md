@@ -13,6 +13,8 @@ Execute any administrative command
 -------------------
 <p style="text-align: center;">COMMANDS</p>
 
+---
+
 hostname : The hostname command will return the hostname of the target machine.
 
 ![[FILES/Pasted image 20251026022208.png]]
