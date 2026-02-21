@@ -15,6 +15,8 @@ Preventing cryptographic failures starts with choosing strong, modern algorithms
 
 Never embed access credentials (i.e., to a third-party service) in source code, configuration files, or repositories. Instead, use secure key management systems or environments specifically designed for storing secrets.
 
+KEY1
+
 ---
 # A05: Injection
 
@@ -40,6 +42,8 @@ Unfortunately, even in 2025, these types of attacks remain relevant, as evidence
 Preventing injection starts by ensuring that user input is always treated as untrusted. Rather than parsing directly, instead, take elements of the input for querying. For SQL queries, this means using prepared statements and parameterised queries instead of building queries through string concatenation. For OS commands, avoid functions that pass input directly to the system shell, and instead rely on safe APIs and processes that don’t invoke the shell at all.
 
 Input validation and sanitisation play a crucial role in preventing these types of attack. Escape dangerous characters, enforce strict data types and filter before the application even processes the input.
+
+Payload : THM{SSTI_FLAG_OBTAINED} 
 
 ---
 # A08: Software or Data Integrity Failures
