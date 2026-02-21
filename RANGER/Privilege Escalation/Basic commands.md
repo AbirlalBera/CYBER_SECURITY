@@ -13,17 +13,17 @@ Execute any administrative command
 -------------------
 <p style="text-align: center;">COMMANDS</p>
 
----
-
-hostname : The hostname command will return the hostname of the target machine.
+==`hostname`== : The hostname command will return the hostname of the target machine.
 
 ![[FILES/Pasted image 20251026022208.png]]
 
-uname -a : Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
+---
+==`uname -a`== : Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
 
 ![[Pasted image 20251026022146.png]]
 
-/proc/version : The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.Looking at /proc/version may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
+---
+==`/proc/version`== : The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.Looking at /proc/version may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
 
 ```
 ┌──(kali㉿RANGER)-[/]
@@ -34,6 +34,7 @@ Linux version 6.12.38+kali-amd64 (devel@kali.org) (x86_64-linux-gnu-gcc-14 (Debi
 
 ![[Pasted image 20251026022123.png]]
 
+---
 /etc/issue :  Systems can also be identified by looking at the /etc/issue file. This file usually contains some information about the operating system but can easily be customized or changed. While on the subject, any file containing system information can be customized or changed. For a clearer understanding of the system, it is always good to look at all of these.
 
 ![[Pasted image 20251026022248.png]]
