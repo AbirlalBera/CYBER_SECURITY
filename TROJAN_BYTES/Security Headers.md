@@ -254,26 +254,27 @@ Access-Control-Allow-Origin: https://example.com
 
 Controls caching behavior of responses.
 
+```
 Cache-Control: no-store
+```
 
 ### **Purpose**
 
-Prevents:
-
+**Prevents:**
 - Caching of sensitive pages
-    
 - Data exposure in shared systems
-    
 
 ---
 
-# 🧾 14. Expect-CT (Obsolete)
+# 14. Expect-CT (Obsolete)
 
 ### **Definition**
 
 Enforced Certificate Transparency compliance.
 
+```
 Expect-CT: max-age=86400, enforce
+```
 
 ### **Status**
 
@@ -281,10 +282,11 @@ Mostly obsolete in modern browsers.
 
 ---
 
-# ✅ Modern Recommended Security Header Set (2026)
+# Modern Recommended Security Header Set (2026)
 
-For most secure production websites:
+For most secure production websites :
 
+```
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload  
 Content-Security-Policy: default-src 'self';  
 X-Content-Type-Options: nosniff  
@@ -293,7 +295,11 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 Cross-Origin-Opener-Policy: same-origin  
 Cross-Origin-Resource-Policy: same-origin  
 Cross-Origin-Embedder-Policy: require-corp
+```
 
-Plus secure cookies:
+Plus secure cookies :
 
+```
 Secure; HttpOnly; SameSite=Strict
+```
+
