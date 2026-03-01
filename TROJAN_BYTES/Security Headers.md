@@ -9,7 +9,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 ### **Purpose :**
 
-**Prevents:**
+**Prevents :**
 SSL stripping attacks
 Downgrade attacks (HTTPS → HTTP)
 
@@ -282,7 +282,7 @@ Mostly obsolete in modern browsers.
 
 ---
 
-# Modern Recommended Security Header Set (2026)
+# Modern Recommended Security Header Set 
 
 For most secure production websites :
 
