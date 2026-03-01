@@ -48,7 +48,7 @@ Content-Security-Policy: default-src 'self';
 ---
 # 3. X-Frame-Options
 
-### **Definition**
+### **Definition :**
 
 Prevents your website from being embedded inside an iframe.
 
@@ -71,7 +71,7 @@ X-Frame-Options: DENY
 
 # 4. X-Content-Type-Options
 
-### **Definition**
+### **Definition :**
 
 Prevents browsers from guessing (sniffing) file types.
 
@@ -90,7 +90,7 @@ X-Content-Type-Options: nosniff
 
 # 5. X-XSS-Protection (Deprecated)
 
-### **Definition**
+### **Definition :**
 Old browser-based XSS filter control.
 
 ```
@@ -106,7 +106,7 @@ Not recommended anymore.
 
 # 6. Referrer-Policy
 
-### **Definition**
+### **Definition :**
 
 Controls how much referrer information is sent with requests.
 
@@ -131,7 +131,7 @@ Referrer-Policy: strict-origin-when-cross-origin
 
 # 7. Permissions-Policy (formerly Feature-Policy)
 
-### **Definition**
+### **Definition :**
 
 Controls which browser features can be used.
 
@@ -153,7 +153,7 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 # 8. Cross-Origin-Opener-Policy (COOP)
 
-### **Definition**
+### **Definition :**
 
 Controls how your page interacts with cross-origin windows.
 
@@ -172,7 +172,7 @@ Cross-Origin-Opener-Policy: same-origin
 
 # 9. Cross-Origin-Resource-Policy (CORP)
 
-### **Definition**
+### **Definition :**
 
 Restricts who can load your resources cross-origin.
 
@@ -189,7 +189,7 @@ Cross-Origin-Resource-Policy: same-origin
 
 # 10. Cross-Origin-Embedder-Policy (COEP)
 
-### **Definition**
+### **Definition :**
 
 Controls which cross-origin resources can be embedded.
 
@@ -208,7 +208,7 @@ Required for:
 
 # 11. Cookie Security Flags (Set-Cookie Attributes)
 
-### **Definition**
+### **Definition :**
 
 Security attributes applied to cookies.
 
@@ -226,7 +226,7 @@ Set-Cookie: sessionId=abc123; Secure; HttpOnly; SameSite=Strict;
 
 # 12. CORS Headers
 
-### **Definition**
+### **Definition :**
 
 Control cross-origin requests for APIs.
 
@@ -250,7 +250,7 @@ Access-Control-Allow-Origin: https://example.com
 
 # 13. Cache-Control
 
-### **Definition**
+### **Definition :**
 
 Controls caching behavior of responses.
 
@@ -268,7 +268,7 @@ Cache-Control: no-store
 
 # 14. Expect-CT (Obsolete)
 
-### **Definition**
+### **Definition :**
 
 Enforced Certificate Transparency compliance.
 
