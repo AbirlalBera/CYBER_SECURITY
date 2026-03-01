@@ -135,41 +135,38 @@ Referrer-Policy: strict-origin-when-cross-origin
 
 Controls which browser features can be used.
 
+```
 Permissions-Policy: camera=(), microphone=(), geolocation=()
+```
 
 ### **Purpose**
 
-Disables:
+**Disables:**
 
 - Camera access
-    
 - Microphone access
-    
 - Location tracking
-    
 - Fullscreen
-    
 - USB, etc.
-    
 
 ---
 
-# 🌍 8. Cross-Origin-Opener-Policy (COOP)
+# 8. Cross-Origin-Opener-Policy (COOP)
 
 ### **Definition**
 
 Controls how your page interacts with cross-origin windows.
 
+```
 Cross-Origin-Opener-Policy: same-origin
+```
 
 ### **Purpose**
 
-Prevents:
+**Prevents:**
 
 - Cross-origin attacks
-    
 - Data leaks between windows
-    
 
 ---
 
@@ -179,14 +176,14 @@ Prevents:
 
 Restricts who can load your resources cross-origin.
 
+```
 Cross-Origin-Resource-Policy: same-origin
+```
 
 ### **Purpose**
 
-Prevents:
-
+**Prevents:**
 - Unauthorized resource sharing
-    
 
 ---
 
