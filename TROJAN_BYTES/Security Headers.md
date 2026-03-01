@@ -58,48 +58,44 @@ X-Frame-Options: DENY
 
 ### **Purpose**
 
-Prevents:
-
+**Prevents:**
 - Clickjacking attacks
-    
 
 ### **Values**
-
 - `DENY`
-    
 - `SAMEORIGIN`
-    
 
 ⚠️ Modern alternative: `Content-Security-Policy: frame-ancestors`
 
 ---
 
-# 🚫 4. X-Content-Type-Options
+# 4. X-Content-Type-Options
 
 ### **Definition**
 
 Prevents browsers from guessing (sniffing) file types.
 
+```
 X-Content-Type-Options: nosniff
+```
 
 ### **Purpose**
 
-Stops:
+**Stops:**
 
 - MIME-type confusion attacks
-    
 - Malicious script execution
-    
 
 ---
 
-# 🛑 5. X-XSS-Protection (Deprecated)
+# 5. X-XSS-Protection (Deprecated)
 
 ### **Definition**
-
 Old browser-based XSS filter control.
 
+```
 X-XSS-Protection: 1; mode=block
+```
 
 ### **Status**
 
@@ -108,37 +104,32 @@ Not recommended anymore.
 
 ---
 
-# 🔒 6. Referrer-Policy
+# 6. Referrer-Policy
 
 ### **Definition**
 
 Controls how much referrer information is sent with requests.
 
+```
 Referrer-Policy: strict-origin-when-cross-origin
+```
 
 ### **Purpose**
 
-Protects:
-
+**Protects:**
 - Sensitive URL data
-    
 - User privacy
-    
 
 ### **Common Values**
 
 - `no-referrer`
-    
 - `same-origin`
-    
 - `strict-origin`
-    
 - `strict-origin-when-cross-origin` (recommended)
-    
 
 ---
 
-# 🎛 7. Permissions-Policy (formerly Feature-Policy)
+# 7. Permissions-Policy (formerly Feature-Policy)
 
 ### **Definition**
 
