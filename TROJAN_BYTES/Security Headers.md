@@ -22,7 +22,7 @@ Downgrade attacks (HTTPS → HTTP)
 ---
 # 2. Content-Security-Policy (CSP)
 
-### **Definition**
+### **Definition :**
 Controls which resources (scripts, styles, images, etc.) the browser is allowed to load.
 
 ```
