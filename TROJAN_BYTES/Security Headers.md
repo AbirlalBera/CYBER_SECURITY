@@ -3,32 +3,24 @@
 ### **Definition** :
 Forces the browser to use HTTPS only for your website.
 
+```
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+```
 
-### **Purpose**
+### **Purpose :**
 
-Prevents:
-
-- SSL stripping attacks
-    
-- Downgrade attacks (HTTPS → HTTP)
-    
+**Prevents:**
+SSL stripping attacks
+Downgrade attacks (HTTPS → HTTP)
 
 ### **Key Directives**
 
-- `max-age` → Time in seconds browser remembers HTTPS rule
-    
-- `includeSubDomains` → Applies to subdomains
-    
-- `preload` → Allows inclusion in browser preload list
-    
-
----
-
-# 🛡 2. Content-Security-Policy (CSP)
+`max-age` → Time in seconds browser remembers HTTPS rule
+`includeSubDomains` → Applies to subdomains
+`preload` → Allows inclusion in browser preload list
+# 2. Content-Security-Policy (CSP)
 
 ### **Definition**
-
 Controls which resources (scripts, styles, images, etc.) the browser is allowed to load.
 
 Content-Security-Policy: default-src 'self';
