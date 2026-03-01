@@ -18,50 +18,43 @@ Downgrade attacks (HTTPS → HTTP)
 `max-age` → Time in seconds browser remembers HTTPS rule
 `includeSubDomains` → Applies to subdomains
 `preload` → Allows inclusion in browser preload list
+
+---
 # 2. Content-Security-Policy (CSP)
 
 ### **Definition**
 Controls which resources (scripts, styles, images, etc.) the browser is allowed to load.
 
+```
 Content-Security-Policy: default-src 'self';
+```
 
 ### **Purpose**
 
-Prevents:
-
+**Prevents:**
 - Cross-Site Scripting (XSS)
-    
 - Code injection
-    
 - Clickjacking (via frame-ancestors)
-    
 - Data exfiltration
-    
-
 ### **Important Directives**
 
 - `default-src`
-    
 - `script-src`
-    
 - `style-src`
-    
 - `img-src`
-    
 - `frame-ancestors`
-    
 - `object-src`
-    
 
 ---
-
-# 🧱 3. X-Frame-Options
+# 3. X-Frame-Options
 
 ### **Definition**
 
 Prevents your website from being embedded inside an iframe.
 
+```
 X-Frame-Options: DENY
+```
 
 ### **Purpose**
 
