@@ -170,7 +170,7 @@ Cross-Origin-Opener-Policy: same-origin
 
 ---
 
-# 🌐 9. Cross-Origin-Resource-Policy (CORP)
+# 9. Cross-Origin-Resource-Policy (CORP)
 
 ### **Definition**
 
@@ -187,73 +187,68 @@ Cross-Origin-Resource-Policy: same-origin
 
 ---
 
-# 🔐 10. Cross-Origin-Embedder-Policy (COEP)
+# 10. Cross-Origin-Embedder-Policy (COEP)
 
 ### **Definition**
 
 Controls which cross-origin resources can be embedded.
 
+```
 Cross-Origin-Embedder-Policy: require-corp
+```
 
 ### **Purpose**
 
 Required for:
 
 - Cross-origin isolation
-    
 - SharedArrayBuffer usage
-    
 
 ---
 
-# 🍪 11. Cookie Security Flags (Set-Cookie Attributes)
+# 11. Cookie Security Flags (Set-Cookie Attributes)
 
 ### **Definition**
 
 Security attributes applied to cookies.
 
+```
 Set-Cookie: sessionId=abc123; Secure; HttpOnly; SameSite=Strict;
+```
 
 ### **Flags**
 
 - `Secure` → HTTPS only
-    
 - `HttpOnly` → Not accessible via JavaScript
-    
 - `SameSite=Strict/Lax/None` → CSRF protection
-    
 
 ---
 
-# 🌐 12. CORS Headers
+# 12. CORS Headers
 
 ### **Definition**
 
 Control cross-origin requests for APIs.
 
+```
 Access-Control-Allow-Origin: https://example.com
+```
 
 ### **Common Headers**
 
 - `Access-Control-Allow-Origin`
-    
 - `Access-Control-Allow-Methods`
-    
 - `Access-Control-Allow-Headers`
-    
 - `Access-Control-Allow-Credentials`
-    
 
 ### **Purpose**
 
-Controls:
-
+**Controls:**
 - API access from other domains
-    
 
 ---
 
-# 📦 13. Cache-Control
+# 13. Cache-Control
 
 ### **Definition**
 
