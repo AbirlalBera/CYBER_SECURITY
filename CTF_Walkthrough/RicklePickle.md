@@ -17,7 +17,12 @@ less Sup3rS3cretPickl3Ingred.txt
 ```
 ![[Pasted image 20260306201831.png]]
 
-Next read the 
+Next read the clue.txt file.
+```
+less clue.txt
+```
+It says Look around the file system for the other ingredient.
+
 
 ```
 ls /home/rick/"second ingredients"
