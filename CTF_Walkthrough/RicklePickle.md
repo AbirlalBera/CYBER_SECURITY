@@ -29,3 +29,7 @@ less /home/rick/"second ingredients"
 ```
 ![[Pasted image 20260306202738.png]]
 
+```
+sudo less /root/3rd.txt
+```
+![[Pasted image 20260306203325.png]]
