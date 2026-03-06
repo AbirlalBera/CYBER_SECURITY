@@ -25,5 +25,7 @@ It says Look around the file system for the other ingredient.
 
 
 ```
-ls /home/rick/"second ingredients"
+less /home/rick/"second ingredients"
 ```
+![[Pasted image 20260306202738.png]]
+
