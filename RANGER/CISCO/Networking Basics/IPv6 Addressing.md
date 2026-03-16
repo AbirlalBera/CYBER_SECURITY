@@ -41,3 +41,23 @@ IPv6 addresses are 128 bits in length and written as a string of hexadecimal val
 ![[Pasted image 20260317011509.png]]
 
 
+**Preferred Format**
+
+The previous figure also shows that the preferred format for writing an IPv6 address is x:x:x:x:x:x:x:x, with each “x” consisting of four hexadecimal values. The term octet refers to the eight bits of an IPv4 address. In IPv6, a hextet is the unofficial term used to refer to a segment of 16 bits, or four hexadecimal values. Each “x” is a single hextet which is 16 bits or four hexadecimal digits.
+
+Preferred format means that you write IPv6 address using all 32 hexadecimal digits. It does not necessarily mean that it is the ideal method for representing the IPv6 address. In this module, you will see two rules that help to reduce the number of digits needed to represent an IPv6 address.
+
+These are examples of IPv6 addresses in the preferred format.
+```
+2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000: 0200
+2001 : 0db8 : 0000 : 00a3 : abcd : 0000 : 0000: 1234
+2001 : 0db8 : 000a : 0001 : c012 : 9aff : fe9a: 19ac
+2001 : 0db8 : aaaa : 0001 : 0000 : 0000 : 0000: 0000
+fe80 : 0000 : 0000 : 0000 : 0123 : 4567 : 89ab: cdef
+fe80 : 0000 : 0000 : 0000 : 0000 : 0000 : 0000: 0001
+fe80 : 0000 : 0000 : 0000 : c012 : 9aff : fe9a: 19ac
+fe80 : 0000 : 0000 : 0000 : 0123 : 4567 : 89ab: cdef
+0000 : 0000 : 0000 : 0000 : 0000 : 0000 : 0000: 0001
+0000 : 0000 : 0000 : 0000 : 0000 : 0000 : 0000: 0001
+```
+
