@@ -20,3 +20,24 @@ Tunneling is a method of transporting an IPv6 packet over an IPv4 network. The I
 ### Translation 
 Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. An IPv6 packet is translated to an IPv4 packet and an IPv4 packet is translated to an IPv6 packet.
 ![[Pasted image 20260317011121.png]]
+
+## 10.2.1 Hexadecimal Number System
+
+Before you dive into IPv6 addressing, it's important that you know that IPv6 addresses are represented using hexadecimal numbers. This base sixteen number system uses the digits 0 to 9 and the letters A to F:
+
+**0 1 2 3 4 5 6 7 8 9 A B C D E F**
+
+In IPv6 addresses, these 16 digits are represented as hextets (discussed next) allowing us to represent these massive addresses in a much more readable format.
+
+10.2.2 IPv6 Addressing Formats
+
+16-bit Segments or Hextets
+
+The first step to learning about IPv6 in networks is to understand the way an IPv6 address is written and formatted. IPv6 addresses are much larger than IPv4 addresses, which is why we are unlikely to run out of them.
+
+IPv6 addresses are 128 bits in length and written as a string of hexadecimal values. Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values, as shown in the figure. IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
+
+## **16-bit Segments or Hextets**
+![[Pasted image 20260317011509.png]]
+
+
