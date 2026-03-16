@@ -19,4 +19,4 @@ Tunneling is a method of transporting an IPv6 packet over an IPv4 network. The I
 
 ### Translation 
 Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. An IPv6 packet is translated to an IPv4 packet and an IPv4 packet is translated to an IPv6 packet.
-
+![[Pasted image 20260317011121.png]]
