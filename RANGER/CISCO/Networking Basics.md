@@ -12,3 +12,11 @@ There is no specific date to move to IPv6. Both IPv4 and IPv6 will coexist in th
 ### Dual stack
 Dual stack allows IPv4 and IPv6 to coexist on the same network segment. Dual stack devices run both IPv4 and IPv6 protocol stacks simultaneously. Known as native IPv6, this means the customer network has an IPv6 connection to their ISP and is able to access content found on the internet over IPv6.
 ![[Pasted image 20260317011010.png]]
+
+### Tunneling
+Tunneling is a method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet, similar to other types of data.
+![[Pasted image 20260317011042.png]]
+
+### Translation 
+Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. An IPv6 packet is translated to an IPv4 packet and an IPv4 packet is translated to an IPv6 packet.
+
